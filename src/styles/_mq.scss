@@ -1,0 +1,18 @@
+@use 'functions' as f;
+$breakpoints-down: ('medium':f.em(1024), 'small':f.em(600));
+
+@mixin breakpoint($size) {
+    @media screen and (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+//Media Queries(Medium Devices - 1024px)
+@include breakpoint(medium) {
+    
+}
+
+//Media Queries(small Devices - 600px)
+@include breakpoint(small) {
+    
+}

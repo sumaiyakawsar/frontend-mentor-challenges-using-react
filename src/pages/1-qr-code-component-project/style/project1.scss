@@ -1,0 +1,43 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.project1 {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: f.rem(16);
+        border-radius: f.rem(16);
+
+        box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
+
+        background: v.$white;
+        text-align: center;
+        padding: f.em(16);
+        max-width: 300px;
+
+        &__img {
+            width: 100%;
+            height: auto;
+            border-radius: f.em(10);
+        }
+        &__header {
+            font-weight: v.$font-bold;
+            font-size: f.rem(20);
+            color: v.$dark-blue;
+        }
+        &__body {
+            font-weight: v.$font-normal;
+            font-size: v.$font-size-p;
+            color: v.$grayish-blue;
+        }
+    }
+}

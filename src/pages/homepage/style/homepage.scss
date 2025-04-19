@@ -1,0 +1,125 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+
+.projects {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: f.rem(32);
+
+    .project {
+        width: 320px;
+        border-radius: f.rem(16);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(16);
+        box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
+
+        &__img {
+            height: 200px;
+            border-radius: f.rem(10);
+            box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+            padding: f.rem(12);
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                h4 {
+                    padding: f.rem(6) 0;
+                }
+                .level {
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: f.rem(8);
+                    overflow: hidden;
+                    text-transform: capitalize;
+                    font-size: f.rem(10);
+
+                    span {
+                        flex-grow: 1;
+                        text-align: center;
+                        padding: f.rem(5);
+                        // border: red solid 2px;
+                    }
+
+                    &.newbie {
+                        border:  v.$newbie 1px dotted !important;
+                    }
+
+                    &.advanced {
+                        border:  v.$advanced 1px dotted !important;
+                    }
+
+                    &.junior {
+                        border:  v.$junior 1px dotted !important;
+                    }
+
+                    &.intermediate {
+                        border:  v.$intermediate 1px dotted !important;
+                    }
+
+                    &.guru {
+                        border:  v.$guru 1px dotted !important;
+                    }
+
+                    &__no {
+                        &.newbie {
+                            background-color:  v.$newbie !important;
+                        }
+                        &.junior {
+                            background-color:  v.$junior !important;
+                        }
+                        &.intermediate {
+                            background-color:  v.$intermediate !important;
+                        }
+                        &.advanced {
+                            background-color:  v.$advanced !important;
+                        }
+
+                        &.guru {
+                            background-color:  v.$guru !important;
+                        }
+                    }
+                }
+            }
+
+            &__tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: f.rem(8);
+
+                .tag {
+                    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
+
+                    // background: rgb(2, 196, 255);
+                    padding: 0 f.rem(8);
+                    border-radius: f.rem(8);
+                    font-weight:  v.$font-bold;
+
+                    &.react {
+                        color:  v.$html;
+                    }
+                    &.scss {
+                        color:  v.$scss;
+                    }
+
+                    &.api {
+                        color:  v.$api;
+                    }
+                    &.flex {
+                        color:  v.$flexbx;
+                    }
+                }
+            }
+        }
+    }
+}

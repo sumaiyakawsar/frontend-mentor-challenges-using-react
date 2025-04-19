@@ -1,0 +1,174 @@
+import project1 from "../images/project1-qr.png"
+import project2 from "../images/project2-3-card-layout.png"
+import project3 from "../images/project3-CountdownTimer.png"
+import project4 from "../images/project4-dark.png"
+import project5 from "../images/project5-space-website.png"
+import project6 from "../images/project6-advice-generator.png"
+import project7 from "../images/project7-blog-preview-card.png"
+import project8 from "../images/project8-profile-card-component.png"
+import project9 from "../images/project9-nft-preview-card-component.png"
+import project10 from "../images/project10-social-links-profile.png"
+import project11 from "../images/project11-recipe-page.png"
+import project12 from "../images/project12-product-preview-card-component.png"
+import project13 from "../images/project13-four-card-feature-section.png"
+import project14 from "../images/project14-testimonials-grid-section.png"
+import project15 from "../images/project15-article-preview-component.png"
+
+
+
+export const Projects = [
+    {
+        projectId: 1,
+        projectTitle: "QR code",
+        src: "/frontend-mentor-challenges-using-react/project1",
+        projectImage: project1,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        levelCSS: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+
+    },
+    {
+        projectId: 2,
+        projectTitle: "3-column Card ",
+        src: "/frontend-mentor-challenges-using-react/project2",
+        projectImage: project2,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 3,
+        projectTitle: "Launch Countdown Timer",
+        src: "/frontend-mentor-challenges-using-react/project3",
+        projectImage: project3,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 4,
+        projectTitle: "REST Countries API with color theme switcher",
+        src: "https://sumaiyakawsar.github.io/rest-api-countries-react/",
+        projectImage: project4,
+        projectLevelNo: "4",
+        projectLevel: "advanced",
+        projectTags: ["React", "SCSS", "Flex", "API"]
+    },
+    {
+        projectId: 5,
+        projectTitle: "Space tourism multi-page website",
+        src: "https://sumaiyakawsar.github.io/space-tourism-website/",
+        projectImage: project5,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 6,
+        projectTitle: "Advice Generator",
+        src: "https://sumaiyakawsar.github.io/sk-advice-generator/",
+        projectImage: project6,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex", "API"]
+    },
+    {
+        projectId: 7,
+        projectTitle: "Blog Preview Card",
+        src: "/frontend-mentor-challenges-using-react/project7",
+        projectImage: project7,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 8,
+        projectTitle: "Profile Card",
+        src: "/frontend-mentor-challenges-using-react/project8",
+        projectImage: project8,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 9,
+        projectTitle: "NFT preview card",
+        src: "/frontend-mentor-challenges-using-react/project9",
+        projectImage: project9,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 10,
+        projectTitle: "Social links profile",
+        src: "/frontend-mentor-challenges-using-react/project10",
+        projectImage: project10,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 11,
+        projectTitle: "Recipe Page",
+        src: "/frontend-mentor-challenges-using-react/project11",
+        projectImage: project11,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 12,
+        projectTitle: "Product preview card",
+        src: "/frontend-mentor-challenges-using-react/project12",
+        projectImage: project12,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 13,
+        projectTitle: "Four card feature section",
+        src: "/frontend-mentor-challenges-using-react/project13",
+        projectImage: project13,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 14,
+        projectTitle: "Testimonials grid",
+        src: "/frontend-mentor-challenges-using-react/project14",
+        projectImage: project14,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 15,
+        projectTitle: "Article preview component",
+        src: "/frontend-mentor-challenges-using-react/project15",
+        projectImage: project15,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 16,
+        projectTitle: "Newsletter Sign Up",
+        src: "/frontend-mentor-challenges-using-react/project16",
+        projectImage: project15,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    // {
+    //     projectId: 1,
+    //     projectTitle: "AboutMe",
+    //     src: "/about",
+    //     projectImage: project16,
+    //     projectLevelNo: "1",
+    //     projectLevel: "newbie",
+    //     // icon: <FaHome />
+    // },
+
+];
+

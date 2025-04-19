@@ -1,0 +1,215 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/animations";
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.project15 {
+    background: v.$light-grayish-blue;
+
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    // width: 90%;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        min-width: f.rem(300);
+        border-radius: f.rem(8);
+        margin: f.rem(80);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background: white;
+        box-shadow: v.$box-shadow;
+        transition: all ease-in-out 0.5s;
+
+        @include breakpoint(small) {
+            max-width: f.rem(900);
+            flex-direction: row !important;
+        }
+        .card-image {
+            flex: 1;
+            overflow: hidden;
+            border-radius: f.rem(8);
+        }
+
+        &__img {
+            object-fit: cover;
+            @include breakpoint(small) {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+        }
+
+        &__content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .details {
+                padding: f.rem(32);
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(22);
+            }
+        }
+
+        &__header {
+            font-size: f.rem(18);
+        }
+
+        &__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            .author {
+                width: 100%;
+                padding: f.rem(16) f.rem(32);
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: f.rem(22);
+
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    gap: f.rem(30);
+                }
+                &__img {
+                    height: auto;
+                    width: 50px;
+                    border-radius: 50%;
+                }
+                &__details {
+                    color: v.$very-dark-grayish-blue;
+                    .name {
+                        font-weight: v.$font-bold;
+                    }
+                    .date {
+                        color: v.$grayish-blue;
+                    }
+                }
+                .share-btn {
+                    border-radius: 50%;
+                    background-color: v.$light-grayish-blue;
+                    box-shadow: v.$box-shadow;
+                    padding: f.rem(8);
+                    user-select: none;
+                    cursor: pointer;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+
+                    z-index: 999;
+                    .fa-share {
+                        color: v.$desaturated-dark-blue;
+                        z-index: 20;
+                    }
+
+                    &:hover {
+                        background-color: v.$grayish-blue;
+                        .fa-share {
+                            color: v.$light-grayish-blue;
+                        }
+                    }
+                }
+            }
+
+            .share-container {
+                .share-popup {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+
+                    text-align: center;
+                    padding: f.rem(16) f.rem(32);
+                    background-color: v.$very-dark-grayish-blue;
+                    box-shadow: v.$box-shadow;
+
+                    animation: slide-left 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
+
+                    color: white;
+                    border-radius: f.rem(8);
+
+                    z-index: 0;
+
+                    display: none;
+                    width: 100%;
+
+                    .share-box {
+                        max-width: 100%;
+                        min-width: 80%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        @include breakpoint(small) {
+                            width: 100%;
+                        }
+                    }
+
+                    &.clicked {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        @include breakpoint(small) {
+                            height: 65px !important;
+                            display: flex !important;
+                        }
+                    }
+
+                    .triangle-down {
+                        @include breakpoint(small) {
+                            content: "" !important;
+                            display: block;
+                            border-top: 15px solid v.$very-dark-grayish-blue !important;
+                            border-right: 10px solid transparent !important;
+                            border-left: 10px solid transparent !important;
+                            position: absolute !important;
+                            bottom: -20% !important;
+                            left: 50% !important;
+                            z-index: 999 !important;
+                        }
+                    }
+
+                    span {
+                        letter-spacing: f.em(8);
+                        color: v.$desaturated-dark-blue;
+                    }
+
+                    .social__icon {
+                        color: v.$light-grayish-blue;
+                        font-size: f.rem(20);
+                        &:hover {
+                            filter: invert(100);
+                        }
+                    }
+
+                    @include breakpoint(small) {
+                        display: none !important;
+                        animation: slide-top 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.8) both !important;
+
+                        width: 250px !important;
+                        left: 60% !important;
+                        top: -60px !important;
+                    }
+                }
+            }
+        }
+    }
+}

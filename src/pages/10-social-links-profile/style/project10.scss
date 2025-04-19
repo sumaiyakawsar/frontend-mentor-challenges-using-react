@@ -1,0 +1,96 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+.project10 {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: v.$grey-900;
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+
+    line-height: 1.5;
+
+    .card {
+        min-width: 327px;
+        max-width: 400px;
+        background-color: v.$grey-800;
+        color: v.$white;
+        border-radius: f.rem(14);
+        display: flex;
+        box-shadow: 0px 0 rgba(0, 0, 0);
+        gap: f.rem(24);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: f.rem(40);
+
+        .img__container {
+            img {
+                border-radius: 50%;
+                width: f.rem(90);
+                height: f.rem(90);
+                object-fit: cover;
+            }
+        }
+
+        &__details {
+            display: flex;
+            gap: f.rem(12);
+            flex-direction: column;
+            align-items: center;
+            .location {
+                color: v.$green;
+                font-weight: v.$font-bold;
+                font-size: f.rem(12);
+            }
+        }
+
+        &__header {
+            font-weight: v.$font-ex-bold;
+            font-size: f.rem(24);
+        }
+        &__body {
+            font-weight: v.$font-normal;
+            font-size: v.$font-size-p;
+            opacity: 50%;
+            padding: 0 f.rem(24);
+            text-align: center;
+        }
+
+        &__social {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: f.rem(12);
+            flex-direction: column;
+
+            a {
+                width: 100%;
+                border-radius: f.rem(8);
+                text-align: center;
+                color: v.$white;
+                font-weight: v.$font-bold;
+                background: v.$grey-700;
+                transition:
+                    background-color 0.5s,
+                    color 0.5s; /* or .5s for short */
+                padding: f.rem(12);
+
+                &:hover {
+                    background: v.$green;
+                    color: v.$grey-900;
+                    cursor: pointer;
+                }
+                &:focus {
+                    outline: 3px solid v.$green;
+                    outline-offset: 3px;
+                }
+            }
+        }
+    }
+}

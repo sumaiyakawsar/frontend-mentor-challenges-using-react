@@ -1,0 +1,84 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+
+.project7 {
+    background: v.$yellow;
+    // min-height: 100vh;
+
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+        min-width: 327px;
+        max-width: 384px;
+        border: v.$gray-950 solid 1px;
+        border-radius: f.rem(20);
+        display: flex;
+        box-shadow: 8px 8px 0px 0px rgba(0, 0, 0);
+        gap: f.rem(24);
+        background: v.$white;
+        flex-direction: column;
+        padding: f.em(24);
+
+        &__img {
+            width: 100%;
+            height: auto;
+            border-radius: f.em(10);
+        }
+
+        &__details {
+            display: flex;
+            gap: f.rem(12);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__tag {
+            color: v.$gray-950;
+            font-weight: v.$font-bold;
+            font-size: f.rem(14);
+            background-color: v.$yellow;
+            padding: f.rem(4) f.rem(12);
+            border-radius: f.rem(4);
+        }
+        &__date {
+            font-size: f.rem(14);
+        }
+        &__header {
+            font-weight: v.$font-bold;
+            font-size: f.rem(24);
+            &:hover {
+                color: v.$yellow;
+                cursor: pointer;
+            }
+        }
+        &__body {
+            font-weight: v.$font-normal;
+            font-size: v.$font-size-p;
+            color: v.$gray-500;
+        }
+
+        &__author {
+            display: flex;
+            align-items: center;
+            gap: f.rem(12);
+            .author {
+                &__img {
+                    width: 32px;
+                    height: 32px;
+                }
+                &__name {
+                    color: v.$gray-950;
+                    font-weight: v.$font-bold;
+                    font-size: f.rem(14);
+                }
+            }
+        }
+    }
+}

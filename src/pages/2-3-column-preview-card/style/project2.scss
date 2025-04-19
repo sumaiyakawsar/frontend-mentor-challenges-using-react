@@ -1,0 +1,86 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.project2 {
+    background: v.$very-light-gray;
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-container {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: v.$font-size-p;
+        user-select: none;
+
+        border-radius: f.rem(10);
+        overflow: hidden;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex: 1 0 200px; // grow: 1, shrink: 0, basis: 200px
+            padding: f.rem(32);
+
+            &__top {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: f.rem(80);
+                justify-content: space-between;
+                gap: f.rem(32);
+                img {
+                    width: f.rem(50);
+                }
+                h1 {
+                    text-transform: uppercase;
+                    font-family: v.$big-shoulders;
+                    color: v.$trans-white;
+                }
+                p {
+                    color: v.$trans-white;
+                    font-size: f.rem(12);
+                    font-family: v.$lexend-deca;
+                }
+            }
+            a {
+                display: block;
+                border-radius: f.rem(50);
+                font-family: v.$lexend-deca;
+                background: v.$trans-white;
+                padding: f.rem(8) f.rem(16);
+                &.sedan {
+                    color: v.$bright-orange;
+                }
+                &.suvs {
+                    color: v.$dark-cyan;
+                }
+                &.luxury {
+                    color: v.$very-dark-cyan;
+                }
+                &:hover {
+                    outline: v.$trans-white 2px solid;
+                    background: transparent;
+                    color: v.$trans-white;
+                }
+            }
+            &.sedan {
+                background: v.$bright-orange;
+            }
+            &.suvs {
+                background: v.$dark-cyan;
+            }
+            &.luxury {
+                background: v.$very-dark-cyan;
+            }
+        }
+    }
+}

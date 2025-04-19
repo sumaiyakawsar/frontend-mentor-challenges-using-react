@@ -1,0 +1,31 @@
+@use "../../../styles/functions" as f;
+@use "sass:map";
+
+$breakpoints-down: (
+    "medium": f.rem(1440),
+    "small": f.rem(900)
+);
+
+@mixin breakpoint($size) {
+    @media screen and (max-width: map.get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+//Media Queries(Medium Devices - 1440px)
+// @include breakpoint(medium) {
+// }
+
+// //Media Queries(small Devices - 600px)
+// @include breakpoint(small) {
+//     .card-wrapper {
+//         grid-template-columns: repeat(1, 1fr) !important; // 1 column for mobile
+
+//         // grid-template-columns: 1fr !important;
+//         grid-template-areas:
+//             "supervisor"
+//             "team-builder"
+//             "calculator"
+//             "karma" !important;
+//     }
+// }

@@ -1,0 +1,129 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+.project9 {
+    background: v.$very-dark-blue-bg;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: v.$font-family;
+    font-size: f.rem(18);
+
+    line-height: 150%;
+    .card {
+        min-width: 327px;
+        max-width: 384px;
+        background-color: v.$very-dark-blue-card;
+        color: v.$white;
+        border-radius: f.rem(20);
+        display: flex;
+        box-shadow: 0px 0 rgba(0, 0, 0);
+        gap: f.rem(24);
+        flex-direction: column;
+        padding: f.em(24);
+
+        .img__container {
+            border-radius: f.rem(10);
+            background-color: v.$cyan;
+            position: relative;
+            overflow: hidden;
+
+            .nft_img {
+                width: 100%;
+                display: block;
+                transition: opacity 0.3s ease;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: v.$cyan-trans;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            &:hover {
+                .overlay {
+                    opacity: 50%;
+                }
+            }
+        }
+        .eye-icon {
+            opacity: 1;
+            z-index: 10;
+        }
+        &__details {
+            display: flex;
+            gap: f.rem(12);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__header {
+            font-weight: v.$font-bold;
+            font-size: f.rem(24);
+            &:hover {
+                color: v.$cyan;
+                cursor: pointer;
+            }
+        }
+        &__body {
+            font-weight: v.$font-thin;
+            font-size: v.$font-size-p;
+            color: v.$soft-blue;
+        }
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__amount {
+            color: v.$cyan;
+            font-weight: v.$font-bold;
+        }
+        &__info {
+            display: flex;
+            gap: f.rem(8);
+            align-items: center;
+        }
+        &__time {
+            color: v.$soft-blue;
+        }
+        &__footer {
+            border-top: 1px solid v.$very-dark-blue-line;
+            padding-top: f.rem(14);
+            display: flex;
+            align-items: center;
+            gap: f.rem(12);
+            color: v.$soft-blue;
+            .author {
+                &__img {
+                    width: 32px;
+                    height: 32px;
+                    border: v.$white solid 2px;
+                    border-radius: 50%;
+                }
+                &__name {
+                    color: v.$white;
+                    font-weight: v.$font-thin;
+
+                    &:hover {
+                        color: v.$cyan;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

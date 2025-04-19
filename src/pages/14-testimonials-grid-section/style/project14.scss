@@ -1,0 +1,148 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+.project14 {
+    background: v.$white;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: v.$font-family;
+    line-height: 1.5;
+    font-size: v.$font-size-p;
+
+    gap: f.rem(32);
+    max-width: 88%;
+    padding: f.rem(32); 
+
+    .card-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        gap: f.rem(24);
+        grid-template-areas:
+            "testimonial1"
+            "testimonial2"
+            "testimonial3"
+            "testimonial4"
+            "testimonial5" !important;
+        padding: f.rem(32);
+
+
+        @include breakpoint(medium) {
+            grid-template-columns: repeat(2, 1fr);
+
+            grid-template-areas:
+                "testimonial1 testimonial2"
+                "testimonial3 testimonial4"
+                "testimonial5 testimonial5" !important;
+        }
+
+        @include breakpoint(large) {
+            grid-template-columns: repeat(4, 1fr) !important;
+            grid-template-areas:
+                "testimonial1 testimonial1 testimonial2 testimonial5"
+                "testimonial3 testimonial4 testimonial4 testimonial5" !important;
+        }
+        .card {
+            border-radius: f.rem(8);
+            padding: f.rem(32);
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(20);
+            backdrop-filter: blur(10px);
+            box-shadow: v.$box-shadow;
+            transition: all ease-in-out 0.5s;
+
+            &:hover {
+                box-shadow: 0 0 15px v.$purple-500;
+            }
+            &.testimonial1 {
+                grid-area: testimonial1;
+                background-color: v.$purple-500;
+                color: v.$purple-50;
+                img {
+                    border: v.$purple-300 4px solid;
+                }
+                h1 {
+                    color: v.$white;
+                }
+                @include breakpoint(large) {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 50px;
+                        width: 100px; // Adjust size as needed
+                        height: 100px;
+                        opacity: 0.5;
+                        background: url("../images/bg-pattern-quotation.svg") no-repeat center;
+                        background-size: contain;
+                    }
+                }
+            }
+
+            &.testimonial2 {
+                grid-area: testimonial2;
+                background-color: v.$grey-400;
+                color: v.$grey-100;
+                h1 {
+                    color: v.$white;
+                }
+            }
+
+            &.testimonial3 {
+                grid-area: testimonial3;
+
+                color: v.$grey-400;
+            }
+
+            &.testimonial4 {
+                grid-area: testimonial4;
+                background-color: v.$dark-blue;
+                color: v.$grey-100;
+                img {
+                    border: v.$purple-500 4px solid;
+                }
+                h1 {
+                    color: v.$white;
+                }
+            }
+            &.testimonial5 {
+                grid-area: testimonial5;
+                color: v.$grey-400;
+            }
+
+            &__header {
+                display: flex;
+                gap: f.rem(28);
+                align-items: center;
+                img {
+                    border-radius: 50%;
+                }
+                .name {
+                    font-weight: v.$font-bold;
+                }
+                .status {
+                    font-weight: v.$font-normal;
+                }
+
+                @include breakpoint(large) {
+                    z-index: 999;
+                }
+            }
+
+            &__topic {
+                font-size: f.em(26);
+                font-weight: v.$font-bold;
+            }
+        }
+    }
+}

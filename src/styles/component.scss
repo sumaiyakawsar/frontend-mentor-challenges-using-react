@@ -1,0 +1,38 @@
+@use "functions" as f;
+
+header {
+    background-color: red;
+
+    nav {
+        text-transform: uppercase;
+        transition: all 300ms ease-in-out;
+        .hidden {
+            display: none;
+            &.hamburger {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}
+
+footer {
+    padding-block-end: f.rem(16);
+    font-size: f.rem(11);
+    text-align: center;
+    .socials {
+        display: flex;
+        justify-content: center;
+        padding-block-end: f.rem(24);
+        gap: f.rem(24);
+        .social__icon {
+            color: lightskyblue;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    a {
+        color: white;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,115 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+.project11 {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: v.$stone-100;
+    color: v.$stone-600;
+    list-style: none;
+
+    font-family: v.$outfit-font-family;
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    padding: f.rem(32);
+    
+    .card {
+        max-width: 600px;
+        background-color: v.$white;
+        border-radius: f.rem(14);
+        display: flex;
+        box-shadow: 0px 0 rgba(0, 0, 0);
+        // gap: f.rem(24);
+        flex-direction: column;
+
+        .img__container {
+            border-radius: f.rem(14);
+            padding: f.rem(32);
+            img {
+                width: 100%;
+                border-radius: f.rem(14);
+            }
+        }
+
+        &__header {
+            font-weight: v.$font-ex-bold;
+            font-size: f.rem(30);
+            color: v.$stone-900;
+        }
+
+        &__details {
+            padding: 0 f.rem(32) f.rem(32) f.rem(32);
+            display: flex;
+            gap: f.rem(24);
+            flex-direction: column;
+
+            .description {
+                text-align: justify;
+            }
+            h1,
+            h2 {
+                font-family: v.$young-font-family;
+                font-weight: v.$font-normal;
+            }
+            h2 {
+                color: v.$brown-800;
+            }
+            span {
+                font-weight: v.$font-ex-bold;
+            }
+
+            ul,
+            ol {
+                padding-left: 20px;
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+
+            h2 {
+                font-size: f.em(32);
+                padding-bottom: f.rem(18);
+            }
+            .prep_time {
+                padding: f.rem(24);
+                background-color: v.$rose-50;
+                border-radius: f.rem(12);
+                h2 {
+                    font-size: f.rem(20);
+                    color: v.$rose-800;
+                    padding-bottom: f.rem(12);
+                }
+            }
+
+            hr {
+                background-color: v.$stone-100;
+                height: 1px;
+            }
+            .nutrition {
+                table {
+                    width: 100%;
+
+                    td {
+                        border-bottom: v.$stone-150 solid 1px;
+                        padding: f.rem(8) f.rem(16);
+                    }
+
+                    .type {
+                        color: v.$stone-900;
+                    }
+
+                    .amount {
+                        font-weight: v.$font-ex-bold;
+                        color: v.$brown-800;
+                    }
+                }
+            }
+        }
+    }
+}

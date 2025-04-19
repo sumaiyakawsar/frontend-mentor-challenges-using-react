@@ -1,0 +1,131 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,700;1,700&display=swap");
+main{
+    
+}
+.project3 {
+    background:
+        url(../images/pattern-hills.svg) bottom no-repeat,
+        url(../images/bg-stars.svg) no-repeat,
+        linear-gradient(to top, v.$soft-red-80 0%, v.$dark-blue 30%);
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+
+    padding: f.rem(32);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: f.rem(32);
+    width: 100%;
+    min-height: 100vh;
+
+    .heading {
+        color: v.$white;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: f.rem(7);
+        margin-bottom: f.rem(32);
+        text-shadow: v.$soft-red-100 1px 1px 5px;
+    }
+
+    .countdown-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: f.rem(32);
+        width: 60%;
+        justify-content: center;
+
+        .ctd {
+            color: v.$soft-red-100;
+            flex: 1 0 150px;
+            text-align: center;
+
+            .countdown-el {
+                position: relative;
+                height: 100px;
+                background: v.$dark-desaturated-blue;
+                border-radius: f.rem(8);
+                box-shadow: v.$dark-black-blue 0px 10px 2px;
+                font-size: 4.8rem;
+                overflow: hidden;
+                text-align: center;
+                vertical-align: middle;
+
+                //Side 2 circles
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: 6;
+                    top: calc(50% - 5px);
+                    background: rgb(0, 0, 0, 50%);
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                }
+                &::before {
+                    left: -5px;
+                }
+                &::after {
+                    right: -5px;
+                }
+
+                & > span {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                }
+                .top {
+                    z-index: 3;
+                    color: v.$soft-red-80;
+                    background-color: v.$saturated-blue;
+                    transform-origin: 50% 100%;
+                    transform: perspective(200px);
+                }
+
+                .top,
+                .top-back {
+                    height: 50%;
+                    overflow: hidden;
+                    backface-visibility: hidden;
+                }
+
+                .top-back {
+                    z-index: 4;
+                    bottom: 0;
+                    transform-origin: 50% 0;
+                    background-color: v.$saturated-blue;
+                    transform: perspective(200px) rotateX(180deg);
+                    span {
+                        position: absolute;
+                        top: -100%;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+
+                .bottom {
+                    z-index: 1;
+                }
+                .bottom-back {
+                    z-index: 2;
+                    top: 0;
+                    height: 50%;
+                    overflow: hidden;
+                    background-color: v.$saturated-blue;
+                }
+            }
+        }
+
+        .describe-container {
+            letter-spacing: f.rem(5);
+            padding: f.rem(32);
+            color: v.$grayish-blue;
+            text-transform: uppercase;
+        }
+    }
+}

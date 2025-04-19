@@ -1,0 +1,22 @@
+@use "../../../styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+// Colors
+$red: hsl(4, 100%, 67%);
+$blue-800: hsl(234, 29%, 20%);
+$blue-700: hsl(235, 18%, 26%);
+$grey: hsl(0, 0%, 58%);
+$white: hsl(0, 0%, 100%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// ## Typography
+$font-size-p: f.rem(16);
+
+// Font
+$font-family: "Roboto", sans-serif;
+
+$font-normal: 400;
+$font-bold: 700;

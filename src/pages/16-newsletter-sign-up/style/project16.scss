@@ -1,0 +1,147 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+.project16 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    color: v.$blue-800;
+    line-height: 1.5;
+
+    .newsletter,
+    .success-message {
+        background-color: white;
+        box-shadow: v.$box-shadow;
+        border-radius: f.rem(16);
+        // border: red solid 4px;
+    }
+    ul {
+        list-style: none; // Remove default bullets
+
+        li {
+            position: relative;
+            padding-left: f.rem(40);
+            margin-bottom: f.rem(10);
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: f.em(20);
+                height: f.em(20);
+                background-image: url("../images/icon-list.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 50%; // Optional: makes it circular
+            }
+        }
+    }
+    .btn {
+        background-color: v.$blue-700;
+        color: v.$white;
+        width: 100%;
+        padding: f.rem(16);
+        border-radius: f.rem(8);
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            background: linear-gradient(to bottom right, #ff6a00, #ee0979);
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(31, 42, 72, 0.3);
+        }
+    }
+    .newsletter {
+        .newsletter-content {
+            min-height: 500px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            @include breakpoint(small) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: f.rem(16);
+            }
+
+            .img__container {
+                picture {
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(32);
+                padding: f.rem(32);
+                form {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: f.rem(16);
+
+                    .label {
+                        display: flex;
+                        justify-content: space-between;
+                        label {
+                            font-weight: v.$font-bold;
+                        }
+                        span {
+                            font-size: f.rem(12);
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: f.rem(16);
+                        outline: v.$grey 1px solid;
+                        border-radius: f.rem(8);
+                        &.error {
+                            outline: v.$red 1px solid;
+                            background-color: #ffe6e6;
+                        }
+                        &:focus {
+                            border-color: #1f2a48;
+                            outline: none;
+                            box-shadow: 0 0 0 2px rgba(31, 42, 72, 0.2);
+                        }
+                    }
+
+                    .error-text {
+                        color: v.$red;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
+        .success {
+            &-message {
+                display: flex;
+                min-height: f.em(450);
+                max-width: f.em(450);
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                padding: f.rem(32);
+                @include breakpoint(small) {
+                    height: auto;
+                }
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: f.rem(16);
+            }
+        }
+    }
+}
