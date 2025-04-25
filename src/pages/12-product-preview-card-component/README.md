@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/12-product-preview-card-component/">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project12">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/12-product-preview-card-component">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/12-product-preview-card-component">
       Solution
     </a>
     <span> | </span>
@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../../images/project12-product-preview-card-component.png)
+![Screenshot](../homepage/images/project12-product-preview-card-component.png)
 
 ## My process
 

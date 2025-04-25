@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/7-blog-preview-card">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project7">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/7-blog-preview-card">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/7-blog-preview-card">
       Solution
     </a>
     <span> | </span>
@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../../images/project7-blog-preview-card.png)
+![Screenshot of the component](../homepage/images/project7-blog-preview-card.png)
 
 
 ## My process

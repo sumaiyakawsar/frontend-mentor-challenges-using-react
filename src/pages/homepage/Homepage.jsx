@@ -1,9 +1,14 @@
 import React from 'react'
+import useFavicon from '../../components/favicons/favicon';
+import useDocumentTitle from '../../components/favicons/useTitle'
 import { Projects } from "./data/data";
 import { Link } from "react-router-dom";
 import './style/homepage.scss'
 
 function Homepage() {
+    useFavicon("icons/main.png");
+    useDocumentTitle("Frontend Mentor Challenges by SK");
+    console.log("Setting favicon")
     return (
         <section className='projects'>
 

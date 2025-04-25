@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/10-social-links-profile">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project10">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/10-social-links-profile">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/10-social-links-profile">
       Solution
     </a>
     <span> | </span>
@@ -20,11 +20,11 @@
 
 
 ## Overview
- This is my 12th challenge
+ This is my 10th challenge
 
 ### Screenshot
 
-![Screenshot of the component](../../images/project10-social-links-profile.png)
+![Screenshot of the component](../homepage/images/project10-social-links-profile.png)
 
 
 ## My process

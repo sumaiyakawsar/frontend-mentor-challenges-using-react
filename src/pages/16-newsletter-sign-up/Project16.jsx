@@ -9,11 +9,11 @@ import iconSuccess from './images/icon-success.svg'
 import iconList from './images/icon-list.svg'
 
 const Project16 = () => {
-    useFavicon("project71516.png");
-    useDocumentTitle("Article preview component | Frontend Mentor");
+    useFavicon("icons/project71516.png");
+    useDocumentTitle("Newsletter sign-up form with success message | Frontend Mentor");
 
     const [email, setEmail] = useState("");
-    const [isValid, setIsValid] = useState(true);
+    // const [isValid, setIsValid] = useState(true);
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState("");
 
@@ -33,6 +33,12 @@ const Project16 = () => {
             setError("");
             setSubmitted(true);
         }
+    };
+
+    const handleDismiss = () => {
+        setEmail("");
+        setSubmitted(false);
+        setError("");
     };
 
     const handleChange = (e) => {
@@ -94,7 +100,7 @@ const Project16 = () => {
                             <p>A confirmation email has been sent to <strong>{email}</strong>. Please open it and click the button inside to confirm your subscription.</p>
 
                         </div>
-                        <a href="" class="btn"> Dismiss message</a>
+                        <button onClick={handleDismiss} class="btn"> Dismiss message</button>
                     </div>
                     // {/* Success message end   */}
                 )}

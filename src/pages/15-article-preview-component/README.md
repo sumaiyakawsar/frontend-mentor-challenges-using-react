@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/15-article-preview-component">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project15">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/15-article-preview-component">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/15-article-preview-component">
       Solution
     </a>
     <span> | </span>
@@ -30,7 +30,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../../images/project15-article-preview-component.png)
+![Screenshot](../homepage/images/project15-article-preview-component.png)
 
 ## My process
 

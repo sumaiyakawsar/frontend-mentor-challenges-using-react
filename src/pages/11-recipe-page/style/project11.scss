@@ -2,14 +2,12 @@
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
 .project11 {
-    width: 100vw;
-    min-height: 100vh;
+    flex: 1;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background: v.$stone-100;
     color: v.$stone-600;
     list-style: none;
 
@@ -17,7 +15,7 @@
     font-size: v.$font-size-p;
     line-height: 1.5;
     padding: f.rem(32);
-    
+
     .card {
         max-width: 600px;
         background-color: v.$white;

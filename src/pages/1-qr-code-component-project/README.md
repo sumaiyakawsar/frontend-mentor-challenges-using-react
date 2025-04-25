@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/1-qr-code-component-project">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project1">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/1-qr-code-component-project">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/1-qr-code-component-project">
       Solution
     </a>
     <span> | </span>
@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../../images/project1-qr.png)
+![Screenshot of the component](../homepage/images/project1-qr.png)
 
 
 ## My process

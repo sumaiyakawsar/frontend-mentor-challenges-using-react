@@ -6,11 +6,11 @@ import { PiShoppingCartBold } from "react-icons/pi";
 
 import productDesktop from './images/image-product-desktop.jpg'
 import productMobile from './images/image-product-mobile.jpg'
-// import iconCart from './images/icon-cart.svg'
+ 
 
 
 const Project12 = () => {
-  useFavicon("project12.png");
+  useFavicon("icons/project12.png");
   useDocumentTitle("Product preview card | Frontend Mentor");
 
   return (

@@ -8,7 +8,7 @@ import food from './images/image-omelette.jpeg'
 
 
 function Project11() {
-    useFavicon("project11.png");
+    useFavicon("icons/project11.png");
     useDocumentTitle("Recipe page | Frontend Mentor");
 
     return (

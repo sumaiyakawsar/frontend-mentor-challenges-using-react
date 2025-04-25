@@ -1,26 +1,19 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,700;1,700&display=swap");
-main{
-    
-}
+
 .project3 {
-    background:
-        url(../images/pattern-hills.svg) bottom no-repeat,
-        url(../images/bg-stars.svg) no-repeat,
-        linear-gradient(to top, v.$soft-red-80 0%, v.$dark-blue 30%);
     font-family: v.$font-family;
     font-size: v.$font-size-p;
 
     padding: f.rem(32);
-
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: f.rem(32);
     width: 100%;
-    min-height: 100vh;
 
     .heading {
         color: v.$white;
@@ -36,7 +29,7 @@ main{
         display: flex;
         flex-wrap: wrap;
         gap: f.rem(32);
-        width: 60%;
+        width: 70%;
         justify-content: center;
 
         .ctd {

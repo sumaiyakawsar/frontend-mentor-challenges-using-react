@@ -3,13 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 .project10 {
-    width: 100vw;
-    height: 100vh;
-
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: v.$grey-900;
+
     font-family: v.$font-family;
     font-size: v.$font-size-p;
 

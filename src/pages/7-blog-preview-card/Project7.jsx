@@ -7,7 +7,7 @@ import avatar from './images/image-avatar.webp'
 import cardImg from './images/illustration-article.svg'
 
 function Project7() {
-    useFavicon("project71516.png");
+    useFavicon("icons/project71516.png");
     useDocumentTitle(" Blog preview card | Frontend Mentor");
     
     return (

@@ -7,6 +7,33 @@ $white: hsl(0, 0%, 100%);
 $black: rgb(0, 0, 0);
 $light-gray: hsl(212, 45%, 89%);
 
+//Project 2
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+//Project 3
+$soft-red-100: rgba(251, 96, 135,100%);
+
+//Project 10
+$green: hsl(140, 94%, 57%);
+
+//Project 11
+$brown-800: hsl(14, 45%, 36%);
+$rose-800: hsl(332, 51%, 32%); 
+
+//Project 12
+$green-500: hsl(158, 36%, 37%);
+
+//Project 13
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+//Project 14
+$purple-500: hsl(263, 55%, 52%);
+
 // ## Typography
 $font-size-p: 15px;
 
@@ -16,10 +43,7 @@ $font-family: "Outfit", sans-serif;
 $font-normal: 400;
 $font-bold: 700;
 
-// Container Widths
-$container-width-lg: 75%;
-$container-width-md: 86%;
-$container-width-sm: 90%;
+ 
 
 //Transition
 $transition: all 400ms ease;

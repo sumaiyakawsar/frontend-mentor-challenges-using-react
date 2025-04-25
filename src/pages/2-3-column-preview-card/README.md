@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/2-3-column-preview-card-component/">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project2">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/2-3-column-preview-card-component">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/2-3-column-preview-card">
       Solution
     </a>
     <span> | </span>
@@ -34,7 +34,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-![Screenshot](../../images/project2-3-card-layout.png)
+![Screenshot](../homepage/images/project2-3-card-layout.png)
 
 
 ## My process

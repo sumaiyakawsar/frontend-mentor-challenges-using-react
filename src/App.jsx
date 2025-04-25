@@ -1,12 +1,11 @@
 import { useEffect } from 'react'
 
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import './styles/app.scss'
+import Layout from "./components/layout/layout"
 
-import Project1 from "./pages/1-qr-code-component-project/Project1";
-import Header from "./components/header/Header";
 import Homepage from "./pages/homepage/Homepage";
-import Footer from './components/footer/Footer';
+import Project1 from "./pages/1-qr-code-component-project/Project1";
 import Project2 from "./pages/2-3-column-preview-card/Project2";
 import Project3 from "./pages/3-launch-countdown-timer/Project3";
 import Project7 from './pages/7-blog-preview-card/Project7';
@@ -19,102 +18,69 @@ import Project13 from './pages/13-four-card-feature-section/project13';
 import Project14 from './pages/14-testimonials-grid-section/Project14';
 import Project15 from './pages/15-article-preview-component/Project15';
 import Project16 from './pages/16-newsletter-sign-up/Project16';
+import ScrollToTop from './components/ScrollToTop';
+
+
+
+const ExternalRedirect = ({ url }) => {
+  useEffect(() => {
+    window.location.href = url;
+  }, [url]);
+
+  return <p> Redirecting... </p>;
+
+}
+
+
 
 function App() {
-  // const location = useLocation();
 
-  // useEffect(() => {
-  //   // Add background change logic based on the current route
-  //   if (location.pathname === "/frontend-mentor-challenges-using-react") {
-  //     document.body.style.background = '#f0f8ff'; // Light Blue for Home
-  //   } else if (location.pathname === "/frontend-mentor-challenges-using-react/project1") {
-  //     document.body.style.background = '#ffebcd'; // Blanched Almond for About
-  //   } else if (location.pathname === "/frontend-mentor-challenges-using-react/project2") {
-  //     document.body.style.background = '#d3d3d3'; // Light Gray for Contact
-  //   } else if (location.pathname === "/frontend-mentor-challenges-using-react/project3") {
-  //     document.body.style.background = '#d3d3d3'; // Light Gray for Contact
-  //   }
-  // }, [location]);
+  const routes = [
+    { path: "/frontend-mentor-challenges-using-react", element: <Homepage /> },
+    { path: "/frontend-mentor-challenges-using-react/project1", element: <Project1 /> },
+    { path: "/frontend-mentor-challenges-using-react/project2", element: <Project2 /> },
+    { path: "/frontend-mentor-challenges-using-react/project3", element: <Project3 /> },
+    { path: "/frontend-mentor-challenges-using-react/project7", element: <Project7 /> },
+    { path: "/frontend-mentor-challenges-using-react/project8", element: <Project8 /> },
+    { path: "/frontend-mentor-challenges-using-react/project9", element: <Project9 /> },
+    { path: "/frontend-mentor-challenges-using-react/project10", element: <Project10 /> },
+    { path: "/frontend-mentor-challenges-using-react/project11", element: <Project11 /> },
+    { path: "/frontend-mentor-challenges-using-react/project12", element: <Project12 /> },
+    { path: "/frontend-mentor-challenges-using-react/project13", element: <Project13 /> },
+    { path: "/frontend-mentor-challenges-using-react/project14", element: <Project14 /> },
+    { path: "/frontend-mentor-challenges-using-react/project15", element: <Project15 /> },
+    { path: "/frontend-mentor-challenges-using-react/project16", element: <Project16 /> },
+    { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
+    { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
+    { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },
+
+
+  ]
 
   return (
-    <main >
-      <Header />
+    <Layout>
+      <ScrollToTop />
+
       <Routes>
-        <Route
-          exact
-          path="/frontend-mentor-challenges-using-react"
-          element={<Homepage />}
-        />
-        <Route
-          path="/frontend-mentor-challenges-using-react/project1"
-          element={<Project1 />}
-        />
+        {routes.map((route, idx) => {
+          return (
+            <Route
+              key={idx}
+              path={route.path}
+              element={
+                route.url ?
+                  <ExternalRedirect url={route.url} />
+                  : route.element
+              }
+            />
+          )
+        })}
 
-
-        <Route
-          path="/frontend-mentor-challenges-using-react/project2"
-          element={<Project2 />}
-        />
-        <Route
-          path="/frontend-mentor-challenges-using-react/project3"
-          element={<Project3 />}
-        />
-        <Route
-          path="/frontend-mentor-challenges-using-react/project7"
-          element={<Project7 />}
-        />   <Route
-          path="/frontend-mentor-challenges-using-react/project8"
-          element={<Project8 />}
-        />
-        <Route
-          path="/frontend-mentor-challenges-using-react/project9"
-          element={<Project9 />}
-        />
-
-        <Route
-          path="/frontend-mentor-challenges-using-react/project10"
-          element={<Project10 />}
-        />
-
-
-        <Route
-          path="/frontend-mentor-challenges-using-react/project11"
-          element={<Project11 />}
-        />
-
-
-        <Route
-          path="/frontend-mentor-challenges-using-react/project12"
-          element={<Project12 />}
-        />
-
-
-        <Route
-          path="/frontend-mentor-challenges-using-react/project13"
-          element={<Project13 />}
-        />
-
-        <Route
-          path="/frontend-mentor-challenges-using-react/project14"
-          element={<Project14 />}
-        />
-        <Route
-          path="/frontend-mentor-challenges-using-react/project15"
-          element={<Project15 />}
-        />
-
-        <Route
-          path="/frontend-mentor-challenges-using-react/project16"
-          element={<Project16 />}
-        />
-        {/*   <Route
-          path="/projects"
-          element={<Projects />}
-        /> */}
       </Routes>
+    </Layout>
 
-      <Footer />
-    </main>
+
+
   )
 }
 

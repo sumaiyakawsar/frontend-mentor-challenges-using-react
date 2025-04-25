@@ -13,6 +13,7 @@ import project12 from "../images/project12-product-preview-card-component.png"
 import project13 from "../images/project13-four-card-feature-section.png"
 import project14 from "../images/project14-testimonials-grid-section.png"
 import project15 from "../images/project15-article-preview-component.png"
+import project16 from "../images/project16-Newsletter.png"
 
 
 
@@ -48,7 +49,7 @@ export const Projects = [
     },
     {
         projectId: 4,
-        projectTitle: "REST Countries API with color theme switcher",
+        projectTitle: "REST Countries API with theme",
         src: "https://sumaiyakawsar.github.io/rest-api-countries-react/",
         projectImage: project4,
         projectLevelNo: "4",
@@ -57,7 +58,7 @@ export const Projects = [
     },
     {
         projectId: 5,
-        projectTitle: "Space tourism multi-page website",
+        projectTitle: "Space tourism multi-page site",
         src: "https://sumaiyakawsar.github.io/space-tourism-website/",
         projectImage: project5,
         projectLevelNo: "3",
@@ -155,7 +156,7 @@ export const Projects = [
         projectId: 16,
         projectTitle: "Newsletter Sign Up",
         src: "/frontend-mentor-challenges-using-react/project16",
-        projectImage: project15,
+        projectImage: project16,
         projectLevelNo: "1",
         projectLevel: "newbie",
         projectTags: ["React", "SCSS", "Flex"]

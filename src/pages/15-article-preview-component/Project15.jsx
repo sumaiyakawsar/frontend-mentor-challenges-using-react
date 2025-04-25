@@ -8,7 +8,7 @@ import drawers from './images/drawers.jpg'
 import { FaShare, FaLinkedin, FaInstagram, FaPinterest } from "react-icons/fa";
 
 const Project15 = () => {
-  useFavicon("project71516.png");
+  useFavicon("icons/project71516.png");
   useDocumentTitle("Article preview component | Frontend Mentor");
 
   const [isClicked, setIsClicked] = useState(false);

@@ -5,7 +5,7 @@ import cardImg from './images/image-qr-code.png'
 import './style/project1.scss'
 
 const Project1 = () => {
-  useFavicon("project1.png");
+  useFavicon("icons/project1.png");
   useDocumentTitle("QR code component | Frontend Mentor");
 
   return (

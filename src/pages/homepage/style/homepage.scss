@@ -39,6 +39,7 @@
                 .level {
                     display: flex;
                     flex-wrap: wrap;
+
                     border-radius: f.rem(8);
                     overflow: hidden;
                     text-transform: capitalize;
@@ -48,45 +49,44 @@
                         flex-grow: 1;
                         text-align: center;
                         padding: f.rem(5);
-                        // border: red solid 2px;
                     }
 
                     &.newbie {
-                        border:  v.$newbie 1px dotted !important;
+                        border: v.$newbie 1px dotted !important;
                     }
 
                     &.advanced {
-                        border:  v.$advanced 1px dotted !important;
+                        border: v.$advanced 1px dotted !important;
                     }
 
                     &.junior {
-                        border:  v.$junior 1px dotted !important;
+                        border: v.$junior 1px dotted !important;
                     }
 
                     &.intermediate {
-                        border:  v.$intermediate 1px dotted !important;
+                        border: v.$intermediate 1px dotted !important;
                     }
 
                     &.guru {
-                        border:  v.$guru 1px dotted !important;
+                        border: v.$guru 1px dotted !important;
                     }
 
                     &__no {
                         &.newbie {
-                            background-color:  v.$newbie !important;
+                            background-color: v.$newbie !important;
                         }
                         &.junior {
-                            background-color:  v.$junior !important;
+                            background-color: v.$junior !important;
                         }
                         &.intermediate {
-                            background-color:  v.$intermediate !important;
+                            background-color: v.$intermediate !important;
                         }
                         &.advanced {
-                            background-color:  v.$advanced !important;
+                            background-color: v.$advanced !important;
                         }
 
                         &.guru {
-                            background-color:  v.$guru !important;
+                            background-color: v.$guru !important;
                         }
                     }
                 }
@@ -100,23 +100,22 @@
                 .tag {
                     box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
 
-                    // background: rgb(2, 196, 255);
                     padding: 0 f.rem(8);
                     border-radius: f.rem(8);
-                    font-weight:  v.$font-bold;
+                    font-weight: v.$font-bold;
 
                     &.react {
-                        color:  v.$html;
+                        color: v.$html;
                     }
                     &.scss {
-                        color:  v.$scss;
+                        color: v.$scss;
                     }
 
                     &.api {
-                        color:  v.$api;
+                        color: v.$api;
                     }
                     &.flex {
-                        color:  v.$flexbx;
+                        color: v.$flexbx;
                     }
                 }
             }

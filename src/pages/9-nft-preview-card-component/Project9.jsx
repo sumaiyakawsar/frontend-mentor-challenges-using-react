@@ -10,7 +10,7 @@ import avatar from './images/image-avatar.png'
 import equilibrium from './images/image-equilibrium.jpg'
 
 function Project9() {
-    useFavicon("project9.png");
+    useFavicon("icons/project9.png");
     useDocumentTitle("NFT preview card component | Frontend Mentor");
     return (
         <div className="container project9">

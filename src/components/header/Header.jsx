@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import Menu from "./Menu";
-import { AiOutlineMenu } from "react-icons/ai";
-import { Projects } from "../../pages/homepage/data/data";
+// import Menu from "./Menu";
+// import { AiOutlineMenu } from "react-icons/ai";
+// import { Projects } from "../../pages/homepage/data/data";
 import { IoMdHome } from "react-icons/io";
 import '../../styles/component.scss'
 
 const Header = () => {
-    const [toggleMenu, setToggleMenu] = useState(false);
+    // const [toggleMenu, setToggleMenu] = useState(false);
 
-    const showMenu = () => {
-        setToggleMenu(!toggleMenu);
-    };
+    // const showMenu = () => {
+    //     setToggleMenu(!toggleMenu);
+    // };
 
-    const activeLink = "py-4 border-b";
-    const normalLink = "py-4 border-0  hover:border-b hover:border-b-white/50";
+    // const activeLink = "py-4 border-b";
+    // const normalLink = "py-4 border-0  hover:border-b hover:border-b-white/50";
 
 
 
     return (
-        <header className="flex py-4 justify-between items-center">
+        <header className="header">
             <Link
                 to="/frontend-mentor-challenges-using-react"
-                className="ml-6 md:ml-[55px] w-12 h-12 min-h-fit min-w-fit"
+                className="home"
             >
-                <IoMdHome />
+                <IoMdHome className="home-icon"/>
 
             </Link>
-            <nav className="uppercase tracking-[0.16875em] transition-all duration-300 ease-linear">
+            {/* <nav className="uppercase tracking-[0.16875em] transition-all duration-300 ease-linear">
                 <div className="md:hidden cursor-pointer scale-150 mr-6">
                     <AiOutlineMenu onClick={showMenu} className="" />
                 </div>
@@ -55,7 +55,7 @@ const Header = () => {
                     toggle={toggleMenu}
                     menuTitles={Projects}
                 />
-            </nav>
+            </nav> */}
         </header>
 
     );

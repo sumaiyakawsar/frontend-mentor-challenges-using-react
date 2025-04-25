@@ -8,13 +8,16 @@
     font-size: v.$font-size-p;
     color: v.$blue-800;
     line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .newsletter,
     .success-message {
         background-color: white;
         box-shadow: v.$box-shadow;
-        border-radius: f.rem(16);
-        // border: red solid 4px;
+        border-radius: f.rem(16); 
     }
     ul {
         list-style: none; // Remove default bullets

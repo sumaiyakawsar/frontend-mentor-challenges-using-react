@@ -9,7 +9,7 @@ import suv from './images/icon-suvs.svg'
 import './style/project2.scss'
 
 const Project2 = () => {
-    useFavicon("project2.png");
+    useFavicon("icons/project2.png");
     useDocumentTitle(" 3-column preview card component | Frontend Mentor");
     const vehicleData = [
         {

@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/14-testimonials-grid-section">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project14">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/14-testimonials-grid-section">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/14-testimonials-grid-section">
       Solution
     </a>
     <span> | </span>
@@ -30,7 +30,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../../images/project14-testimonials-grid-section.png)
+![Screenshot](../homepage/images/project14-testimonials-grid-section.png)
 
 ## My process
 

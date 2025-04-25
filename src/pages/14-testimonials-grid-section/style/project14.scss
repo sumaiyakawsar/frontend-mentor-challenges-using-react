@@ -4,14 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
 .project14 {
-    background: v.$white;
-
-    width: 100vw;
-    min-height: 100vh;
+    flex: 1;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     font-family: v.$font-family;
     line-height: 1.5;
@@ -19,7 +17,7 @@
 
     gap: f.rem(32);
     max-width: 88%;
-    padding: f.rem(32); 
+    padding: f.rem(32);
 
     .card-wrapper {
         width: 100%;
@@ -33,7 +31,6 @@
             "testimonial4"
             "testimonial5" !important;
         padding: f.rem(32);
-
 
         @include breakpoint(medium) {
             grid-template-columns: repeat(2, 1fr);

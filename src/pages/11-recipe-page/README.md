@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/11-recipe-page">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project11">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/11-recipe-page">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/11-recipe-page">
       Solution
     </a>
     <span> | </span>
@@ -20,11 +20,11 @@
 
 
 ## Overview
- This is my 13th challenge
+ This is my 11th challenge
 
 ### Screenshot
 
-![Screenshot of the component](../../images/project11-recipe-page.png)
+![Screenshot of the component](../homepage/images/project11-recipe-page.png)
 
 
 ## My process

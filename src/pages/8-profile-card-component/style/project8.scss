@@ -3,19 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 .project8 {
-    background-color: v.$dark-cyan;
-    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    background-position:
-        top -25vw left -20vw,
-        bottom -25vw right -20vw;
-    background-repeat: no-repeat, no-repeat;
-width:100vw;
-height: 100vh;
+    flex: 1;
 
- display: flex;
- justify-content: center;
- align-items: center;
-    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // z-index: -10;
     font-family: v.$font-family;
     font-size: f.rem(16);
     line-height: 150%;

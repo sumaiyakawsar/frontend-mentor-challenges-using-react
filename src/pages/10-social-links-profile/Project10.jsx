@@ -8,7 +8,7 @@ import avatar from './images/avatar-sumaiya.jpg'
 
 
 function Project10() {
-    useFavicon("project10.jpg");
+    useFavicon("icons/project10.jpg");
     useDocumentTitle("Social links profile | Frontend Mentor");
 
     return (

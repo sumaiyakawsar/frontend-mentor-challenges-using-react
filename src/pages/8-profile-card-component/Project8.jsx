@@ -7,7 +7,7 @@ import avatar from './images/image-victor.jpg'
 import cardImg from './images/bg-pattern-card.svg'
 
 function Project8() {
-    useFavicon("project8.png");
+    useFavicon("icons/project8.png");
     useDocumentTitle(" Profile card component | Frontend Mentor");
 
     return (

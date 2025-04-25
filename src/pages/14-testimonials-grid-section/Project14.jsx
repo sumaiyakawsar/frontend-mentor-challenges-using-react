@@ -7,7 +7,7 @@ import TestimonialCard from './component/TestimonialCard';
 import { testimonialsData } from './data/data'
 
 const Project14 = () => {
-  useFavicon("project1314.png");
+  useFavicon("icons/project1314.png");
   useDocumentTitle("Testimonials grid section | Frontend Mentor");
 
   return (

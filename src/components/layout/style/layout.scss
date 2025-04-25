@@ -1,0 +1,55 @@
+@use "variables" as v;
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    min-height: 100vh;
+}
+
+.project {
+    &-default {
+        background: v.$white;
+    }
+    &-1 {
+        background: v.$light-gray;
+    }
+    &-2 {
+        background: v.$very-light-gray;
+    }
+    &-3 {
+        background:
+            url(../../../pages/3-launch-countdown-timer/images/pattern-hills.svg) bottom no-repeat,
+            url(../../../pages/3-launch-countdown-timer/images/bg-stars.svg) no-repeat,
+            linear-gradient(to top, v.$soft-red-80 0%, v.$dark-blue 30%);
+    }
+    &-7 {
+        background: v.$yellow;
+    }
+    &-8 {
+        background-color: v.$dark-cyan;
+        background-image: url("../../../pages/8-profile-card-component/images/bg-pattern-top.svg"),
+            url("../../../pages/8-profile-card-component/images/bg-pattern-bottom.svg");
+        background-position:
+            top -25vw left -20vw,
+            bottom -25vw right -20vw;
+        background-repeat: no-repeat, no-repeat;
+    }
+    &-9 {
+        background: v.$very-dark-blue-bg;
+    }
+    &-10 {
+        background: v.$grey-900;
+    }
+    &-11 {
+        background: v.$stone-100;
+    }
+    &-12 {
+        background: v.$cream;
+    }
+
+    &-15 {
+        background: v.$light-grayish-blue;
+    }
+}

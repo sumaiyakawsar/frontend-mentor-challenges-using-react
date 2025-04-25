@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/3-launch-countdown-timer/">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project3">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/3-launch-countdown-timer">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/3-launch-countdown-timer">
       Solution
     </a>
     <span> | </span>
@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../../images/project3-CountdownTimer.png)
+![Screenshot](../homepage/images/project3-CountdownTimer.png)
 
 ## My process
 

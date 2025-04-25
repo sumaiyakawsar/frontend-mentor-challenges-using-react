@@ -7,7 +7,7 @@ import CountdownEL from './component/CountdownEL';
 
 
 const Project3 = () => {
-    useFavicon("project3.png");
+    useFavicon("icons/project3.png");
     useDocumentTitle(" Launch countdown timer | Frontend Mentor");
 
     const timeUnits = [

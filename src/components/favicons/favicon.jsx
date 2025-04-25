@@ -2,12 +2,19 @@ import { useEffect } from 'react';
 
 const useFavicon = (iconUrl) => {
     useEffect(() => {
-        const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-        link.type = 'image/x-icon';
-        link.rel = 'icon';
+
+        let link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.head.appendChild(link);
+        }
+        link.type = "image/x-icon";
         link.href = iconUrl;
-        document.getElementsByTagName('head')[0].appendChild(link);
+
+        return () => { link.href = ""; };
     }, [iconUrl]);
+
 };
 
 export default useFavicon;
