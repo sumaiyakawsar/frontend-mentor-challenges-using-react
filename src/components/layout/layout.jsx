@@ -21,8 +21,7 @@ const Layout = ({ children }) => {
     else if (pathname === "/frontend-mentor-challenges-using-react/project11") bgClass = "project-11";
     else if (pathname === "/frontend-mentor-challenges-using-react/project12") bgClass = "project-12";
     else if (pathname === "/frontend-mentor-challenges-using-react/project15") bgClass = "project-15";
-    // else if (pathname === "/frontend-mentor-challenges-using-react/project16") bgClass = "project-16";
-
+ 
 
 
     return (

@@ -155,7 +155,7 @@ export const Projects = [
     {
         projectId: 16,
         projectTitle: "Newsletter Sign Up",
-        src: "/frontend-mentor-challenges-using-react/16-newsletter-sign-up",
+        src: "/frontend-mentor-challenges-using-react/project16",
         projectImage: project16,
         projectLevelNo: "1",
         projectLevel: "newbie",

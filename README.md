@@ -24,7 +24,7 @@ After converting the entire project to react: [![wakatime](https://wakatime.com/
 | 13           | [Four card feature section](hhttps://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project13)             | Newbie       | ✔️    | 
 | 14           | [Testimonials grid section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project14)             | Junior       | ✔️    | 
 | 15           | [Article preview component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project15)             | Newbie       | ✔️    | 
-| 16           | [Newsletter sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project16)               | Newbie       | ✔️    | 
+| 16           | [Newsletter sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/16-newsletter-sign-up)               | Newbie       | ✔️    | 
 | 17           | -------                                                                                                                                  | Newbie       | ❌    |
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
