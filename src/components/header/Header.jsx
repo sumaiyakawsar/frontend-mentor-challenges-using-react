@@ -22,7 +22,7 @@ const Header = () => {
         <header className="header">
             <Link
                 to="/"
-                className="home"
+                className="home" aria-label="Home"
             >
                 <IoMdHome className="home-icon"/>
 
