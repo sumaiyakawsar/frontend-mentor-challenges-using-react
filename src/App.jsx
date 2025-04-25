@@ -50,7 +50,7 @@ function App() {
     { path: "/frontend-mentor-challenges-using-react/project13", element: <Project13 /> },
     { path: "/frontend-mentor-challenges-using-react/project14", element: <Project14 /> },
     { path: "/frontend-mentor-challenges-using-react/project15", element: <Project15 /> },
-    { path: "/frontend-mentor-challenges-using-react/project16", element: <Project16 /> },
+    { path: "/frontend-mentor-challenges-using-react/16-newsletter-sign-up", element: <Project16 /> },
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },
