@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header className="header">
             <Link
-                to="/frontend-mentor-challenges-using-react/"
+                to="/"
                 className="home"
             >
                 <IoMdHome className="home-icon"/>

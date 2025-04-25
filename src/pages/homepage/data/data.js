@@ -21,7 +21,7 @@ export const Projects = [
     {
         projectId: 1,
         projectTitle: "QR code",
-        src: "/frontend-mentor-challenges-using-react/project1",
+        src: "/project1",
         projectImage: project1,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -32,7 +32,7 @@ export const Projects = [
     {
         projectId: 2,
         projectTitle: "3-column Card ",
-        src: "/frontend-mentor-challenges-using-react/project2",
+        src: "/project2",
         projectImage: project2,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -41,7 +41,7 @@ export const Projects = [
     {
         projectId: 3,
         projectTitle: "Launch Countdown Timer",
-        src: "/frontend-mentor-challenges-using-react/project3",
+        src: "/project3",
         projectImage: project3,
         projectLevelNo: "3",
         projectLevel: "intermediate",
@@ -77,7 +77,7 @@ export const Projects = [
     {
         projectId: 7,
         projectTitle: "Blog Preview Card",
-        src: "/frontend-mentor-challenges-using-react/project7",
+        src: "/project7",
         projectImage: project7,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -86,7 +86,7 @@ export const Projects = [
     {
         projectId: 8,
         projectTitle: "Profile Card",
-        src: "/frontend-mentor-challenges-using-react/project8",
+        src: "/project8",
         projectImage: project8,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -95,7 +95,7 @@ export const Projects = [
     {
         projectId: 9,
         projectTitle: "NFT preview card",
-        src: "/frontend-mentor-challenges-using-react/project9",
+        src: "/project9",
         projectImage: project9,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -104,7 +104,7 @@ export const Projects = [
     {
         projectId: 10,
         projectTitle: "Social links profile",
-        src: "/frontend-mentor-challenges-using-react/project10",
+        src: "/project10",
         projectImage: project10,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -113,7 +113,7 @@ export const Projects = [
     {
         projectId: 11,
         projectTitle: "Recipe Page",
-        src: "/frontend-mentor-challenges-using-react/project11",
+        src: "/project11",
         projectImage: project11,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -121,7 +121,7 @@ export const Projects = [
     }, {
         projectId: 12,
         projectTitle: "Product preview card",
-        src: "/frontend-mentor-challenges-using-react/project12",
+        src: "/project12",
         projectImage: project12,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -129,7 +129,7 @@ export const Projects = [
     }, {
         projectId: 13,
         projectTitle: "Four card feature section",
-        src: "/frontend-mentor-challenges-using-react/project13",
+        src: "/project13",
         projectImage: project13,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -138,7 +138,7 @@ export const Projects = [
     {
         projectId: 14,
         projectTitle: "Testimonials grid",
-        src: "/frontend-mentor-challenges-using-react/project14",
+        src: "/project14",
         projectImage: project14,
         projectLevelNo: "2",
         projectLevel: "junior",
@@ -146,7 +146,7 @@ export const Projects = [
     }, {
         projectId: 15,
         projectTitle: "Article preview component",
-        src: "/frontend-mentor-challenges-using-react/project15",
+        src: "/project15",
         projectImage: project15,
         projectLevelNo: "1",
         projectLevel: "newbie",
@@ -155,7 +155,7 @@ export const Projects = [
     {
         projectId: 16,
         projectTitle: "Newsletter Sign Up",
-        src: "/frontend-mentor-challenges-using-react/project16",
+        src: "/project16",
         projectImage: project16,
         projectLevelNo: "1",
         projectLevel: "newbie",

@@ -18,7 +18,7 @@ import Project13 from './pages/13-four-card-feature-section/project13';
 import Project14 from './pages/14-testimonials-grid-section/Project14';
 import Project15 from './pages/15-article-preview-component/Project15';
 import Project16 from './pages/16-newsletter-sign-up/Project16';
-import ScrollToTop from './components/ScrollToTop'; 
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -36,20 +36,20 @@ const ExternalRedirect = ({ url }) => {
 function App() {
 
   const routes = [
-    { path: "/frontend-mentor-challenges-using-react", element: <Homepage /> },
-    { path: "/frontend-mentor-challenges-using-react/project1", element: <Project1 /> },
-    { path: "/frontend-mentor-challenges-using-react/project2", element: <Project2 /> },
-    { path: "/frontend-mentor-challenges-using-react/project3", element: <Project3 /> },
-    { path: "/frontend-mentor-challenges-using-react/project7", element: <Project7 /> },
-    { path: "/frontend-mentor-challenges-using-react/project8", element: <Project8 /> },
-    { path: "/frontend-mentor-challenges-using-react/project9", element: <Project9 /> },
-    { path: "/frontend-mentor-challenges-using-react/project10", element: <Project10 /> },
-    { path: "/frontend-mentor-challenges-using-react/project11", element: <Project11 /> },
-    { path: "/frontend-mentor-challenges-using-react/project12", element: <Project12 /> },
-    { path: "/frontend-mentor-challenges-using-react/project13", element: <Project13 /> },
-    { path: "/frontend-mentor-challenges-using-react/project14", element: <Project14 /> },
-    { path: "/frontend-mentor-challenges-using-react/project15", element: <Project15 /> },
-    { path: "/frontend-mentor-challenges-using-react/project16", element: <Project16 /> },
+    { path: "/", element: <Homepage /> },
+    { path: "/project1", element: <Project1 /> }, 
+    { path: "/project2", element: <Project2 /> },
+    { path: "/project3", element: <Project3 /> },
+    { path: "/project7", element: <Project7 /> },
+    { path: "/project8", element: <Project8 /> },
+    { path: "/project9", element: <Project9 /> },
+    { path: "/project10", element: <Project10 /> },
+    { path: "/project11", element: <Project11 /> },
+    { path: "/project12", element: <Project12 /> },
+    { path: "/project13", element: <Project13 /> },
+    { path: "/project14", element: <Project14 /> },
+    { path: "/project15", element: <Project15 /> },
+    { path: "/project16", element: <Project16 /> },
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },
