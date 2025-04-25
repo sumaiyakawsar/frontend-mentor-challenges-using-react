@@ -8,18 +8,18 @@ const Footer = () => {
 
 
   let fgClass = "footer-default";
-  if (pathname === "/frontend-mentor-challenges-using-react") fgClass = "footer-main";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project1") fgClass = "footer-1";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project2") fgClass = "footer-2";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project3") fgClass = "footer-3";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project9") fgClass = "footer-9";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project10") fgClass = "footer-10";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project11") fgClass = "footer-11";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project12") fgClass = "footer-12";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project13") fgClass = "footer-13";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project14") fgClass = "footer-14";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project15") fgClass = "footer-15";
-  else if (pathname === "/frontend-mentor-challenges-using-react/project16") fgClass = "footer-16";
+  if (pathname.endsWith("/")) fgClass = "footer-main";
+  else if (pathname.endsWith("project1")) fgClass = "footer-1";
+  else if (pathname.endsWith("project2")) fgClass = "footer-2";
+  else if (pathname.endsWith("project3")) fgClass = "footer-3";
+  else if (pathname.endsWith("project9")) fgClass = "footer-9";
+  else if (pathname.endsWith("project10")) fgClass = "footer-10";
+  else if (pathname.endsWith("project11")) fgClass = "footer-11";
+  else if (pathname.endsWith("project12")) fgClass = "footer-12";
+  else if (pathname.endsWith("project13")) fgClass = "footer-13";
+  else if (pathname.endsWith("project14")) fgClass = "footer-14";
+  else if (pathname.endsWith("project15")) fgClass = "footer-15";
+  else if (pathname.endsWith("project16")) fgClass = "footer-16";
 
 
   return (

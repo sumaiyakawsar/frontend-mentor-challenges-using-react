@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project10">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project10">
       Demo
     </a>
     <span> | </span>

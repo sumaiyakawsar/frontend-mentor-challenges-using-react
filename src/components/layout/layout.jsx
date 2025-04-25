@@ -11,17 +11,17 @@ const Layout = ({ children }) => {
 
     let bgClass = "project-default";
 
-    if (pathname === "/frontend-mentor-challenges-using-react/project1") bgClass = "project-1";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project2") bgClass = "project-2";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project3") bgClass = "project-3";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project7") bgClass = "project-7";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project8") bgClass = "project-8";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project9") bgClass = "project-9";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project10") bgClass = "project-10";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project11") bgClass = "project-11";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project12") bgClass = "project-12";
-    else if (pathname === "/frontend-mentor-challenges-using-react/project15") bgClass = "project-15";
- 
+    if (pathname.endsWith("project1")) bgClass = "project-1";
+    else if (pathname.endsWith("project2")) bgClass = "project-2";
+    else if (pathname.endsWith("project3")) bgClass = "project-3";
+    else if (pathname.endsWith("project7")) bgClass = "project-7";
+    else if (pathname.endsWith("project8")) bgClass = "project-8";
+    else if (pathname.endsWith("project9")) bgClass = "project-9";
+    else if (pathname.endsWith("project10")) bgClass = "project-10";
+    else if (pathname.endsWith("project11")) bgClass = "project-11";
+    else if (pathname.endsWith("project12")) bgClass = "project-12";
+    else if (pathname.endsWith("project15")) bgClass = "project-15";
+
 
 
     return (
