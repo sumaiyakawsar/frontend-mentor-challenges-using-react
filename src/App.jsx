@@ -19,6 +19,7 @@ import Project14 from './pages/14-testimonials-grid-section/Project14';
 import Project15 from './pages/15-article-preview-component/Project15';
 import Project16 from './pages/16-newsletter-sign-up/Project16';
 import ScrollToTop from './components/ScrollToTop';
+import NotFound from './pages/NotFound/NotFound';
 
 
 
@@ -54,6 +55,7 @@ function App() {
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },
 
+    { path: "*", element: <NotFound /> },
 
   ]
 
