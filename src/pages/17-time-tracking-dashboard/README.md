@@ -1,4 +1,4 @@
-# Frontend Mentor - Newsletter sign-up form with success message
+# Frontend Mentor -  Time tracking dashboard solution
 
 <div align="center">
   <h3>
