@@ -1,0 +1,204 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+.project17 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .dashboard__cards {
+        display: grid;
+        gap: f.rem(28);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "profile" "work" "play" "study"
+            "exercise" "social" "selfcare" !important;
+
+        @include breakpoint(medium) {
+            grid-template-columns: repeat(4, 1fr);
+
+            grid-template-areas:
+                "profile work play study"
+                "profile exercise social selfcare" !important;
+        }
+        .profile {
+            &__card {
+                background: v.$navy-900;
+                border-radius: f.rem(16);
+                overflow: hidden;
+                grid-area: profile;
+                display: flex;
+                flex-direction: column;
+                @include breakpoint(medium) {
+                    width: f.em(200);
+                }
+                .dashboard__tabs {
+                    background: v.$navy-900;
+                    border-radius: f.rem(16);
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    padding: f.rem(16);
+                    @include breakpoint(medium) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .dashboard__tab {
+                        background: transparent;
+                        color: v.$navy-200;
+                        cursor: pointer;
+                        &.active,
+                        &:hover {
+                            color: white;
+                        }
+                        @include breakpoint(medium) {
+                            padding: f.rem(8);
+                        }
+                    }
+                }
+            }
+            &__details {
+                background-color: v.$purple-600;
+                border-radius: f.rem(16);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: f.rem(16);
+                padding: f.rem(32);
+
+                @include breakpoint(medium) {
+                    flex: 1;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .pro-img {
+                    width: 60px;
+                    height: 60px;
+                    border: white 4px solid;
+                    border-radius: 50%;
+                }
+                .user-details {
+                    span {
+                        font-size: f.rem(13);
+                        color: v.$navy-200;
+                    }
+                    p {
+                        font-size: f.rem(24);
+
+                        color: white;
+                        @include breakpoint(medium) {
+                            font-size: f.rem(32);
+                        }
+                    }
+                }
+            }
+        }
+        .activity-card {
+            border-radius: f.rem(16);
+            color: #fff;
+            overflow: hidden;
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: right 20px top;
+            position: relative;
+
+            &__image-wrapper {
+                height: 40px;
+            }
+            &--work {
+                grid-area: work;
+                background-color: v.$orange-300;
+                background-image: url("../images/icon-work.svg");
+            }
+            &--play {
+                grid-area: play;
+                background-color: v.$blue-300;
+                background-image: url("../images/icon-play.svg");
+            }
+            &--study {
+                grid-area: study;
+                background-color: v.$pink-400;
+                background-image: url("../images/icon-study.svg");
+            }
+            &--exercise {
+                grid-area: exercise;
+                background-color: v.$green-400;
+                background-image: url("../images/icon-exercise.svg");
+            }
+            &--social {
+                grid-area: social;
+                background-color: v.$purple-700;
+                background-image: url("../images/icon-social.svg");
+            }
+            &--self-care {
+                grid-area: selfcare;
+                background-color: v.$yellow-300;
+                background-image: url("../images/icon-self-care.svg");
+            }
+            @include breakpoint(medium) {
+                height: f.em(170);
+            }
+            
+            &__content {
+                border-radius: f.rem(16);
+                background: v.$navy-900;
+                padding: f.rem(18);
+                transition: all 0.3s ease;
+
+                @include breakpoint(medium) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: f.rem(16);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+                &:hover {
+                    background-color: lighten($color: v.$navy-900, $amount: 10%);
+                }
+            }
+
+            &__header,
+            &__details {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &__details {
+                @include breakpoint(medium) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+            &__title {
+                font-size: f.rem(16);
+                font-weight: v.$font-normal;
+            }
+
+            &__ellipsis {
+                cursor: pointer;
+            }
+
+            &__current {
+                font-size: f.rem(36);
+                font-weight: v.$font-thin;
+            }
+
+            &__previous {
+                font-size: f.rem(12);
+                color: v.$navy-200;
+            }
+        }
+    }
+}

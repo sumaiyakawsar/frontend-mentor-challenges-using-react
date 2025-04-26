@@ -19,6 +19,7 @@ import Project14 from './pages/14-testimonials-grid-section/Project14';
 import Project15 from './pages/15-article-preview-component/Project15';
 import Project16 from './pages/16-newsletter-sign-up/Project16';
 import ScrollToTop from './components/ScrollToTop';
+import Project17 from './pages/17-time-tracking-dashboard/Project17';
 
 
 
@@ -50,6 +51,7 @@ function App() {
     { path: "/project14", element: <Project14 /> },
     { path: "/project15", element: <Project15 /> },
     { path: "/project16", element: <Project16 /> },
+    { path: "/project17", element: <Project17 /> },  
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },

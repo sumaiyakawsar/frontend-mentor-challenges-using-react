@@ -14,6 +14,7 @@ import project13 from "../images/project13-four-card-feature-section.png"
 import project14 from "../images/project14-testimonials-grid-section.png"
 import project15 from "../images/project15-article-preview-component.png"
 import project16 from "../images/project16-Newsletter.png"
+import project17 from "../images/project17-time-tracking-dashboard.png"
 
 
 
@@ -159,6 +160,15 @@ export const Projects = [
         projectImage: project16,
         projectLevelNo: "1",
         projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 17,
+        projectTitle: "Time tracking dashboard",
+        src: "/project17",
+        projectImage: project17,
+        projectLevelNo: "2",
+        projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex"]
     },
     // {

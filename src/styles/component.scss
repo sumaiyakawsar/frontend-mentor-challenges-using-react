@@ -123,4 +123,16 @@
             color: v.$red;
         }
     }
+    &-17 {
+        color:v.$white;
+        a {
+            background: linear-gradient(90deg, v.$orange-300, v.$blue-300, v.$pink-400, v.$green-400, v.$purple-700, v.$yellow-300);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;     
+
+            // Optional for other browsers:
+            background-clip: text;
+            color: transparent;
+        }
+    }
 }
