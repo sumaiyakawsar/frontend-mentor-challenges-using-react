@@ -91,8 +91,9 @@
                         font-size: f.rem(13);
                         color: v.$navy-200;
                     }
-                    p {
+                    h1 {
                         font-size: f.rem(24);
+                        font-weight: v.$font-normal;
 
                         color: white;
                         @include breakpoint(medium) {
@@ -147,7 +148,7 @@
             @include breakpoint(medium) {
                 height: f.em(170);
             }
-            
+
             &__content {
                 border-radius: f.rem(16);
                 background: v.$navy-900;

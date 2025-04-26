@@ -24,7 +24,7 @@ const Project17 = () => {
                         </div>
                         <div className="user-details">
                             <span>Report for</span>
-                            <p>Jeremy Robson</p>
+                            <h1>Jeremy Robson</h1>
                         </div>
                     </div>
 
