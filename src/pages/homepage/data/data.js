@@ -15,6 +15,7 @@ import project14 from "../images/project14-testimonials-grid-section.png"
 import project15 from "../images/project15-article-preview-component.png"
 import project16 from "../images/project16-Newsletter.png"
 import project17 from "../images/project17-time-tracking-dashboard.png"
+import project18 from "../images/project18-tip-calculator.png"
 
 
 
@@ -175,7 +176,7 @@ export const Projects = [
         projectId: 18,
         projectTitle: "Tip calculator app",
         src: "/project18",
-        projectImage: project17,
+        projectImage: project18,
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex"]

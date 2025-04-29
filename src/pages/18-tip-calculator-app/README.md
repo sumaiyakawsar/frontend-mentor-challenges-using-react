@@ -1,16 +1,16 @@
-# Frontend Mentor -  Time tracking dashboard solution
+# Frontend Mentor - Tip calculator app solution
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project17">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project18">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/17-time-tracking-dashboard">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/18-tip-calculator-app">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw">
+    <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX">
       Challenge
     </a>
   </h3>
@@ -23,15 +23,15 @@
 
 ### The challenge
 
-Your users should be able to:
+Users should be able to:
 
-- [x] Switch between viewing Daily, Weekly, and Monthly stats
-- [x] View the optimal layout for the site depending on their device's screen size
+- [x] View the optimal layout for the app depending on their device's screen size
 - [x] See hover states for all interactive elements on the page
-
+- [x] Calculate the correct tip and total cost of the bill per person
+ 
 ### Screenshot
 
-![Screenshot](../homepage/images/project17-time-tracking-dashboard.png)
+![Screenshot](../homepage/images/project18-tip-calculator.png)
 
  
 
