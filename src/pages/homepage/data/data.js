@@ -171,6 +171,15 @@ export const Projects = [
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex"]
     },
+    {
+        projectId: 18,
+        projectTitle: "Tip calculator app",
+        src: "/project18",
+        projectImage: project17,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",

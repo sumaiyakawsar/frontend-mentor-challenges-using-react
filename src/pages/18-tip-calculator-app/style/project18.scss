@@ -1,0 +1,173 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+.project18 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: f.rem(32);
+
+     .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .calculator {
+        border-radius: f.rem(12);
+        background-color: v.$white;
+        padding: f.rem(28);
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(32);
+        max-width: f.em(800);
+
+        @include breakpoint(medium) {
+            flex-direction: row;
+        }
+
+        &_container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(32);
+            .error {
+                outline: red 2px solid;
+                &:focus,
+                &:focus-visible {
+                    outline: red 2px solid;
+                }
+            }
+
+            .error-text {
+                color: #e17055;
+                font-size: 0.75rem;
+            }
+            .input_field {
+                position: relative;
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 1rem;
+                    transform: translateY(-50%);
+
+                    pointer-events: none;
+                }
+            }
+            input {
+                font-family: v.$font-family;
+                background-color: v.$grey-50;
+                padding: f.rem(8) f.rem(12);
+                border-radius: f.rem(8);
+                color: v.$green-900;
+                text-align: right;
+                font-weight: v.$font-normal;
+                font-size: f.rem(16);
+                width: 100%;
+                border-radius: 8px;
+                border: 2px solid #f3f9fa;
+
+                outline: none;
+                &:focus,
+                &:focus-visible {
+                    outline: v.$green-900 2px solid;
+                }
+            }
+            .label {
+                color: v.$grey-500;
+                margin-bottom: f.rem(8);
+            }
+            .tip {
+                &__options {
+                    display: grid;
+                    gap: f.rem(16);
+                    grid-template-columns: repeat(2, 1fr);
+                    @include breakpoint(medium) {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    input {
+                        text-align: right;
+                        &::placeholder {
+                            text-align: center;
+                        }
+                    }
+                    button {
+                        background-color: v.$green-900;
+                        color: v.$white;
+                        font-family: v.$font-family;
+                        border-radius: f.rem(5);
+                        font-weight: v.$font-normal;
+                        font-size: v.$font-size-p;
+                        text-align: center;
+                        cursor: pointer;
+                        padding: f.rem(12);
+                        &:hover,
+                        &.selected {
+                            background-color: v.$green-400;
+                            color: v.$green-900;
+                        }
+
+                        &:focus,
+                        &:focus-visible {
+                            outline: v.$green-900 2px solid;
+                        }
+                    }
+                }
+            }
+        }
+
+        .results {
+            flex: 1;
+            background-color: v.$green-900;
+            border-radius: f.rem(12);
+            padding: f.rem(32);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__container {
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(20);
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    .label {
+                        font-size: f.rem(18);
+                        color: v.$white;
+                        span {
+                            font-size: f.rem(12);
+                            color: v.$grey-400;
+                        }
+                    }
+                    .amount {
+                        color: v.$green-400;
+                    }
+                }
+            }
+
+            button {
+                border-radius: f.rem(5);
+                width: 100%;
+                padding: f.rem(12);
+                text-align: center;
+                background-color: v.$green-400;
+                color: v.$green-900;
+                cursor: pointer;
+                font-weight: bold;
+                &:hover {
+                    background-color: v.$grey-500;
+                    color: v.$green-900;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use "../../../styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+// Colors
+
+// Primary
+$green-400: hsl(172, 67%, 45%);
+
+//Neutral
+$green-900: hsl(183, 100%, 15%);
+$grey-500: hsl(186, 14%, 43%);
+$grey-400: hsl(184, 14%, 56%);
+$grey-200: hsl(185, 41%, 84%);
+$grey-50: hsl(189, 47%, 97%);
+$white: hsl(0, 100%, 100%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// ## Typography
+$font-size-p: f.rem(20);
+
+// Font
+$font-family: "Space Mono", monospace;
+
+$font-normal: 700;

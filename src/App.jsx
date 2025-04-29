@@ -20,6 +20,7 @@ import Project15 from './pages/15-article-preview-component/Project15';
 import Project16 from './pages/16-newsletter-sign-up/Project16';
 import ScrollToTop from './components/ScrollToTop';
 import Project17 from './pages/17-time-tracking-dashboard/Project17';
+import Project18 from './pages/18-tip-calculator-app/Project18';
 
 
 
@@ -38,7 +39,7 @@ function App() {
 
   const routes = [
     { path: "/", element: <Homepage /> },
-    { path: "/project1", element: <Project1 /> }, 
+    { path: "/project1", element: <Project1 /> },
     { path: "/project2", element: <Project2 /> },
     { path: "/project3", element: <Project3 /> },
     { path: "/project7", element: <Project7 /> },
@@ -51,7 +52,8 @@ function App() {
     { path: "/project14", element: <Project14 /> },
     { path: "/project15", element: <Project15 /> },
     { path: "/project16", element: <Project16 /> },
-    { path: "/project17", element: <Project17 /> },  
+    { path: "/project17", element: <Project17 /> },
+    { path: "/project18", element: <Project18 /> },
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },
