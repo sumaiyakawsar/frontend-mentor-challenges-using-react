@@ -48,11 +48,11 @@ const Project16 = () => {
 
     return (
         <div className='container project16'>
-            <div class="newsletter">
+            <div className="newsletter">
                 {/* Sign-up form start   */}
                 {!submitted ? (
 
-                    <div class="newsletter-content">
+                    <div className="newsletter-content">
 
 
                         <div className="content">
@@ -65,7 +65,7 @@ const Project16 = () => {
                             </ul>
 
                             <form onSubmit={handleSubmit} noValidate>
-                                <div class="label">
+                                <div className="label">
                                     <label htmlFor="email">Email address</label>
                                     {error && <span className="error-text">{error}</span>}
                                 </div>
@@ -100,7 +100,7 @@ const Project16 = () => {
                             <p>A confirmation email has been sent to <strong>{email}</strong>. Please open it and click the button inside to confirm your subscription.</p>
 
                         </div>
-                        <button onClick={handleDismiss} class="btn"> Dismiss message</button>
+                        <button onClick={handleDismiss} className="btn"> Dismiss message</button>
                     </div>
                     // {/* Success message end   */}
                 )}

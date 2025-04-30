@@ -12,22 +12,22 @@ function Project7() {
     
     return (
         <div className="container project7">
-            <div class="card">
-                <img src={cardImg} alt="" class="card__img" />
-                <div class="card__details">
-                    <span class="card__tag">Learning</span>
-                    <div class="card__date">Published 21 Dec 2023</div>
-                    <h1 class="card__header">
+            <div className="card">
+                <img src={cardImg} alt="" className="card__img" />
+                <div className="card__details">
+                    <span className="card__tag">Learning</span>
+                    <div className="card__date">Published 21 Dec 2023</div>
+                    <h1 className="card__header">
                         HTML & CSS foundations
                     </h1>
-                    <p class="card__body">
+                    <p className="card__body">
                         These languages are the backbone of every website, defining structure, content, and presentation.
                     </p>
                 </div>
 
-                <div class="card__author">
-                    <img src={avatar} alt="" class="author__img" />
-                    <span class="author__name">Greg Hooper</span>
+                <div className="card__author">
+                    <img src={avatar} alt="" className="author__img" />
+                    <span className="author__name">Greg Hooper</span>
                 </div>
             </div>
 

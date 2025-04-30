@@ -12,7 +12,7 @@ const Project14 = () => {
 
   return (
     <div className='container project14'>
-      <div class="card-wrapper">
+      <div className="card-wrapper">
 
         {testimonialsData.map((testimonial, index) => (
           <TestimonialCard key={index} {...testimonial} />

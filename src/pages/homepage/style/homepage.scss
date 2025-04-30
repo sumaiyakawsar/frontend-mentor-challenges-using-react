@@ -4,24 +4,28 @@
 .projects {
     font-family: v.$font-family;
     font-size: v.$font-size-p;
-    width: 80%;
+    // width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: f.rem(32);
 
     .project {
         width: 320px;
+
+        flex: 1;
         border-radius: f.rem(16);
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        gap: f.rem(16);
         box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
 
         &__img {
+            // aspect-ratio: 1;
+            // object-fit:fill;
             height: 200px;
-            border-radius: f.rem(10);
+            // border-radius: f.rem(10);
             box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
         }
 
@@ -33,9 +37,11 @@
             &__header {
                 display: flex;
                 justify-content: space-between;
+
                 h4 {
                     padding: f.rem(6) 0;
                 }
+
                 .level {
                     display: flex;
                     flex-wrap: wrap;
@@ -99,7 +105,6 @@
 
                 .tag {
                     box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
-
                     padding: 0 f.rem(8);
                     border-radius: f.rem(8);
                     font-weight: v.$font-bold;

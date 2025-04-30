@@ -21,6 +21,7 @@ import Project16 from './pages/16-newsletter-sign-up/Project16';
 import ScrollToTop from './components/ScrollToTop';
 import Project17 from './pages/17-time-tracking-dashboard/Project17';
 import Project18 from './pages/18-tip-calculator-app/Project18';
+import Project19 from './pages/19-interactive-rating/Project19';
 
 
 
@@ -53,7 +54,8 @@ function App() {
     { path: "/project15", element: <Project15 /> },
     { path: "/project16", element: <Project16 /> },
     { path: "/project17", element: <Project17 /> },
-    { path: "/project18", element: <Project18 /> },
+    { path: "/project18", element: <Project18 /> }, 
+    { path: "/project19", element: <Project19 /> },
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },

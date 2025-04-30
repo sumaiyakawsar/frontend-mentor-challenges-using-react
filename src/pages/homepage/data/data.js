@@ -16,6 +16,7 @@ import project15 from "../images/project15-article-preview-component.png"
 import project16 from "../images/project16-Newsletter.png"
 import project17 from "../images/project17-time-tracking-dashboard.png"
 import project18 from "../images/project18-tip-calculator.png"
+import project19 from "../images/project19-Interactive-rating.png"
 
 
 
@@ -179,6 +180,15 @@ export const Projects = [
         projectImage: project18,
         projectLevelNo: "2",
         projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 19,
+        projectTitle: "Interactive rating component",
+        src: "/project19",
+        projectImage: project19,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
         projectTags: ["React", "SCSS", "Flex"]
     },
     // {

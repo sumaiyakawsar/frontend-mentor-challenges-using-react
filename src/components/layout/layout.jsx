@@ -24,6 +24,7 @@ const Layout = ({ children }) => {
     else if (pathname.endsWith("project16")) bgClass = "project-16";
     else if (pathname.endsWith("project17")) bgClass = "project-17";
     else if (pathname.endsWith("project18")) bgClass = "project-18";
+    else if (pathname.endsWith("project19")) bgClass = "project-19";
 
 
     return (

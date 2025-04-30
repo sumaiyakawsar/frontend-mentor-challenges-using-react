@@ -13,25 +13,25 @@ function Project10() {
 
     return (
         <div className="container project10">
-            <div class="card">
-                <div class="img__container">
-                    <img src={avatar} alt="" class="my_pic" />
+            <div className="card">
+                <div className="img__container">
+                    <img src={avatar} alt="" className="my_pic" />
                 </div>
 
-                <div class="card__details">
-                    <h1 class="card__header">Sumaiya Kawsar </h1>
-                    <p class="location"> Riyadh, Saudi Arabia</p>
+                <div className="card__details">
+                    <h1 className="card__header">Sumaiya Kawsar </h1>
+                    <p className="location"> Riyadh, Saudi Arabia</p>
 
                 </div>
-                <p class="card__body">
+                <p className="card__body">
                     "Front-end developer, Data Analyst and avid reader."
                 </p>
-                <div class="card__social">
-                    <a href="https://github.com/sumaiyakawsar" class="social_links">Github</a>
-                    <a href="https://www.frontendmentor.io/profile/sumaiyakawsar" class="social_links">Frontend Mentor</a>
-                    <a href="https://www.linkedin.com/in/sumaiyakawsar/" class="social_links">Linkedin</a>
-                    <a href="https://x.com/SumaiyaKawsar_" class="social_links">X</a>
-                    <a href="https://www.instagram.com/sumaiyakawsar_/" class="social_links">Instagram</a>
+                <div className="card__social">
+                    <a href="https://github.com/sumaiyakawsar" className="social_links">Github</a>
+                    <a href="https://www.frontendmentor.io/profile/sumaiyakawsar" className="social_links">Frontend Mentor</a>
+                    <a href="https://www.linkedin.com/in/sumaiyakawsar/" className="social_links">Linkedin</a>
+                    <a href="https://x.com/SumaiyaKawsar_" className="social_links">X</a>
+                    <a href="https://www.instagram.com/sumaiyakawsar_/" className="social_links">Instagram</a>
                 </div>
 
             </div>

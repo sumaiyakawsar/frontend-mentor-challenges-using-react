@@ -1,0 +1,107 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+.project19 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    // gap: f.rem(32);
+
+    .rating {
+        flex: 1;
+        padding: f.rem(28);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: f.rem(28);
+
+        background-color: v.$grey-900;
+        border-radius: f.rem(12);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        min-width: 340px;
+        max-width: 360px;
+
+        .icon {
+            box-shadow: v.$box-shadow;
+            background: v.$grey-800;
+            padding: f.rem(16);
+            border-radius: 50%;
+        }
+        h1,
+        h2 {
+            color: v.$white;
+        }
+        p {
+            color: v.$grey-500;
+        }
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+            // border: red solid 2px;
+            width: 100%;
+            .btnRating {
+                background-color: v.$grey-800;
+                color: v.$white;
+                padding: f.rem(16);
+                border-radius: 50%;
+                text-align: center;
+                font-weight: v.$font-bold;
+                box-shadow: v.$box-shadow;
+
+                cursor: pointer;
+                transition:
+                    background 0.3s,
+                    color 0.3s;
+
+                &:hover {
+                    background-color: v.$orange-500;
+                    color: v.$grey-950;
+                }
+                &.selected {
+                    background: v.$white;
+                    color: v.$grey-950;
+                }
+            }
+        }
+        .btnSubmit {
+            width: 100%;
+            padding: f.rem(16);
+            border-radius: f.rem(30);
+            background-color: v.$orange-500;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: v.$font-family;
+            font-weight: v.$font-bold;
+            cursor: pointer;
+            &:hover {
+                background-color: v.$white;
+            }
+        }
+        .thankYou {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: f.rem(20);
+            .result {
+                background: v.$grey-800;
+                color: v.$orange-500;
+                padding: f.rem(8) f.rem(16);
+
+                border-radius: 1rem;
+                font-size: 0.85rem;
+            }
+        }
+    }
+}

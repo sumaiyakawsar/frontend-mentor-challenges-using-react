@@ -22,58 +22,58 @@ const Project15 = () => {
 
   return (
     <div className='container project15'>
-      <div class="card">
-        <div class="card-image">
-          <img src={drawers} alt="Drawer" class="card__img" />
+      <div className="card">
+        <div className="card-image">
+          <img src={drawers} alt="Drawer" className="card__img" />
         </div>
 
-        <div class="card__content">
-          <div class="details">
-            <h1 class="card__header">
+        <div className="card__content">
+          <div className="details">
+            <h1 className="card__header">
               Shift the overall look and feel by adding these wonderful
               touches to furniture in your home
 
             </h1>
-            <p class="card__body"> Ever been in a room and felt like something was missing? Perhaps
+            <p className="card__body"> Ever been in a room and felt like something was missing? Perhaps
               it felt slightly bare and uninviting. I’ve got some simple tips
               to help you make any room feel complete.
             </p>
           </div>
 
 
-          <div class="card__footer">
+          <div className="card__footer">
 
-            <div class="author">
-              <div class="profile">
-                <img src={avatar} alt="" class="author__img" />
-                <div class="author__details">
-                  <p class="name"> Michelle Appleton</p>
-                  <p class="date"> 28 Jun 2020</p>
+            <div className="author">
+              <div className="profile">
+                <img src={avatar} alt="" className="author__img" />
+                <div className="author__details">
+                  <p className="name"> Michelle Appleton</p>
+                  <p className="date"> 28 Jun 2020</p>
                 </div>
               </div>
 
-              <a class="share-btn" id="share-btn" onClick={toggleShare}> <FaShare className='fa-share'/> </a>
+              <a className="share-btn" id="share-btn" onClick={toggleShare}> <FaShare className='fa-share' /> </a>
 
 
             </div>
 
-            <div class="share-container">
-              <div class="share-popup" id="sharePopup" className={`share-popup ${isClicked ? 'clicked' : ''}`}
+            <div className="share-container">
+              <div id="sharePopup" className={`share-popup ${isClicked ? 'clicked' : ''}`}
               >
 
-                <div class="share-box">
+                <div className="share-box">
                   <span>SHARE</span>
                   <a href="https://www.linkedin.com/in/sumaiyakawsar/" target="_blank" rel="noopener noreferrer"
-                    class="social__icon" aria-label="linkedin">  <FaLinkedin />
+                    className="social__icon" aria-label="linkedin">  <FaLinkedin />
                   </a>
                   <a href="https://www.instagram.com/devsume/" target="_blank"
-                    class="social__icon" aria-label="instagram" rel="noopener noreferrer">
+                    className="social__icon" aria-label="instagram" rel="noopener noreferrer">
                     <FaInstagram />   </a>
                   <a href="https://www.pinterest.com/sumaiyakawsar693/" target="_blank"
-                    class="social__icon " aria-label="pinterest" rel="noopener noreferrer">
+                    className="social__icon " aria-label="pinterest" rel="noopener noreferrer">
                     <FaPinterest />    </a>
                 </div>
-                <div class="triangle-down"></div>
+                <div className="triangle-down"></div>
 
               </div>
 

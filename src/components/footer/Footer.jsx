@@ -22,16 +22,17 @@ const Footer = () => {
   else if (pathname.endsWith("project16")) fgClass = "footer-16";
   else if (pathname.endsWith("project17")) fgClass = "footer-17";
   else if (pathname.endsWith("project18")) fgClass = "footer-18";
+  else if (pathname.endsWith("project19")) fgClass = "footer-19";
 
 
   return (
     <footer id='footer' className={`footer ${fgClass}`}>
-      <div class="socials">
+      <div className="socials">
         <a
           href="https://www.facebook.com/Sumaiya.Kawsar/"
           target="_blank"
           rel="noopener noreferrer"
-          class="social__icon "
+          className="social__icon "
           aria-label="facebook"
         ><FaSquareFacebook />
 
@@ -39,7 +40,7 @@ const Footer = () => {
         <a
           href="https://www.pinterest.com/sumaiyakawsar693/"
           target="_blank"
-          class="social__icon  "
+          className="social__icon  "
           aria-label="pinterest"
           rel="noopener noreferrer"
         ><FaPinterest />
@@ -48,14 +49,14 @@ const Footer = () => {
         <a
           href="https://www.instagram.com/sumaiyakawsar_/"
           target="_blank"
-          class="social__icon "
+          className="social__icon "
           aria-label="instagram"
           rel="noopener noreferrer"
         ><FaInstagram />
 
         </a>
       </div>
-      <div class="attribution">Challenge by
+      <div className="attribution">Challenge by
         <Link to="https://www.frontendmentor.io?ref=challenge"> Frontend Mentor</Link>. Coded by <Link
           to="https://github.com/sumaiyakawsar"> Sumaiya Kawsar</Link>.
 

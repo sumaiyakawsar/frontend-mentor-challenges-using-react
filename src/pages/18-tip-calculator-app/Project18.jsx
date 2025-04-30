@@ -17,12 +17,20 @@ const Project18 = () => {
     const [error, setError] = useState(false);
     const tipPercent = 0;
 
+    const isResetDisabled =
+        (bill === '' || Number(bill) === 0) &&
+        (people === '' || Number(people) === 0) &&
+        (tip === null || tip === 0) &&
+        (customTip === '' || Number(customTip) === 0);
+
+
+
     const tipAmount = () => {
         if (people > 0) {
             const tipPercent = tip !== null ? tip : (customTip / 100);
             return (bill * tipPercent) / people;
         }
-        return 0;
+        return 0.00;
     };
 
     const totalPerPerson = () => {
@@ -38,6 +46,12 @@ const Project18 = () => {
         setCustomTip('');
         setPeople('');
         setError(false);
+    };
+
+
+    const handleCustomTip = (e) => {
+        setCustomTip(e.target.value);
+        setTip(null);
     };
 
     const handlePeopleChange = (value) => {
@@ -59,7 +73,7 @@ const Project18 = () => {
                         <p className="label">Bill</p>
                         <div className="input_field">
                             <img src={iconDollar} alt="" className="icon" />
-                            <input type="number" name="bill" id="bill" placeholder="0" value={bill}
+                            <input type="number" name="bill" id="bill" placeholder="0" value={bill === 0 ? '' : bill}
                                 onChange={(e) => setBill(Number(e.target.value))} />
 
                         </div>
@@ -82,7 +96,7 @@ const Project18 = () => {
                                 type="number"
                                 placeholder="Custom"
                                 value={customTip}
-                                onChange={(e) => { setCustomTip(e.target.value); setTip(null); }}
+                                onChange={handleCustomTip}
                             />
 
                         </div>
@@ -135,8 +149,7 @@ const Project18 = () => {
                     </div>
 
 
-                    <button className="reset-btn" onClick={handleReset} disabled={!bill && !people && !tipPercent}
-                    >RESET</button>
+                    <button className="reset-btn" onClick={handleReset} disabled={isResetDisabled}>RESET</button>
                 </div>
             </div>
         </div>

@@ -14,40 +14,40 @@ function Project9() {
     useDocumentTitle("NFT preview card component | Frontend Mentor");
     return (
         <div className="container project9">
-            <div class="card">
-                <div class="img__container">
-                    <img src={equilibrium} alt="" class="nft_img" />
-                    <div class="overlay">
-                        <img src={iconView} alt="" class="eye-icon" />
+            <div className="card">
+                <div className="img__container">
+                    <img src={equilibrium} alt="" className="nft_img" />
+                    <div className="overlay">
+                        <img src={iconView} alt="" className="eye-icon" />
                     </div>
                 </div>
 
-                <div class="card__details">
-                    <h1 class="card__header">
+                <div className="card__details">
+                    <h1 className="card__header">
                         Equilibrium #3429
                     </h1>
-                    <p class="card__body">
+                    <p className="card__body">
                         Our Equilibrium collection promotes balance and calm.
                     </p>
                 </div>
-                <div class="card__flex">
-                    <div class="card__info">
-                        <img src={iconEthereum} alt="" class="card__icon" />
-                        <span class="card__amount">0.041 ETH</span>
+                <div className="card__flex">
+                    <div className="card__info">
+                        <img src={iconEthereum} alt="" className="card__icon" />
+                        <span className="card__amount">0.041 ETH</span>
 
                     </div>
-                    <div class="card__info ">
-                        <img src={iconClock} alt="" class="card__icon" />
-                        <span class="card__time"> 3 days left</span>
+                    <div className="card__info ">
+                        <img src={iconClock} alt="" className="card__icon" />
+                        <span className="card__time"> 3 days left</span>
 
                     </div>
 
 
                 </div>
 
-                <div class="card__footer">
-                    <img src={avatar} alt="" class="author__img" />
-                    <p>Creation of <span class="author__name">Jules Wyvern</span></p>
+                <div className="card__footer">
+                    <img src={avatar} alt="" className="author__img" />
+                    <p>Creation of <span className="author__name">Jules Wyvern</span></p>
                 </div>
             </div>
         </div>

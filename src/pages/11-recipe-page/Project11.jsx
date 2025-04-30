@@ -13,21 +13,21 @@ function Project11() {
 
     return (
         <div className="container project11">
-            <div class="card">
+            <div className="card">
 
-                <div class="img__container">
-                    <img src={food} alt="" class="my_pic" />
+                <div className="img__container">
+                    <img src={food} alt="" className="my_pic" />
                 </div>
-                <div class="card__details">
-                    <h1 class="card__header"> Simple Omelette Recipe </h1>
+                <div className="card__details">
+                    <h1 className="card__header"> Simple Omelette Recipe </h1>
 
 
-                    <p class="description">
+                    <p className="description">
                         An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
                         to perfection, optionally filled with your choice of cheese, vegetables, or meats.
                     </p>
 
-                    <div class="prep_time">
+                    <div className="prep_time">
                         <h2> Preparation time</h2>
                         <ul>
                             <li><span>Total:</span> Approximately 10 minutes</li>
@@ -37,7 +37,7 @@ function Project11() {
                     </div>
 
 
-                    <div class="ingredients">
+                    <div className="ingredients">
                         <h2>Ingredients</h2>
                         <ul>
                             <li>2-3 large eggs</li>
@@ -50,7 +50,7 @@ function Project11() {
 
                     <hr />
 
-                    <div class="instructions">
+                    <div className="instructions">
                         <h2>Instructions</h2>
                         <ol>
                             <li><span> Beat the eggs: </span>
@@ -78,29 +78,29 @@ function Project11() {
                     </div>
                     <hr />
 
-                    <div class="nutrition">
+                    <div className="nutrition">
                         <h2>Nutrition</h2>
 
-                        <div class="description">
+                        <div className="description">
                             The table below shows nutritional values per serving without the additional fillings.
                         </div>
 
                         <table>
                             <tr>
-                                <td class="type">Calories</td>
-                                <td class="amount">277kcal</td>
+                                <td className="type">Calories</td>
+                                <td className="amount">277kcal</td>
                             </tr>
                             <tr>
-                                <td class="type"> Carbs</td>
-                                <td class="amount"> 0g</td>
+                                <td className="type"> Carbs</td>
+                                <td className="amount"> 0g</td>
                             </tr>
                             <tr>
-                                <td class="type">Protein</td>
-                                <td class="amount">20g</td>
+                                <td className="type">Protein</td>
+                                <td className="amount">20g</td>
                             </tr>
                             <tr>
-                                <td class="type">Fat</td>
-                                <td class="amount">22g</td>
+                                <td className="type">Fat</td>
+                                <td className="amount">22g</td>
                             </tr>
                         </table>
 

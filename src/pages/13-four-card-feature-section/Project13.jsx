@@ -18,12 +18,12 @@ const Project13 = () => {
         <h2> Powered by Technology</h2>
 
 
-        <p class="description">
+        <p className="description">
           Our Artificial Intelligence powered tools use millions of project data points
           to ensure that your project is successful </p>
       </div>
 
-      <div class="card-wrapper">
+      <div className="card-wrapper">
         {servicesData.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
