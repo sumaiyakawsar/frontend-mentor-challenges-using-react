@@ -3,7 +3,7 @@ import FaqItem from './FaqItem';
 
 const FaqAccordion = ({ items }) => {
     const [openIndex, setOpenIndex] = useState(0);
-     const buttonRefs = useRef([]);
+    const buttonRefs = useRef([]);
 
     const toggleItem = index => {
         setOpenIndex(prev => (prev === index ? null : index));
@@ -33,7 +33,7 @@ const FaqAccordion = ({ items }) => {
                     title={item.title}
                     content={item.content}
                     isOpen={openIndex === idx}
-                    onClick={() => toggleItem(idx)} 
+                    onClick={() => toggleItem(idx)}
                     onKeyDown={(e) => handleKeyDown(e, idx)}
                     ref={el => buttonRefs.current[idx] = el}
                 />
