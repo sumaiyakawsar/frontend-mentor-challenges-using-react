@@ -63,7 +63,11 @@
     &-18 {
         background-color: v.$grey-200;
     }
-     &-19 {
-        background-color: v.$grey-950; 
+    &-19 {
+        background-color: v.$grey-950;
+    }
+    &-20 {
+        background-color: v.$purple-100;
+        z-index: -999;
     }
 }

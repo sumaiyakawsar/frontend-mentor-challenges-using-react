@@ -1,0 +1,98 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+.project20 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .img__container {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+
+        img {
+            height: f.em(300);
+            width: 100dvw;
+            object-fit: cover;
+        }
+    }
+    .accordion_container {
+        background: v.$white;
+        padding: f.rem(32);
+        border-radius: f.rem(12);
+        min-width: f.em(360);
+        max-width: f.em(600);
+        z-index: 20;
+
+        .faq-header {
+            display: flex;
+            gap: f.rem(32);
+            align-items: center;
+
+            .faq-icon {
+                img {
+                    width: f.em(30);
+                    height: f.em(30);
+                }
+            }
+        }
+
+        .faq-card {
+            .faq-item {
+                border-top: 1px solid #eee;
+
+                &:first-of-type {
+                    border-top: none;
+                }
+
+                .faq-question {
+                    padding: 1rem 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: none;
+                    border: none;
+                    font-weight: v.$font-x-bold;
+                    font-size: v.$font-size-p;
+                    cursor: pointer;
+
+                    span:hover {
+                        color: v.$purple-700;
+                    }
+
+                    // Focus outline
+                    &:focus,
+                    &:focus-visible {
+                        color: v.$purple-700;
+                    }
+                }
+
+                .faq-answer {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition:
+                        max-height 0.3s ease,
+                        padding 0.3s ease;
+                    color: v.$purple-600;
+                    font-size: 0.95rem;
+                }
+
+                &.open {
+                    .faq-answer {
+                        max-height: 500px;
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

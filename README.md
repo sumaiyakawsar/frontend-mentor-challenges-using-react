@@ -30,10 +30,10 @@ After converting the entire project to react: [![wakatime](https://wakatime.com/
 | 15           | [Article preview component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project15)           | Newbie       | ✔️    |
 | 16           | [Newsletter sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/16-newsletter-sign-up) | Newbie       | ✔️    |
 | 17           | [Time tracking dashboard](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project17)           | Junior       | ✔️    |
-| 18           | [Tip calculator app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project18)                                                                                                                 | Junior       | ✔️    |
-| 19           | [Interactive rating component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project19)                                                                                                                                  | Newbie       | ✔️    |
-| 20           | -------                                                                                                                         | Newbie       | ❌    |
-
+| 18           | [Tip calculator app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project18)                | Junior       | ✔️    |
+| 19           | [Interactive rating component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project19)      | Newbie       | ✔️    |
+| 20           | [FAQ accordion](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project20)                     | Newbie       | ✔️    |
+| 21           | -------                                                                                                                 | Newbie       | ❌    |
 
 
 

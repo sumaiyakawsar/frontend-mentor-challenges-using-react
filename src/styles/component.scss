@@ -6,10 +6,11 @@
     width: 100vw;
     top: 0;
     padding: f.rem(16);
-
+    z-index: 10;
     .home-icon {
         width: 30px;
         height: 30px;
+        color: v.$black;
     }
     // nav {
     //     text-transform: uppercase;
@@ -149,9 +150,15 @@
             color: v.$green-900;
         }
     }
-    &-19 {  color: v.$white;
+    &-19 {
+        color: v.$white;
         a {
             color: v.$orange-500;
+        }
+    }
+    &-20 {
+        a {
+            color: v.$purple-500;
         }
     }
 }

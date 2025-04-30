@@ -17,6 +17,7 @@ import project16 from "../images/project16-Newsletter.png"
 import project17 from "../images/project17-time-tracking-dashboard.png"
 import project18 from "../images/project18-tip-calculator.png"
 import project19 from "../images/project19-Interactive-rating.png"
+import project20 from "../images/project20-faq-accordion.png"
 
 
 
@@ -191,6 +192,15 @@ export const Projects = [
         projectLevel: "newbie",
         projectTags: ["React", "SCSS", "Flex"]
     },
+    {
+        projectId: 20,
+        projectTitle: "FAQ accordion",
+        src: "/project20",
+        projectImage: project20,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",
@@ -198,7 +208,6 @@ export const Projects = [
     //     projectImage: project16,
     //     projectLevelNo: "1",
     //     projectLevel: "newbie",
-    //     // icon: <FaHome />
     // },
 
 ];

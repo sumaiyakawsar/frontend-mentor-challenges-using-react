@@ -1,0 +1,25 @@
+@use "../../../styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+// Colors
+
+//Neutral
+$white: hsl(0, 100%, 100%);
+$purple-100: hsl(275, 100%, 97%);
+$purple-600: hsl(292, 16%, 49%);
+$purple-700:hsl(281, 83%, 54%);
+$purple-950: hsl(292, 42%, 14%);
+
+$box-shadow:
+    0 10px 30px rgba(17, 17, 17, 0.068),
+    0 4px 6px rgba(0, 0, 0, 0.322);
+
+// ## Typography
+$font-size-p: f.rem(16);
+
+// Font
+$font-family: "Work Sans", sans-serif;
+
+$font-normal: 400;
+$font-bold: 600;
+$font-x-bold: 700;
