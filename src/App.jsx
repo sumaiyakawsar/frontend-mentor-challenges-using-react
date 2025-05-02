@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Routes, Route, Navigate } from "react-router-dom";
 import './styles/app.scss'
 import Layout from "./components/layout/layout"
-
+import ScrollToTop from './components/ScrollToTop';
 import Homepage from "./pages/homepage/Homepage";
 import Project1 from "./pages/1-qr-code-component-project/Project1";
 import Project2 from "./pages/2-3-column-preview-card/Project2";
@@ -18,11 +18,11 @@ import Project13 from './pages/13-four-card-feature-section/project13';
 import Project14 from './pages/14-testimonials-grid-section/Project14';
 import Project15 from './pages/15-article-preview-component/Project15';
 import Project16 from './pages/16-newsletter-sign-up/Project16';
-import ScrollToTop from './components/ScrollToTop';
 import Project17 from './pages/17-time-tracking-dashboard/Project17';
 import Project18 from './pages/18-tip-calculator-app/Project18';
 import Project19 from './pages/19-interactive-rating/Project19';
 import Project20 from './pages/20-faq-accordion/Project20';
+import Project21 from './pages/21-contact-form/Project21';
 
 
 
@@ -58,6 +58,7 @@ function App() {
     { path: "/project18", element: <Project18 /> },
     { path: "/project19", element: <Project19 /> },
     { path: "/project20", element: <Project20 /> },
+    { path: "/project21", element: <Project21 /> },
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },

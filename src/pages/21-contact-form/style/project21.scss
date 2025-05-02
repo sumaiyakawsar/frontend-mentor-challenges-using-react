@@ -1,0 +1,183 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+.project21 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .toast {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-200%);
+        background-color: v.$grey-900;
+        color: v.$white;
+        padding: f.rem(16);
+        border-radius: f.rem(8);
+        box-shadow: v.$box-shadow;
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(12);
+
+        z-index: 1000;
+        transition:
+            transform 0.4s ease,
+            opacity 0.4s ease;
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        p {
+            font-size: f.rem(15);
+            opacity: 0.8;
+        }
+
+        &.show {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+
+    .contact-form {
+        background-color: v.$white;
+        border-radius: f.rem(12);
+        padding: f.rem(24);
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(16);
+        box-shadow: v.$box-shadow;
+
+        .error-text {
+            color: v.$red;
+            font-size: f.rem(14);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(12);
+
+            &.row {
+                display: flex;
+                gap: 1rem;
+                @include breakpoint(small) {
+                    flex-direction: row;
+                }
+            }
+            .column {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: f.rem(12);
+            }
+            label {
+                font-weight: v.$font-bold;
+                color: v.$grey-500;
+            }
+
+            input,
+            textarea {
+                padding: f.rem(10);
+                border: 1px solid v.$grey-500;
+                border-radius: f.rem(6);
+                transition: outline 0.2s ease;
+
+                &.error {
+                    border: v.$red 1px solid;
+                }
+
+                &:focus {
+                    border: v.$grey-500 1px solid;
+                }
+
+                &:-webkit-autofill {
+                    background-color: v.$white !important;
+                    transition: background-color 5000s ease-in-out 0s;
+                    -webkit-box-shadow: 0 0 0px 1000px v.$white inset !important;
+                }
+            }
+
+            textarea {
+                height: 100px;
+                resize: vertical;
+            }
+
+            .error-text {
+                color: #e74c3c;
+                font-size: 0.875rem;
+            }
+
+            &.checkbox {
+                accent-color: v.$green-600;
+
+                input {
+                    margin-right: 0.5rem;
+                    width: auto;
+                }
+            }
+        }
+
+        .query-options {
+            display: flex;
+            gap: f.rem(16);
+            justify-content: space-between;
+            flex-direction: column;
+
+            @include breakpoint(small) {
+                flex-direction: row;
+            }
+            .option {
+                font-weight: v.$font-normal;
+                flex: 1;
+                padding: f.rem(8);
+                border: 1px solid #ccc;
+                border-radius: f.rem(8);
+                user-select: none;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                &.selected,
+                &:checked {
+                    border-color: v.$green-600;
+                    background-color: v.$green-200;
+                    accent-color: v.$green-600;
+                }
+                input {
+                    margin-right: f.rem(8);
+                }
+            }
+        }
+
+        button {
+            background-color: v.$green-600;
+            color: v.$white;
+            padding: f.rem(16);
+            border: none;
+            border-radius: f.rem(8);
+            cursor: pointer;
+            font-weight: v.$font-bold;
+            text-align: center;
+            transition: all 0.2s;
+            width: 100%;
+
+            &:hover {
+                background-color: v.$green-700;
+            }
+        }
+    }
+}

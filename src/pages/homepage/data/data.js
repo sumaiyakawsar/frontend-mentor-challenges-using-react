@@ -17,8 +17,8 @@ import project16 from "../images/project16-Newsletter.png"
 import project17 from "../images/project17-time-tracking-dashboard.png"
 import project18 from "../images/project18-tip-calculator.png"
 import project19 from "../images/project19-Interactive-rating.png"
-import project20 from "../images/project20-faq-accordion.png"
-
+import project20 from "../images/project20-faq-accordion.png" 
+import project21 from "../images/project21-contact-form.png"
 
 
 export const Projects = [
@@ -199,6 +199,15 @@ export const Projects = [
         projectImage: project20,
         projectLevelNo: "1",
         projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 21,
+        projectTitle: "Contact form",
+        src: "/project21",
+        projectImage: project21,
+        projectLevelNo: "2",
+        projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex"]
     },
     // {

@@ -12,8 +12,7 @@ const Project16 = () => {
     useFavicon("icons/project71516.png");
     useDocumentTitle("Newsletter sign-up form with success message | Frontend Mentor");
 
-    const [email, setEmail] = useState("");
-    // const [isValid, setIsValid] = useState(true);
+    const [email, setEmail] = useState(""); 
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState("");
 
