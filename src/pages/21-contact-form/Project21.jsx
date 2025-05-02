@@ -152,24 +152,28 @@ const Project21 = () => {
                 <div className="form-group">
                     <label htmlFor="queryType">Query Type *</label>
                     <div className="query-options">
-                        <label className={`option ${formData.queryType === 'general' ? 'selected' : ''}`}>
+                        <div className={`option ${formData.queryType === 'general' ? 'selected' : ''}`}>
                             <input
                                 type="radio"
-                                name="queryType"
+                                name="queryType" id="general"
                                 value="general"
                                 checked={formData.queryType === 'general'}
                                 onChange={handleChange}
-                            /> General Enquiry
-                        </label>
-                        <label className={`option ${formData.queryType === 'support' ? 'selected' : ''}`}>
+                            />
+                            <label htmlFor="general">
+                                General Enquiry </label>
+                        </div>
+                        <div className={`option ${formData.queryType === 'support' ? 'selected' : ''}`}>
                             <input
                                 type="radio"
-                                name="queryType"
+                                name="queryType" id="support"
                                 value="support"
                                 checked={formData.queryType === 'support'}
                                 onChange={handleChange}
-                            /> Support Request
-                        </label>
+                            />
+                            <label htmlFor="support">Support Request</label>
+                        </div>
+
                     </div>
                     {errors.queryType && <span role="alert" className="error-text">{errors.queryType}</span>}
                 </div>
@@ -188,16 +192,16 @@ const Project21 = () => {
                     {errors.message && <span id="message-error" role="alert" className="error-text">{errors.message}</span>}
                 </div>
 
-                <div className="form-group checkbox">
-                    <label htmlFor="consent">
-                        <input
-                            type="checkbox"
-                            name="consent"
-                            checked={formData.consent}
-                            onChange={handleChange}
-                        />
-                        I consent to being contacted by the team *
-                    </label>
+                <div className="form-group-checkbox">
+
+                    <input
+                        type="checkbox"
+                        name="consent"
+                        checked={formData.consent}
+                        onChange={handleChange}
+                    />
+
+                    <label htmlFor="consent"> I consent to being contacted by the team *     </label>
                     {errors.consent && <span role="alert" className="error-text">{errors.consent}</span>}
                 </div>
 

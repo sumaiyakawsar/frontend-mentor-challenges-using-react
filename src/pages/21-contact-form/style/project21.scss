@@ -117,16 +117,18 @@
             }
 
             .error-text {
-                color: #e74c3c;
+                color: v.$red;
                 font-size: 0.875rem;
             }
 
-            &.checkbox {
+            &-checkbox {
                 accent-color: v.$green-600;
 
                 input {
                     margin-right: 0.5rem;
-                    width: auto;
+                }
+                label {
+                    color: v.$grey-500;
                 }
             }
         }
@@ -154,11 +156,16 @@
                 &.selected,
                 &:checked {
                     border-color: v.$green-600;
+                    cursor: pointer;
                     background-color: v.$green-200;
                     accent-color: v.$green-600;
                 }
                 input {
                     margin-right: f.rem(8);
+                }
+
+                > * {
+                    cursor: pointer;
                 }
             }
         }
