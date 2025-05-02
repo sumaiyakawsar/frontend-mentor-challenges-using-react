@@ -192,16 +192,18 @@ const Project21 = () => {
                     {errors.message && <span id="message-error" role="alert" className="error-text">{errors.message}</span>}
                 </div>
 
-                <div className="form-group-checkbox">
+                <div className="form-group">
+                    <div className="checkbox">
+                        <input
+                            type="checkbox"
+                            name="consent" id="consent"
+                            checked={formData.consent}
+                            onChange={handleChange}
+                        />
 
-                    <input
-                        type="checkbox"
-                        name="consent"
-                        checked={formData.consent}
-                        onChange={handleChange}
-                    />
+                        <label htmlFor="consent"> I consent to being contacted by the team *</label>
+                    </div>
 
-                    <label htmlFor="consent"> I consent to being contacted by the team *     </label>
                     {errors.consent && <span role="alert" className="error-text">{errors.consent}</span>}
                 </div>
 
