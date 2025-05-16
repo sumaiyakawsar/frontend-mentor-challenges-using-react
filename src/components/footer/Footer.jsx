@@ -25,7 +25,7 @@ const Footer = () => {
   else if (pathname.endsWith("project19")) fgClass = "footer-19";
   else if (pathname.endsWith("project20")) fgClass = "footer-20";
   else if (pathname.endsWith("project21")) fgClass = "footer-21";
-
+  else if (pathname.endsWith("project22")) fgClass = "footer-22";
 
   return (
     <footer id='footer' className={`footer ${fgClass}`}>

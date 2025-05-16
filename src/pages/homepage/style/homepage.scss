@@ -21,6 +21,11 @@
         flex-direction: column;
         box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
 
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            outline: 2px solid black;
+        }
         &__img {
             // aspect-ratio: 1;
             // object-fit:fill;

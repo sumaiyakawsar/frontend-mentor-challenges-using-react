@@ -5,7 +5,7 @@ import './style/project21.scss';
 import Toast from "./component/Toast";
 
 const Project21 = () => {
-    useFavicon("icons/project19.png");
+    useFavicon("icons/project21.png");
     useDocumentTitle("Contact form | Frontend Mentor");
 
     const [formData, setFormData] = useState({
@@ -196,7 +196,8 @@ const Project21 = () => {
                     <div className="checkbox">
                         <input
                             type="checkbox"
-                            name="consent" id="consent"
+                            name="consent" 
+                            id="consent"
                             checked={formData.consent}
                             onChange={handleChange}
                         />

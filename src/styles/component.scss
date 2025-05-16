@@ -37,7 +37,9 @@
         gap: f.rem(24);
         .social__icon {
             color: lightskyblue;
-            &:hover {
+            &:hover,
+            &:focus,
+            &:focus-visible {
                 color: red;
             }
         }
@@ -165,6 +167,18 @@
     &-21 {
         a {
             color: v.$green-600;
+        }
+    }
+
+    &-22 {
+        a {
+            background: linear-gradient(90deg, v.$soft-red, v.$soft-orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            // Optional for other browsers:
+            background-clip: text;
+            color: transparent;
         }
     }
 }

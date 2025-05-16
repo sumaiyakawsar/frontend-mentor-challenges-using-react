@@ -1,0 +1,277 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;700;800&display=swap");
+
+.project22 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    line-height: 1.5;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: f.rem(16);
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: none;
+            font-weight: v.$font-normal;
+        }
+
+        @include breakpoint(medium) {
+            .menu-toggle {
+                display: none;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 1.5rem;
+
+                a {
+                    color: v.$dark-grayish-blue;
+
+                    &:hover,
+                    &:focus,
+                    &:focus-visible {
+                        color: v.$soft-red;
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); // semi-transparent dark overlay
+        z-index: 999; // slightly below the mobile menu
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100dvh;
+        background-color: v.$off-white; // soft yellow tone from your mockup
+        box-shadow: v.$box-shadow;
+        z-index: 1000;
+        padding: f.rem(32);
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+        transition:
+            transform 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+
+        &.open {
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .close-button {
+            background: none;
+            border: none;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(24);
+            margin-top: f.rem(120);
+            a {
+                font-size: f.rem(19.2);
+                font-weight: v.$font-normal;
+                color: v.$very-dark-blue;
+            }
+        }
+
+        @include breakpoint(medium) {
+            display: none; // Hide on desktop
+        }
+    }
+
+    .page {
+        padding: f.rem(32) 0;
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            "featured"
+            "news"
+            "project";
+        gap: f.rem(40);
+
+        @include breakpoint(medium) {
+            // grid-template-columns: repeat(3, 1fr);
+
+            grid-template-areas:
+                "featured featured news"
+                "project project project" !important;
+            column-gap: f.rem(28);
+            row-gap: f.rem(40);
+        }
+
+        .featured__section {
+            grid-area: featured;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            img {
+                width: 100%;
+                height: f.em(250);
+                object-fit: cover;
+                aspect-ratio: 1;
+            }
+            .content {
+                @include breakpoint(medium) {
+                    display: flex;
+                    flex-direction: row;
+                    gap: f.rem(80);
+                }
+
+                h1 {
+                    flex: 1;
+                    font-size: f.rem(45);
+                    font-weight: v.$font-x-bold;
+                }
+                .col {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    p {
+                        color: v.$dark-grayish-blue;
+                        // font-size: f.rem(19);
+                        padding: f.rem(16) 0;
+                        @include breakpoint(medium) {
+                            padding: 0;
+                        }
+                    }
+                    .btn {
+                        align-self: flex-start;
+                        background-color: v.$soft-red;
+                        padding: f.rem(16) f.rem(32);
+                        text-transform: uppercase;
+                        letter-spacing: f.rem(4);
+                        font-weight: v.$font-bold;
+                        cursor: pointer;
+                        &:hover,
+                        &:focus,
+                        &:focus-visible {
+                            background-color: v.$very-dark-blue;
+                            color: v.$off-white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .new__section {
+            grid-area: news;
+            background: v.$very-dark-blue;
+            padding: f.rem(24);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2 {
+                color: v.$soft-orange;
+            }
+
+            .article {
+                border-top: 1px solid #eee;
+                padding: f.rem(24) 0;
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(8);
+
+                &:first-of-type {
+                    border-top: none;
+                }
+                a {
+                    color: v.$off-white;
+                    font-weight: v.$font-x-bold;
+                    cursor: pointer;
+                    &:hover,
+                    &:focus,
+                    &:focus-visible {
+                        color: v.$soft-orange;
+                    }
+                }
+                p {
+                    color: v.$grayish-blue;
+                }
+            }
+        }
+
+        .trending-articles {
+            grid-area: project;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(28);
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+            }
+
+            .trending-card {
+                display: flex;
+                align-items: center;
+                gap: f.rem(30);
+
+                img {
+                    height: f.em(150);
+                    width: f.em(150);
+                    object-fit: cover;
+                }
+                .category__details {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-between;
+
+                    span {
+                        color: v.$soft-red;
+                        font-weight: v.$font-bold;
+                        font-size: f.rem(32);
+                    }
+                    a {
+                        color: v.$very-dark-blue;
+                        font-weight: v.$font-x-bold;
+                        font-size: f.rem(16);
+
+                        cursor: pointer;
+                        &:hover,
+                        &:focus,
+                        &:focus-visible {
+                            color: v.$soft-red;
+                        }
+                    }
+                    p {
+                        color: v.$dark-grayish-blue;
+                    }
+                }
+            }
+        }
+    }
+}

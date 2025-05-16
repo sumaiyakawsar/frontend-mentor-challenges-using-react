@@ -4,7 +4,7 @@
 
 Before Converting it to react(until project 15): [![wakatime](https://wakatime.com/badge/github/sumaiyakawsar/FrontendMentorsChallenges.svg)](https://wakatime.com/badge/github/sumaiyakawsar/FrontendMentorsChallenges)
 
-After converting the entire project to react: [![wakatime](https://wakatime.com/badge/github/sumaiyakawsar/frontend-mentor-challenges-using-react.svg)](https://wakatime.com/badge/github/sumaiyakawsar/frontend-mentor-challenges-using-react)
+After converting to react and adding more projects: [![wakatime](https://wakatime.com/badge/github/sumaiyakawsar/frontend-mentor-challenges-using-react.svg)](https://wakatime.com/badge/github/sumaiyakawsar/frontend-mentor-challenges-using-react)
 
 
 
@@ -34,7 +34,7 @@ After converting the entire project to react: [![wakatime](https://wakatime.com/
 | 19           | [Interactive rating component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project19)      | Newbie       | ✔️    |
 | 20           | [FAQ accordion](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project20)                     | Newbie       | ✔️    |
 | 21           | [Contact Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project21)                      | Junior       | ✔️    |
-| 22           | -------                                                                                                                 | Newbie       | ❌    |
+| 22           | [News homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project22)                     | Junior       | ✔️    |
 | 23           | -------                                                                                                                 | Newbie       | ❌    |
 | 24           | -------                                                                                                                 | Newbie       | ❌    |
 

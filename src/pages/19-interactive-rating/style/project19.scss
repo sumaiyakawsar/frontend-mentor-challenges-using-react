@@ -1,6 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
- 
+
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 .project19 {
@@ -14,7 +14,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
- 
 
     .rating {
         flex: 1;
@@ -49,7 +48,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            
+
             .btnRating {
                 background-color: v.$grey-800;
                 color: v.$white;
@@ -71,6 +70,10 @@
                 &.selected {
                     background: v.$white;
                     color: v.$grey-950;
+                } // Focus outline
+                &:focus,
+                &:focus-visible {
+                    outline: v.$orange-500 2px solid;
                 }
             }
         }
@@ -86,6 +89,10 @@
             cursor: pointer;
             &:hover {
                 background-color: v.$white;
+            }
+            &:focus,
+            &:focus-visible {
+                outline: v.$white 2px solid;
             }
         }
         .thankYou {
