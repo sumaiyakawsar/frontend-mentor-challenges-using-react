@@ -44,7 +44,7 @@ const Project20 = () => {
 
                 <div className="faq-header">
                     <span className="faq-icon">
-                        <img src={iconStar} alt="icon-star"/>
+                        <img src={iconStar} alt="icon-star" />
                     </span>
                     <h1>FAQs</h1>
                 </div>
@@ -52,19 +52,6 @@ const Project20 = () => {
                 <FaqAccordion items={data} />
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div >
     )
 }

@@ -75,7 +75,7 @@ const Project22 = () => {
                     <h2>New</h2>
                     {newArticles.map((article, id) => (
                         <div className="article">
-                            <a href="#">{article.title}</a>
+                            <a href="#/project22">{article.title}</a>
                             <p>{article.content}</p>
                         </div>
                     ))}
@@ -89,7 +89,7 @@ const Project22 = () => {
 
                             <div className="category__details">
                                 <span>0{id + 1}</span>
-                                <a href="#">{category.title}</a>
+                                <a href="#/project22">{category.title}</a>
                                 <p>{category.content}</p>
                             </div>
 

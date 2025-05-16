@@ -80,14 +80,22 @@
                     max-height: 0;
                     overflow: hidden;
                     transition:
-                        max-height 0.3s ease,
-                        padding 0.3s ease;
+                        max-height 0.4s ease,
+                        padding 0.4s ease;
+
+                    padding-top: 0;
+                    padding-bottom: 0;
                     color: v.$purple-600;
                     font-size: 0.95rem;
                 }
 
                 &.open {
-                    .faq-answer {
+                    .faq-question { 
+                        span {
+                            color: v.$purple-700;
+                        }
+                    }
+                    .faq-answer { 
                         max-height: 500px;
                         padding-bottom: 1rem;
                     }

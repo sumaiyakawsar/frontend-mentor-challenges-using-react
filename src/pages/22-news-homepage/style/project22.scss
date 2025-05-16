@@ -211,6 +211,8 @@
                 a {
                     color: v.$off-white;
                     font-weight: v.$font-x-bold;
+                    font-size: f.rem(16);
+
                     cursor: pointer;
                     &:hover,
                     &:focus,
