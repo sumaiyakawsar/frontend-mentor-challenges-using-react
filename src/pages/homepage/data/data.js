@@ -20,6 +20,8 @@ import project19 from "../images/project19-Interactive-rating.png"
 import project20 from "../images/project20-faq-accordion.png"
 import project21 from "../images/project21-contact-form.png"
 import project22 from "../images/project22-news-homepage.png"
+import project23 from "../images/project23-ecommerce-product-page.png"
+// import project24 from "../images/project23-ecommerce-product-page.png"
 
 
 export const Projects = [
@@ -220,6 +222,25 @@ export const Projects = [
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex", "Grid"]
     },
+    {
+        projectId: 23,
+        projectTitle: "E-commerce product page",
+        src: "/project23",
+        projectImage: project23,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+
+    // {
+    //     projectId: 24,
+    //     projectTitle: "E-commerce product page",
+    //     src: "/project24",
+    //     projectImage: project24,
+    //     projectLevelNo: "3",
+    //     projectLevel: "intermediate",
+    //     projectTags: ["React", "SCSS", "Flex"]
+    // },
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",

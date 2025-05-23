@@ -35,7 +35,7 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 20           | [FAQ accordion](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project20)                     | Newbie       | ✔️    |
 | 21           | [Contact Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project21)                      | Junior       | ✔️    |
 | 22           | [News homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project22)                     | Junior       | ✔️    |
-| 23           | -------                                                                                                                 | Newbie       | ❌    |
+| 23           | [E-commerce product page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project23)                                                                                                              | Intermediate       | ✔️    |
 | 24           | -------                                                                                                                 | Newbie       | ❌    |
 
 

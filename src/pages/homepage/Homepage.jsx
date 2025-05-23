@@ -1,4 +1,3 @@
-import React from 'react'
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle'
 import { Projects } from "./data/data";
@@ -8,8 +7,8 @@ import './style/homepage.scss'
 function Homepage() {
     useFavicon("icons/main.png");
     useDocumentTitle("Frontend Mentor Challenges by SK");
-    
-    
+
+
     return (
         <section className='projects'>
 

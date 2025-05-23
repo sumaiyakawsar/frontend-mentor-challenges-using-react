@@ -22,8 +22,7 @@ const FaqAccordion = ({ items }) => {
         }
     };
 
-    return (
-        // <div className="faq-wrapper">
+    return ( 
         <div className="faq-card">
 
             {items.map((item, idx) => (
