@@ -13,7 +13,7 @@ const Navbar = ({ toggleMenu, toggleCart, cartItemCount, menuTitles, cartRef }) 
 
             <div className="navigation">
                 <div className="logo">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="logo" />
                 </div>
 
                 <nav className="nav-links">
@@ -24,8 +24,8 @@ const Navbar = ({ toggleMenu, toggleCart, cartItemCount, menuTitles, cartRef }) 
                         </a>
                     ))}
                 </nav>
-                <button className="menu-toggle" onClick={toggleMenu}>
-                    <img src={iconMenu} alt="" />
+                <button type="button" className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+                    <img src={iconMenu} alt="Menu icon" />
                 </button>
             </div>
 
