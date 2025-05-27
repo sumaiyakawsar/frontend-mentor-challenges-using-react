@@ -13,14 +13,14 @@ function Slide({ desktopImg, mobileImg, title, description, onPrev, onNext, anim
                     <img src={mobileImg} alt={title} />
                 </picture>
                 <div className="hero__nav">
-                    <button onClick={onPrev}><FaChevronLeft /></button>
-                    <button onClick={onNext}><FaChevronRight /></button>
+                    <button type='button' onClick={onPrev}><FaChevronLeft /></button>
+                    <button type='button' onClick={onNext}><FaChevronRight /></button>
                 </div>
             </div>
 
             <div className="slide__content">
 
-                <h2>{title}</h2>
+                <h1>{title}</h1>
                 <p>{description}</p>
 
                 <a href="#/project25" target="_blank" className="slide__shop-link" rel="noopener noreferrer">

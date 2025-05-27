@@ -206,7 +206,7 @@
                 justify-content: center;
                 gap: f.rem(16);
 
-                h2 {
+                h1 {
                     font-size: f.rem(32);
                 }
 
@@ -275,9 +275,10 @@
             flex-direction: column;
             justify-content: center;
             gap: f.rem(16);
-            h3 {
+            h2 {
                 text-transform: uppercase;
                 letter-spacing: f.em(8);
+                font-size: f.rem(18);
             }
             p {
                 color: v.$grey-500;

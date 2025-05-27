@@ -35,13 +35,13 @@ const Project25 = () => {
                 <HeroSlider />
 
                 <div className="about">
-                    <img src={imgAboutDark} alt="darkimg"  />
+                    <img src={imgAboutDark} alt="darkimg" />
 
 
                     <div className="about__content">
-                        <h3>
+                        <h2>
                             About our furniture
-                        </h3>
+                        </h2>
 
                         <p>
                             Our multifunctional collection blends design and function to suit your individual taste.
