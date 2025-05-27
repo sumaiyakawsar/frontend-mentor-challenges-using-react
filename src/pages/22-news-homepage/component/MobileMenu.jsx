@@ -7,7 +7,7 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
             {isOpen && <div className="overlay" onClick={closeMenu} />}
 
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
-                <button className="close-button" onClick={closeMenu}>
+                <button type="button" className="close-button" onClick={closeMenu}>
                     <img src={iconMenuClose} alt="" />
                 </button>
 

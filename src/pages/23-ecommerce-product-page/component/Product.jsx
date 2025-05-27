@@ -91,7 +91,7 @@ const Product = ({ onAddToCart, cartRef }) => {
 
             <div className="product__images">
                 <div className="main-image-wrapper">
-                    <button className="nav left"
+                    <button type="button" className="nav left"
                         onClick={handlePrevImage}
                         aria-label="Previous image"><FaChevronLeft /></button>
 
@@ -103,7 +103,7 @@ const Product = ({ onAddToCart, cartRef }) => {
                         className="main-image"
                         onClick={handleOpenLightbox} />
 
-                    <button className="nav right"
+                    <button type="button" className="nav right"
                         onClick={handleNextImage}
                         aria-label="Next image"><FaChevronRight /></button>
                 </div>
@@ -144,15 +144,15 @@ const Product = ({ onAddToCart, cartRef }) => {
 
                 <div className="product__actions">
                     <div className="quantity">
-                        <button onClick={decrement}>
+                        <button type="button" onClick={decrement}>
                             <img src={iconminus} alt="subtract" />
                         </button>
                         <span>{quantity}</span>
-                        <button onClick={increment}>
+                        <button type="button" onClick={increment}>
                             <img src={iconplus} alt="add" />
                         </button>
                     </div>
-                    <button className="add-to-cart" onClick={handleAdd}>
+                    <button type="button" className="add-to-cart" onClick={handleAdd}>
                         <IoCartOutline className="icon" />
                         <span>Add to cart</span>
                     </button>

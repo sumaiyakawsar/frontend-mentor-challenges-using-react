@@ -7,7 +7,7 @@ const Navbar = ({ toggleMenu, menuTitles }) => {
             <div className="logo">
                 <img src={logo} alt="logo" />
             </div>
-            <button className="menu-toggle" onClick={toggleMenu}>
+            <button type='button' className="menu-toggle" onClick={toggleMenu}>
                 <img src={iconMenu} alt="" />
             </button>
             <nav className="nav-links">

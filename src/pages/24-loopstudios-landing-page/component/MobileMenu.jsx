@@ -12,7 +12,7 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
                         <img src={logo} alt="logo" />
                     </div>
 
-                    <button className="close-button" onClick={closeMenu}>
+                    <button type='button' className="close-button" onClick={closeMenu}>
                         <img src={iconMenuClose} alt="" />
                     </button>
                 </div>

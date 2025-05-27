@@ -23,7 +23,7 @@ const CartDropdown = ({ cartitems, onRemove, onCheckout, isCartOpen, removingIte
                                         <strong>${(item.price * item.quantity).toFixed(2)}</strong>
                                     </p>
                                 </div>
-                                <button className="delete-btn"
+                                <button type="button" className="delete-btn"
                                     onClick={() => onRemove(item.id)}
                                     aria-label="Remove item"
                                 >🗑️</button>
@@ -31,7 +31,7 @@ const CartDropdown = ({ cartitems, onRemove, onCheckout, isCartOpen, removingIte
                         ))}
                     </div>
                     <div className="btn">
-                        <button className="checkout-btn" onClick={onCheckout}>Checkout</button>
+                            <button type="button" className="checkout-btn" onClick={onCheckout}>Checkout</button>
                     </div>
 
                 </>

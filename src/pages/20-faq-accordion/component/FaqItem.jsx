@@ -4,7 +4,7 @@ import iconMinus from '../images/icon-minus.svg'
 
 const FaqItem = ({ id, title, content, isOpen, onClick, onKeyDown }) => (
     <div className={`faq-item ${isOpen ? 'open' : ''}`}>
-        <button
+        <button type="button" 
             id={`faq-button-${id}`}
             className="faq-question"
             onClick={onClick}

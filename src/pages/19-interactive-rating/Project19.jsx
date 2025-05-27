@@ -34,8 +34,8 @@ const Project19 = () => {
                         </p>
                         <div className="rating__buttons">
                             {[1, 2, 3, 4, 5].map((rating) => (
-                                <button key={rating}
-                                    type="button"
+                                <button type="button"
+                                    key={rating}
                                     className={`btnRating ${selected === rating ? "selected" : ""}`}
                                     onClick={() => setSelected(rating)}
                                 >

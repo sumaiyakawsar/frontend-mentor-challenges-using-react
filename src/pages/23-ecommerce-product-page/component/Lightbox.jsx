@@ -4,14 +4,14 @@ const Lightbox = ({ images, currentIndex, onClose, onNavigate }) => {
     return (
         <div className="lightbox-overlay">
             <div className="lightbox-content">
-                <button className="close-btn" onClick={onClose}><FaTimes /></button>
+                <button type="button" className="close-btn" onClick={onClose}><FaTimes /></button>
 
                 <div className="lightbox-image-wrapper">
 
 
-                    <button className="nav left" onClick={() => onNavigate("prev")}><FaChevronLeft /></button>
+                    <button type="button" className="nav left" onClick={() => onNavigate("prev")}><FaChevronLeft /></button>
                     <img src={images[currentIndex]} alt={`product ${currentIndex + 1}`} className="lightbox-main" />
-                    <button className="nav right" onClick={() => onNavigate("next")}><FaChevronRight /></button>
+                    <button type="button" className="nav right" onClick={() => onNavigate("next")}><FaChevronRight /></button>
                 </div>
 
                 <div className="lightbox-thumbnails">

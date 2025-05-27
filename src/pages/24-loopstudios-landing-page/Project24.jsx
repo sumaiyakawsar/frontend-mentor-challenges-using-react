@@ -112,7 +112,7 @@ const Project24 = () => {
             <section className="creations container">
                 <div className="creations__header">
                     <h2>Our creations</h2>
-                    <button className="see-all">See all</button>
+                    <button type="button" className="see-all" >See all</button>
                 </div>
 
                 <div className="creations__grid">
@@ -128,7 +128,7 @@ const Project24 = () => {
                 </div>
 
                 {/* Show See All again on mobile only */}
-                <button className="see-all see-all__mobile">See All</button>
+                <button type="button" className="see-all see-all__mobile">See All</button>
 
             </section>
 

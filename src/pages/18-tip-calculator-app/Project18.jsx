@@ -83,8 +83,8 @@ const Project18 = () => {
 
                         <div className="tip__options">
                             {[5, 10, 15, 25, 50].map((percent) => (
-                                <button
-                                    key={percent}
+                                <button type="button" 
+                                key={percent}
                                     className={tip === percent / 100 ? 'selected' : ''}
                                     onClick={() => { setTip(percent / 100); setCustomTip(''); }}
                                 >
@@ -149,7 +149,7 @@ const Project18 = () => {
                     </div>
 
 
-                    <button className="reset-btn" onClick={handleReset} disabled={isResetDisabled}>RESET</button>
+                    <button type="button" className="reset-btn" onClick={handleReset} disabled={isResetDisabled}>RESET</button>
                 </div>
             </div>
         </div>

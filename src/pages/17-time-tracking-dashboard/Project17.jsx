@@ -30,7 +30,7 @@ const Project17 = () => {
 
                     <div className="dashboard__tabs">
                         {["daily", "weekly", "monthly"].map((period) => (
-                            <button
+                            <button type="button" 
                                 key={period}
                                 className={`dashboard__tab ${selected === period ? "active" : ""}`}
                                 onClick={() => setSelected(period)}
