@@ -2,15 +2,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project24">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project25">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/24-loopstudios-landing-page">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/25-room-homepage">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw">
+    <a href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq">
       Challenge
     </a>
   </h3>
@@ -23,13 +23,14 @@
 
 Users should be able to:
 
+- [x] Navigate the slider using either their mouse/trackpad or keyboard
 - [x] View the optimal layout for the interface depending on their device's screen size
 - [x] See hover and focus states for all interactive elements on the page
 
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project22-news-homepage.png)
+![Screenshot](../homepage/images/project25-room-homepage.png)
 
 
 ## Author

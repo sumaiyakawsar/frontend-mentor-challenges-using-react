@@ -210,4 +210,12 @@
             color: v.$orange;
         }
     }
+    &-25 {
+        color: v.$white;
+      
+        background: black;
+        a {
+            color: v.$soft-red;
+        }
+    }
 }

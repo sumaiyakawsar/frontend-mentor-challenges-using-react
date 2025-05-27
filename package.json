@@ -32,7 +32,7 @@
     "sass": "^1.86.3",
     "vite": "^6.2.0"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "Fun Challenges to solve by frontend mentor",
   "main": "eslint.config.js",
   "author": "Sumaiya Kawsar",
   "license": "ISC"
