@@ -1,0 +1,21 @@
+@use "../../../styles/functions" as f;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+// Colors
+// Primary
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$grey-200: hsl(0, 0%, 85%);
+
+$box-shadow:
+    0 10px 30px rgba(17, 17, 17, 0.068),
+    0 4px 6px rgba(0, 0, 0, 0.322);
+
+// ## Typography
+$font-size-p: f.rem(15);
+
+// Font
+$font-alata: "Alata", sans-serif;
+$font-JS: "Josefin Sans", sans-serif;
+
+$font-normal: 400;
+$font-thin: 300;

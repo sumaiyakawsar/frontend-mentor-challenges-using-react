@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 
 import Footer from '../footer/Footer';
-import Header from '../header/Header';
+import NavigateHome from '../main-nav/NavigateHome';
 import './style/layout.scss'
 
 const Layout = ({ children }) => {
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
 
     return (
         <div className={`layout ${bgClass}`} >
-            <Header />
+            <NavigateHome />
             <main>{children}</main>
             <Footer />
         </div>

@@ -9,7 +9,8 @@
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
     line-height: 1.5;
-
+    width: 90%; 
+    
     .navbar {
         display: flex;
         justify-content: space-between;

@@ -1,16 +1,29 @@
 @use "functions" as f;
 @use "variables" as v;
 
-.header {
+.main-home {
+    padding: f.rem(8);
     position: fixed;
-    width: 100vw;
-    top: 0;
-    padding: f.rem(16);
-    z-index: 10;
+    bottom: f.rem(20); // or just 20px
+    right: f.rem(20);
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.664);
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+
     .home-icon {
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
         color: v.$black;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: v.$soft-red-100;
+        }
+    }
+    &:hover {
+        transform: scale(1.5);
     }
     // nav {
     //     text-transform: uppercase;
@@ -183,6 +196,16 @@
     }
 
     &-23 {
+        a {
+            color: v.$orange;
+        }
+    }
+    &-24 {
+        color: v.$white;
+        .socials {
+            display: none;
+        }
+        background: black;
         a {
             color: v.$orange;
         }

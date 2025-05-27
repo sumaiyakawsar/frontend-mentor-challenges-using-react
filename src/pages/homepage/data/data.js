@@ -21,7 +21,7 @@ import project20 from "../images/project20-faq-accordion.png"
 import project21 from "../images/project21-contact-form.png"
 import project22 from "../images/project22-news-homepage.png"
 import project23 from "../images/project23-ecommerce-product-page.png"
-// import project24 from "../images/project23-ecommerce-product-page.png"
+import project24 from "../images/project24-loopstudios.png"
 
 
 export const Projects = [
@@ -231,16 +231,15 @@ export const Projects = [
         projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "Flex"]
     },
-
-    // {
-    //     projectId: 24,
-    //     projectTitle: "E-commerce product page",
-    //     src: "/project24",
-    //     projectImage: project24,
-    //     projectLevelNo: "3",
-    //     projectLevel: "intermediate",
-    //     projectTags: ["React", "SCSS", "Flex"]
-    // },
+    {
+        projectId: 24,
+        projectTitle: "Loopstudios landing page",
+        src: "/project24",
+        projectImage: project24,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",

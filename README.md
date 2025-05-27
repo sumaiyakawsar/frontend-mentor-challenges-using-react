@@ -35,8 +35,9 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 20           | [FAQ accordion](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project20)                     | Newbie       | ✔️    |
 | 21           | [Contact Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project21)                      | Junior       | ✔️    |
 | 22           | [News homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project22)                     | Junior       | ✔️    |
-| 23           | [E-commerce product page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project23)                                                                                                              | Intermediate       | ✔️    |
-| 24           | -------                                                                                                                 | Newbie       | ❌    |
+| 23           | [E-commerce product page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project23)           | Intermediate | ✔️    |
+| 24           | [Loopstudios landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project24)          | Junior       | ✔️    |
+| 25           | -------                                                                                                                 | Newbie       | ❌    |
 
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)

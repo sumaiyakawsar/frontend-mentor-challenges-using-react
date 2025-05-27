@@ -6,25 +6,16 @@ import { NavLink, Link } from "react-router-dom";
 import { IoMdHome } from "react-icons/io";
 import '../../styles/component.scss'
 
-const Header = () => {
-    // const [toggleMenu, setToggleMenu] = useState(false);
-
-    // const showMenu = () => {
-    //     setToggleMenu(!toggleMenu);
-    // };
-
-    // const activeLink = "py-4 border-b";
-    // const normalLink = "py-4 border-0  hover:border-b hover:border-b-white/50";
-
+const NavigateHome = () => {
 
 
     return (
-        <header className="header">
+        <section className="main-home">
             <Link
                 to="/"
                 className="home" aria-label="Home"
             >
-                <IoMdHome className="home-icon"/>
+                <IoMdHome className="home-icon" />
 
             </Link>
             {/* <nav className="uppercase tracking-[0.16875em] transition-all duration-300 ease-linear">
@@ -56,9 +47,9 @@ const Header = () => {
                     menuTitles={Projects}
                 />
             </nav> */}
-        </header>
+        </section>
 
     );
 };
 
-export default Header;
+export default NavigateHome;

@@ -6,7 +6,7 @@ import { PiShoppingCartBold } from "react-icons/pi";
 
 import productDesktop from './images/image-product-desktop.jpg'
 import productMobile from './images/image-product-mobile.jpg'
- 
+
 
 
 const Project12 = () => {
