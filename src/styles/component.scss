@@ -212,10 +212,22 @@
     }
     &-25 {
         color: v.$white;
-      
+
         background: black;
         a {
             color: v.$soft-red;
+        }
+    }
+
+    &-26 {
+        color: v.$white;
+
+        background: v.$blue-950;
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$red-400;
         }
     }
 }

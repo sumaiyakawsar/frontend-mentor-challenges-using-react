@@ -27,6 +27,7 @@ import Project22 from './pages/22-news-homepage/Project22';
 import Project23 from './pages/23-ecommerce-product-page/Project23';
 import Project24 from './pages/24-loopstudios-landing-page/Project24';
 import Project25 from './pages/25-room-homepage/Project25';
+import Project26 from './pages/26-bookmark-landing-page/Project26';
 
 
 
@@ -67,6 +68,7 @@ function App() {
     { path: "/project23", element: <Project23 /> },
     { path: "/project24", element: <Project24 /> },
     { path: "/project25", element: <Project25 /> },
+    { path: "/project26", element: <Project26 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
