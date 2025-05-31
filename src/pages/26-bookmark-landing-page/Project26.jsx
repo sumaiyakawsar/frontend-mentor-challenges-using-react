@@ -157,7 +157,7 @@ const Project26 = () => {
                         <div className="tab-buttons">
                             {tabData.map((tab, index) => (
                                 <button
-                                    key={index}
+                                    key={index} type="button"
                                     className={activeIndex === index ? 'active' : ''}
                                     onClick={() => setActiveIndex(index)}
                                 >
