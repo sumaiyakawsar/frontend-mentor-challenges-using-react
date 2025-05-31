@@ -200,7 +200,7 @@ const Project26 = () => {
                             <div className="download__card" key={idx}>
                                 <div className="details">
                                     <img src={ext.img} alt={ext.title} />
-                                    <h4>Add to {ext.title}</h4>
+                                    <h3>Add to {ext.title}</h3>
                                     <p>Minimum version {ext.version}</p>
                                 </div>
 
