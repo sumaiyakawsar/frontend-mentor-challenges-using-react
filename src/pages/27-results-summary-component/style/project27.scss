@@ -1,0 +1,230 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+.project27 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .result-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: v.$white;
+ 
+        @include breakpoint(medium) {
+            max-width: 700px;
+            flex-direction: row;
+            border-radius: 2rem;
+            box-shadow: v.$box-shadow;
+        }
+    }
+
+    .result-section {
+        background: linear-gradient(to top, v.$light-royal-blue, v.$light-slate-blue);
+        color: v.$white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: f.rem(32);
+        border-radius: 0 0 f.rem(32) f.rem(32);
+        animation: fadeSlideLeft 0.7s ease-out forwards;
+
+        @include breakpoint(medium) {
+            flex: 1;
+            border-radius: f.rem(32);
+            animation: fadeSlideLeft 0.7s ease-out forwards;
+        }
+
+        .title {
+            font-weight: v.$font-bold;
+            color: v.$pale-blue;
+            font-size: f.rem(16);
+        }
+
+        .score-circle {
+            background: linear-gradient(to top, v.$persian-blue, v.$violet-blue);
+
+            border-radius: 50%;
+            width: f.em(130);
+            height: f.em(130);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: f.rem(42);
+            }
+
+            span {
+                font-size: 0.9rem;
+                color: v.$light-lavender;
+            }
+        }
+
+        .rating {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .desc {
+            font-size: 0.9rem;
+            color: v.$light-lavender;
+            padding: 0 f.rem(16);
+        }
+    }
+
+    .summary-section {
+        padding: f.rem(32);
+
+        flex: 1;
+        opacity: 1;
+        transform: translateX(0);
+        transition: none;
+
+        @include breakpoint(medium) {
+            opacity: 0;
+            transform: translateX(100%);
+            animation: slideOutRight 0.8s ease-out forwards;
+            animation-delay: 0.8s;
+        }
+        h3 {
+            font-weight: v.$font-bold;
+            padding-bottom: 1.5rem;
+            color: v.$dark-gray-blue;
+        }
+
+        .summary-items {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+
+            .summary-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 0.75rem;
+                padding: f.rem(16);
+                font-size: 0.95rem;
+                opacity: 0;
+                animation: riseFade 0.6s ease-out forwards;
+
+                &:nth-child(1) {
+                    animation-delay: 0.3s;
+                }
+                &:nth-child(2) {
+                    animation-delay: 0.5s;
+                }
+                &:nth-child(3) {
+                    animation-delay: 0.7s;
+                }
+                &:nth-child(4) {
+                    animation-delay: 0.9s;
+                }
+                .category {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    .label {
+                        font-weight: v.$font-bold;
+                    }
+                }
+
+                .score {
+                    color: v.$dark-gray-blue;
+                    font-weight: v.$font-bold;
+
+                    .total {
+                        color: v.$light-lavender;
+                        font-weight: v.$font-normal;
+                    }
+                }
+
+                &.reaction {
+                    background-color: hsla(from v.$light-red h s l / 0.1);
+                    color: v.$light-red;
+                }
+
+                &.memory {
+                    background-color: hsla(from v.$orangey-yellow h s l / 0.1);
+                    color: v.$orangey-yellow;
+                }
+
+                &.verbal {
+                    background-color: hsla(from v.$green-teal h s l / 0.1);
+                    color: v.$green-teal;
+                }
+
+                &.visual {
+                    background-color: hsla(from v.$cobalt-blue h s l / 0.1);
+                    color: v.$cobalt-blue;
+                }
+            }
+        }
+
+        .btn_continue {
+            margin-top: 2rem;
+            width: 100%;
+            background-color: v.$dark-gray-blue;
+            text-align: center;
+            color: white;
+            border: none;
+            padding: f.rem(16);
+            border-radius: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background: linear-gradient(to top, v.$light-royal-blue, v.$light-slate-blue);
+            }
+        }
+    }
+}
+
+@keyframes fadeSlideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes riseFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
