@@ -452,10 +452,12 @@
         }
         .faq-card {
             max-width: 600px;
+            width: 100%;
             min-width: 400px;
             display: flex;
             flex-direction: column;
-
+            flex-shrink: 0;
+            
             .faq-item {
                 border-top: 1px solid #eee;
 
