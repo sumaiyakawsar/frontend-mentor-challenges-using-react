@@ -36,7 +36,7 @@
             padding: f.rem(70) f.rem(80);
         }
         .container {
-            min-height: 100vh;
+            min-height: 90vh;
             display: flex;
             flex-direction: column;
 
@@ -157,11 +157,10 @@
             .headline {
                 flex: 1;
                 display: flex;
-                align-items: center;
-                // width: f.em(400);
+                align-items: center; 
 
                 @include breakpoint(medium) {
-                    width: f.em(400);
+                    width: 60%;
                 }
                 h1 {
                     border: v.$white solid 4px;
