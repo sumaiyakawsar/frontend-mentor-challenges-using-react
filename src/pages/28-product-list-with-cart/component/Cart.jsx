@@ -29,7 +29,7 @@ const Cart = ({ cartItems, onConfirmOrder, removeItem }) => {
 
                                     </div>
                                 </div>
-                                <button onClick={() => removeItem(item.name)} aria-label={`Remove ${item.name}`} className="">
+                                <button type="button" onClick={() => removeItem(item.name)} aria-label={`Remove ${item.name}`}  >
                                     <IoCloseCircleOutline />
                                 </button>
                             </li>
@@ -43,7 +43,7 @@ const Cart = ({ cartItems, onConfirmOrder, removeItem }) => {
                             </p>
                         </div>
 
-                        <button className="btn" onClick={onConfirmOrder}>Confirm Order</button>
+                        <button type="button" className="btn" onClick={onConfirmOrder}>Confirm Order</button>
                     </div>
                 </>
             )}

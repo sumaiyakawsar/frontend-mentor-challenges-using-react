@@ -44,7 +44,7 @@ const OrderConfirmation = ({ isOpen, cartItems, onReset, total }) => {
                 </div>
 
 
-                <button className="btn" onClick={onReset}>
+                <button type="button" className="btn" onClick={onReset}>
                     Start New Order
                 </button>
             </div>

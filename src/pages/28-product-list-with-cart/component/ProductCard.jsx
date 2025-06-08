@@ -43,7 +43,7 @@ const ProductCard = ({ product, addToCart, quantity }) => {
             <div className="cart-actions">
                 <div className={`cart-switch ${selected ? "show-quantity" : ""}`}>
                     <div className="add-view">
-                        <button onClick={handleAddClick} className="add-to-cart-btn">
+                        <button type="button" onClick={handleAddClick} className="add-to-cart-btn">
                             <img src={iconcart} alt="" />
                             Add to Cart
                         </button>
@@ -51,11 +51,11 @@ const ProductCard = ({ product, addToCart, quantity }) => {
 
                     <div className="quantity-controls-view">
                         <div className="quantity-controls">
-                            <button onClick={decrement}>
+                            <button type="button" onClick={decrement}>
                                 <FiMinus className="icon" />
                             </button>
                             <span>{quantity}</span>
-                            <button onClick={increment}>
+                            <button type="button" onClick={increment}>
                                 <FiPlus className="icon" />
                             </button>
                         </div>
@@ -64,7 +64,7 @@ const ProductCard = ({ product, addToCart, quantity }) => {
             </div>
 
             <div className="product-card__info">
-                <h3 className="product__category">{product.category}</h3>
+                <span className="product__category">{product.category}</span>
                 <p className="product__name">{product.name}</p>
                 <p className="product__price">${product.price.toFixed(2)}</p>
             </div>
