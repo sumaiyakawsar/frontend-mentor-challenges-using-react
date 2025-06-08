@@ -5,7 +5,7 @@ import './style/project27.scss';
 import { results } from "./data/data";
 
 const Project27 = () => {
-    useFavicon("icons/project18.png");
+    useFavicon("icons/project71516.png");
     useDocumentTitle("Results summary component | Frontend Mentor");
 
     useEffect(() => {

@@ -40,7 +40,7 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 25           | [Room Homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project25)                     | Intermediate | ✔️    |
 | 26           | [Bookmark landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project26)             | Intermediate | ✔️    |
 | 27           | [Results Summary](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project27)                   | Newbie       | ✔️    |
-| 28           | -------                                                                                                                 | Newbie       | ❌    |
+| 28           | [Product list with cart](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project28)                                                                                                                     | Newbie       | ❌    |
 | 29           | -------                                                                                                                 | Newbie       | ❌    |
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
