@@ -23,6 +23,11 @@ function Homepage() {
                         strict
                     >
                         <img className="project__img" src={menu.projectImage} />
+                        
+                        <div className={`project__num ${menu.projectLevel}`}>{menu.projectId}</div>
+                        
+                  
+                        
                         <div className="project__body">
                             <div className="project__body__header">
                                 <h4>  {menu.projectTitle}</h4>

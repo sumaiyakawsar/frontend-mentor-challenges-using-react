@@ -1,0 +1,280 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
+.project29 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .error-msg {
+        min-height: f.rem(16); // ensures consistent spacing
+        color: v.$red;
+        font-size: f.rem(12);
+    }
+    .mortgage-calculator {
+        width: 100%;
+        min-height: f.em(500); // adjust as needed based on your design
+        max-width: f.em(900);
+
+        background: v.$white;
+        box-shadow: v.$box-shadow;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(medium) {
+            flex-direction: row;
+            border-radius: f.rem(16);
+        }
+
+        .input-section {
+            flex: 1;
+            padding: f.rem(32);
+            background: v.$white;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+            justify-content: space-between;
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @include breakpoint(medium) {
+                    flex-direction: row;
+                }
+            }
+
+            .label {
+                font-weight: v.$font-normal;
+                color: v.$slate-700;
+                width: 100%;
+                font-size: f.rem(14);
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(6);
+
+                .currency-input,
+                .term-input,
+                .rate-input {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    border-radius: f.rem(6);
+                    border: 1px solid v.$slate-500;
+                    width: 100%;
+
+                    span {
+                        padding: f.rem(8) f.rem(12);
+                        font-weight: v.$font-bold;
+                        color: v.$slate-700;
+                        background: v.$slate-100;
+
+                        &.icon-error {
+                            background: v.$red;
+                            color: v.$white;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+
+                        flex: 1;
+                        border: none;
+                        background: transparent;
+                        font-weight: v.$font-bold;
+                        padding: 0 f.rem(16);
+                        font-size: f.rem(16);
+                        padding: 0 f.rem(16);
+                    }
+
+                    &.error {
+                        border: 1px solid v.$red;
+                    }
+
+                    // — when input inside is focused…
+                    &:focus-within {
+                        border: 1px solid v.$lime;
+
+                        span {
+                            background: v.$lime;
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid v.$slate-900;
+                    }
+                }
+            }
+
+            .flex-row {
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(16);
+
+                @include breakpoint(medium) {
+                    flex-direction: row;
+                }
+
+                > * {
+                    flex: 1;
+                }
+            }
+
+            .mortgage-type {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(12);
+                color: v.$slate-700;
+
+                .radio {
+                    cursor: pointer;
+                    border: 1px solid v.$slate-500;
+                    padding: f.rem(8);
+                    border-radius: f.rem(6);
+                    display: flex;
+                    gap: f.rem(16);
+                    align-items: center;
+                    color: v.$slate-900;
+                    font-weight: v.$font-bold;
+                    width: 100%;
+
+                    input[type="radio"] {
+                        display: grid;
+                        place-content: center;
+                        height: 1.2rem;
+                        width: 1.2rem;
+
+                        aspect-ratio: 1;
+                        border: calc(1em / 8) solid #939393;
+                        padding: calc(1em / 8);
+                        background: radial-gradient(farthest-side, v.$lime 94%, #0000) 50%/0 0 no-repeat content-box;
+                        border-radius: 50%;
+                        outline-offset: 1em;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        cursor: pointer;
+                        transition: 0.3s;
+
+                        &:checked {
+                            border-color: v.$lime;
+                            background-size: 100% 100%;
+                        }
+                    }
+
+                    &.active {
+                        background-color: #fefde8;
+                        border-color: v.$lime;
+                    }
+
+                    &:hover {
+                        border-color: v.$lime;
+                    }
+                }
+            }
+
+            .calculate-btn {
+                background: v.$lime;
+                padding: 0.75rem f.rem(32);
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                &:hover {
+                    background: lighten(v.$lime, 20%);
+                }
+                @include breakpoint(medium) {
+                    width: 60%;
+                }
+            }
+
+            .clear-btn {
+                background: none;
+                border: none;
+                color: v.$slate-500;
+                text-decoration: underline;
+                cursor: pointer;
+
+                &:hover {
+                    color: v.$slate-900;
+                }
+            }
+        }
+
+        .results-section {
+            flex: 1;
+            background: v.$slate-900;
+            color: v.$white;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @include breakpoint(medium) {
+                border-bottom-left-radius: f.rem(60);
+            }
+            .result__description {
+                color: v.$slate-300;
+                font-size: f.rem(14);
+            }
+            .result-box {
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                height: 100%;
+                gap: f.rem(16);
+
+                .kpi {
+                    border-radius: f.rem(8);
+                    padding: f.rem(32);
+                    border-top: 4px solid v.$lime;
+
+                    background: rgba(0, 0, 0, 0.5);
+                    box-shadow: v.$box-shadow;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    color: #fff;
+
+                    h3 {
+                        font-size: 2rem;
+                        color: v.$lime;
+                    }
+                    p {
+                        color: v.$slate-300;
+                    }
+
+                    strong {
+                        font-size: 1.25rem;
+                    }
+                    hr {
+                        margin: 1rem 0;
+                        border: 1px solid #24414f;
+                    }
+                }
+            }
+
+            .empty-state {
+                text-align: center;
+
+                h2 {
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+}

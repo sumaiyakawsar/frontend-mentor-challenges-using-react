@@ -6,7 +6,7 @@ import './style/project16.scss'
 import imgdesktop from './images/illustration-sign-up-desktop.svg'
 import imgMobile from './images/illustration-sign-up-mobile.svg'
 import iconSuccess from './images/icon-success.svg'
-import iconList from './images/icon-list.svg'
+import Error from "../../components/Error";
 
 const Project16 = () => {
     useFavicon("icons/project71516.png");
@@ -66,7 +66,9 @@ const Project16 = () => {
                             <form onSubmit={handleSubmit} noValidate>
                                 <div className="label">
                                     <label htmlFor="email">Email address</label>
-                                    {error && <span className="error-text">{error}</span>}
+                                    {error &&
+                                        <Error message={error} className="error-text" id="error-text" />
+                                    }
                                 </div>
                                 <input
                                     type="email" name="email"

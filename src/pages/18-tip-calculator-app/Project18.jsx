@@ -5,6 +5,7 @@ import './style/project18.scss';
 import iconDollar from './images/icon-dollar.svg'
 import iconPerson from './images/icon-person.svg'
 import logo from './images/logo.svg'
+import Error from "../../components/Error";
 
 const Project18 = () => {
     useFavicon("icons/project18.png");
@@ -105,14 +106,19 @@ const Project18 = () => {
                     <div className="ppl_container">
                         <div className="flex">
                             <p className="label">Number of People</p>
-                            {error && <span className="error-text">Can't be zero</span>}
+                            {error && 
+                            
+                                <Error message="Can't be zero" className="error-text" id="error-text" />
+
+                            
+                            }
 
                         </div>
 
                         <div className="input_field">
                             <img src={iconPerson} alt="" className="icon" />
-                            {/* <input type="text" name="ppl" id="ppl" /> */}
 
+ 
                             <input
                                 type="number"
                                 placeholder="0"

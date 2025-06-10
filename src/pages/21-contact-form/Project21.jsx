@@ -3,6 +3,7 @@ import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
 import './style/project21.scss';
 import Toast from "./component/Toast";
+import Error from "../../components/Error";
 
 const Project21 = () => {
     useFavicon("icons/project21.png");
@@ -117,7 +118,10 @@ const Project21 = () => {
                             aria-describedby={errors.firstName ? "firstName-error" : undefined}
                             aria-invalid={!!errors.firstName}
                         />
-                        {errors.firstName && <span id="firstName-error" role="alert" className="error-text">{errors.firstName}</span>}
+                        {errors.firstName &&
+                            <Error message={errors.firstName} id="firstName-error" className="error-text" />
+
+                        }
                     </div>
                     <div className="column">
                         <label htmlFor="lastName">Last Name *</label>
@@ -130,7 +134,9 @@ const Project21 = () => {
                             aria-describedby={errors.lastName ? "lastName-error" : undefined}
                             aria-invalid={!!errors.lastName}
                         />
-                        {errors.lastName && <span id="lastName-error" role="alert" className="error-text">{errors.lastName}</span>}
+                        {errors.lastName &&
+                            <Error message={errors.lastName} id="lastName-error" className="error-text" />
+                        }
                     </div>
                 </div>
 
@@ -146,7 +152,9 @@ const Project21 = () => {
                         aria-describedby={errors.email ? "email-error" : undefined}
                         aria-invalid={!!errors.email}
                     />
-                    {errors.email && <span id="email-error" role="alert" className="error-text">{errors.email}</span>}
+                    {errors.email &&
+                        <Error message={errors.email} id="email-error" className="error-text" />
+                    }
                 </div>
 
                 <div className="form-group">
@@ -175,7 +183,9 @@ const Project21 = () => {
                         </div>
 
                     </div>
-                    {errors.queryType && <span role="alert" className="error-text">{errors.queryType}</span>}
+                    {errors.queryType &&
+                        <Error message={errors.queryType} id="email-error" className="error-text" />
+                    }
                 </div>
 
                 <div className="form-group">
@@ -189,14 +199,16 @@ const Project21 = () => {
                         aria-describedby={errors.message ? "message-error" : undefined}
                         aria-invalid={!!errors.message}
                     />
-                    {errors.message && <span id="message-error" role="alert" className="error-text">{errors.message}</span>}
+                    {errors.message &&
+                        <Error message={errors.message} id="message-error" className="error-text" />
+                    }
                 </div>
 
                 <div className="form-group">
                     <div className="checkbox">
                         <input
                             type="checkbox"
-                            name="consent" 
+                            name="consent"
                             id="consent"
                             checked={formData.consent}
                             onChange={handleChange}
@@ -205,7 +217,9 @@ const Project21 = () => {
                         <label htmlFor="consent"> I consent to being contacted by the team *</label>
                     </div>
 
-                    {errors.consent && <span role="alert" className="error-text">{errors.consent}</span>}
+                    {errors.consent &&
+                        <Error message={errors.consent} id="message-error" className="error-text" />
+                    }
                 </div>
 
 

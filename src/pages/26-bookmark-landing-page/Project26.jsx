@@ -20,6 +20,7 @@ import { MdError } from "react-icons/md";
 
 
 import line from "./images/bg-dots.svg"
+import Error from "../../components/Error";
 
 const MenuTitles = [
     { title: "Features", href: "#/project26" },
@@ -258,7 +259,9 @@ const Project26 = () => {
                             {error &&
                                 <MdError className="error-icon" />}
 
-                            {error && <span className="error-message">Whoops, make sure it's an email</span>}
+                            {error &&
+                                <Error message="Whoops, make sure it's an email" className="error-message" id="error-message" />
+                            }
                         </div>
 
 

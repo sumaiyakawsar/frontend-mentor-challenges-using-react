@@ -1,0 +1,29 @@
+@use "../../../styles/functions" as f; 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+// Colors
+
+// Primary
+$lime: hsl(61, 70%, 52%);
+$red: hsl(4, 69%, 50%);
+
+//Neutral
+$white: hsl(0, 0%, 100%);
+$slate-100: hsl(202, 86%, 94%);
+$slate-300: hsl(203, 41%, 72%);
+$slate-500: hsl(200, 26%, 54%);
+$slate-700: hsl(200, 24%, 40%);
+$slate-900: hsl(202, 55%, 16%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// ## Typography
+$font-size-p: f.rem(16);
+
+// Font
+$font-family: "Plus Jakarta Sans", sans-serif;
+
+$font-normal: 500;
+$font-bold: 700;

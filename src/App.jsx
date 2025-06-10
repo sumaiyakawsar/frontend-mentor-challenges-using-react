@@ -30,6 +30,7 @@ import Project25 from './pages/25-room-homepage/Project25';
 import Project26 from './pages/26-bookmark-landing-page/Project26';
 import Project27 from './pages/27-results-summary-component/Project27';
 import Project28 from './pages/28-product-list-with-cart/Project28';
+import Project29 from './pages/29-mortgage-repayment-calculator/Project29';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -72,6 +73,7 @@ function App() {
     { path: "/project26", element: <Project26 /> },
     { path: "/project27", element: <Project27 /> },
     { path: "/project28", element: <Project28 /> },
+    { path: "/project29", element: <Project29 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

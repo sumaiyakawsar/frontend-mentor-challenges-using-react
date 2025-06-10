@@ -26,6 +26,7 @@ import project25 from "../images/project25-room-homepage.png"
 import project26 from "../images/project26-bookmark-landing-page.png"
 import project27 from "../images/project27-results-summary.png"
 import project28 from "../images/project28-product-list-with-cart.png"
+import Project29 from "../images/project29-mortgage-calculator.png"
 
 
 export const Projects = [
@@ -276,6 +277,14 @@ export const Projects = [
         projectTitle: "Product list with cart",
         src: "/project28",
         projectImage: project28,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 29,
+        projectTitle: "Mortgage repayment calculator",
+        src: "/project29",
+        projectImage: Project29,
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex"]
