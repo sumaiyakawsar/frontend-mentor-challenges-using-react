@@ -1,16 +1,13 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@use "../../../styles/font" as fo;
 
 .project9 {
-
-    // width: 100vw;
-    // height: 100vh;
-flex:1;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: v.$font-family;
+    font-family: fo.$outfit-font;
     font-size: f.rem(18);
 
     line-height: 150%;

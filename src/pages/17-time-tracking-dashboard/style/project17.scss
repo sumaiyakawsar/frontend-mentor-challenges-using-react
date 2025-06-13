@@ -1,10 +1,10 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @use "mq" as *;
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@use "../../../styles/font" as fo;
 
 .project17 {
-    font-family: v.$font-family;
+    font-family: fo.$rubik-font;
     font-size: v.$font-size-p;
 
     line-height: 1.5;

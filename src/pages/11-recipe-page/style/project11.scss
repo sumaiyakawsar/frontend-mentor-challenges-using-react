@@ -1,6 +1,7 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+@use "../../../styles/font" as fo;
+
 .project11 {
     flex: 1;
 
@@ -11,7 +12,7 @@
     color: v.$stone-600;
     list-style: none;
 
-    font-family: v.$outfit-font-family;
+    font-family: fo.$outfit-font;
     font-size: v.$font-size-p;
     line-height: 1.5;
     padding: f.rem(32);
@@ -22,7 +23,6 @@
         border-radius: f.rem(14);
         display: flex;
         box-shadow: 0px 0 rgba(0, 0, 0);
-        // gap: f.rem(24);
         flex-direction: column;
 
         .img__container {

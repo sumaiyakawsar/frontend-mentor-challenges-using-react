@@ -2,10 +2,10 @@
 @use "variables" as v;
 @use "mq" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap");
+@use "../../../styles/font" as fo;
 
 .project28 {
-  font-family: v.$font-family;
+  font-family: fo.$red-hat-font;
   font-size: v.$font-size-p;
   font-weight: v.$font-normal;
   line-height: 1.5;

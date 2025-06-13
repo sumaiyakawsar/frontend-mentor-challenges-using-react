@@ -1,9 +1,9 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,700;1,700&display=swap");
+@use "../../../styles/font" as fo;
 
 .project3 {
-    font-family: v.$font-family;
+    font-family: fo.$red-hat-font;
     font-size: v.$font-size-p;
 
     padding: f.rem(32);

@@ -1,8 +1,9 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/font" as fo;
 @use "variables" as v;
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .project1 {
+    font-family: fo.$outfit-font;
     flex: 1;
     display: flex;
     justify-content: center;

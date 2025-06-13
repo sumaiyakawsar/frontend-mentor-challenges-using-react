@@ -1,6 +1,5 @@
 @use "../../../styles/functions" as f;
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
-
+ 
 // ## Colors
 $white: hsl(0, 0%, 100%);
 
@@ -13,9 +12,7 @@ $very-dark-blue-line: hsl(215, 32%, 27%);
 
 // ## Typography
 $font-size-p: f.rem(18);
-
-// Font
-$font-family: "Outfit", sans-serif;
+ 
 
 $font-thin: 300;
 $font-normal: 400;

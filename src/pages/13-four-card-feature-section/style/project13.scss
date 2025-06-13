@@ -1,7 +1,7 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @use "mq" as *;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 .project13 {
     flex: 1;
@@ -49,7 +49,7 @@
 
         @include breakpoint(small) {
             grid-template-columns: repeat(1, 1fr) !important; // 1 column for mobile
- 
+
             grid-template-areas:
                 "supervisor"
                 "team-builder"

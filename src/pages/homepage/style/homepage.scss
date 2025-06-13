@@ -1,8 +1,9 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
+@use "../../../styles/font" as fo;
 
 .projects {
-    font-family: v.$font-family;
+    font-family: fo.$outfit-font;
     font-size: v.$font-size-p;
     // width: 80%;
     display: flex;

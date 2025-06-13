@@ -1,5 +1,4 @@
 @use "../../../styles/functions" as f;
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 // Colors
 
@@ -27,9 +26,7 @@ $box-shadow:
 
 // ## Typography
 $font-size-p: f.rem(18);
-
-// Font
-$font-family: "Rubik", sans-serif;
+ 
 
 $font-thin: 300;
 $font-normal: 400;

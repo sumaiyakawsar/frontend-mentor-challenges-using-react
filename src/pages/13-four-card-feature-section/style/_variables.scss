@@ -1,6 +1,4 @@
-@use "../../../styles/functions" as f; 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
+@use "../../../styles/functions" as f;
 
 // Colors
 // Primary
@@ -25,6 +23,6 @@ $font-size-p: f.rem(15);
 // Font
 $font-family: "Poppins", sans-serif;
 
-$font-thin:200;
+$font-thin: 200;
 $font-normal: 400;
 $font-bold: 600;

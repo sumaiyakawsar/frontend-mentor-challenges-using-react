@@ -1,10 +1,10 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @use "mq" as *;
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@use "../../../styles/font" as fo;
 
 .project30 {
-    font-family: v.$font-family;
+    font-family: fo.$rubik-font;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
     line-height: 1.5;
@@ -87,7 +87,7 @@
         padding: 1.5rem;
         max-width: 720px;
         margin: 0 auto;
-        font-family: v.$font-family;
+        font-family: inherit;
 
         .container {
             display: flex;
