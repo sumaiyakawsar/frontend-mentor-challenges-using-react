@@ -1,0 +1,301 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+.project30 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    line-height: 1.5;
+    flex: 1;
+
+    .avatar {
+        border-radius: 50%;
+        &.input {
+            width: f.em(40);
+            height: f.em(40);
+        }
+
+        &.noinput {
+            width: f.em(32);
+            height: f.em(32);
+        }
+    }
+
+    textarea {
+        width: 100%;
+        padding: f.rem(10) f.rem(16);
+        border: v.$grey-100 solid 1px;
+        resize: none;
+        font-family: inherit;
+        border-radius: f.rem(6);
+        min-height: 90px;
+        cursor: pointer;
+
+        &:focus,
+        &:focus-visible,
+        &:hover {
+            border: v.$purple-600 solid 1px;
+        }
+    }
+
+    button {
+        background: none;
+        cursor: pointer;
+    }
+
+    .btn {
+        padding: f.rem(10) f.rem(20);
+        background-color: v.$purple-600;
+        color: v.$white;
+        text-transform: uppercase;
+        font-weight: v.$font-bold;
+        font-family: inherit;
+        border-radius: f.rem(6);
+        transition: background-color 0.2s ease;
+
+        &__link {
+            font-size: 1rem;
+            padding: 0.25rem;
+            font-weight: v.$font-bolder;
+            display: flex;
+            gap: f.rem(6);
+            color: v.$purple-600;
+
+            &:hover {
+                color: v.$purple-200;
+            }
+
+            &.delete {
+                color: v.$pink-400;
+                &:hover {
+                    color: v.$pink-200;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: v.$purple-200;
+        }
+    }
+
+    .comments-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        max-width: 720px;
+        margin: 0 auto;
+        font-family: v.$font-family;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+
+            .reply,
+            .comment {
+                background-color: v.$white;
+                border-radius: f.rem(8);
+                padding: 1rem;
+                box-shadow: v.$box-shadow;
+                display: grid;
+                grid-template-columns: 30px 1fr;
+                grid-template-areas:
+                    "profiles profiles"
+                    "contentes contentes"
+                    "vote buttons";
+                gap: f.rem(18);
+
+                @include breakpoint(medium) {
+                    grid-template-areas:
+                        "vote profiles buttons"
+                        "vote contentes contentes";
+                }
+
+                .vote {
+                    grid-area: vote;
+                    display: flex;
+                    justify-content: center;
+                    justify-self: flex-start;
+                    align-items: center;
+                    border-radius: f.rem(8);
+                    background-color: v.$grey-50;
+                    color: v.$purple-600;
+                    font-weight: v.$font-bold;
+
+                    @include breakpoint(medium) {
+                        flex-direction: column;
+                        align-self: flex-start;
+                    }
+
+                    .btn_vote {
+                        padding: f.rem(7);
+                        color: v.$purple-200;
+
+                        &:hover {
+                            color: v.$purple-600;
+                        }
+                    }
+                }
+
+                .profile,
+                .btn__container {
+                    display: flex;
+                    align-items: center;
+                    gap: f.rem(10);
+                    .username {
+                        color: v.$grey-800;
+                    }
+                    .tag {
+                        background-color: v.$purple-600;
+                        color: v.$white;
+                        font-size: f.rem(12);
+                        padding: f.rem(1) f.rem(6);
+                        border-radius: f.rem(2);
+                    }
+                    .time {
+                        color: v.$grey-500;
+                        font-size: f.rem(14);
+                    }
+                }
+
+                .profile {
+                    grid-area: profiles;
+                }
+                .btn__container {
+                    grid-area: buttons;
+                    justify-content: flex-end;
+                }
+
+                .content {
+                    grid-area: contentes;
+                    color: v.$grey-500;
+
+                    .replying-to {
+                        color: v.$purple-600;
+                        font-weight: v.$font-bold;
+                    }
+                }
+
+                .edit_box {
+                    grid-area: contentes;
+                    display: flex;
+                    flex-direction: column;
+                    gap: f.rem(16);
+                    .btn {
+                        align-self: end;
+                    }
+                }
+            }
+
+            .replies {
+                border-left: 2px solid v.$grey-100;
+                padding-left: f.rem(32);
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(16);
+                @include breakpoint(medium) {
+                    margin-left: f.rem(32);
+                }
+            }
+        }
+
+        .comment-input,
+        .reply-input {
+            background-color: v.$white;
+            box-shadow: v.$box-shadow;
+            border-radius: f.rem(8);
+            padding: f.rem(16);
+
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-areas: " texts texts" "pic buttons";
+            gap: f.rem(28);
+
+            @include breakpoint(medium) {
+                grid-template-areas: "pic texts buttons";
+            }
+
+            img {
+                grid-area: pic;
+            }
+
+            textarea {
+                grid-area: texts;
+            }
+
+            button {
+                grid-area: buttons;
+                justify-self: flex-end;
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+
+        .modal-container {
+            background-color: v.$white;
+            padding: f.rem(32);
+            border-radius: f.rem(10);
+            width: 90%;
+            max-width: 400px;
+            box-shadow: v.$box-shadow;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+
+            h2 {
+                font-size: f.rem(24);
+            }
+
+            p {
+                color: v.$grey-500;
+            }
+
+            .modal-actions {
+                display: flex;
+                justify-content: space-between;
+                gap: f.rem(32);
+                button {
+                    padding: 0.75rem 1.5rem;
+                    text-align: center;
+                    flex: 1;
+                    border-radius: f.rem(8);
+                    font-weight: v.$font-bold;
+                    text-transform: uppercase;
+                }
+
+                .cancel {
+                    background-color: v.$grey-800;
+                    color: v.$white;
+
+                    &:hover {
+                        background-color: v.$grey-500;
+                    }
+                }
+
+                .confirm {
+                    background-color: v.$pink-400;
+                    color: v.$white;
+
+                    &:hover {
+                        background-color: v.$pink-200;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -158,12 +158,15 @@ const Project21 = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="queryType">Query Type *</label>
-                    <div className="query-options">
+                    <label htmlFor="queryType" id="queryType-label">Query Type *</label>
+                    <div className="query-options" role="radiogroup"
+                        aria-labelledby="queryType-label"
+                    >
                         <div className={`option ${formData.queryType === 'general' ? 'selected' : ''}`}>
                             <input
                                 type="radio"
-                                name="queryType" id="general"
+                                name="queryType"
+                                id="general"
                                 value="general"
                                 checked={formData.queryType === 'general'}
                                 onChange={handleChange}
@@ -174,7 +177,8 @@ const Project21 = () => {
                         <div className={`option ${formData.queryType === 'support' ? 'selected' : ''}`}>
                             <input
                                 type="radio"
-                                name="queryType" id="support"
+                                name="queryType"
+                                id="support"
                                 value="support"
                                 checked={formData.queryType === 'support'}
                                 onChange={handleChange}

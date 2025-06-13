@@ -40,14 +40,13 @@ const InputForm = ({ formData, setErrors, setFormData, onCalculate, onClear, err
         <div className="input-section">
             <div className="header">
                 <h1>Mortgage Calculator</h1>
-                <button onClick={onClear} className="clear-btn">Clear All</button>
+                <button onClick={onClear} className="clear-btn" type="button">Clear All</button>
             </div>
 
             <label className="label"> Mortgage Amount
 
                 <div className={`currency-input ${errors.amount ? 'error' : ''}`}>
-                    <span
-                        className={errors.amount ? 'icon-error' : ''} >
+                    <span className={errors.amount ? 'icon-error' : ''} >
                         £
                     </span>
 

@@ -27,6 +27,7 @@ import project26 from "../images/project26-bookmark-landing-page.png"
 import project27 from "../images/project27-results-summary.png"
 import project28 from "../images/project28-product-list-with-cart.png"
 import Project29 from "../images/project29-mortgage-calculator.png"
+import Project30 from "../images/project30-interactive-comments.png"
 
 
 export const Projects = [
@@ -287,6 +288,14 @@ export const Projects = [
         projectImage: Project29,
         projectLevelNo: "2",
         projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 30,
+        projectTitle: "Interactive comments",
+        src: "/project30",
+        projectImage: Project30,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "Flex"]
     },
     // {

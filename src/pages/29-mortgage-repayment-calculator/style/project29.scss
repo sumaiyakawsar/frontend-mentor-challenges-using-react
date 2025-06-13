@@ -171,6 +171,9 @@
                         }
                     }
 
+                    &:has(input[type="radio"]:focus) {
+                        border: v.$lime 1px solid;
+                    }
                     &.active {
                         background-color: #fefde8;
                         border-color: v.$lime;

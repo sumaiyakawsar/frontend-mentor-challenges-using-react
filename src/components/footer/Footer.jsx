@@ -33,6 +33,7 @@ const Footer = () => {
   else if (pathname.endsWith("project27")) fgClass = "footer-27";
   else if (pathname.endsWith("project28")) fgClass = "footer-28";
   else if (pathname.endsWith("project29")) fgClass = "footer-29";
+  else if (pathname.endsWith("project30")) fgClass = "footer-30";
 
 
   return (

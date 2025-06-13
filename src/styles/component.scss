@@ -249,12 +249,23 @@
         }
     }
 
-    
     &-29 {
         background-color: v.$slate-900;
         color: white;
         a {
             color: v.$lime;
+        }
+    }
+
+    &-30 {
+        color: v.$purple-600;
+
+        a {
+            color: v.$pink-400;
+
+            &:hover {
+                color: v.$pink-200;
+            }
         }
     }
 }

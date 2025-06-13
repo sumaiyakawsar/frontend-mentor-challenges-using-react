@@ -125,7 +125,7 @@
                 accent-color: v.$green-600;
 
                 input {
-                    margin-right: 0.5rem; 
+                    margin-right: 0.5rem;
                 }
                 label {
                     color: v.$grey-500;
@@ -160,6 +160,12 @@
                     background-color: v.$green-200;
                     accent-color: v.$green-600;
                 }
+
+                &:has(input[type="radio"]:focus) {
+                    outline: 2px solid v.$green-600;
+                    outline-offset: 2px; 
+                }
+
                 input {
                     margin-right: f.rem(8);
                 }

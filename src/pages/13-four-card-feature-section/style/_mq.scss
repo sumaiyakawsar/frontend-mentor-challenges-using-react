@@ -11,21 +11,4 @@ $breakpoints-down: (
         @content;
     }
 }
-
-//Media Queries(Medium Devices - 1440px)
-// @include breakpoint(medium) {
-// }
-
-// //Media Queries(small Devices - 600px)
-// @include breakpoint(small) {
-//     .card-wrapper {
-//         grid-template-columns: repeat(1, 1fr) !important; // 1 column for mobile
-
-//         // grid-template-columns: 1fr !important;
-//         grid-template-areas:
-//             "supervisor"
-//             "team-builder"
-//             "calculator"
-//             "karma" !important;
-//     }
-// }
+ 
