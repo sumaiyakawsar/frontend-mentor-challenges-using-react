@@ -1,12 +1,10 @@
-// import React, { useState } from "react";
+import { useState, useEffect } from 'react'
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
-import './style/project30.scss';
-// import { status } from "./data/data";
-// import CommentThread from "./components/CommentThread";
+import './style/project30.scss'; 
 
-import React, { useState, useEffect } from 'react'
 import { status as initialStatus } from './data/commentsData'
+
 import Comment from './components/Comment'
 import CommentInput from './components/CommentInput'
 import DeleteModal from './components/DeleteModal' // import this
@@ -23,7 +21,7 @@ const getMaxId = (comments) => {
 
 
 function Project30() {
-    useFavicon("icons/project18.png");
+    useFavicon("icons/project30.png");
     useDocumentTitle("Interactive comments | Frontend Mentor");
 
 
@@ -175,8 +173,7 @@ function Project30() {
                         comment={comment}
                         currentUser={data.currentUser}
                         onReply={addReply}
-                        onUpdate={updateCommentOrReply}
-                        // onDelete={deleteCommentOrReply}
+                        onUpdate={updateCommentOrReply} 
                         onDelete={requestDelete} // change this line
                         onVote={vote}
                         getNextId={getNextId}

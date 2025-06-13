@@ -24,9 +24,9 @@ const Reply = ({ reply, currentUser, onReply, onUpdate, onDelete, onVote, getNex
             <div className="reply">
 
                 <div className="vote">
-                    <button className='btn_vote' onClick={() => onVote(reply.id, 1)}><FaPlus /></button>
+                    <button type='button' className='btn_vote' onClick={() => onVote(reply.id, 1)}><FaPlus /></button>
                     <span>{reply.score}</span>
-                    <button className='btn_vote' onClick={() => onVote(reply.id, -1)}><FaMinus /></button>
+                    <button type='button' className='btn_vote' onClick={() => onVote(reply.id, -1)}><FaMinus /></button>
                 </div>
 
                 <div className="profile">

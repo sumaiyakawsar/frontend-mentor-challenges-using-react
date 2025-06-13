@@ -23,9 +23,9 @@ const Comment = ({ comment, currentUser, onReply, onUpdate, onDelete, onVote, ge
             <div className="comment">
 
                 <div className="vote">
-                    <button className="btn_vote" onClick={() => onVote(comment.id, 1)}><FaPlus /></button>
+                    <button type='button' className="btn_vote" onClick={() => onVote(comment.id, 1)}><FaPlus /></button>
                     <span>{comment.score}</span>
-                    <button className="btn_vote" onClick={() => onVote(comment.id, -1)}><FaMinus /></button>
+                    <button type='button' className="btn_vote" onClick={() => onVote(comment.id, -1)}><FaMinus /></button>
                 </div>
 
 
@@ -39,7 +39,6 @@ const Comment = ({ comment, currentUser, onReply, onUpdate, onDelete, onVote, ge
                 <div className="btn__container">
                     {isOwner ? (
                         <>
-                            {/* <button type='button' className='btn__link delete' onClick={() => onDelete(comment.id)}> */}
                             <button type='button' className='btn__link delete' onClick={() => onDelete(comment.id)}>
                                 <MdDelete className="icon" />
                                 Delete
