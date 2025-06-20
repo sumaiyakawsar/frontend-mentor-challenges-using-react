@@ -18,6 +18,14 @@ $js: rgb(207, 99, 144);
 $api: rgb(170, 215, 66);
 $flexbx: rgba(41, 224, 24, 0.76);
 
+$filter-colors: (
+    "newbie": $newbie,
+    "junior": $junior,
+    "intermediate": $intermediate,
+    "advanced": $advanced,
+    "guru":$guru,
+    "all": #3f54a3
+);
 // ## Typography
 $font-size-p: 15px;
  
