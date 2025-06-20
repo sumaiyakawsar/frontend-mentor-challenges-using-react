@@ -32,6 +32,7 @@ import Project27 from './pages/27-results-summary-component/Project27';
 import Project28 from './pages/28-product-list-with-cart/Project28';
 import Project29 from './pages/29-mortgage-repayment-calculator/Project29';
 import Project30 from './pages/30-interactive-comments/Project30';
+import Project31 from './pages/31-multi-step-form/Project31';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -67,7 +68,7 @@ function App() {
     { path: "/project19", element: <Project19 /> },
     { path: "/project20", element: <Project20 /> },
     { path: "/project21", element: <Project21 /> },
-    { path: "/project22", element: <Project22 /> }, 
+    { path: "/project22", element: <Project22 /> },
     { path: "/project23", element: <Project23 /> },
     { path: "/project24", element: <Project24 /> },
     { path: "/project25", element: <Project25 /> },
@@ -76,6 +77,7 @@ function App() {
     { path: "/project28", element: <Project28 /> },
     { path: "/project29", element: <Project29 /> },
     { path: "/project30", element: <Project30 /> },
+    { path: "/project31", element: <Project31 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

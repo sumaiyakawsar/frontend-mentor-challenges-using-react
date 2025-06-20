@@ -1,0 +1,623 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+.project31 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    line-height: 1.5;
+    flex: 1;
+    @include breakpoint(medium) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .multi-step-form {
+        display: flex;
+        flex-direction: column;
+        width: 100dvw;
+        height: 100dvh;
+
+        @include breakpoint(medium) {
+            background: v.$white;
+            box-shadow: v.$box-shadow;
+            border-radius: f.rem(12);
+
+            flex-direction: row;
+
+            width: 940px;
+            height: 650px;
+
+            padding: f.rem(16);
+            overflow: hidden;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: f.rem(16);
+            background-color: v.$white;
+        }
+
+        .btn {
+            background: v.$blue-950;
+            color: v.$white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover,
+            &:focus {
+                background: v.$blue-900;
+            }
+
+            &__link {
+                background: none;
+                color: v.$grey-500;
+                font-weight: v.$font-bolder;
+                padding-inline: 0;
+                &:hover,
+                &:focus {
+                    color: v.$blue-950;
+                    background: none;
+                }
+            }
+
+            &__toggle {
+                background: none;
+                color: v.$grey-500;
+                cursor: pointer;
+                text-decoration: underline;
+                &:hover,
+                &:focus {
+                    color: v.$purple-600;
+                    background: none;
+                }
+            }
+
+            &__submit {
+                background: v.$purple-600;
+                color: v.$white;
+
+                &:hover,
+                &:focus {
+                    background-color: color-mix(in srgb, white 30%, v.$purple-600);
+                }
+            }
+
+            &__next {
+                justify-self: end;
+                align-self: end;
+            }
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1.5rem;
+            color: v.$white;
+            height: 274px;
+
+            // Mobile background (default)
+            background-image: url("../images/bg-sidebar-mobile.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+
+            // Desktop background (override on wider screens)
+            @include breakpoint(medium) {
+                padding: f.rem(32);
+                min-width: 250px;
+                height: auto;
+                background-image: url("../images/bg-sidebar-desktop.svg");
+                flex-direction: column;
+                justify-content: start;
+                border-radius: f.rem(12);
+            }
+
+            .step-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: f.rem(16);
+                margin-bottom: f.rem(48);
+                @include breakpoint(medium) {
+                    margin-bottom: 0;
+                }
+
+                .circle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    width: f.em(35);
+                    height: f.em(35);
+                    border-radius: 50%;
+                    border: 1px solid v.$grey-500;
+                    color: v.$white;
+                    background: transparent;
+                    transition:
+                        transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                        background 0.3s ease;
+
+                    &.active {
+                        background: v.$blue-200;
+                        color: v.$blue-950;
+                        border: none;
+                        animation: gooey 0.6s ease-in-out; // Apply the gooey animation
+                    }
+
+                    &:not(.active) {
+                        transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+                    }
+                }
+
+                @keyframes gooey {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.1);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
+                .step-text {
+                    display: none;
+
+                    @include breakpoint(medium) {
+                        display: block;
+                        span {
+                            font-size: f.rem(12);
+                            color: v.$grey-500;
+                            text-transform: uppercase;
+                        }
+
+                        strong {
+                            font-size: 0.9rem;
+                            font-weight: v.$font-bolder;
+                            color: v.$white;
+                            letter-spacing: f.em(1);
+                        }
+                    }
+                }
+            }
+        }
+
+        form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            @include breakpoint(medium) {
+                padding: clamp(1rem, 4vw, 3rem);
+            }
+
+            .form-content {
+                margin: 0 auto;
+                width: 90%;
+                background-color: v.$white;
+                padding: f.rem(32) f.rem(32);
+                display: flex;
+                flex-direction: column;
+                border-radius: f.rem(8);
+                margin-top: f.rem(-80);
+                z-index: 999;
+
+                @include breakpoint(medium) {
+                    margin: 0;
+                    width: 100%;
+                    transform: translateY(0);
+                }
+                .step {
+                    flex: 1;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: f.rem(32);
+
+                    // > * {
+                    //     max-width: 100%;
+                    // }
+
+                    .intro {
+                        h1 {
+                            font-size: clamp(f.rem(24), 5vw, f.rem(32));
+                            color: v.$blue-950;
+                        }
+
+                        .description {
+                            color: v.$grey-500;
+                        }
+                    }
+
+                    &.step1 {
+                        .form-items {
+                            display: flex;
+                            flex-direction: column;
+                            gap: f.rem(24);
+
+                            .field {
+                                display: flex;
+                                flex-direction: column;
+                                position: relative;
+                                gap: f.rem(4);
+                                .label {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    font-weight: v.$font-bold;
+
+                                    label {
+                                        color: v.$blue-950;
+                                        font-size: f.rem(14);
+                                    }
+                                }
+
+                                input {
+                                    padding: f.rem(12);
+                                    border: 1px solid v.$purple-200;
+                                    border-radius: f.rem(8);
+                                    font-size: f.rem(16);
+                                    cursor: pointer;
+                                    outline: none;
+                                    transition: border 0.3s;
+
+                                    &::placeholder {
+                                        color: v.$grey-500;
+                                        font-weight: v.$font-bold;
+                                    }
+
+                                    &:focus,
+                                    &:hover {
+                                        border-color: v.$purple-600;
+                                        outline: none;
+                                    }
+                                }
+
+                                .error-msg {
+                                    font-size: f.rem(12);
+                                    color: v.$red-500;
+                                    font-weight: v.$font-bolder;
+                                }
+
+                                &.error {
+                                    input {
+                                        border-color: v.$red-500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.step2 {
+                        .plans {
+                            display: flex;
+                            flex-direction: column;
+                            gap: f.rem(16);
+
+                            @include breakpoint(medium) {
+                                flex-direction: row;
+                            }
+                            .plan-option {
+                                cursor: pointer;
+                                padding: f.rem(16);
+                                border-radius: f.rem(8);
+                                border: 1.5px solid v.$purple-200;
+                                display: flex;
+                                flex-direction: row;
+                                gap: f.rem(16);
+                                flex: 1;
+                                transition: all 0.3s;
+
+                                @include breakpoint(medium) {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    min-height: f.rem(180);
+                                    justify-content: space-between;
+                                }
+
+                                &.selected {
+                                    border-color: v.$purple-600;
+                                    background-color: v.$blue-100;
+                                }
+
+                                &:hover,
+                                &:focus,
+                                &:focus-visible {
+                                    border-color: v.$purple-600;
+                                }
+
+                                .plan-details {
+                                    .plan__name {
+                                        font-weight: v.$font-bolder;
+                                        color: v.$blue-950;
+                                        font-size: f.rem(16);
+                                    }
+                                    .plan__price {
+                                        font-size: f.rem(14);
+                                        color: v.$grey-500;
+                                        font-weight: v.$font-normal;
+                                    }
+
+                                    .free-months {
+                                        font-size: f.rem(13);
+                                        color: v.$blue-900;
+                                        font-weight: v.$font-bolder;
+                                    }
+                                }
+                            }
+                        }
+
+                        .billing-toggle {
+                            background-color: v.$blue-100;
+                            border-radius: f.rem(8);
+                            padding: f.rem(16);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: f.rem(30);
+
+                            span {
+                                font-weight: v.$font-bolder;
+                                color: v.$grey-500;
+
+                                &.active {
+                                    color: v.$blue-950;
+                                }
+                            }
+
+                            .switch {
+                                position: relative;
+                                display: inline-block;
+                                width: 40px;
+                                height: 20px;
+
+                                input {
+                                    opacity: 0;
+                                    width: 0;
+                                    height: 0;
+                                }
+
+                                .slider {
+                                    position: absolute;
+                                    cursor: pointer;
+                                    background-color: v.$blue-950;
+                                    transition: 0.4s;
+                                    border-radius: 20px;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        height: 12px;
+                                        width: 12px;
+                                        left: 4px;
+                                        bottom: 4px;
+                                        background-color: v.$white;
+                                        transition: 0.4s;
+                                        border-radius: 50%;
+                                    }
+                                }
+
+                                input:checked + .slider::before {
+                                    transform: translateX(20px);
+                                }
+                            }
+                        }
+                    }
+
+                    &.step3 {
+                        .addons {
+                            display: flex;
+                            flex-direction: column;
+                            gap: f.rem(16);
+
+                            .addon {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border: 1px solid v.$purple-200;
+                                border-radius: f.rem(8);
+                                padding: f.rem(16);
+                                cursor: pointer;
+                                transition: all 0.3s ease;
+
+                                &__content {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: f.rem(28);
+
+                                    input[type="checkbox"] {
+                                        appearance: none;
+                                        width: 20px; // slightly bigger for padding space
+                                        height: 20px;
+                                        cursor: pointer;
+                                        border: 2px solid v.$purple-600;
+                                        border-radius: f.rem(4);
+                                        background-color: v.$white;
+                                        padding: f.rem(4); // padding inside box
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        position: relative;
+                                        transition:
+                                            background 0.3s,
+                                            border-color 0.3s;
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            width: 14px;
+                                            height: 10px;
+                                            background-image: url("../images/icon-checkmark.svg");
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                            opacity: 0;
+                                            transition: opacity 0.2s;
+                                        }
+
+                                        &:checked {
+                                            background-color: v.$purple-600;
+                                            border-color: v.$purple-600;
+
+                                            &::after {
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+
+                                    .addon-info {
+                                        display: flex;
+                                        flex-direction: column;
+                                        .addon_name {
+                                            color: v.$blue-900;
+                                            font-weight: v.$font-bolder;
+                                        }
+                                        .addon_description {
+                                            color: v.$grey-500;
+                                            font-size: f.rem(14);
+                                            font-weight: v.$font-bold;
+                                        }
+                                    }
+                                }
+
+                                .price {
+                                    font-weight: v.$font-bold;
+                                    color: v.$purple-600;
+                                    white-space: nowrap;
+                                }
+
+                                &.selected {
+                                    border-color: v.$purple-600;
+                                    background-color: v.$blue-100;
+                                }
+
+                                &:hover,
+                                &:focus,
+                                &:focus-visible {
+                                    border-color: v.$purple-600;
+                                }
+                            }
+                        }
+                    }
+
+                    &.step4 {
+                        .summary__content {
+                            .summary {
+                                background-color: v.$blue-100;
+                                padding: f.rem(16);
+                                border-radius: f.rem(12);
+                                display: flex;
+                                flex-direction: column;
+
+                                .plan {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-bottom: 1px solid v.$purple-200;
+                                    padding-bottom: f.rem(16);
+                                    font-weight: v.$font-bolder;
+                                    p {
+                                        color: v.$blue-950;
+                                    }
+                                }
+
+                                .addons {
+                                    color: v.$grey-500;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: f.rem(16);
+                                    padding-top: f.rem(16);
+
+                                    .addon {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        &__price {
+                                            color: v.$blue-950;
+                                            font-weight: v.$font-bold;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .total {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: f.rem(16);
+                                &__value {
+                                    color: v.$grey-500;
+                                    font-size: f.rem(14);
+                                }
+                                &__price {
+                                    color: v.$purple-600;
+                                    font-weight: v.$font-bolder;
+                                    font-size: f.rem(18);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .confirmation {
+            flex: 1;
+            margin: 0 auto;
+            width: 90%;
+            background-color: v.$white;
+            padding: f.rem(80) f.rem(32);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: f.rem(8);
+            transform: translateY(-80px);
+
+            @include breakpoint(medium) {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                transform: translateY(0);
+            }
+
+            .some {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: f.rem(20);
+
+                h1 {
+                    color: v.$blue-950;
+                }
+
+                .description {
+                    color: v.$grey-500;
+                }
+            }
+        }
+    }
+}

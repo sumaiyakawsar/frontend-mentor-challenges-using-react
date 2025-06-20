@@ -196,8 +196,10 @@
                 align-items: center;
                 justify-content: center;
                 gap: 0.5rem;
-                &:hover {
-                    background: lighten(v.$lime, 20%);
+                &:hover { 
+
+                    background-color: color-mix(in srgb, white 30%,v.$lime);
+
                 }
                 @include breakpoint(medium) {
                     width: 60%;

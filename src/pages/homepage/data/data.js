@@ -28,6 +28,7 @@ import project27 from "../images/project27-results-summary.png"
 import project28 from "../images/project28-product-list-with-cart.png"
 import Project29 from "../images/project29-mortgage-calculator.png"
 import Project30 from "../images/project30-interactive-comments.png"
+import Project31 from "../images/project31-multi-step-form.png"
 
 
 export const Projects = [
@@ -296,6 +297,14 @@ export const Projects = [
         projectImage: Project30,
         projectLevelNo: "3",
         projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Flex", "Grid"]
+    }, {
+        projectId: 31,
+        projectTitle: "Multi Step Form",
+        src: "/project31",
+        projectImage: Project31,
+        projectLevelNo: "4",
+        projectLevel: "advanced",
         projectTags: ["React", "SCSS", "Flex"]
     },
     // {

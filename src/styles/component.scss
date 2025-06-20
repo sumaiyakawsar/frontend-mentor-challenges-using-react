@@ -62,6 +62,7 @@
     }
 
     &-default {
+        // display: none;
         a {
             color: v.$white;
         }
@@ -266,6 +267,13 @@
             &:hover {
                 color: v.$pink-200;
             }
+        }
+    }
+
+    &-31 {
+        // background: v.$white; 
+        a {
+            color: v.$purple-31;
         }
     }
 }

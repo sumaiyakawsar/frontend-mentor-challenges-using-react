@@ -166,7 +166,7 @@
                 }
 
                 &:hover {
-                    background-color: lighten($color: v.$navy-900, $amount: 10%);
+                    background-color: color-mix(in srgb, white 5%, v.$navy-900);
                 }
             }
 
