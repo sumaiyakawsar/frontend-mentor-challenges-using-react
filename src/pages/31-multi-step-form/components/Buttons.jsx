@@ -4,7 +4,7 @@ const Buttons = ({ nextStep, prevStep, currentStep, handleNext }) => {
             {/* Step 1: only Next */}
             {currentStep === 1 && (
                 <>
-                    <button></button>
+                    <button type="button"></button>
                     <button type="button" className="btn btn__next" onClick={handleNext}>
                         Next Step
                     </button>
