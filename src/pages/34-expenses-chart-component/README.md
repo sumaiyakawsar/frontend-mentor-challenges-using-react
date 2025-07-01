@@ -1,16 +1,16 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - Expenses chart component solution
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project19">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project34">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/19-interactive-rating">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/34-expenses-chart-component">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">
+    <a href="https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt">
       Challenge
     </a>
   </h3>
@@ -25,13 +25,14 @@
 
 Users should be able to:
 
-- [x] Select and submit a number rating
-- [x] See the "Thank you" card state after submitting a rating
-- [x] See hover and focus states for all interactive elements on the page
-  
+- [x] View the bar chart and hover over the individual bars to see the correct amounts for each day
+- [x] See the current day’s bar highlighted in a different colour to the other bars
+- [x] View the optimal layout for the content depending on their device’s screen size
+- [x] See hover states for all interactive elements on the page
+- [x] **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 ### Screenshot
 
-![Screenshot](../homepage/images/project19-Interactive-rating.png)
+![Screenshot](../homepage/images/project34-expenses-chart-component.png)
 
  
 

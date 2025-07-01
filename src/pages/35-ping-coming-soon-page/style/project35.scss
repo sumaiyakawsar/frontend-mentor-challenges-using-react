@@ -1,16 +1,98 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
+@use "mq" as *;
 
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
 .project-35 {
     font-family: v.$font-family;
     font-size: v.$font-size-p;
-    font-weight: v.$font-normal;
 
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        padding: f.rem(64);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: f.rem(60);
+
+        .header {
+            text-align: center;
+            h1 {
+                font-weight: v.$font-normal;
+                color: v.$gray;
+                font-size: f.rem(28);
+                span {
+                    font-weight: v.$font-bold;
+                    color: v.$very-dark-blue;
+                }
+            }
+            p {
+                color: v.$very-dark-blue;
+            }
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+                gap: f.rem(32);
+            }
+
+            .input-wrapper {
+                flex: 1;
+                position: relative;
+
+                input {
+                    border: v.$gray solid 1px;
+                    border-radius: f.rem(50);
+                    padding: f.rem(16) f.rem(24);
+                    width: 100%;
+
+                    &.error {
+                        border: v.$light-red solid 1px;
+                    }
+                }
+
+                .error-text {
+                    color: v.$light-red;
+                    font-size: f.rem(14);
+                    text-align: center;
+                    padding: f.rem(8);
+                    width: 100%;
+                    @include breakpoint(medium) {
+                        position: absolute;
+                        padding: f.rem(8) f.rem(24);
+                        text-align: left;
+                    }
+                }
+            }
+
+            .btn {
+                background-color: v.$blue;
+                border-radius: f.rem(50);
+                color: white;
+                padding: f.rem(8) f.rem(64);
+                text-align: center;
+                cursor: pointer;
+                &:hover {
+                    opacity: 80%;
+                }
+            }
+        }
+
+        .illustration {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

@@ -7,11 +7,12 @@ import { extensions as extensionData } from './data/data';
 
 import Extension from './components/Extension';
 import ConfirmModal from './components/ConfirmModal';
-import Toast from './components/Toast';
+import Toast from '../../components/Toast';
 import logolight from './images/logo-light.svg';
 import logodark from './images/logo-dark.svg';
 
 import { useTheme } from '../../components/theme/ThemeContext';
+
 
 
 function Project32() {

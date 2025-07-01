@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import '../../styles/component.scss'
-import { FaSquareFacebook, FaPinterest, FaInstagram } from "react-icons/fa6";
+import { FaFacebookF, FaPinterestP, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   const { pathname } = useLocation();
 
 
   const lastSegment = pathname.split('/').filter(Boolean).pop();
-  // console.log(lastSegment)
+
 
   const footerClassMap = {
     "": "footer-main", // Home route "/"
@@ -56,7 +56,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="social__icon "
           aria-label="facebook"
-        ><FaSquareFacebook />
+        ><FaFacebookF />
 
         </a>
         <a
@@ -65,7 +65,7 @@ const Footer = () => {
           className="social__icon  "
           aria-label="pinterest"
           rel="noopener noreferrer"
-        ><FaPinterest />
+        ><FaPinterestP />
 
         </a>
         <a
@@ -78,11 +78,18 @@ const Footer = () => {
 
         </a>
       </div>
+
+      {
+        fgClass === "footer-35" ?
+          <p>&copy; Copyright Ping. All rights reserved.</p>
+          : ""
+      }
+
       <div className="attribution">Challenge by
         <Link to="https://www.frontendmentor.io?ref=challenge"> Frontend Mentor</Link>. Coded by <Link
           to="https://github.com/sumaiyakawsar"> Sumaiya Kawsar</Link>.
-
       </div>
+
 
     </footer>
   );

@@ -43,8 +43,8 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 31           | [Multi Step Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project31)                   | Advanced     | ✔️    |
 | 32           | [Browser Extension Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project32)            | Junior       | ✔️    |
 | 33           | [Interactive Card Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project33)             | Junior       | ✔️    |
-| 34           | -------                                                                                                                 | Newbie       | ❌    |
-| 35           | -------                                                                                                                 | Newbie       | ❌    |
+| 34           | [Expenses Chart Component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project34)             | Junior       | ❌    |
+| 35           | [Ping Coming Soon Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project35)             | Newbie       | ❌    |
 | 36           | -------                                                                                                                 | Newbie       | ❌    |
 | 37           | -------                                                                                                                 | Newbie       | ❌    |
 

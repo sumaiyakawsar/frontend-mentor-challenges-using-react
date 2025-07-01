@@ -294,4 +294,26 @@
             color: v.$red-34;
         }
     }
+    &-35 {
+        color:v.$gray-35;
+        .socials {
+            .social__icon {
+                border-radius: 50%;
+                border: v.$gray-35 solid 1px;
+                color: v.$blue-35;
+                padding: f.rem(8);
+
+                &:hover,
+                &:focus,
+                &:focus-visible {
+                    background-color: v.$blue-35;
+                    color: white;
+                    border: solid 1px v.$blue-35;
+                }
+            }
+        }
+        a {
+            color: v.$blue-35;
+        }
+    }
 }
