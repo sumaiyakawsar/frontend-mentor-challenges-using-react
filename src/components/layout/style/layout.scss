@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "theme";
 
 .layout {
     display: flex;
@@ -7,25 +8,25 @@
 }
 
 .project {
-    &-default {
+    &default {
         background: v.$white;
     }
-    &-1 {
+    &1 {
         background: v.$light-gray;
     }
-    &-2 {
+    &2 {
         background: v.$very-light-gray;
     }
-    &-3 {
+    &3 {
         background:
             url(../../../pages/3-launch-countdown-timer/images/pattern-hills.svg) bottom no-repeat,
             url(../../../pages/3-launch-countdown-timer/images/bg-stars.svg) no-repeat,
             linear-gradient(to top, v.$soft-red-80 0%, v.$dark-blue 30%);
     }
-    &-7 {
+    &7 {
         background: v.$yellow;
     }
-    &-8 {
+    &8 {
         background-color: v.$dark-cyan;
         background-image: url("../../../pages/8-profile-card-component/images/bg-pattern-top.svg"),
             url("../../../pages/8-profile-card-component/images/bg-pattern-bottom.svg");
@@ -34,59 +35,64 @@
             bottom -25vw right -20vw;
         background-repeat: no-repeat, no-repeat;
     }
-    &-9 {
+    &9 {
         background: v.$very-dark-blue-bg;
     }
-    &-10 {
+    &10 {
         background: v.$grey-900;
     }
-    &-11 {
+    &11 {
         background: v.$stone-100;
     }
-    &-12 {
+    &12 {
         background: v.$cream;
     }
 
-    &-15 {
+    &15 {
         background: v.$light-grayish-blue;
     }
 
-    &-16 {
+    &16 {
         background-color: v.$blue-700;
     }
 
-    &-17 {
+    &17 {
         background-color: v.$navy-950;
     }
-    &-18 {
+    &18 {
         background-color: v.$grey-200;
     }
-    &-19 {
+    &19 {
         background-color: v.$grey-950;
     }
-    &-20 {
+    &20 {
         background-color: v.$purple-100;
         z-index: -999;
     }
-    &-21 {
+    &21 {
         background-color: v.$green-200;
     }
-    &-27 {
+    &27 {
         background-color: v.$pale-blue;
     }
 
-    &-28 {
+    &28 {
         background-color: v.$rose-100;
     }
 
-    &-29 {
+    &29 {
         background-color: v.$slate-100;
     }
-    &-30 {
+    &30 {
         background-color: v.$grey-50;
     }
 
-    &-31{
-        background-color: v.$blue-100;//;
+    &31 {
+        background-color: v.$blue-100;
     }
+}
+
+.theme {
+    background: var(--bg-color);
+    // color: var(--text-color);
 }

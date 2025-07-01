@@ -13,7 +13,7 @@ const Project17 = () => {
 
 
     return (
-        <div className='container project17'>
+        <div className='container project-17'>
 
             <div className="dashboard__cards">
                 <div className="profile__card">

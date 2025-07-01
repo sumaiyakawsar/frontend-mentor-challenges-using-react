@@ -41,8 +41,8 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 29           | [Mortgage repayment calculator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project29)     | Junior       | ✔️    |
 | 30           | [Interactive Comments](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project30)              | Intermediate | ✔️    |
 | 31           | [Multi Step Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project31)                   | Advanced     | ✔️    |
-| 32           | -------                                                                                                                 | Newbie       | ❌    |
-| 33           | -------                                                                                                                 | Newbie       | ❌    |
+| 32           | [Browser Extension Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project32)            | Junior       | ✔️    |
+| 33           | [Interactive Card Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project33)             | Junior       | ✔️    |
 | 34           | -------                                                                                                                 | Newbie       | ❌    |
 | 35           | -------                                                                                                                 | Newbie       | ❌    |
 | 36           | -------                                                                                                                 | Newbie       | ❌    |

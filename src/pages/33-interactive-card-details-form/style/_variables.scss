@@ -1,0 +1,27 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary 
+$linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); //(active input border)
+$active-border-gradient: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+$red-400: hsl(0, 100%, 66%); //(input errors)
+
+//Neutral
+
+$white: hsl(0, 100%, 100%);
+$gray-200: hsl(270, 3%, 87%);
+$gray-400: hsl(212, 12%, 71%);
+$purple-950: hsl(278, 68%, 11%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// Typography
+$font-size-p: f.rem(18);
+
+// Font
+$font-family: "Space Grotesk", sans-serif;
+
+$font-normal: 500;

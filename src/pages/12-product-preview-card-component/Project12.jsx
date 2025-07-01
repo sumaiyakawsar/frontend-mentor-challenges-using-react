@@ -14,7 +14,7 @@ const Project12 = () => {
   useDocumentTitle("Product preview card | Frontend Mentor");
 
   return (
-    <div className='container project12'>
+    <div className='container project-12'>
       <div className="card">
 
         <div className="img__container">

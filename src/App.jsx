@@ -33,6 +33,8 @@ import Project28 from './pages/28-product-list-with-cart/Project28';
 import Project29 from './pages/29-mortgage-repayment-calculator/Project29';
 import Project30 from './pages/30-interactive-comments/Project30';
 import Project31 from './pages/31-multi-step-form/Project31';
+import Project32 from './pages/32-browser-extensions-manager-ui/Project32';
+import Project33 from './pages/33-interactive-card-details-form/Project33';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -78,6 +80,8 @@ function App() {
     { path: "/project29", element: <Project29 /> },
     { path: "/project30", element: <Project30 /> },
     { path: "/project31", element: <Project31 /> },
+    { path: "/project32", element: <Project32 /> },
+    { path: "/project33", element: <Project33 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

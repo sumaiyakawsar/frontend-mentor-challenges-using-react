@@ -12,7 +12,7 @@ function Project10() {
     useDocumentTitle("Social links profile | Frontend Mentor");
 
     return (
-        <div className="container project10">
+        <div className="container project-10">
             <div className="card">
                 <div className="img__container">
                     <img src={avatar} alt="" className="my_pic" />

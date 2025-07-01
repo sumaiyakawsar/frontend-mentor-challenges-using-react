@@ -88,7 +88,7 @@ const Project29 = () => {
 
 
     return (
-        <div className='project29'>
+        <div className='project-29'>
             <div className="mortgage-calculator">
                 <InputForm
                     formData={formData}

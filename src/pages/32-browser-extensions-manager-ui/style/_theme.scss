@@ -1,0 +1,37 @@
+.theme[data-theme="light"] {
+    --toggle-color: hsl(200, 60%, 99%);
+    --toggle-color-hover: hsl(0, 0%, 93%);
+
+    --toggle-icon-color: hsl(225, 23%, 24%);
+
+    --text-color: hsl(227, 75%, 14%);
+    --text-color-active: hsl(200, 60%, 99%);
+    --text-color-lighter: hsl(226, 25%, 17%);
+    --text-color-hover: hsl(200, 60%, 99%);
+
+    --button-bg: hsl(200, 60%, 99%);
+    --button-bg-active: hsl(3, 77%, 44%);
+    --button-bg-hover: hsl(0, 0%, 93%);
+
+    --card-bg: hsla(200, 60%, 99%, 0.6);
+    --toggle-bg: hsl(0, 0%, 78%);
+}
+
+.theme[data-theme="dark"] {
+    --toggle-color: hsl(225, 23%, 24%);
+    --toggle-color-hover: hsl(226, 11%, 37%);
+
+    --toggle-icon-color: hsl(200, 60%, 99%);
+
+    --text-color: hsl(200, 60%, 99%);
+    --text-color-active: hsl(227, 75%, 14%);
+    --text-color-lighter: hsl(217, 61%, 90%);
+    --text-color-hover: hsl(227, 75%, 14%);
+
+    --button-bg: hsl(225, 23%, 24%);
+    --button-bg-active: hsl(3, 71%, 56%);
+    --button-bg-hover: hsl(226, 11%, 37%);
+
+    --card-bg: hsla(226, 24%, 17%, 0.6);
+    --toggle-bg: hsl(226, 11%, 37%);
+}

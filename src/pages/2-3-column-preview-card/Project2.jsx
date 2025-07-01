@@ -36,7 +36,7 @@ const Project2 = () => {
     ];
     
     return (
-        <div className="container project2">
+        <div className="container project-2">
             <div className="card-container">
                 {vehicleData.map((vehicle, index) => (
                     <VehicleCard key={index} {...vehicle} />

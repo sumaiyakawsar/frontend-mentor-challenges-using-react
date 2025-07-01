@@ -66,7 +66,7 @@ const Project23 = () => {
     };
 
     return (
-        <div className='project23'>
+        <div className='project-23'>
 
             <Navbar
                 toggleMenu={() => setIsMenuOpen(true)}

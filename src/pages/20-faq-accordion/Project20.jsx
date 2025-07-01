@@ -33,7 +33,7 @@ const Project20 = () => {
     useDocumentTitle("FAQ accordion | Frontend Mentor");
 
     return (
-        <div className='project20'>
+        <div className='project-20'>
             <div className="img__container">
                 <picture>
                     <source srcSet={imgMobile} media="(max-width: 600px)" />

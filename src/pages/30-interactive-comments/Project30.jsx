@@ -163,7 +163,7 @@ function Project30() {
     }
 
     return (
-        <div className='project30'>
+        <div className='project-30'>
             <div className="comments-container">
                 {data.comments.map(comment => (
                     <Comment

@@ -62,7 +62,7 @@ const Project18 = () => {
 
 
     return (
-        <div className='container project18'>
+        <div className='container project-18'>
 
             <div className="logo">
                 <img src={logo} alt="logo" />

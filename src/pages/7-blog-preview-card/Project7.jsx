@@ -11,7 +11,7 @@ function Project7() {
     useDocumentTitle(" Blog preview card | Frontend Mentor");
     
     return (
-        <div className="container project7">
+        <div className="container project-7">
             <div className="card">
                 <img src={cardImg} alt="" className="card__img" />
                 <div className="card__details">

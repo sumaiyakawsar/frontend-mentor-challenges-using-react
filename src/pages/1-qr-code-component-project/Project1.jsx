@@ -9,7 +9,7 @@ const Project1 = () => {
   useDocumentTitle("QR code component | Frontend Mentor");
 
   return (
-    <div className="container project1">
+    <div className="container project-1">
       <div className="card">
         <img src={cardImg} alt="qr-code" className="card__img" />
         <h1 className="card__header">

@@ -59,7 +59,7 @@ const Project28 = () => {
     );
 
     return (
-        <div className='project28'>
+        <div className='project-28'>
             <div className="container">
                 <div className="product-list">
                     <h1 className="product-list__title">Desserts</h1>

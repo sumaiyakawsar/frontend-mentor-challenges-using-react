@@ -7,35 +7,42 @@ const Footer = () => {
   const { pathname } = useLocation();
 
 
-  let fgClass = "footer-default";
-  if (pathname.endsWith("/")) fgClass = "footer-main";
-  else if (pathname.endsWith("project1")) fgClass = "footer-1";
-  else if (pathname.endsWith("project2")) fgClass = "footer-2";
-  else if (pathname.endsWith("project3")) fgClass = "footer-3";
-  else if (pathname.endsWith("project9")) fgClass = "footer-9";
-  else if (pathname.endsWith("project10")) fgClass = "footer-10";
-  else if (pathname.endsWith("project11")) fgClass = "footer-11";
-  else if (pathname.endsWith("project12")) fgClass = "footer-12";
-  else if (pathname.endsWith("project13")) fgClass = "footer-13";
-  else if (pathname.endsWith("project14")) fgClass = "footer-14";
-  else if (pathname.endsWith("project15")) fgClass = "footer-15";
-  else if (pathname.endsWith("project16")) fgClass = "footer-16";
-  else if (pathname.endsWith("project17")) fgClass = "footer-17";
-  else if (pathname.endsWith("project18")) fgClass = "footer-18";
-  else if (pathname.endsWith("project19")) fgClass = "footer-19";
-  else if (pathname.endsWith("project20")) fgClass = "footer-20";
-  else if (pathname.endsWith("project21")) fgClass = "footer-21";
-  else if (pathname.endsWith("project22")) fgClass = "footer-22";
-  else if (pathname.endsWith("project23")) fgClass = "footer-23";
-  else if (pathname.endsWith("project24")) fgClass = "footer-24";
-  else if (pathname.endsWith("project25")) fgClass = "footer-25";
-  else if (pathname.endsWith("project26")) fgClass = "footer-26";
-  else if (pathname.endsWith("project27")) fgClass = "footer-27";
-  else if (pathname.endsWith("project28")) fgClass = "footer-28";
-  else if (pathname.endsWith("project29")) fgClass = "footer-29";
-  else if (pathname.endsWith("project30")) fgClass = "footer-30";
-  else if (pathname.endsWith("project31")) fgClass = "footer-31";
+  const lastSegment = pathname.split('/').filter(Boolean).pop();
+  // console.log(lastSegment)
 
+  const footerClassMap = {
+    "": "footer-main", // Home route "/"
+    "project1": "footer-1",
+    "project2": "footer-2",
+    "project3": "footer-3",
+    "project9": "footer-9",
+    "project10": "footer-10",
+    "project11": "footer-11",
+    "project12": "footer-12",
+    "project13": "footer-13",
+    "project14": "footer-14",
+    "project15": "footer-15",
+    "project16": "footer-16",
+    "project17": "footer-17",
+    "project18": "footer-18",
+    "project19": "footer-19",
+    "project20": "footer-20",
+    "project21": "footer-21",
+    "project22": "footer-22",
+    "project23": "footer-23",
+    "project24": "footer-24",
+    "project25": "footer-25",
+    "project26": "footer-26",
+    "project27": "footer-27",
+    "project28": "footer-28",
+    "project29": "footer-29",
+    "project30": "footer-30",
+    "project31": "footer-31",
+    "project32": "footer-32",
+    "project33": "footer-33"
+  };
+
+  const fgClass = footerClassMap[lastSegment ?? ""] || "footer-default";
 
   return (
     <footer id='footer' className={`footer ${fgClass}`}>

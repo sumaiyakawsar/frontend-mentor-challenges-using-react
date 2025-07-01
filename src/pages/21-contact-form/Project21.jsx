@@ -98,7 +98,7 @@ const Project21 = () => {
 
 
     return (
-        <div className='project21'>
+        <div className='project-21'>
             <Toast
                 message="Message Sent!"
                 subtext="Thanks for completing the form. We'll be in touch soon!"

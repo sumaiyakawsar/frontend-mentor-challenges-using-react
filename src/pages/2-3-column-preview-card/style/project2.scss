@@ -2,16 +2,16 @@
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
-.project2 {
+.project-2 {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+
     .card-container {
         width: 50vw;
         display: flex;
-        flex-direction: row;
-        // align-items: center;
+        flex-direction: row; 
         justify-content: center;
         flex-wrap: wrap;
         font-size: v.$font-size-p;

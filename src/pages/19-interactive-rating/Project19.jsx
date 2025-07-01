@@ -19,7 +19,7 @@ const Project19 = () => {
     };
 
     return (
-        <div className='project19'>
+        <div className='project-19'>
             <div className="rating">
                 {!submitted ? (
 

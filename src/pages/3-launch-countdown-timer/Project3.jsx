@@ -85,7 +85,7 @@ const Project3 = () => {
 
     return (
 
-        <div className="container project3">
+        <div className="container project-3">
             <h1 className="heading">We're launching soon</h1>
             <div className="countdown-container">
                 {timeUnits.map((unit) => (

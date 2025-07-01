@@ -12,7 +12,7 @@ function Project11() {
     useDocumentTitle("Recipe page | Frontend Mentor");
 
     return (
-        <div className="container project11">
+        <div className="container project-11">
             <div className="card">
 
                 <div className="img__container">

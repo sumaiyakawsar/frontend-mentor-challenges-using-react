@@ -11,7 +11,7 @@ function Project8() {
     useDocumentTitle(" Profile card component | Frontend Mentor");
 
     return (
-        <div className="container project8">
+        <div className="container project-8">
             <div className="card">
 
                 <div className="card__header">

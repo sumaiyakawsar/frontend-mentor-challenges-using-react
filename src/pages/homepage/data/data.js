@@ -29,6 +29,8 @@ import project28 from "../images/project28-product-list-with-cart.png"
 import Project29 from "../images/project29-mortgage-calculator.png"
 import Project30 from "../images/project30-interactive-comments.png"
 import Project31 from "../images/project31-multi-step-form.png"
+import Project32 from "../images/project32-browser-extensions-manager-ui.png"
+import Project33 from "../images/project33-interactive-card-details-form.png"
 
 
 export const Projects = [
@@ -305,6 +307,23 @@ export const Projects = [
         projectImage: Project31,
         projectLevelNo: "4",
         projectLevel: "advanced",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 32,
+        projectTitle: "Browser extension manager UI",
+        src: "/project32",
+        projectImage: Project32,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 33,
+        projectTitle: "Interactive card details form",
+        src: "/project33",
+        projectImage: Project33,
+        projectLevelNo: "2",
+        projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex"]
     },
     // {

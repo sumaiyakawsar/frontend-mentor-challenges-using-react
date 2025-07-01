@@ -13,7 +13,7 @@ function Project9() {
     useFavicon("icons/project9.png");
     useDocumentTitle("NFT preview card component | Frontend Mentor");
     return (
-        <div className="container project9">
+        <div className="container project-9">
             <div className="card">
                 <div className="img__container">
                     <img src={equilibrium} alt="" className="nft_img" />

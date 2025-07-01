@@ -103,7 +103,7 @@ const Project26 = () => {
     };
 
     return (
-        <div className='project26'>
+        <div className='project-26'>
 
             <header className="header">
                 <div className="container">

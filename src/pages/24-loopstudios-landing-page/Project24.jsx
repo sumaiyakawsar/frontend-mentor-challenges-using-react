@@ -83,7 +83,7 @@ const Project24 = () => {
     ];
 
     return (
-        <div className='project24'>
+        <div className='project-24'>
 
 
             <Header MenuTitles={MenuTitles} />

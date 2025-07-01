@@ -271,9 +271,22 @@
     }
 
     &-31 {
-        // background: v.$white; 
+        // background: v.$white;
         a {
             color: v.$purple-31;
+        }
+    }
+
+    &-32 {
+        a {
+            color: var(--button-bg-active);
+        }
+    }
+    
+    &-33 {
+        display: none;
+        a {
+            color: var(--button-bg-active);
         }
     }
 }

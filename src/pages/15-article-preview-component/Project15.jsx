@@ -21,7 +21,7 @@ const Project15 = () => {
 
 
   return (
-    <div className='container project15'>
+    <div className='container project-15'>
       <div className="card">
         <div className="card-image">
           <img src={drawers} alt="Drawer" className="card__img" />

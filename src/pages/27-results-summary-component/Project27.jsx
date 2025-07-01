@@ -28,7 +28,7 @@ const Project27 = () => {
     }, []);
 
     return (
-        <div className='project27'>
+        <div className='project-27'>
             <div className="result-card">
                 <div className="result-section">
                     <p className="title">Your Result</p>

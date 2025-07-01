@@ -11,7 +11,7 @@ const Project14 = () => {
   useDocumentTitle("Testimonials grid section | Frontend Mentor");
 
   return (
-    <div className='container project14'>
+    <div className='container project-14'>
       <div className="card-wrapper">
 
         {testimonialsData.map((testimonial, index) => (

@@ -46,7 +46,7 @@ const Project16 = () => {
     };
 
     return (
-        <div className='container project16'>
+        <div className='container project-16'>
             <div className="newsletter">
                 {/* Sign-up form start   */}
                 {!submitted ? (

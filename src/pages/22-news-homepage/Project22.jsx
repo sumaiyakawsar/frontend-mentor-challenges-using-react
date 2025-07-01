@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
 import './style/project22.scss';
-
-// import iconMenuClose from './images/icon-menu-close.svg'
-
+ 
 import imgGaming from './images/image-gaming-growth.jpg'
 import imgRetro from './images/image-retro-pcs.jpg'
 import imgLaptops from './images/image-top-laptops.jpg'
@@ -42,7 +40,7 @@ const Project22 = () => {
         { img: imgGaming, title: "The Growth of Gaming", content: "How the pandemic has sparked fresh opportunities." },
     ];
     return (
-        <div className='project22'>
+        <div className='project-22'>
 
             <Navbar toggleMenu={() => setIsMenuOpen(true)} menuTitles={MenuTitles} />
             {isMenuOpen && <MobileMenu isOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} menuTitles={MenuTitles} />}

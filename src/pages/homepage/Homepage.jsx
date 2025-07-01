@@ -9,15 +9,6 @@ function Homepage() {
     useFavicon("icons/main.png");
     useDocumentTitle("Frontend Mentor Challenges by SK");
 
-
-    // const [filter, setFilter] = useState("all");
-
-    // const levels = ["all", "newbie", "junior", "intermediate", "advanced"];
-
-    // const filteredProjects =
-    //     filter === "all"
-    //         ? Projects
-    //         : Projects.filter((project) => project.projectLevel.toLowerCase() === filter);
     const [levelFilter, setLevelFilter] = useState("all");
     const [tagFilter, setTagFilter] = useState("all");
 
@@ -33,6 +24,7 @@ function Homepage() {
             project.projectTags.includes(tagFilter);
         return matchLevel && matchTag;
     });
+
     return (
         <section className='projects'>
 
@@ -62,6 +54,7 @@ function Homepage() {
                     </button>
                 ))}
             </div>
+            
             <div className='projects__filtered'>
                 {filteredProjects.map((menu, id) => (
                     <div>

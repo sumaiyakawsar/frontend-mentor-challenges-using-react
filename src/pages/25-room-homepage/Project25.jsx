@@ -25,7 +25,7 @@ const Project25 = () => {
 
 
     return (
-        <div className='project25'>
+        <div className='project-25'>
             <Navbar toggleMenu={() => setIsMenuOpen(true)} menuTitles={MenuTitles} />
 
             {isMenuOpen && <MobileMenu isOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} menuTitles={MenuTitles} />}

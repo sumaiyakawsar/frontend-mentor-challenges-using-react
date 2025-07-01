@@ -84,7 +84,7 @@ function Project31() {
     };
 
     return (
-        <div className='project31'>
+        <div className='project-31'>
 
             <div className="multi-step-form">
                 <Sidebar currentStep={currentStep} />

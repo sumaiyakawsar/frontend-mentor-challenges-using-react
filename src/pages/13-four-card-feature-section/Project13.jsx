@@ -12,7 +12,7 @@ const Project13 = () => {
   useDocumentTitle("Four card feature section | Frontend Mentor");
 
   return (
-    <div className='container project13'>
+    <div className='container project-13'>
       <div className='project-header'>
         <h1> Reliable, efficient delivery</h1>
         <h2> Powered by Technology</h2>
