@@ -1,0 +1,16 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+.project-35 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

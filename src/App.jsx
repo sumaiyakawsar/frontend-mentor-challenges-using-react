@@ -35,6 +35,8 @@ import Project30 from './pages/30-interactive-comments/Project30';
 import Project31 from './pages/31-multi-step-form/Project31';
 import Project32 from './pages/32-browser-extensions-manager-ui/Project32';
 import Project33 from './pages/33-interactive-card-details-form/Project33';
+import Project34 from './pages/34-expenses-chart-component/Project34';
+import Project35 from './pages/35-ping-coming-soon-page/Project35';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -82,6 +84,8 @@ function App() {
     { path: "/project31", element: <Project31 /> },
     { path: "/project32", element: <Project32 /> },
     { path: "/project33", element: <Project33 /> },
+    { path: "/project34", element: <Project34 /> },
+    { path: "/project35", element: <Project35 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

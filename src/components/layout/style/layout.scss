@@ -90,9 +90,11 @@
     &31 {
         background-color: v.$blue-100;
     }
+    &34{
+        background-color: v.$red-100;
+    }
 }
 
 .theme {
-    background: var(--bg-color);
-    // color: var(--text-color);
+    background: var(--bg-color); 
 }

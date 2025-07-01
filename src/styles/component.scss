@@ -282,11 +282,16 @@
             color: var(--button-bg-active);
         }
     }
-    
+
     &-33 {
-        display: none;
         a {
-            color: var(--button-bg-active);
+            color: v.$purple-33;
+        }
+    }
+
+    &-34 {
+        a {
+            color: v.$red-34;
         }
     }
 }

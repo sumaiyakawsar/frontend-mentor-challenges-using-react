@@ -1,0 +1,27 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary
+$red-500: hsl(10, 79%, 65%);
+$blue-300: hsl(186, 34%, 65%);
+
+//Neutral
+$white: hsl(0, 100%, 100%);
+
+$brown-950: hsl(25, 47%, 15%);
+$brown-400: hsl(28, 10%, 53%);
+$red-100: hsl(26, 66%, 93%);
+
+$box-shadow:
+    0 10px 30px rgba(17, 17, 17, 0.068),
+    0 4px 6px rgba(0, 0, 0, 0.322);
+
+// ## Typography
+$font-size-p: f.rem(18);
+
+// Font
+$font-family: "DM Sans", sans-serif;
+
+$font-normal: 400;
+$font-bold: 700;

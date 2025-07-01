@@ -1,0 +1,28 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary
+$blue: hsl(223, 87%, 63%);
+
+// Secondary
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+//Neutral
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+$box-shadow:
+    0 10px 30px rgba(17, 17, 17, 0.068),
+    0 4px 6px rgba(0, 0, 0, 0.322);
+
+// ## Typography
+$font-size-p: f.rem(20);
+
+// Font
+$font-family: "Overpass", sans-serif;
+
+$font-normal: 300;
+$font-bold: 600;
+$font-bolder: 700;

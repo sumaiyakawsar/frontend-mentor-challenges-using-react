@@ -1,0 +1,77 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;700&display=swap");
+
+.project-34 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: f.rem(28);
+
+    .expense__header {
+        background: v.$red-500;
+        border-radius: f.rem(12);
+        padding: f.rem(32);
+        display: flex;
+        justify-content: space-between;
+        color: v.$red-100;
+        .balance {
+            span {
+                font-size: f.rem(16);
+            }
+            .amount {
+                font-size: f.rem(28);
+            }
+        }
+    }
+
+    .chart__card {
+        background: v.$white;
+        box-shadow: v.$box-shadow;
+        border-radius: f.rem(12);
+        padding: f.rem(32);
+        .chart {
+            padding-bottom: f.rem(32);
+
+            h1 {
+                font-size: f.rem(28);
+                color: v.$brown-950;
+            }
+        }
+        .card__footer {
+            border-top: v.$red-100 1px solid;
+            padding-top: f.rem(16);
+            span {
+                font-size: f.rem(14);
+                color: v.$brown-400;
+            }
+            .amounts {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .total {
+                    font-size: f.rem(32);
+                    font-weight: v.$font-bold;
+                    color: v.$brown-950;
+                }
+
+                .difference {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    font-size: f.rem(12);
+                    .amount {
+                        color: v.$brown-950;
+                        font-weight: v.$font-bold;
+                    }
+                }
+            }
+        }
+    }
+}

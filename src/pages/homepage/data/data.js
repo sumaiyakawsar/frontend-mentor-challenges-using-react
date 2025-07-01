@@ -31,6 +31,9 @@ import Project30 from "../images/project30-interactive-comments.png"
 import Project31 from "../images/project31-multi-step-form.png"
 import Project32 from "../images/project32-browser-extensions-manager-ui.png"
 import Project33 from "../images/project33-interactive-card-details-form.png"
+import Project34 from "../images/project34-expenses-chart-component.png"
+
+import Project35 from "../images/project33-interactive-card-details-form.png"
 
 
 export const Projects = [
@@ -324,6 +327,25 @@ export const Projects = [
         projectImage: Project33,
         projectLevelNo: "2",
         projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+
+    {
+        projectId: 34,
+        projectTitle: "Expenses chart component",
+        src: "/project34",
+        projectImage: Project34,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 35,
+        projectTitle: "Ping coming soon page",
+        src: "/project35",
+        projectImage: Project35,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
         projectTags: ["React", "SCSS", "Flex"]
     },
     // {
