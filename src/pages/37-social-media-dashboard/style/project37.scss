@@ -1,0 +1,288 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "mq" as *;
+@use "theme";
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@400;700&display=swap");
+
+.project-37 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    color: var(--text-color);
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        padding: f.rem(16);
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(32);
+
+        @include breakpoint(medium) {
+            width: 75%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 240px;
+                width: 100%;
+                background: var(--top-bg);
+                z-index: 0;
+            }
+
+            > * {
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        .header__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .title__summary {
+                padding-block: f.rem(16);
+                border-bottom: 1px solid var(--text-color);
+
+                @include breakpoint(medium) {
+                    border: none;
+                }
+                h1 {
+                    color: var(--text-color-lighter);
+                }
+                span {
+                    font-weight: v.$font-bold;
+                }
+            }
+
+            .theme-toggle {
+                padding-block: f.rem(16);
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                @include breakpoint(medium) {
+                    gap: f.rem(16);
+                    width: auto;
+                }
+
+                span {
+                    font-weight: v.$font-bolder;
+                }
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 40px;
+                    height: 22px;
+
+                    input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+
+                        &:focus + .slider,
+                        &:hover + .slider {
+                            background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+                        }
+
+                        &:checked + .slider::before {
+                            transform: translateX(16px);
+                        }
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: var(--toggle-bg);
+                        transition: 0.4s;
+                        border-radius: 34px;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            height: 16px;
+                            width: 16px;
+                            left: 4px;
+                            bottom: 3px;
+                            background-color: var(--bg-color);
+                            transition: 0.4s;
+                            border-radius: 50%;
+                        }
+
+                        &.light {
+                            &:hover::before {
+                                background-color: color-mix(in srgb, black 5%, var(--bg-color));
+                            }
+                        }
+                        &.dark {
+                            &:hover::before {
+                                background-color: color-mix(in srgb, white 5%, var(--bg-color));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        h2 {
+            color: var(--text-color-lighter);
+            padding-block-end: f.rem(16);
+        }
+
+        .summary__cards,
+        .today__overview {
+            display: grid;
+            align-items: center;
+            gap: f.rem(32);
+
+            // Responsive layout for tablets
+            @include breakpoint(small) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            // Responsive layout for desktops
+            @include breakpoint(medium) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .social__card,
+            .stats__card {
+                border-radius: f.rem(8);
+                background: var(--card-bg);
+                padding: f.rem(24);
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                &.dark {
+                    &:hover {
+                        background-color: color-mix(in srgb, white 5%, var(--card-bg));
+                    }
+                }
+                &.light {
+                    &:hover {
+                        background-color: color-mix(in srgb, black 5%, var(--card-bg));
+                    }
+                }
+
+                .handle,
+                .change {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: f.rem(8);
+                    font-size: f.rem(12);
+                    font-weight: v.$font-bolder;
+                }
+
+                .count {
+                    .followers {
+                        font-size: f.rem(48);
+
+                        font-weight: v.$font-bolder;
+                        color: var(--text-color-lighter);
+                    }
+                    .label {
+                        letter-spacing: f.rem(4);
+                        text-align: center;
+                        font-size: f.rem(14);
+                    }
+                }
+                .change {
+                    font-weight: v.$font-bold;
+                    .change-icon {
+                        vertical-align: middle;
+                    }
+                    .positive {
+                        color: v.$lime-green;
+                    }
+                    .negative {
+                        color: v.$bright-red;
+                    }
+                }
+            }
+
+            .social__card {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: f.rem(16);
+
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 4px;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                &.facebook::before {
+                    background-color: v.$facebook;
+                }
+
+                &.instagram::before {
+                    background: v.$instagram;
+                }
+
+                &.twitter::before {
+                    background-color: v.$twitter;
+                }
+
+                &.youtube::before {
+                    background-color: v.$youTube;
+                }
+            }
+
+            .stats__card {
+                gap: f.rem(24);
+
+                > * {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .stat__header {
+                    .stat__label {
+                        font-weight: v.$font-bolder;
+                    }
+                    .logo {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .stat__footer {
+                    .stat__count {
+                        font-size: f.rem(22);
+                        font-weight: v.$font-bolder;
+                        color: var(--text-color-lighter);
+                    }
+                }
+            }
+        }
+    }
+}

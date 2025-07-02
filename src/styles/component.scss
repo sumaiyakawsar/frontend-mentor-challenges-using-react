@@ -271,7 +271,6 @@
     }
 
     &-31 {
-        // background: v.$white;
         a {
             color: v.$purple-31;
         }
@@ -295,7 +294,7 @@
         }
     }
     &-35 {
-        color:v.$gray-35;
+        color: v.$gray-35;
         .socials {
             .social__icon {
                 border-radius: 50%;
@@ -314,6 +313,18 @@
         }
         a {
             color: v.$blue-35;
+        }
+    }
+
+    &-37 {
+        a {
+            background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            // Optional for other browsers:
+            background-clip: text;
+            color: transparent;
         }
     }
 }

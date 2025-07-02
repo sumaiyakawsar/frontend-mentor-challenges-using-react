@@ -100,6 +100,16 @@
                 color: v.$flexbx;
             }
         }
+
+        .tag-theme{
+            background-color: red;
+            color: white;
+
+            &.active {
+                color: red;
+            }
+        }
+
         .tag-all {
             background-color: #555;
             color: white;
@@ -190,6 +200,7 @@
 
                     h4 {
                         padding: f.rem(6) 0;
+                        color:darkred;
                     }
 
                     .level {
@@ -271,6 +282,10 @@
                         }
                         &.flex {
                             color: v.$flexbx;
+                        }
+
+                        &.theme {
+                            color: rgba(0, 0, 0, 0.753);
                         }
                     }
                 }

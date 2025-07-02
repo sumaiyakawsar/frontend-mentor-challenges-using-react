@@ -34,6 +34,9 @@ import Project33 from "../images/project33-interactive-card-details-form.png"
 import Project34 from "../images/project34-expenses-chart-component.png"
 import Project35 from "../images/project35-ping-coming-soon-page.png"
 
+import Project36 from "../images/project35-ping-coming-soon-page.png"
+import Project37 from "../images/project37-social-media-dashboard.png"
+
 
 export const Projects = [
     {
@@ -72,7 +75,7 @@ export const Projects = [
         projectImage: project4,
         projectLevelNo: "4",
         projectLevel: "advanced",
-        projectTags: ["React", "SCSS", "Flex", "API"]
+        projectTags: ["React", "SCSS", "Flex", "API", "Theme"]
     },
     {
         projectId: 5,
@@ -317,7 +320,7 @@ export const Projects = [
         projectImage: Project32,
         projectLevelNo: "2",
         projectLevel: "junior",
-        projectTags: ["React", "SCSS", "Flex"]
+        projectTags: ["React", "SCSS", "Flex", "Theme"]
     },
     {
         projectId: 33,
@@ -346,6 +349,24 @@ export const Projects = [
         projectLevelNo: "1",
         projectLevel: "newbie",
         projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 36,
+        projectTitle: "Todo app",
+        src: "/project36",
+        projectImage: Project36,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Flex"]
+    },
+    {
+        projectId: 37,
+        projectTitle: "Social media dashboard",
+        src: "/project37",
+        projectImage: Project37,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Flex", "Theme"]
     },
     // {
     //     projectId: 1,

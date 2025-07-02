@@ -1,4 +1,6 @@
-.theme[data-theme="light"] {
+.theme[data-theme="light"].project32 {
+    --bg-color: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+
     --toggle-color: hsl(200, 60%, 99%);
     --toggle-color-hover: hsl(0, 0%, 93%);
 
@@ -17,7 +19,9 @@
     --toggle-bg: hsl(0, 0%, 78%);
 }
 
-.theme[data-theme="dark"] {
+.theme[data-theme="dark"].project32 {
+    --bg-color: linear-gradient(180deg, #040918 0%, #091540 100%);
+
     --toggle-color: hsl(225, 23%, 24%);
     --toggle-color-hover: hsl(226, 11%, 37%);
 

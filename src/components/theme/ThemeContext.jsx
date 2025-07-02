@@ -1,15 +1,14 @@
-// project1/context/ThemeContext.js
 import { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProvider = ({ children, projectId }) => {
     const [theme, setTheme] = useState(() => {
-        return localStorage.getItem("theme") || "light";
+        return localStorage.getItem(`${projectId}-theme`) || "light";
     });
 
     useEffect(() => {
-        localStorage.setItem("theme", theme);
+        localStorage.setItem(`${projectId}-theme`, theme);
     }, [theme]);
 
     const toggleTheme = () => {
@@ -20,7 +19,7 @@ export const ThemeProvider = ({ children }) => {
 
     return (
         <ThemeContext.Provider value={value}>
-            <div className="theme" data-theme={theme}>
+            <div className={`theme ${projectId}`} data-theme={theme}>
                 {children}
             </div>
         </ThemeContext.Provider>

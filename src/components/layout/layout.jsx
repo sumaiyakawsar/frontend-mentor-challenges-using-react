@@ -19,15 +19,11 @@ const Layout = ({ children }) => {
         bgClass = lastSegment;
     }
 
-    const themedProjects = ["project32"];
+    const themedProjects = ["project32","project36", "project37"];
     if (themedProjects.includes(lastSegment)) {
         themeClass = `theme-${lastSegment}`;
     }
-    // if (themedProjects.includes(lastSegment)) {
-    //     bgClass = `project32`;
-    // } else if (lastSegment.startsWith("project")) {
-    //     bgClass = lastSegment;
-    // }
+   
     // if (pathname.endsWith("project1")) bgClass = "project-1";
     // else if (pathname.endsWith("project2")) bgClass = "project-2";
     // else if (pathname.endsWith("project3")) bgClass = "project-3";
@@ -60,7 +56,7 @@ const Layout = ({ children }) => {
 
 
     return themedProjects.includes(lastSegment) ? (
-        <ThemeProvider>{content}</ThemeProvider>
+        <ThemeProvider projectId={lastSegment}>{content}</ThemeProvider>
     ) : (
         content
     );

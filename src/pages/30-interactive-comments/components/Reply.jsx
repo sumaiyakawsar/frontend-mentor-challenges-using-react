@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import ReplyInput from './ReplyInput'
-import { timeAgo } from '../../../components/timeAgo'
 import { FaReply, FaPencilAlt, FaPlus, FaMinus } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import { timeAgo } from '../../../components/utility/timeAgo';
 
 const Reply = ({ reply, currentUser, onReply, onUpdate, onDelete, onVote, getNextId }) => {
     const [isEditing, setIsEditing] = useState(false)
