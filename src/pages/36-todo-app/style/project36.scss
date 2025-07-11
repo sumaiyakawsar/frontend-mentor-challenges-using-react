@@ -1,18 +1,23 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+@use "mq" as *;
+@use "theme";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
 .project-36 {
     font-family: v.$font-family;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
 
-    line-height: 1.5;
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     flex-direction: column;
+    position: relative;
+
+    min-height: 100vh;
+    padding-top: f.em(300);
     .img__container {
         position: absolute;
         top: 0;
@@ -24,82 +29,302 @@
             object-fit: cover;
         }
     }
-    .accordion_container {
-        background: v.$white;
-        padding: f.rem(32);
-        border-radius: f.rem(12);
-        min-width: f.em(360);
-        max-width: f.em(600);
-        z-index: 20;
 
-        .faq-header {
+    .todo__container {
+        position: relative;
+        top: unset;
+        margin-top: -290px;
+        width: 90vw;
+        max-width: f.em(600);
+        padding-inline: 1rem;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(32);
+
+        .todo__header {
+            padding-block: f.rem(32);
             display: flex;
-            gap: f.rem(32);
+            justify-content: space-between;
             align-items: center;
 
-            .faq-icon {
-                img {
+            > * {
+                color: white;
+                font-weight: v.$font-bold;
+            }
+            h1 {
+                letter-spacing: 0.3em;
+                text-transform: uppercase;
+            }
+            .theme-toggle {
+                background: none;
+                > * {
                     width: f.em(30);
                     height: f.em(30);
                 }
             }
         }
 
-        .faq-card {
-            .faq-item {
-                border-top: 1px solid #eee;
+        .todo__body {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(32);
 
-                &:first-of-type {
-                    border-top: none;
+            .todo-input {
+                border-radius: f.rem(8);
+
+                padding: 1.2rem 1.5rem;
+                box-shadow: v.$box-shadow;
+                background: var(--form-bg);
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .circle {
+                    width: 22px;
+                    height: 22px;
+                    border: 1px solid #ccc;
+                    border-radius: 50%;
+                    flex-shrink: 0;
                 }
 
-                .faq-question {
-                    padding: 1rem 0;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    background: none;
-                    border: none;
-                    font-weight: v.$font-x-bold;
-                    font-size: v.$font-size-p;
-                    cursor: pointer;
-
-                    span:hover {
-                        color: v.$purple-700;
-                    }
-
-                    // Focus outline
-                    &:focus,
-                    &:focus-visible {
-                        color: v.$purple-700;
-                    }
-                }
-
-                .faq-answer {
-                    max-height: 0;
+                .sr-only {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
                     overflow: hidden;
-                    transition:
-                        max-height 0.4s ease,
-                        padding 0.4s ease;
-
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    color: v.$purple-600;
-                    font-size: 0.95rem;
+                    clip: rect(0, 0, 0, 0);
+                    white-space: nowrap;
+                    border: 0;
                 }
 
-                &.open {
-                    .faq-question { 
-                        span {
-                            color: v.$purple-700;
+                input {
+                    width: 100%;
+                    border: none;
+                    font-size: 1rem;
+                    background: none;
+                    color: var(--text-color);
+
+                    &::placeholder {
+                        color: v.$dark-grayish-blue;
+                        letter-spacing: 0.1em;
+                    }
+                }
+            }
+
+            .todo__box {
+                border-radius: f.rem(8);
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+
+                .empty-message {
+                    text-align: center;
+                    padding: 2rem;
+                    font-size: 1rem;
+                    font-weight: v.$font-bold;
+                    color: var(--footer-color);
+                    background: var(--form-bg);
+                    border-top-left-radius: f.rem(8);
+                    border-top-right-radius: f.rem(8);
+                }
+
+                .todo-list {
+                    background: var(--form-bg);
+                    padding: 0;
+                    list-style: none;
+                    overflow: hidden;
+
+                    .todo-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 1rem;
+                        padding: 1.2rem 1.5rem;
+                        border-bottom: 1px solid var(--footer-color);
+                        position: relative;
+                        color: var(--text-color);
+
+                        .todoo {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            flex: 1;
+
+                            .checkmark-wrapper {
+                                background: transparent;
+                                background-image: #ccc;
+                                padding: 1px;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: background 0.3s ease;
+
+                                &:hover {
+                                    background-image: v.$check-background;
+                                }
+
+                                .checkmark {
+                                    width: 22px;
+                                    height: 22px;
+                                    border-radius: 50%;
+                                    background: var(--form-bg);
+                                    cursor: pointer;
+                                    position: relative;
+                                    display: block;
+                                    border: 1px solid #ccc;
+
+                                    &.checked {
+                                        background: v.$check-background;
+
+                                        &::after {
+                                            content: "✓";
+                                            color: white;
+                                            font-size: 14px;
+                                            position: absolute;
+                                            top: 1px;
+                                            left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .text {
+                                font-size: 1rem;
+                                color: var(--text-color);
+                                cursor: pointer;
+                                &.completed {
+                                    text-decoration: line-through;
+                                    color: var(--completed);
+                                }
+                            }
+                        }
+
+                        .btn__container {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+
+                            @include breakpoint(medium) {
+                                opacity: 0;
+                            }
+
+                            .delete-btn {
+                                background: none;
+                                border: none;
+                                font-size: 1.2rem;
+                                color: #bbb;
+
+                                transition: opacity 0.2s ease;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: v.$bright-blue;
+                                }
+                            }
+                        }
+
+                        &:hover .btn__container {
+                            opacity: 1;
                         }
                     }
-                    .faq-answer { 
-                        max-height: 500px;
-                        padding-bottom: 1rem;
+                }
+
+                .todo__footer {
+                    border-radius: f.rem(8);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 0.9rem;
+                    color: var(--text);
+                    flex-wrap: wrap;
+                    gap: 2rem;
+
+                    @include breakpoint(medium) {
+                        border-radius: 0;
+                        background: var(--form-bg);
+                        flex-direction: row;
+                        justify-content: space-between;
+                        box-shadow: v.$box-shadow;
+                    }
+
+                    .top {
+                        border-bottom-left-radius: f.rem(8);
+                        border-bottom-right-radius: f.rem(8);
+
+                        width: 100%;
+                        padding: 1.2rem 1.5rem;
+                        background: var(--form-bg);
+                        color: var(--footer-color);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        @include breakpoint(medium) {
+                            width: auto;
+                            border-radius: 0;
+                        }
+                    }
+
+                    .buttons {
+                        width: 100%;
+                        padding: 1.2rem 1.5rem;
+                        border-top-left-radius: f.rem(8);
+                        border-top-right-radius: f.rem(8);
+
+                        display: flex;
+                        justify-content: center;
+                        gap: 0.5rem;
+                        background: var(--form-bg);
+                        @include breakpoint(medium) {
+                            width: auto;
+                            border-radius: 0;
+                        }
+                    }
+
+                    button {
+                        font-weight: v.$font-bold;
+
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        padding: 0.3rem 0.8rem;
+                        border-radius: 5px;
+                        color: var(--footer-color);
+                        transition: background 0.2s;
+
+                        &:hover {
+                            color: var(--footer-color-hover);
+                        }
+
+                        &.active {
+                            color: v.$bright-blue;
+                        }
+
+                        &.clear__all {
+                            display: none;
+                            @include breakpoint(medium) {
+                                display: block;
+                            }
+                        }
+
+                        &.clear__all__mobile {
+                            display: block;
+
+                            @include breakpoint(medium) {
+                                display: none;
+                            }
+                        }
                     }
                 }
+            }
+            
+            .info {
+                padding: f.rem(32);
+                text-align: center;
+                font-size: f.rem(14);
+                color: v.$dark-grayish-blue;
+                font-weight: v.$font-bold;
             }
         }
     }

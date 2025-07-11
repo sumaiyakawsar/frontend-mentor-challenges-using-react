@@ -1,0 +1,21 @@
+.theme[data-theme="light"].project36 {
+    --bg-color: hsl(236, 33%, 92%);
+    --form-bg: hsl(0, 0%, 98%);
+
+    --text-color: hsl(237, 14%, 26%);
+    --completed: hsl(234, 39%, 85%);
+    // --info-color:;
+    --footer-color: hsl(236, 9%, 61%);
+    --footer-color-hover: hsl(235, 19%, 35%);
+}
+
+.theme[data-theme="dark"].project36 {
+    --bg-color: hsl(235, 21%, 11%);
+    --form-bg: hsl(235, 24%, 19%);
+
+    --text-color:  hsl(233, 11%, 84%);
+    --completed: hsl(233, 14%, 35%);
+    // --info-color:;
+    --footer-color: hsl(233, 14%, 35%);
+    --footer-color-hover: hsl(236, 33%, 92%);
+}

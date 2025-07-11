@@ -45,9 +45,10 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 33           | [Interactive Card Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project33)             | Junior       | ✔️    |
 | 34           | [Expenses Chart Component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project34)             | Junior       | ❌    |
 | 35           | [Ping Coming Soon Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project35)             | Newbie       | ❌    |
-| 36           | -------                                                                                                                 | Newbie       | ❌    |
-| 37           | -------                                                                                                                 | Newbie       | ❌    |
-
+| 36           |[Todo app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project36)                                                                                                               | Intermediate       | ❌    |
+| 37           | [Social Media Dashboard](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project37)                                                                                                                | Junior       | ❌    |
+| 38           | --------                                                                                                        | Junior       | ❌    |
+| 39           | ------                                                                                                             | Junior       | ❌    |
 
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)

@@ -1,16 +1,16 @@
-# Frontend Mentor - FAQ accordion
+# Frontend Mentor - Todo app solution
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project20">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project36">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/20-faq-accordion">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/36-todo-app">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz">
+    <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW">
       Challenge
     </a>
   </h3>
@@ -25,14 +25,20 @@
 
 Users should be able to:
  
-- [x] Hide/Show the answer to a question when the question is clicked
-- [x] Navigate the questions and hide/show answers using keyboard navigation alone
-- [x] View the optimal layout for the interface depending on their device's screen size
-- [x] See hover and focus states for all interactive elements on the page
-  
+- [x] View the optimal layout for the app depending on their device's screen size
+- [x] See hover states for all interactive elements on the page
+- [x] Add new todos to the list
+- [x] Mark todos as complete
+- [x] Delete todos from the list
+- [x] Filter by all/active/complete todos
+- [x] Clear all completed todos
+- [x] Toggle light and dark mode
+- [x] **Bonus**: Drag and drop to reorder items on the list 
+
+
 ### Screenshot
 
-![Screenshot](../homepage/images/project20-faq-accordion.png)
+![Screenshot](../homepage/images/project36-todo-app.png)
 
  
 

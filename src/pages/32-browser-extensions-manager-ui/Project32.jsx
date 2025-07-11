@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { BsSun, BsMoon } from "react-icons/bs";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
@@ -75,7 +75,6 @@ function Project32() {
 
                     <button onClick={toggleTheme} className={`theme-toggle ${theme}`} >
                         {theme === "light" ? <BsMoon /> : <BsSun />}
-
                     </button>
 
 

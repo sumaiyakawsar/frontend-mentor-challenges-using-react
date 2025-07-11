@@ -34,7 +34,7 @@ import Project33 from "../images/project33-interactive-card-details-form.png"
 import Project34 from "../images/project34-expenses-chart-component.png"
 import Project35 from "../images/project35-ping-coming-soon-page.png"
 
-import Project36 from "../images/project35-ping-coming-soon-page.png"
+import Project36 from "../images/project36-todo-app.png"
 import Project37 from "../images/project37-social-media-dashboard.png"
 
 
@@ -357,7 +357,7 @@ export const Projects = [
         projectImage: Project36,
         projectLevelNo: "3",
         projectLevel: "intermediate",
-        projectTags: ["React", "SCSS", "Flex"]
+        projectTags: ["React", "SCSS", "Flex", "Theme"]
     },
     {
         projectId: 37,

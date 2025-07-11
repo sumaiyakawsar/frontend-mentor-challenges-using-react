@@ -1,4 +1,4 @@
-# Frontend Mentor - Browser extensions manager UI solution
+# Frontend Mentor - Social Media Dashboard solution
 
 
 <div align="center">

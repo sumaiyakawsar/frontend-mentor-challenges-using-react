@@ -231,10 +231,6 @@
                     flex-direction: column;
                     gap: f.rem(32);
 
-                    // > * {
-                    //     max-width: 100%;
-                    // }
-
                     .intro {
                         h1 {
                             font-size: clamp(f.rem(24), 5vw, f.rem(32));
