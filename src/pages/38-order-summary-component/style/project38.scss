@@ -1,4 +1,4 @@
-@use "../../../styles/functions" as f; 
+@use "../../../styles/functions" as f;
 @use "../../../styles/mq" as *;
 @use "../../../styles/font" as fo;
 @use "variables" as v;
@@ -14,7 +14,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    padding-block: f.rem(34);
+    
     .btn {
         background: none;
         text-align: center;
