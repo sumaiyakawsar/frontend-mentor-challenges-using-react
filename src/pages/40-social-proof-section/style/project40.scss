@@ -22,9 +22,7 @@
         @include breakpoint(medium) {
             width: 70vw;
         }
-        // > * {
-        //     outline: 1px dashed red;
-        // }
+      
 
         .top {
             display: flex;
@@ -39,12 +37,13 @@
                 gap: f.rem(32);
 
                 @include breakpoint(medium) {
-                    width: 600px;
+                    min-width: 400px;
+                    width: 40%;
                 }
 
                 h1 {
                     color: v.$very-dark-magenta;
-                    font-size: f.rem(72);
+                    font-size: 4vw;
                     text-align: center;
                     @include breakpoint(medium) {
                         text-align: left;
