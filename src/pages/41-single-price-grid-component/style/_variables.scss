@@ -1,0 +1,22 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+$teal-500: hsl(179, 62%, 43%);
+$green-400: hsl(71, 73%, 54%);
+
+// Neutral
+$teal-100: hsl(204, 43%, 93%);
+$gray-500: hsl(218, 22%, 67%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// Typography
+$font-size-p: f.rem(16);
+
+$font-family: "Karla", sans-serif;
+
+$font-normal: 400;
+$font-bold: 700;

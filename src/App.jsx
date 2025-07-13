@@ -42,6 +42,7 @@ import Project37 from './pages/37-social-media-dashboard/Project37';
 import Project38 from './pages/38-order-summary-component/Project38';
 import Project39 from './pages/39-stats-preview-card-component/Project39';
 import Project40 from './pages/40-social-proof-section/Project40';
+import Project41 from './pages/41-single-price-grid-component/Project41';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -96,6 +97,7 @@ function App() {
     { path: "/project38", element: <Project38 /> },
     { path: "/project39", element: <Project39 /> },
     { path: "/project40", element: <Project40 /> },
+    { path: "/project41", element: <Project41 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

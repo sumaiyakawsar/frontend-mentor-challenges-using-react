@@ -1,0 +1,109 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+.project-41 {
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: v.$font-family;
+    padding: f.rem(32);
+
+    .card {
+        box-shadow: v.$box-shadow;
+        border-radius: f.rem(8);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+
+        @include breakpoint(medium) {
+            width: 50vw;
+        }
+        .description {
+            background-color: white;
+            padding: f.rem(32);
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+            h1 {
+                color: v.$teal-500;
+            }
+
+            h2 {
+                color: v.$green-400;
+            }
+            p {
+                color: v.$gray-500;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            color: v.$teal-100;
+            @include breakpoint(medium) {
+                flex-direction: row;
+            }
+            .subscription {
+                background-color: v.$teal-500;
+                padding: f.rem(32);
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: f.rem(32);
+
+                .price {
+                    display: flex;
+                    align-items: center;
+                    gap: f.rem(8);
+                    .amount {
+                        font-weight: v.$font-bold;
+                        font-size: f.rem(28);
+                    }
+
+                    span {
+                        color: v.$teal-100;
+                    }
+                }
+
+                .btn {
+                    text-align: center;
+                    padding: f.rem(16);
+                    border-radius: f.rem(8);
+                    background-color: v.$green-400;
+                    color: inherit;
+                    font-weight: v.$font-bold;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: color-mix(in srgb, white 20%, v.$green-400);
+                    }
+                }
+            }
+
+            .why {
+                background-color: color-mix(in srgb, white 25%, v.$teal-500);
+
+                padding: f.rem(32);
+                flex: 1;
+
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(24);
+
+                ul {
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}

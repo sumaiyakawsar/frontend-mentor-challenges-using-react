@@ -47,16 +47,17 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 35           | [Ping Coming Soon Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project35)             | Newbie       | ✔️    |
 | 36           | [Todo app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project36)                          | Intermediate | ✔️    |
 | 37           | [Social Media Dashboard](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project37)            | Junior       | ✔️    |
-| 38           | [Order summary card](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project38)                                                                                                  | Newbie       | ✔️    |
-| 39           | [Stats preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project39)                                                                                        | Newbie       | ✔️    |
-| 40           | [Social proof section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project40)                                                                                                | Newbie       | ✔️    |
-| 39           | ------                                                                                                                  | Junior       | ❌    |
-| 39           | ------                                                                                                                  | Junior       | ❌    |
+| 38           | [Order summary card](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project38)                | Newbie       | ✔️    |
+| 39           | [Stats preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project39)      | Newbie       | ✔️    |
+| 40           | [Social proof section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project40)              | Newbie       | ✔️    |
+| 41           | [Single price grid component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project41)       | Newbie       | ✔️    |
+| 42           | [Base Apparel coming soon page]                                   | Newbie       | ❌    |
+| 43           | [Intro component with sign-up form]                                                                                                                      | Newbie       | ❌    |
+| 44           | [Huddle landing page with a single introductory section]                                                                                                                      | Newbie       | ❌    |
+| 45           | ------                                                                                                                  | Junior       | ❌    |
+| 46           | ------                                                                                                                  | Junior       | ❌    |
+
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
 
-
-
-Order summary card 
-Stats preview card component 
- Social proof section
+ 
