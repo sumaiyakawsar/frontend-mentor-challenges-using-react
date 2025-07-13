@@ -44,7 +44,9 @@
                     color: v.$very-dark-magenta;
                     font-size: 4vw;
                     text-align: center;
-
+                    white-space: pre-line;
+                    overflow: hidden;
+                    
                     @include breakpoint(medium) {
                         text-align: left;
                     }
