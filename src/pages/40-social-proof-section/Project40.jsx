@@ -6,6 +6,7 @@ import iconStar from './images/icon-star.svg'
 import avatrAnne from './images/image-anne.jpg'
 import avatrColton from './images/image-colton.jpg'
 import avatrIrene from './images/image-irene.jpg'
+import MultiLineTypewriter from '../../components/utility/MultiLineTypewriter';
 
 const Project40 = () => {
   useFavicon("icons/project30.png");
@@ -16,9 +17,11 @@ const Project40 = () => {
       <div className="container">
         <div className="top">
           <div className="description">
-            <h1>
-              10,000+ of our users love our products.
-            </h1>
+            
+            <MultiLineTypewriter
+              text={`10,000+ of our users love our products.`}
+              speed={40}
+            />
 
             <p>
               We only provide great products combined with excellent customer service.

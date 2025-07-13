@@ -22,7 +22,6 @@
         @include breakpoint(medium) {
             width: 70vw;
         }
-      
 
         .top {
             display: flex;
@@ -41,10 +40,11 @@
                     width: 40%;
                 }
 
-                h1 {
+                .typing {
                     color: v.$very-dark-magenta;
                     font-size: 4vw;
                     text-align: center;
+
                     @include breakpoint(medium) {
                         text-align: left;
                     }
