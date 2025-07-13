@@ -1,11 +1,10 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
-@use "mq" as *;
-
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@use "../../../styles/mq" as *;
+@use "../../../styles/font" as fo;
 
 .project-25 {
-    font-family: v.$font-family;
+    font-family: fo.$league-spartan;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
     line-height: 1.5;

@@ -327,4 +327,22 @@
             color: transparent;
         }
     }
+
+    &-38 {
+        a {
+            color: v.$blue-38;
+        }
+    }
+
+    &-39 {
+        a {
+            color: v.$soft-violet-39;
+        }
+    }
+    &-40 {
+        color: v.$very-dark-magenta-40;
+        a {
+            color: v.$soft-pink-40;
+        }
+    }
 }

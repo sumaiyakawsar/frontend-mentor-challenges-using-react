@@ -1,0 +1,174 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/font" as fo;
+@use "variables" as v;
+
+.project-40 {
+    font-family: fo.$league-spartan;
+    font-size: v.$font-size-p;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        padding-block: f.rem(90);
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(64);
+
+        @include breakpoint(medium) {
+            width: 70vw;
+        }
+        // > * {
+        //     outline: 1px dashed red;
+        // }
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: f.rem(48);
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(32);
+
+                @include breakpoint(medium) {
+                    width: 600px;
+                }
+
+                h1 {
+                    color: v.$very-dark-magenta;
+                    font-size: f.rem(72);
+                    text-align: center;
+                    @include breakpoint(medium) {
+                        text-align: left;
+                    }
+                }
+
+                p {
+                    line-height: 1.5;
+                    color: v.$dark-grayish-magenta;
+                    text-align: center;
+                    @include breakpoint(medium) {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .ratings {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(16);
+                @include breakpoint(medium) {
+                    flex: none;
+                }
+                .rating {
+                    padding: f.rem(16) f.rem(40);
+                    border-radius: f.rem(10);
+                    background-color: v.$light-grayish-magenta;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: f.rem(24);
+                    box-shadow: v.$box-shadow;
+
+                    @include breakpoint(medium) {
+                        flex-direction: row;
+                        justify-content: start;
+
+                        &.reviews {
+                            margin-right: f.rem(64);
+                        }
+                        &.guru {
+                            margin-left: f.rem(32);
+                            margin-right: f.rem(32);
+                        }
+
+                        &.besttech {
+                            margin-left: f.rem(64);
+                        }
+                    }
+                    .star-rating {
+                        display: flex;
+                        gap: f.rem(4);
+                        @include breakpoint(medium) {
+                            gap: f.rem(2);
+                        }
+                    }
+                    p {
+                        font-weight: v.$font-bolder;
+                        color: v.$very-dark-magenta;
+                        word-wrap: none;
+                    }
+                }
+            }
+        }
+
+        .reviews__container {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(16);
+            line-height: 1.5;
+            @include breakpoint(medium) {
+                gap: f.rem(32);
+                flex-direction: row;
+            }
+            .review {
+                box-shadow: v.$box-shadow;
+                padding: f.rem(32);
+                background-color: v.$very-dark-magenta;
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(18);
+                border-radius: f.rem(8);
+
+                @include breakpoint(medium) {
+                    &.smith {
+                        margin-bottom: f.rem(64);
+                    }
+
+                    &.roberts {
+                        margin-top: f.rem(16);
+                        margin-bottom: f.rem(32);
+                    }
+                    &.wallace {
+                        margin-top: f.rem(32);
+                    }
+                }
+
+                .user {
+                    &__profile {
+                        display: flex;
+                        align-items: center;
+                        gap: f.rem(24);
+
+                        .avatar {
+                            border-radius: 50%;
+                            width: 45px;
+                            height: 45px;
+                        }
+
+                        .user__details {
+                            color: v.$white;
+                            span {
+                                color: v.$soft-pink;
+                            }
+                        }
+                    }
+
+                    &__review {
+                        color: v.$light-grayish-magenta;
+                    }
+                }
+            }
+        }
+    }
+}

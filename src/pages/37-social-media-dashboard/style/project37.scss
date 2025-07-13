@@ -1,11 +1,11 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
-@use "mq" as *;
+@use "../../../styles/mq" as *;
+@use "../../../styles/font" as fo;
 @use "theme";
-@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@400;700&display=swap");
 
 .project-37 {
-    font-family: v.$font-family;
+    font-family: fo.$inter-font;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
     flex: 1;

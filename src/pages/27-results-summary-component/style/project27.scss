@@ -1,6 +1,7 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
-@use "mq" as *;
+@use "../../../styles/mq" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 .project-27 {
@@ -17,7 +18,7 @@
         flex-direction: column;
         overflow: hidden;
         background-color: v.$white;
- 
+
         @include breakpoint(medium) {
             max-width: 700px;
             flex-direction: row;

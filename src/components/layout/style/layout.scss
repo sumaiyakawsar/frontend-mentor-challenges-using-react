@@ -1,5 +1,5 @@
 @use "variables" as v;
-// @use "theme";
+@use "../../../styles/mq" as *;
 
 .layout {
     display: flex;
@@ -22,6 +22,7 @@
             url(../../../pages/3-launch-countdown-timer/images/pattern-hills.svg) bottom no-repeat,
             url(../../../pages/3-launch-countdown-timer/images/bg-stars.svg) no-repeat,
             linear-gradient(to top, v.$soft-red-80 0%, v.$dark-blue 30%);
+        background-size: 100% auto;
     }
     &7 {
         background: v.$yellow;
@@ -92,6 +93,41 @@
     }
     &34 {
         background-color: v.$red-100;
+    }
+
+    &38 {
+        background-color: v.$blue-38;
+        background-image: url("../../../pages/38-order-summary-component/images/pattern-background-mobile.svg");
+        background-size: 100% auto; // Fit width, let height adjust
+        background-repeat: no-repeat; // Prevent tiling
+        background-position: top center;
+
+        @include breakpoint(medium) {
+            background-image: url("../../../pages/38-order-summary-component/images/pattern-background-desktop.svg");
+        }
+    }
+
+    &39 {
+        background-color: v.$very-dark-blue-39;
+    }
+
+    &40 {
+        background-color: v.$light-grayish-magenta;
+        background-image: url("../../../pages/40-social-proof-section/images/bg-pattern-top-mobile.svg"),
+            url("../../../pages/40-social-proof-section/images/bg-pattern-bottom-mobile.svg");
+        background-position:
+            top 0vw left 0vw,
+            bottom 0vw right 0vw;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, 100%;
+
+        @include breakpoint(medium) {
+            background-image: url("../../../pages/40-social-proof-section/images/bg-pattern-top-desktop.svg"),
+                url("../../../pages/40-social-proof-section/images/bg-pattern-bottom-desktop.svg");
+            background-position:
+                top -15vw left -30vw,
+                bottom -5vw right -20vw;
+        }
     }
 }
 

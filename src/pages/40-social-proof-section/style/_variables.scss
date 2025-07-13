@@ -1,0 +1,23 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+// Neutral
+
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// Typography
+$font-size-p: f.rem(15);
+
+$font-normal: 400;
+$font-bold: 500;
+$font-bolder: 700;

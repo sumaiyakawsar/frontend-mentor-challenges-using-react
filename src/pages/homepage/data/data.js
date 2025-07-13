@@ -33,9 +33,12 @@ import Project32 from "../images/project32-browser-extensions-manager-ui.png"
 import Project33 from "../images/project33-interactive-card-details-form.png"
 import Project34 from "../images/project34-expenses-chart-component.png"
 import Project35 from "../images/project35-ping-coming-soon-page.png"
-
 import Project36 from "../images/project36-todo-app.png"
 import Project37 from "../images/project37-social-media-dashboard.png"
+import Project38 from "../images/project38-order-summary-component.png"
+import Project39 from "../images/project39-stats-preview-card-component.png"
+
+import Project40 from "../images/project40-social-proof-section.png"
 
 
 export const Projects = [
@@ -367,6 +370,30 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Flex", "Theme"]
+    }, {
+        projectId: 38,
+        projectTitle: "Order summary card",
+        src: "/project38",
+        projectImage: Project38,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 39,
+        projectTitle: "Stats preview card",
+        src: "/project39",
+        projectImage: Project39,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
+    }, {
+        projectId: 40,
+        projectTitle: "Social proof section",
+        src: "/project40",
+        projectImage: Project40,
+        projectLevelNo: "1",
+        projectLevel: "newbie",
+        projectTags: ["React", "SCSS", "Flex"]
     },
     // {
     //     projectId: 1,

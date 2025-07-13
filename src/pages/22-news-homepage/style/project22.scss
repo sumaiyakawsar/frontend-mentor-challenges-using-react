@@ -1,11 +1,11 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/font" as fo;
 @use "variables" as v;
-@use "mq" as *;
+@use "../../../styles/mq" as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;700;800&display=swap');
-
+ 
 .project-22 {
-    font-family: v.$font-family;
+    font-family: fo.$inter-font;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
     line-height: 1.5;

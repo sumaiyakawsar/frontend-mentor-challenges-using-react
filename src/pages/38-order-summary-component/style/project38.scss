@@ -1,0 +1,132 @@
+@use "../../../styles/functions" as f; 
+@use "../../../styles/mq" as *;
+@use "../../../styles/font" as fo;
+@use "variables" as v;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.project-38 {
+    font-family: fo.$red-hat-display;
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+        background: none;
+        text-align: center;
+        border: none;
+        font-weight: v.$font-bolder;
+        cursor: pointer;
+        &__link {
+            text-decoration: underline;
+            color: v.$blue-700;
+            &:hover {
+                text-decoration: none;
+                color: color-mix(in srgb, white 20%, v.$blue-700);
+            }
+        }
+        &__primary {
+            width: 100%;
+            background-color: v.$blue-700;
+            padding: f.rem(16);
+            border-radius: f.rem(12);
+            color: v.$blue-50;
+            box-shadow: v.$box-shadow;
+            &:hover {
+                background-color: color-mix(in srgb, white 20%, v.$blue-700);
+            }
+        }
+        &__cancel {
+            width: 100%;
+            color: v.$gray-600;
+
+            &:hover {
+                color: v.$blue-950;
+            }
+        }
+    }
+    .card {
+        width: 90vw;
+        max-width: f.em(400);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background: white;
+        box-shadow: v.$box-shadow;
+        transition: all ease-in-out 0.5s;
+
+        overflow: hidden;
+        border-radius: f.rem(16);
+
+        .card-image {
+            flex: 1;
+        }
+
+        &__img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__content {
+            padding: f.rem(32);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: f.rem(24);
+
+            h1 {
+                font-size: f.rem(24);
+                font-weight: v.$font-bolder;
+                color: v.$blue-950;
+            }
+
+            .order__description {
+                text-align: center;
+                color: v.$gray-600;
+                font-weight: v.$font-normal;
+            }
+
+            .plan__selection {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: f.rem(16);
+                border-radius: f.rem(12);
+                padding: f.rem(24);
+                background-color: v.$blue-50;
+                .icon {
+                    background-color: v.$blue-100;
+                    border-radius: 50%;
+                    padding: f.rem(16);
+                    display: grid;
+                    place-items: center;
+                    color: v.$gray-600;
+                }
+                .content {
+                    flex: 1;
+
+                    h2 {
+                        font-size: f.rem(18);
+                        color: v.$blue-950;
+                        font-weight: v.$font-bolder;
+                    }
+
+                    p {
+                        color: v.$gray-600;
+                        font-weight: v.$font-bold;
+                    }
+                }
+            }
+        }
+    }
+}

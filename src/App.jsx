@@ -39,6 +39,9 @@ import Project34 from './pages/34-expenses-chart-component/Project34';
 import Project35 from './pages/35-ping-coming-soon-page/Project35';
 import Project36 from './pages/36-todo-app/Project36';
 import Project37 from './pages/37-social-media-dashboard/Project37';
+import Project38 from './pages/38-order-summary-component/Project38';
+import Project39 from './pages/39-stats-preview-card-component/Project39';
+import Project40 from './pages/40-social-proof-section/Project40';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -88,9 +91,11 @@ function App() {
     { path: "/project33", element: <Project33 /> },
     { path: "/project34", element: <Project34 /> },
     { path: "/project35", element: <Project35 /> },
-
     { path: "/project36", element: <Project36 /> },
     { path: "/project37", element: <Project37 /> },
+    { path: "/project38", element: <Project38 /> },
+    { path: "/project39", element: <Project39 /> },
+    { path: "/project40", element: <Project40 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

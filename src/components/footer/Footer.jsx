@@ -42,7 +42,10 @@ const Footer = () => {
     "project33": "footer-33",
     "project34": "footer-34",
     "project35": "footer-35",
-    "project37": "footer-37"
+    "project37": "footer-37",
+    "project38": "footer-38",
+    "project39": "footer-39",
+    "project40": "footer-40",
 
   };
 

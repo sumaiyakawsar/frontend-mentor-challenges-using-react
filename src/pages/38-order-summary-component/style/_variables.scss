@@ -1,0 +1,22 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+$blue-100: hsl(225, 100%, 94%);
+$blue-700: hsl(245, 75%, 52%);
+
+// Neutral
+
+$blue-50: hsl(225, 100%, 98%);
+$gray-600: hsl(224, 23%, 55%);
+$blue-950: hsl(223, 47%, 23%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// ## Typography
+$font-size-p: f.rem(16);
+
+$font-normal: 500;
+$font-bold: 700;
+$font-bolder: 900;
