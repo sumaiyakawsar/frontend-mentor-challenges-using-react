@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle'
 import './style/project40.scss'
@@ -31,24 +30,24 @@ const Project40 = () => {
           <div className="ratings">
             <div className="rating reviews">
               <div className="star-rating">
-                {[...Array(5)].map((_, index) => (
-                  <img src={iconStar} alt="" key={index} className="star" />
+                {[...Array(5)].map((_, idx) => (
+                  <img src={iconStar} alt="star" key={idx} />
                 ))}
               </div>
               <p>Rated 5 Stars in Reviews</p>
             </div>
             <div className="rating guru">
               <div className="star-rating">
-                {[...Array(5)].map((_, index) => (
-                  <img src={iconStar} alt="" key={index} className="star" />
+                {[...Array(5)].map((_, idx) => (
+                  <img src={iconStar} alt="star" key={idx} />
                 ))}
               </div>
               <p> Rated 5 Stars in Report Guru</p>
             </div>
             <div className="rating besttech">
               <div className="star-rating">
-                {[...Array(5)].map((_, index) => (
-                  <img src={iconStar} alt="" key={index} className="star" />
+                {[...Array(5)].map((_, idx) => (
+                  <img src={iconStar} alt="star" key={idx} />
                 ))}
               </div>
               <p>Rated 5 Stars in BestTech</p>
@@ -60,7 +59,7 @@ const Project40 = () => {
         <div className="reviews__container">
           <div className="review smith">
             <div className="user__profile">
-              <img src={avatrColton} alt="" className='avatar'/>
+              <img src={avatrColton} alt="colton" className='avatar' />
               <div className="user__details">
                 <div className="user__name">Colton Smith</div>
                 <span> Verified Buyer</span>
@@ -74,7 +73,7 @@ const Project40 = () => {
           </div>
           <div className="review roberts">
             <div className="user__profile">
-              <img src={avatrIrene} alt="" className='avatar'/>
+              <img src={avatrIrene} alt="irene" className='avatar' />
               <div className="user__details">
                 <div className="user__name">Irene Roberts</div>
                 <span> Verified Buyer</span>
@@ -87,7 +86,7 @@ const Project40 = () => {
           </div>
           <div className="review wallace">
             <div className="user__profile">
-              <img src={avatrAnne} alt="" className='avatar'/>
+              <img src={avatrAnne} alt="anne" className='avatar' />
               <div className="user__details">
                 <div className="user__name">Anne Wallace</div>
                 <span> Verified Buyer</span>

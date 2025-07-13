@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle'
 import './style/project38.scss'
@@ -18,7 +17,6 @@ const Project38 = () => {
         <div className="card-image">
           <img src={drawers} alt="Drawer" className="card__img" />
         </div>
-
 
         <div className="card__content">
           <h1>
@@ -40,18 +38,10 @@ const Project38 = () => {
             <a href='#/project38' className='btn btn__link'>
               Change
             </a>
-
           </div>
 
           <button type="submit" className='btn btn__primary'>Proceed to Payment</button>
           <button type="button" className='btn btn__cancel'>Cancel Order</button>
-
-
-
-
-
-
-
         </div>
       </div>
     </div>
