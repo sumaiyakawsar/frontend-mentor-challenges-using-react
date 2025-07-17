@@ -1,4 +1,4 @@
-import logo from '../images/logo-bookmark.svg'
+import logo from '../images/logo-bookmark - white.svg'
 import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
 
 function Footer({ MenuTitles }) {

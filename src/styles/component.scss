@@ -1,5 +1,6 @@
 @use "functions" as f;
 @use "variables" as v;
+@use "mq" as *;
 
 .main-home {
     padding: f.rem(8);
@@ -19,7 +20,7 @@
         transition: color 0.2s ease;
 
         &:hover {
-            color: v.$soft-red-100;
+            color: v.$soft-red-3;
         }
     }
     &:hover {
@@ -81,7 +82,7 @@
     }
     &-2 {
         a {
-            background: linear-gradient(90deg, v.$bright-orange, v.$dark-cyan, v.$very-dark-cyan);
+            background: linear-gradient(90deg, v.$bright-orange-2, v.$dark-cyan-2, v.$very-dark-cyan-2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
@@ -92,7 +93,7 @@
     }
     &-3 {
         a {
-            color: v.$soft-red-100;
+            color: v.$soft-red-3;
         }
     }
 
@@ -100,25 +101,26 @@
     &-10 {
         color: v.$white;
     }
+
     &-10 {
         a {
-            color: v.$green;
+            color: v.$green-10;
         }
     }
     &-11 {
-        color: v.$brown-800;
+        color: v.$brown-11;
         a {
-            color: v.$rose-800;
+            color: v.$rose-11;
         }
     }
     &-12 {
         a {
-            color: v.$green-500;
+            color: v.$green-12;
         }
     }
     &-13 {
         a {
-            background: linear-gradient(90deg, v.$red, v.$cyan, v.$orange, v.$blue);
+            background: linear-gradient(90deg, v.$red-13, v.$cyan-13, v.$orange-13, v.$blue-13);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
@@ -129,7 +131,7 @@
     }
     &-14 {
         a {
-            color: v.$purple-500;
+            color: v.$purple-14;
         }
     }
 
@@ -137,20 +139,21 @@
         color: v.$white;
 
         a {
-            color: v.$red;
+            color: v.$red-16;
         }
     }
+
     &-17 {
         color: v.$white;
         a {
             background: linear-gradient(
                 90deg,
-                v.$orange-300,
-                v.$blue-300,
-                v.$pink-400,
-                v.$green-400,
-                v.$purple-700,
-                v.$yellow-300
+                v.$orange-17,
+                v.$blue-17,
+                v.$pink-17,
+                v.$green-17,
+                v.$purple-17,
+                v.$yellow-17
             );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -163,30 +166,30 @@
 
     &-18 {
         a {
-            color: v.$green-900;
+            color: v.$green-18;
         }
     }
     &-19 {
         color: v.$white;
         a {
-            color: v.$orange-500;
+            color: v.$orange-19;
         }
     }
     &-20 {
         a {
-            color: v.$purple-500;
+            color: v.$purple-20;
         }
     }
 
     &-21 {
         a {
-            color: v.$green-600;
+            color: v.$green-21;
         }
     }
 
     &-22 {
         a {
-            background: linear-gradient(90deg, v.$soft-red, v.$soft-orange);
+            background: linear-gradient(90deg, v.$soft-red-22, v.$soft-orange-22);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
@@ -198,7 +201,7 @@
 
     &-23 {
         a {
-            color: v.$orange;
+            color: v.$orange-23;
         }
     }
     &-24 {
@@ -208,7 +211,7 @@
         }
         background: black;
         a {
-            color: v.$orange;
+            color: v.$orange-23;
         }
     }
     &-25 {
@@ -216,25 +219,25 @@
 
         background: black;
         a {
-            color: v.$soft-red;
+            color: v.$soft-red-22;
         }
     }
 
     &-26 {
         color: v.$white;
 
-        background: v.$blue-950;
+        background: v.$blue-26;
         .socials {
             display: none;
         }
         a {
-            color: v.$red-400;
+            color: v.$red-26;
         }
     }
 
     &-27 {
         a {
-            background: linear-gradient(90deg, v.$light-royal-blue, v.$light-slate-blue);
+            background: linear-gradient(90deg, v.$light-royal-blue-27, v.$light-slate-blue-27);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
@@ -251,21 +254,21 @@
     }
 
     &-29 {
-        background-color: v.$slate-900;
+        background-color: v.$slate-29;
         color: white;
         a {
-            color: v.$lime;
+            color: v.$lime-29;
         }
     }
 
     &-30 {
-        color: v.$purple-600;
+        color: v.$purple-30;
 
         a {
-            color: v.$pink-400;
+            color: v.$pink-30;
 
             &:hover {
-                color: v.$pink-200;
+                color: color-mix(in srgb, white 45%, v.$pink-30);
             }
         }
     }
@@ -339,16 +342,66 @@
             color: v.$soft-violet-39;
         }
     }
+
     &-40 {
         color: v.$very-dark-magenta-40;
         a {
             color: v.$soft-pink-40;
         }
     }
+
     &-41 {
         color: v.$teal-41;
         a {
             color: v.$green-41;
+        }
+    }
+
+    &-42 {
+        background: v.$light-Gradient-42;
+
+        color: v.$pink-42;
+
+        a {
+            color: v.$red-42;
+        }
+    }
+    &-43 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: v.$pink-42;
+        width: 80vw;
+        margin: 0 auto;
+
+        .socials {
+            .social__icon {
+                border-radius: 50%;
+                border: white solid 1px;
+                color: white;
+                padding: f.rem(8);
+
+                &:hover,
+                &:focus,
+                &:focus-visible {
+                    color: v.$magenta-43;
+                    border: solid 1px v.$magenta-43;
+                }
+            }
+        }
+
+        a {
+            color: v.$magenta-43;
+        }
+
+        @include breakpoint(medium) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &-44 {
+        a {
+            color: v.$green-44;
         }
     }
 }

@@ -7,7 +7,7 @@ import { extensions as extensionData } from './data/data';
 
 import Extension from './components/Extension';
 import ConfirmModal from './components/ConfirmModal';
-import Toast from '../../components/Toast';
+import SimpleToast from '../../components/SimpleToast';
 import logolight from './images/logo-light.svg';
 import logodark from './images/logo-dark.svg';
 
@@ -114,7 +114,7 @@ function Project32() {
                     />
                 )}
 
-                <Toast message={toastMessage} visible={toastVisible} />
+                <SimpleToast message={toastMessage} show={toastVisible} />
 
             </div>
         </div>

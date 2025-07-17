@@ -133,6 +133,29 @@
     &41 {
         background-color: v.$teal-100;
     }
+    &43 {
+        background-color: v.$purple-43;
+
+        background-image: url("../../../pages/43-huddle-landing-page/images/bg-mobile.svg");
+        // background-size: 100% cover; // Fit width, let height adjust
+        background-repeat: no-repeat; // Prevent tiling
+        background-size: contain;
+        @include breakpoint(medium) {
+            background-image: url("../../../pages/43-huddle-landing-page/images/bg-desktop.svg");
+        }
+    }
+
+        &44 {
+        background-color: v.$red-44;
+
+        background-image: url("../../../pages/44-intro-component-with-signup-form/images/bg-intro-mobile.png");
+        // background-size: 100% cover; // Fit width, let height adjust
+        background-repeat: no-repeat; // Prevent tiling
+        background-size: contain;
+        @include breakpoint(medium) {
+            background-image: url("../../../pages/44-intro-component-with-signup-form/images/bg-intro-desktop.png");
+        }
+    }
 }
 
 .theme {

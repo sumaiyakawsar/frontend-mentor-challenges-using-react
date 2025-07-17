@@ -51,9 +51,9 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 39           | [Stats preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project39)      | Newbie       | ✔️    |
 | 40           | [Social proof section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project40)              | Newbie       | ✔️    |
 | 41           | [Single price grid component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project41)       | Newbie       | ✔️    |
-| 42           | [Base Apparel coming soon page]                                   | Newbie       | ❌    |
-| 43           | [Intro component with sign-up form]                                                                                                                      | Newbie       | ❌    |
-| 44           | [Huddle landing page with a single introductory section]                                                                                                                      | Newbie       | ❌    |
+| 42           | [Base Apparel coming soon page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project42)                                   | Newbie       | ✔️    |
+| 43           | [Intro component with sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project43)                                                                                                                      | Newbie       | ✔️    |
+| 44           | [Huddle landing page with a single introductory section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project44)                                                                                                                      | Newbie       | ✔️    |
 | 45           | ------                                                                                                                  | Junior       | ❌    |
 | 46           | ------                                                                                                                  | Junior       | ❌    |
 

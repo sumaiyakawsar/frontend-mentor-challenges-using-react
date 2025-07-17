@@ -1,0 +1,80 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+.project-43 {
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: f.rem(16);
+    padding: f.rem(32);
+
+    @include breakpoint(medium) {
+        gap: f.rem(32);
+    }
+    .header {
+        width: 100%;
+    }
+    .flex {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: f.rem(64);
+
+        @include breakpoint(medium) {
+            flex-direction: row;
+        }
+        img {
+            flex: 60%;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .content {
+            flex: 40%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: f.rem(20);
+            text-align: center;
+
+            @include breakpoint(medium) {
+                text-align: left;
+                align-items: flex-start;
+            }
+            h1 {
+                font-family: v.$poppins-family;
+                font-weight: v.$font-bold;
+            }
+
+            p {
+                font-family: v.$os-family;
+                font-weight: v.$font-normal;
+                opacity: 70%;
+            }
+
+            .btn {
+                border-radius: f.rem(24);
+                padding: f.rem(12) f.rem(48);
+                color: v.$purple-700;
+                box-shadow: v.$box-shadow;
+                cursor: pointer;
+
+                &:hover,
+                &:focus,
+                &:focus-within {
+                    background-color: v.$magenta-400;
+                    color: white;
+                }
+            }
+        }
+    }
+}

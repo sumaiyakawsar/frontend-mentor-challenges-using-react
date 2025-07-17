@@ -1,8 +1,7 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @use "../../../styles/mq" as *;
-
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+@use "../../../styles/font" as fo;
 
 .project-24 {
     font-size: v.$font-size-p;
@@ -16,7 +15,7 @@
     h2,
     h3 {
         font-weight: v.$font-thin;
-        font-family: v.$font-JS;
+        font-family: fo.$josefin-sans;
         text-transform: uppercase;
     }
     .container {
@@ -63,7 +62,7 @@
                     .nav-links {
                         display: flex;
                         gap: 1.5rem;
-                        font-family: v.$font-alata;
+                        font-family: fo.$alata;
 
                         a {
                             color: v.$white;
@@ -144,7 +143,7 @@
                         font-size: f.rem(32);
                         font-weight: v.$font-normal;
                         text-transform: uppercase;
-                        font-family: v.$font-JS;
+                        font-family: fo.$josefin-sans;
                         color: v.$white;
                     }
                 }
@@ -157,7 +156,7 @@
             .headline {
                 flex: 1;
                 display: flex;
-                align-items: center; 
+                align-items: center;
 
                 @include breakpoint(medium) {
                     width: 60%;
@@ -204,7 +203,7 @@
             p {
                 color: #666;
                 font-weight: v.$font-normal;
-                font-family: v.$font-alata;
+                font-family: fo.$alata;
             }
 
             @include breakpoint(medium) {
@@ -456,7 +455,7 @@
                 color: v.$grey-200;
                 font-weight: v.$font-normal;
                 font-size: f.rem(16);
-                font-family: v.$font-alata;
+                font-family: fo.$alata;
             }
 
             @include breakpoint(medium) {

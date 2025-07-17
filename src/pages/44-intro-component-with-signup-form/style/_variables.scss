@@ -1,0 +1,24 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+$red-400: hsl(0, 100%, 74%);
+$green-400: hsl(154, 59%, 51%);
+
+// Accent
+$purple-700: hsl(248, 32%, 49%);
+
+// Neutral
+$gray-900: hsl(249, 10%, 26%);
+$purple-350: hsl(246, 25%, 77%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// Typography
+$font-size-p: f.rem(16);
+
+$font-normal: 400;
+$font-bold: 500;
+$font-bolder: 600;
+$font-boldest: 700;

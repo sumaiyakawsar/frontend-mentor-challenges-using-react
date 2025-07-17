@@ -1,0 +1,19 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+$purple-700: hsl(257, 40%, 49%);
+$magenta-400: hsl(300, 69%, 71%);
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// Typography
+$font-size-p: f.rem(16);
+
+$poppins-family: "Poppins", sans-serif;
+$os-family: "Open Sans", sans-serif;
+
+
+$font-normal: 400;
+$font-bold: 600;

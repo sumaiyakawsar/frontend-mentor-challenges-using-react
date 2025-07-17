@@ -95,12 +95,12 @@ const Project26 = () => {
         }
     };
 
-
-
     const handleChange = (e) => {
         setEmail(e.target.value);
         if (error) setError("");
     };
+
+
 
     return (
         <div className='project-26'>

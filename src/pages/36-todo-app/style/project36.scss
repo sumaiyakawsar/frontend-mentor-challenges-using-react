@@ -1,17 +1,17 @@
 @use "../../../styles/functions" as f;
-@use "variables" as v;
+@use "../../../styles/font" as fo;
 @use "../../../styles/mq" as *;
 @use "theme";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@use "variables" as v;
 
 .project-36 {
-    font-family: v.$font-family;
+    font-family: fo.$josefin-sans;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
 
     flex: 1;
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
     position: relative;
 
@@ -317,7 +317,7 @@
                     }
                 }
             }
-            
+
             .info {
                 padding: f.rem(32);
                 text-align: center;
