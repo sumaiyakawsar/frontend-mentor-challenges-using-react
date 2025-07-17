@@ -57,11 +57,6 @@ const Project44 = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-
-
-
-
-
   const handleChange = (e) => {
     const { name, value } = e.target;
 

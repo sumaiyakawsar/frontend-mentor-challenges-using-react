@@ -20,7 +20,7 @@ const Project42 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Basic validation
+    
     const isValid = /^\S+@\S+\.\S+$/.test(email);
     setError(!isValid);
     if (isValid) {
@@ -39,7 +39,7 @@ const Project42 = () => {
       <div className="container">
         <div className="left">
           <div className="header">
-            <img src={logo} alt="" />
+            <img src={logo} alt="logo" />
           </div>
 
           <img src={heroMobile} alt="Image" className="top-img" />

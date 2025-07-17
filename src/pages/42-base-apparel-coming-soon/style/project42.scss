@@ -30,7 +30,7 @@
             @include breakpoint(medium) {
                 background: url("../images/bg-pattern-desktop.svg") no-repeat;
                 background-size: contain;
-                background-color: v.$light-Gradient; // soft pink behind pattern
+                background-color: v.$light-Gradient;  
             }
 
             .header {

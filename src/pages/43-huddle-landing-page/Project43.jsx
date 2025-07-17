@@ -14,11 +14,11 @@ const Project43 = () => {
   return (
     <div className='project-43'>
       <div className="header">
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
       </div>
 
       <div className="flex">
-        <img src={illustration} alt="" />
+        <img src={illustration} alt="illustration" />
         <div className="content">
           <MultiLineTypewriter
             text='Build The Community Your Fans Will Love'
