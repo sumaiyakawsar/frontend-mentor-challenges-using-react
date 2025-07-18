@@ -1,7 +1,6 @@
-import illustration from "../images/illustration-empty-cart.svg"
 import { IoCloseCircleOutline } from "react-icons/io5";
 import carbon from "../images/icon-carbon-neutral.svg"
-
+import illustration from "../images/illustration-empty-cart.svg"
 
 const Cart = ({ cartItems, onConfirmOrder, removeItem }) => {
     const totalPrice = cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0).toFixed(2);

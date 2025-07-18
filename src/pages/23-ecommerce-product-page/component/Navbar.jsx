@@ -1,9 +1,7 @@
-import React from 'react'
-import iconMenu from '../images/icon-menu.svg'
-
 import logo from '../images/logo.svg'
 import imgAvatar from '../images/image-avatar.png'
 import { IoCartOutline } from "react-icons/io5";
+import { MdOutlineMenu } from "react-icons/md";
 
 
 const Navbar = ({ toggleMenu, toggleCart, cartItemCount, menuTitles, cartRef }) => {
@@ -25,7 +23,8 @@ const Navbar = ({ toggleMenu, toggleCart, cartItemCount, menuTitles, cartRef }) 
                     ))}
                 </nav>
                 <button type="button" className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
-                    <img src={iconMenu} alt="Menu icon" />
+                     <MdOutlineMenu className='icon' />
+
                 </button>
             </div>
 

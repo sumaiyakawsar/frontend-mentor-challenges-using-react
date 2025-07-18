@@ -11,7 +11,7 @@
     .card-container {
         width: 50vw;
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
         font-size: v.$font-size-p;
@@ -54,29 +54,24 @@
                 font-family: v.$lexend-deca;
                 background: v.$trans-white;
                 padding: f.rem(8) f.rem(16);
-                &.sedan {
-                    color: v.$bright-orange;
+
+                @each $level, $color in v.$card-colors {
+                    &.#{$level} {
+                        color: $color;
+                    }
                 }
-                &.suvs {
-                    color: v.$dark-cyan;
-                }
-                &.luxury {
-                    color: v.$very-dark-cyan;
-                }
+
                 &:hover {
                     outline: v.$trans-white 2px solid;
                     background: transparent;
                     color: v.$trans-white;
                 }
             }
-            &.sedan {
-                background: v.$bright-orange;
-            }
-            &.suvs {
-                background: v.$dark-cyan;
-            }
-            &.luxury {
-                background: v.$very-dark-cyan;
+
+            @each $level, $color in v.$card-colors {
+                &.#{$level} {
+                    background: $color;
+                }
             }
         }
     }

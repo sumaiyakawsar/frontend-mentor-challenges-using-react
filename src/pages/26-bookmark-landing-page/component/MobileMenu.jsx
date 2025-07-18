@@ -1,6 +1,8 @@
-import iconMenuClose from '../images/icon-close.svg'
+// import iconMenuClose from '../images/icon-close.svg'
 import logo from '../images/logo-bookmark.svg'
 import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
+
+import { FaTimes } from "react-icons/fa";
 
 const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
     return (
@@ -8,9 +10,12 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
             <div className="top">
                 <div className="logo">
                     <img src={logo} alt="logo" />
+
+
                 </div>
                 <button type='button' className="close-button" onClick={closeMenu}>
-                    <img src={iconMenuClose} alt="close" />
+                    {/* <img src={iconMenuClose} alt="close" />  */}
+                    <FaTimes className='icon' />
                 </button>
             </div>
             <nav className="mobile-nav">

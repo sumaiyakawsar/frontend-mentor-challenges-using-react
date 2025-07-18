@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ServiceCard = ({ title, description, icon, altText, className }) => {
     return (
         <div className={`card ${className}`}>

@@ -16,8 +16,7 @@
     .container {
         margin: 0 auto;
         width: 95%;
-        padding: f.rem(16); // adds spacing to prevent edge overflow
-
+        padding: f.rem(16); 
         display: flex;
         flex-direction: column;
         gap: f.rem(16);
@@ -59,7 +58,7 @@
                 }
 
                 &:hover {
-                    background: var(--toggle-color-hover); // subtle frosted look
+                    background: var(--toggle-color-hover);  
                 }
 
                 &:focus,

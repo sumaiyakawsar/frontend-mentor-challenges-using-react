@@ -155,25 +155,12 @@
                         font-weight: v.$font-normal;
                     }
                 }
-
-                &.reaction {
-                    background-color: hsla(from v.$light-red h s l / 0.1);
-                    color: v.$light-red;
-                }
-
-                &.memory {
-                    background-color: hsla(from v.$orangey-yellow h s l / 0.1);
-                    color: v.$orangey-yellow;
-                }
-
-                &.verbal {
-                    background-color: hsla(from v.$green-teal h s l / 0.1);
-                    color: v.$green-teal;
-                }
-
-                &.visual {
-                    background-color: hsla(from v.$cobalt-blue h s l / 0.1);
-                    color: v.$cobalt-blue;
+                
+                @each $key, $color in v.$summary-colors {
+                    &.#{$key} {
+                        background-color: hsla(from #{$color} h s l / 0.1);
+                        color: $color;
+                    }
                 }
             }
         }

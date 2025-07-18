@@ -1,4 +1,5 @@
 import iconThanks from "../images/icon-complete.svg"
+
 function Confirmation({ onContinue }) {
     return (
         <section className="thank-you">

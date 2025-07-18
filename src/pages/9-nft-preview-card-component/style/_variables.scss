@@ -1,6 +1,6 @@
 @use "../../../styles/functions" as f;
- 
-// ## Colors
+
+// Colors
 $white: hsl(0, 0%, 100%);
 
 $soft-blue: hsl(215, 51%, 70%);
@@ -10,9 +10,8 @@ $cyan-trans: hsl(178, 100%, 50%, 0.5);
 $very-dark-blue-card: hsl(216, 50%, 16%);
 $very-dark-blue-line: hsl(215, 32%, 27%);
 
-// ## Typography
+// Typography
 $font-size-p: f.rem(18);
- 
 
 $font-thin: 300;
 $font-normal: 400;

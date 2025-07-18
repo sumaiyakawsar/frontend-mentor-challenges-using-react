@@ -7,7 +7,7 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
 
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
                 <button type="button" className="close-button" onClick={closeMenu}>
-                    <FaTimes />
+                    <FaTimes className="icon"/>
                 </button>
                 
                 <nav className="mobile-nav">

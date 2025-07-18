@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import iconcart from "../images/icon-add-to-cart.svg"
 
 import { FiMinus, FiPlus } from "react-icons/fi";

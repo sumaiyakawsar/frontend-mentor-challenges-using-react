@@ -3,13 +3,16 @@
 @use "variables" as v;
 @use "../../../styles/mq" as *;
 
- 
 .project-22 {
     font-family: fo.$inter-font;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
     line-height: 1.5;
-    width: 90%; 
+    width: 90%;
+
+    .icon {
+        font-size: f.rem(44);
+    }
     
     .navbar {
         display: flex;
@@ -85,8 +88,7 @@
         }
 
         .close-button {
-            background: none;
-            border: none;
+            all: unset;
             position: absolute;
             top: 1.5rem;
             right: 1.5rem;

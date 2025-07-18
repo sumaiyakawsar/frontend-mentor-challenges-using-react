@@ -3,11 +3,10 @@ import product1 from "../images/image-product-1.jpg"
 import product2 from "../images/image-product-2.jpg"
 import product3 from "../images/image-product-3.jpg"
 import product4 from "../images/image-product-4.jpg"
-import iconminus from "../images/icon-minus.svg"
-import iconplus from "../images/icon-plus.svg"
 import Lightbox from "./Lightbox";
 import { IoCartOutline } from "react-icons/io5";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaPlus, FaMinus } from "react-icons/fa";
+
 
 const productImages = [product1, product2, product3, product4];
 
@@ -97,7 +96,6 @@ const Product = ({ onAddToCart, cartRef }) => {
 
                     <img
                         ref={imageRef}
-
                         src={productImages[currentImageIndex]}
                         alt={productData.name}
                         className="main-image"
@@ -145,11 +143,11 @@ const Product = ({ onAddToCart, cartRef }) => {
                 <div className="product__actions">
                     <div className="quantity">
                         <button type="button" onClick={decrement}>
-                            <img src={iconminus} alt="subtract" />
+                            <FaMinus className="icon" />
                         </button>
                         <span>{quantity}</span>
                         <button type="button" onClick={increment}>
-                            <img src={iconplus} alt="add" />
+                            <FaPlus className="icon" />
                         </button>
                     </div>
                     <button type="button" className="add-to-cart" onClick={handleAdd}>

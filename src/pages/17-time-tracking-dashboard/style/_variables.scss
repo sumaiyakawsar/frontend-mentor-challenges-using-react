@@ -3,18 +3,36 @@
 // Colors
 
 // Primary
-
 $purple-600: hsl(246, 80%, 60%);
 
-$orange-300: hsl(15, 100%, 70%); //(work)
-$blue-300: hsl(195, 74%, 62%); //(play)
-$pink-400: hsl(348, 100%, 68%); //(study)
-$green-400: hsl(145, 58%, 55%); //(exercise)
-$purple-700: hsl(264, 64%, 52%); //(social)
-$yellow-300: hsl(43, 84%, 65%); //(self care)
+$card-data: (
+    work: (
+        color: hsl(15, 100%, 70%),
+        image: "../images/icon-work.svg"
+    ),
+    play: (
+        color: hsl(195, 74%, 62%),
+        image: "../images/icon-play.svg"
+    ),
+    study: (
+        color: hsl(348, 100%, 68%),
+        image: "../images/icon-study.svg"
+    ),
+    exercise: (
+        color: hsl(145, 58%, 55%),
+        image: "../images/icon-exercise.svg"
+    ),
+    social: (
+        color: hsl(264, 64%, 52%),
+        image: "../images/icon-social.svg"
+    ),
+    self-care: (
+        color: hsl(43, 84%, 65%),
+        image: "../images/icon-self-care.svg"
+    )
+);
 
 //Neutral
-
 $navy-950: hsl(226, 43%, 10%);
 $navy-900: hsl(235, 46%, 20%);
 $purple-500: hsl(235, 45%, 61%);
@@ -26,7 +44,6 @@ $box-shadow:
 
 // ## Typography
 $font-size-p: f.rem(18);
- 
 
 $font-thin: 300;
 $font-normal: 400;

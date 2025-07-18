@@ -24,6 +24,10 @@
             background: none;
             border: none;
             cursor: pointer;
+            .icon {
+                font-size: f.rem(32);
+                color: v.$white;
+            }
         }
 
         .nav-links {
@@ -124,6 +128,11 @@
             background: none;
             border: none;
             cursor: pointer;
+            
+            .icon {
+                font-size: f.rem(32);
+                color: v.$grey-500;
+            }
         }
 
         .mobile-nav {

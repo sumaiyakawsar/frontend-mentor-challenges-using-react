@@ -1,5 +1,4 @@
-import React from 'react';
-import iconMenuClose from '../images/icon-menu-close.svg'
+import { LiaTimesSolid } from "react-icons/lia";
 
 const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
     return (
@@ -8,7 +7,7 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
 
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
                 <button type="button" className="close-button" onClick={closeMenu}>
-                    <img src={iconMenuClose} alt="" />
+                    <LiaTimesSolid className='icon' />
                 </button>
 
 

@@ -25,7 +25,7 @@
 
             grid-template-areas:
                 "profile work play study"
-                "profile exercise social selfcare" !important;
+                "profile exercise social self-care" !important;
         }
         .profile {
             &__card {
@@ -107,44 +107,24 @@
             border-radius: f.rem(16);
             color: #fff;
             overflow: hidden;
-            background-size: 60px;
-            background-repeat: no-repeat;
-            background-position: right 20px top;
+
             position: relative;
 
             &__image-wrapper {
                 height: 40px;
             }
-            &--work {
-                grid-area: work;
-                background-color: v.$orange-300;
-                background-image: url("../images/icon-work.svg");
+            
+            @each $level, $data in v.$card-data {
+                &.#{$level} {
+                    background: map-get($map: $data, $key: color);
+                    background-image: url(map-get($data, image));
+                    grid-area: $level;
+                    background-size: 60px;
+                    background-repeat: no-repeat;
+                    background-position: right 20px top;
+                }
             }
-            &--play {
-                grid-area: play;
-                background-color: v.$blue-300;
-                background-image: url("../images/icon-play.svg");
-            }
-            &--study {
-                grid-area: study;
-                background-color: v.$pink-400;
-                background-image: url("../images/icon-study.svg");
-            }
-            &--exercise {
-                grid-area: exercise;
-                background-color: v.$green-400;
-                background-image: url("../images/icon-exercise.svg");
-            }
-            &--social {
-                grid-area: social;
-                background-color: v.$purple-700;
-                background-image: url("../images/icon-social.svg");
-            }
-            &--self-care {
-                grid-area: selfcare;
-                background-color: v.$yellow-300;
-                background-image: url("../images/icon-self-care.svg");
-            }
+
             @include breakpoint(medium) {
                 height: f.em(170);
             }
@@ -189,6 +169,7 @@
 
             &__ellipsis {
                 cursor: pointer;
+                font-size: f.rem(32);
             }
 
             &__current {

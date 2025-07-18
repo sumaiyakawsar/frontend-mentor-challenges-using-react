@@ -238,21 +238,10 @@
                     top: 0;
                     left: 0;
                 }
-
-                &.facebook::before {
-                    background-color: v.$facebook;
-                }
-
-                &.instagram::before {
-                    background: v.$instagram;
-                }
-
-                &.twitter::before {
-                    background-color: v.$twitter;
-                }
-
-                &.youtube::before {
-                    background-color: v.$youTube;
+                @each $platform, $color in v.$social-colors {
+                    &.#{$platform}::before {
+                        background: $color;
+                    }
                 }
             }
 

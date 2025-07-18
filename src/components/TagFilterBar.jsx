@@ -1,3 +1,5 @@
+import { FaTimes } from "react-icons/fa";
+
 const TagFilterBar = ({ filters, clearFilters, removeFilter }) => {
     if (filters.length === 0) return null;
 
@@ -7,7 +9,9 @@ const TagFilterBar = ({ filters, clearFilters, removeFilter }) => {
                 {filters.map((tag, i) => (
                     <div key={i} className={`tag ${tag.toLowerCase()}`}>
                         <span>{tag}</span>
-                        <button onClick={() => removeFilter(tag)}>✖</button>
+                        <button onClick={() => removeFilter(tag)}>
+                            <FaTimes />
+                        </button>
                     </div>
                 ))}
             </div>

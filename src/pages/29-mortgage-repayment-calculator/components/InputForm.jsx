@@ -1,4 +1,3 @@
-
 import { FaCalculator } from "react-icons/fa";
 import Error from "../../../components/Error";
 

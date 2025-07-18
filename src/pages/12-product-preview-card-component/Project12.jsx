@@ -1,4 +1,3 @@
-import React from 'react'
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle'
 import './style/project12.scss'
@@ -42,7 +41,6 @@ const Project12 = () => {
             <span className="old-price">$169.99</span>
           </div>
           <a href="" className="btn" target="_blank" rel="noopener noreferrer">
-            {/* <img src={iconCart} alt="" /> */}
             <PiShoppingCartBold />
 
             <p>Add to Cart</p>

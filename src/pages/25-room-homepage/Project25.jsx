@@ -31,9 +31,8 @@ const Project25 = () => {
             {isMenuOpen && <MobileMenu isOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} menuTitles={MenuTitles} />}
 
             <div className="page">
-
                 <HeroSlider />
-
+                
                 <div className="about">
                     <img src={imgAboutDark} alt="darkimg" />
 
@@ -51,15 +50,9 @@ const Project25 = () => {
                         </p>
                     </div>
 
-
                     <img src={imgAboutLight} alt="lightimg" />
-
                 </div>
-
-
             </div>
-
-
         </div>
     )
 }

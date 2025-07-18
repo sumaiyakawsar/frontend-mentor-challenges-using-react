@@ -1,6 +1,5 @@
-import React from 'react'
-import iconMenu from '../images/icon-menu.svg'
 import logo from '../images/logo.svg'
+import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = ({ toggleMenu, menuTitles }) => {
     return (
@@ -9,7 +8,8 @@ const Navbar = ({ toggleMenu, menuTitles }) => {
                 <img src={logo} alt="" />
             </div>
             <button type="button" className="menu-toggle" onClick={toggleMenu}>
-                <img src={iconMenu} alt="" />
+                 <MdOutlineMenu className='icon'/>
+
             </button>
             <nav className="nav-links">
                 {menuTitles.map((menu, id) => (

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
+import Error from "../../components/Error";
 import './style/project18.scss';
+
 import iconDollar from './images/icon-dollar.svg'
 import iconPerson from './images/icon-person.svg'
 import logo from './images/logo.svg'
-import Error from "../../components/Error";
+
 
 const Project18 = () => {
     useFavicon("icons/project18.png");

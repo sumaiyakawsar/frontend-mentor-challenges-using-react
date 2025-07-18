@@ -1,7 +1,7 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/font" as fo;
 @use "variables" as v;
 @use "mq" as *;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 .project-13 {
     flex: 1;
@@ -11,7 +11,7 @@
     justify-content: center;
     gap: f.rem(32);
 
-    font-family: v.$font-family;
+    font-family: fo.$poppins;
     font-size: v.$font-size-p;
     line-height: 1.5;
 
@@ -72,28 +72,12 @@
                 transform: translateY(-5px);
             }
 
-            &.supervisor {
-                border-top: v.$cyan 4px solid;
-                grid-area: supervisor;
-                box-shadow: 0 4px 6px v.$cyan-10;
-            }
-
-            &.team-builder {
-                border-top: v.$red 4px solid;
-                grid-area: team-builder;
-                box-shadow: 0 4px 6px v.$red-10;
-            }
-
-            &.calculator {
-                border-top: v.$blue 4px solid;
-                grid-area: calculator;
-                box-shadow: 0 4px 6px v.$blue-10;
-            }
-
-            &.karma {
-                border-top: v.$orange 4px solid;
-                grid-area: karma;
-                box-shadow: 0 4px 6px v.$orange-10;
+            @each $level, $color in v.$card-colors {
+                &.#{$level} {
+                    border-top: $color 4px solid;
+                    box-shadow: 0 4px 6px color-mix(in srgb, white 80%, $color);
+                    grid-area: $level;
+                }
             }
 
             &__title {

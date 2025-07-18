@@ -1,10 +1,11 @@
 @use "../../../styles/functions" as f;
 
 // Primary
-$bright-orange: hsl(31, 77%, 52%);
-$dark-cyan: hsl(184, 100%, 22%);
-$very-dark-cyan: hsl(179, 100%, 13%);
-
+$card-colors: (
+    sedan: hsl(31, 77%, 52%),
+    suvs: hsl(184, 100%, 22%),
+    luxury: hsl(179, 100%, 13%)
+);
 // Neutral
 
 $trans-white: hsla(0, 0%, 100%, 0.75); // (paragraphs)

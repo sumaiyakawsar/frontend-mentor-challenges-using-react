@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
 import './style/project22.scss';
- 
+
 import imgGaming from './images/image-gaming-growth.jpg'
 import imgRetro from './images/image-retro-pcs.jpg'
 import imgLaptops from './images/image-top-laptops.jpg'
@@ -11,6 +11,7 @@ import imgWebDesktop from './images/image-web-3-desktop.jpg'
 import imgWebMobile from './images/image-web-3-mobile.jpg'
 import MobileMenu from "./component/MobileMenu";
 import Navbar from "./component/Navbar";
+
 const Project22 = () => {
     useFavicon("icons/project1314.png");
     useDocumentTitle("News homepage | Frontend Mentor");

@@ -1,6 +1,4 @@
-
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-
 
 const OrderConfirmation = ({ isOpen, cartItems, onReset, total }) => {
     if (!isOpen) return null;

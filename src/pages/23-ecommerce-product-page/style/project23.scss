@@ -44,6 +44,10 @@
                 border: none;
                 cursor: pointer;
 
+                .icon {
+                    font-size: f.rem(32);
+                }
+
                 @include breakpoint(medium) {
                     display: none;
                 }
@@ -156,6 +160,9 @@
             top: 1.5rem;
             left: 1.5rem;
             cursor: pointer;
+            .icon {
+                font-size: f.rem(32);
+            }
         }
 
         .mobile-nav {
@@ -464,6 +471,10 @@
                         // border: red solid 2px;
                         font-weight: bold;
                         font-size: f.rem(18);
+
+                        .icon {
+                            color: v.$orange;
+                        }
                     }
                 }
 

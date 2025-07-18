@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
 import './style/project19.scss';
+
 import iconThanks from './images/illustration-thank-you.svg'
 import iconStar from './images/icon-star.svg'
 
@@ -22,10 +23,8 @@ const Project19 = () => {
         <div className='project-19'>
             <div className="rating">
                 {!submitted ? (
-
-                    // {/* Rating state start   */}
                     <>
-                        <img src={iconStar} alt="" className="icon" />
+                        <img src={iconStar} alt="star" className="icon" />
 
                         <h1> How did we do?</h1>
                         <p>
@@ -43,14 +42,9 @@ const Project19 = () => {
                                 </button>
                             ))}
                         </div>
-
-
                         <button type="submit" className="btnSubmit" onClick={handleSubmit}>Submit</button>
                     </>
-                    // {/*   Rating state end  */}
-
                 ) : (
-                    // {/* Thank you state start   */ }
                     <div className="thankYou">
                         <img src={iconThanks} alt="illustration" />
                         <div className="result"> You selected {selected} out of 5</div>
@@ -60,11 +54,7 @@ const Project19 = () => {
                             don’t hesitate to get in touch!
                         </p>
                     </div>
-                    // {/* Thank you state end   */ }
-
                 )}
-
-
             </div>
         </div >
     )

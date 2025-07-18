@@ -7,7 +7,7 @@ import { status as initialStatus } from './data/commentsData'
 
 import Comment from './components/Comment'
 import CommentInput from './components/CommentInput'
-import DeleteModal from './components/DeleteModal' // import this
+import DeleteModal from './components/DeleteModal' 
 
 const LOCAL_STORAGE_KEY = 'commentsData'
 
@@ -172,7 +172,7 @@ function Project30() {
                         currentUser={data.currentUser}
                         onReply={addReply}
                         onUpdate={updateCommentOrReply}
-                        onDelete={requestDelete} // change this line
+                        onDelete={requestDelete} 
                         onVote={vote}
                         getNextId={getNextId}
                     />

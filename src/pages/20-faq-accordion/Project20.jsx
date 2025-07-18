@@ -1,12 +1,12 @@
-import React, { useState } from "react";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
+import FaqAccordion from "./component/FaqAccordion";
 import './style/project20.scss';
-import iconStar from './images/icon-star.svg'
 
+import iconStar from './images/icon-star.svg'
 import imgDesktop from './images/background-pattern-desktop.svg'
 import imgMobile from './images/background-pattern-mobile.svg'
-import FaqAccordion from "./component/FaqAccordion";
+
 
 const data = [
     {

@@ -1,11 +1,9 @@
-import React from 'react'
 import useFavicon from '../../components/favicons/favicon';
-import useDocumentTitle from '../../components/favicons/useTitle'
-import './style/project13.scss'
-
+import useDocumentTitle from '../../components/favicons/useTitle';
+import './style/project13.scss';
 
 import ServiceCard from './component/ServiceCard';
-import { servicesData } from './data/data' 
+import { servicesData } from './data/data';
 
 const Project13 = () => {
   useFavicon("icons/project1314.png");

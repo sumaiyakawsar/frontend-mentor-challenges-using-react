@@ -1,12 +1,15 @@
-import React, { useState } from "react";
-import useFavicon from '../../components/favicons/favicon';
-import useDocumentTitle from '../../components/favicons/useTitle';
-import './style/project35.scss';
-import illustration from "./images/illustration-dashboard.png"
-import logo from "./images/logo.svg"
-import Error from "../../components/Error";
+import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import useFavicon from '../../components/favicons/favicon';
+import useDocumentTitle from '../../components/favicons/useTitle';
+import Error from "../../components/Error"; 
+import './style/project35.scss';
+
+import illustration from "./images/illustration-dashboard.png"
+import logo from "./images/logo.svg"
+
 
 const Project35 = () => {
   useFavicon("icons/project19.png");
@@ -38,7 +41,7 @@ const Project35 = () => {
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
-        theme: "dark",  
+        theme: "dark",
       });
 
       setEmail("");

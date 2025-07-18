@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "check-unused": "knip"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
@@ -36,7 +37,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
-    "jsdom": "^26.1.0",
+    "knip": "^5.61.3",
     "sass": "^1.86.3",
     "vite": "^6.2.0"
   },

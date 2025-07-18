@@ -1,5 +1,4 @@
 import illustration from "../images/illustration-empty.svg"
-import { MdCurrencyPound } from "react-icons/md";
 
 const formatNumber = (num) => {
     return new Intl.NumberFormat().format(Number(num));

@@ -1,4 +1,4 @@
-import iconSuccess from '../images/icon-success-check.svg'
+ import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const Toast = ({ message, subtext, show }) => {
     return (
@@ -7,8 +7,9 @@ const Toast = ({ message, subtext, show }) => {
         aria-live="polite" 
         className={`toast ${show ? 'show' : ''}`}
         >
-            <span className="row">
-                <img src={iconSuccess} alt="" />
+            <span className="row"> 
+                <IoIosCheckmarkCircleOutline className='icon'/>
+
                 <strong>{message}</strong>
             </span>
             <div>

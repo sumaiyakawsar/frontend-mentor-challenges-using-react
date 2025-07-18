@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import gsap from 'gsap';
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle'
@@ -84,7 +84,6 @@ const Project3 = () => {
     }, []);
 
     return (
-
         <div className="container project-3">
             <h1 className="heading">We're launching soon</h1>
             <div className="countdown-container">
@@ -93,8 +92,6 @@ const Project3 = () => {
                 ))}
             </div>
         </div>
-
-
     )
 }
 

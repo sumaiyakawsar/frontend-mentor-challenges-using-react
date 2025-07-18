@@ -1,4 +1,4 @@
-import iconMenuClose from '../images/icon-close.svg'
+import { FaTimes } from "react-icons/fa";
 
 const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
     return (
@@ -7,9 +7,8 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
 
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
                 <button type="button" className="close-button" onClick={closeMenu}>
-                    <img src={iconMenuClose} alt="" />
+                    <FaTimes className='icon' />
                 </button>
-
 
                 <nav className="mobile-nav">
                     {menuTitles.map((menu, id) => (

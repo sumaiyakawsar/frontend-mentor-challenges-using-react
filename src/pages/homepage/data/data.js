@@ -72,7 +72,7 @@ export const Projects = [
         projectImage: project3,
         projectLevelNo: "3",
         projectLevel: "intermediate",
-        projectTags: ["React", "SCSS", "Flex"]
+        projectTags: ["React", "SCSS", "Flex", "Gsap"]
     },
     {
         projectId: 4,

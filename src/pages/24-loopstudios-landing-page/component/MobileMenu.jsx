@@ -1,11 +1,9 @@
-import iconMenuClose from '../images/icon-close.svg'
 import logo from '../images/logo.svg'
+import { FaTimes } from "react-icons/fa";
 
 const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
     return (
         <>
-
-
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
                 <div className="top">
                     <div className="logo">
@@ -13,11 +11,9 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
                     </div>
 
                     <button type='button' className="close-button" onClick={closeMenu}>
-                        <img src={iconMenuClose} alt="" />
+                        <FaTimes className='icon' />
                     </button>
                 </div>
-
-
 
                 <nav className="mobile-nav">
                     {menuTitles.map((menu, id) => (
@@ -26,7 +22,6 @@ const MobileMenu = ({ isOpen, closeMenu, menuTitles }) => {
                         </a>
                     ))}
                 </nav>
-
             </div>
         </>
     );
