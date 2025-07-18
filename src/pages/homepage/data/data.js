@@ -42,6 +42,7 @@ import Project41 from "../images/project41-single-price-grid-component.png"
 import Project42 from "../images/project42-base-apparel-coming-soon.png"
 import Project43 from "../images/project43-huddle-landing-page.png"
 import Project44 from "../images/project44-intro-component-with-signup-form.png"
+import Project45 from "../images/project45-static-job-listings.png"
 
 export const Projects = [
     {
@@ -57,12 +58,12 @@ export const Projects = [
     },
     {
         projectId: 2,
-        projectTitle: "3-column Card",
+        projectTitle: "3-column",
         src: "/project2",
         projectImage: project2,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Component"]
+        projectTags: ["React", "SCSS", "Component", "Card"]
     },
     {
         projectId: 3,
@@ -75,7 +76,7 @@ export const Projects = [
     },
     {
         projectId: 4,
-        projectTitle: "REST Countries API with theme",
+        projectTitle: "REST Countries",
         src: "https://sumaiyakawsar.github.io/rest-api-countries-react/",
         projectImage: project4,
         projectLevelNo: "4",
@@ -102,30 +103,30 @@ export const Projects = [
     },
     {
         projectId: 7,
-        projectTitle: "Blog Preview Card",
+        projectTitle: "Blog Preview",
         src: "/project7",
         projectImage: project7,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Component"]
+        projectTags: ["React", "SCSS", "Component", "Card"]
     },
     {
         projectId: 8,
-        projectTitle: "Profile Card",
+        projectTitle: "Profile preview",
         src: "/project8",
         projectImage: project8,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Component"]
+        projectTags: ["React", "SCSS", "Component", "Card"]
     },
     {
         projectId: 9,
-        projectTitle: "NFT preview card",
+        projectTitle: "NFT preview",
         src: "/project9",
         projectImage: project9,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Component"]
+        projectTags: ["React", "SCSS", "Component", "Card"]
     },
     {
         projectId: 10,
@@ -146,12 +147,12 @@ export const Projects = [
         projectTags: ["React", "SCSS", "Flex"]
     }, {
         projectId: 12,
-        projectTitle: "Product preview card",
+        projectTitle: "Product preview",
         src: "/project12",
         projectImage: project12,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Component"]
+        projectTags: ["React", "SCSS", "Component", "Card"]
     }, {
         projectId: 13,
         projectTitle: "Four card feature section",
@@ -189,7 +190,7 @@ export const Projects = [
     },
     {
         projectId: 17,
-        projectTitle: "Time tracking dashboard",
+        projectTitle: "Time tracking",
         src: "/project17",
         projectImage: project17,
         projectLevelNo: "2",
@@ -207,7 +208,7 @@ export const Projects = [
     },
     {
         projectId: 19,
-        projectTitle: "Interactive rating component",
+        projectTitle: "Interactive rating",
         src: "/project19",
         projectImage: project19,
         projectLevelNo: "1",
@@ -339,7 +340,7 @@ export const Projects = [
 
     {
         projectId: 34,
-        projectTitle: "Expenses chart component",
+        projectTitle: "Expenses chart",
         src: "/project34",
         projectImage: Project34,
         projectLevelNo: "2",
@@ -374,20 +375,20 @@ export const Projects = [
         projectTags: ["React", "SCSS", "Flex", "Theme"]
     }, {
         projectId: 38,
-        projectTitle: "Order summary card",
+        projectTitle: "Order summary",
         src: "/project38",
         projectImage: Project38,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Component"]
+        projectTags: ["React", "SCSS", "Component", "Card"]
     }, {
         projectId: 39,
-        projectTitle: "Stats preview card",
+        projectTitle: "Stats preview",
         src: "/project39",
         projectImage: Project39,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Flex"]
+        projectTags: ["React", "SCSS", "Card"]
     }, {
         projectId: 40,
         projectTitle: "Social proof section",
@@ -399,7 +400,7 @@ export const Projects = [
     },
     {
         projectId: 41,
-        projectTitle: "Single price grid component",
+        projectTitle: "Single price grid",
         src: "/project41",
         projectImage: Project41,
         projectLevelNo: "1",
@@ -423,12 +424,21 @@ export const Projects = [
         projectTags: ["React", "SCSS"]
     }, {
         projectId: 44,
-        projectTitle: "Intro component with sign-up",
+        projectTitle: "Intro component",
         src: "/project44",
         projectImage: Project44,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS", "Toast"]
+        projectTags: ["React", "SCSS", "Toast", "Form"]
+    },
+    {
+        projectId: 45,
+        projectTitle: "Job listings",
+        src: "/project45",
+        projectImage: Project45,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Filter"]
     },
     // {
     //     projectId: 1,

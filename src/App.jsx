@@ -46,6 +46,7 @@ import Project41 from './pages/41-single-price-grid-component/Project41';
 import Project42 from './pages/42-base-apparel-coming-soon/Project42';
 import Project43 from './pages/43-huddle-landing-page/Project43';
 import Project44 from './pages/44-intro-component-with-signup-form/Project44';
+import Project45 from './pages/45-static-job-listings/Project45';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -101,11 +102,11 @@ function App() {
     { path: "/project39", element: <Project39 /> },
     { path: "/project40", element: <Project40 /> },
     { path: "/project41", element: <Project41 /> },
-
     { path: "/project42", element: <Project42 /> },
     { path: "/project43", element: <Project43 /> },
     { path: "/project44", element: <Project44 /> },
 
+    { path: "/project45", element: <Project45 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

@@ -1,4 +1,3 @@
- 
 // ## Colors
 $frontend-io: #3f54a3;
 
@@ -6,38 +5,42 @@ $white: hsl(0, 0%, 100%);
 $black: rgb(0, 0, 0);
 $light-gray: hsl(212, 45%, 89%);
 
-$newbie: rgb(106, 190, 205);
-
-$junior: rgb(170, 215, 66);
-$intermediate: rgb(241, 182, 4);
-$advanced: rgb(244, 137, 37);
-$guru: rgb(237, 44, 73);
-
-$html: rgb(106, 190, 205);
-$scss: rgb(62, 84, 163);
-$js: rgb(207, 99, 144);
-$api: rgb(170, 215, 66);
-$flexbx: rgba(41, 224, 24, 0.76);
-
 $filter-colors: (
-    "newbie": $newbie,
-    "junior": $junior,
-    "intermediate": $intermediate,
-    "advanced": $advanced,
-    "guru":$guru,
-    "all": #3f54a3
+    newbie: rgb(106, 190, 205),
+    junior: rgb(170, 215, 66),
+    intermediate: rgb(241, 182, 4),
+    advanced: rgb(244, 137, 37),
+    guru: rgb(237, 44, 73),
+    all: #3f54a3
 );
+
+$tag-colors: (
+    react: #61dafb,
+    scss: #cd6799,
+    component: #3f51b5,
+    flex: #ff9800,
+    api: #76b947,
+
+    theme: #7e57c2,
+    grid: #009688,
+    form: #26a69a,
+    dashboard: #1e1e2f,
+    calculator: #455a64,
+
+    toast: #4caf50,
+    landing: #795548,
+    card: #607d8b,
+    filter: #8bc34a,
+    animation: #e91e63
+);
+
 // ## Typography
 $font-size-p: 15px;
- 
+
+$box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
 
 $font-normal: 400;
 $font-bold: 700;
-
-// Container Widths
-$container-width-lg: 75%;
-$container-width-md: 86%;
-$container-width-sm: 90%;
 
 //Transition
 $transition: all 400ms ease;

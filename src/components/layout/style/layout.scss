@@ -145,7 +145,7 @@
         }
     }
 
-        &44 {
+    &44 {
         background-color: v.$red-44;
 
         background-image: url("../../../pages/44-intro-component-with-signup-form/images/bg-intro-mobile.png");
@@ -155,6 +155,9 @@
         @include breakpoint(medium) {
             background-image: url("../../../pages/44-intro-component-with-signup-form/images/bg-intro-desktop.png");
         }
+    }
+    &45 {
+        background-color: v.$green-45;
     }
 }
 

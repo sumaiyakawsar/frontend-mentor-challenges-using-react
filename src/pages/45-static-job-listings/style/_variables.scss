@@ -1,0 +1,19 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+$green-400: hsl(180, 29%, 50%);
+
+// Neutral
+$green-50: hsl(180, 52%, 96%); 
+$gray-400: hsl(180, 8%, 52%);
+$green-900: hsl(180, 14%, 20%);
+
+$box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.1);
+
+// Typography
+$font-size-p: f.rem(15);
+
+$font-normal: 500;
+$font-bold: 700;

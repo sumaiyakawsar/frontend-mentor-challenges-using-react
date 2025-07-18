@@ -1,0 +1,246 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "variables" as v;
+@use "../../../styles/font" as fo;
+
+.project-45 {
+    font-size: v.$font-size-p;
+    // line-height: 1.5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: fo.$league-spartan;
+    gap: f.rem(32);
+    width: 100dvw;
+
+    .header {
+        background: url("../images/bg-header-mobile.svg"), v.$green-400;
+        background-repeat: no-repeat; // Prevent tiling
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+
+        @include breakpoint(medium) {
+            background-image: url("../images/bg-header-desktop.svg");
+        }
+    }
+
+    .container {
+        width: 80dvw;
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(32);
+        position: relative;
+        top: -60px;
+
+        .filter-bar-wrapper {
+            min-height: 60px;
+
+            .filter-bar {
+                padding: f.rem(16) f.rem(32);
+                background: white;
+                border-radius: f.rem(6);
+                box-shadow: v.$box-shadow;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: f.rem(16);
+
+                .tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+
+                    .tag {
+                        display: flex;
+                        align-items: center;
+                        background-color: color-mix(in srgb, white 80%, v.$green-400);
+                        border-radius: f.rem(6);
+                        overflow: hidden;
+
+                        span {
+                            padding: 0.5rem 0.8rem;
+                            color: v.$green-400;
+                            font-weight: 700;
+                        }
+
+                        button {
+                            background: v.$green-400;
+                            color: v.$green-50;
+                            border: none;
+                            padding: f.rem(8);
+                            cursor: pointer;
+
+                            &:hover {
+                                background: v.$green-900;
+                            }
+                        }
+                    }
+                }
+
+                .clear {
+                    all: unset;
+                    font-weight: v.$font-bold;
+                    cursor: pointer;
+                    color: v.$gray-400;
+
+                    &:hover {
+                        color: v.$green-400;
+                        text-decoration: underline;
+                    }
+                }
+
+                &.empty {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .job__listings {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(44);
+
+            .job-card {
+                background: white;
+                border-radius: f.rem(8);
+                box-shadow: v.$box-shadow;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: f.rem(24);
+                padding: f.rem(24);
+                position: relative;
+
+                @include breakpoint(medium) {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: f.rem(32);
+                    padding: f.rem(32);
+                }
+
+                .logo {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: -25px;
+
+                    @include breakpoint(medium) {
+                        width: auto;
+                        height: auto;
+                        position: unset;
+                    }
+                }
+
+                &.border-left {
+                    border-left: 5px solid v.$green-400;
+                }
+
+                .info {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: f.rem(16);
+                    padding-top: f.rem(16);
+
+                    @include breakpoint(medium) {
+                        padding-top: 0;
+                        align-self: stretch;
+                        justify-content: space-around;
+                    }
+
+                    .company-meta,
+                    .job-meta {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .company-meta {
+                        gap: f.rem(8);
+                        font-weight: v.$font-bold;
+
+                        h2 {
+                            color: v.$green-400;
+                            font-size: f.rem(16);
+                            padding-right: f.rem(8);
+                        }
+
+                        .new,
+                        .featured {
+                            font-size: f.rem(10);
+                            color: white;
+                          
+                            padding: f.rem(4) f.rem(8);
+                            border-radius: f.rem(12);
+                        }
+
+                        .new {
+                            background-color: v.$green-400;
+                        }
+
+                        .featured {
+                            background-color: v.$green-900;
+                        }
+                    }
+
+                    h3 {
+                        font-weight: v.$font-bold;
+                        font-size: f.rem(18);
+                        cursor: pointer;
+
+                        &:hover {
+                            color: v.$green-400;
+                        }
+                    }
+
+                    .job-meta {
+                        gap: f.rem(16);
+                        font-size: 0.875rem;
+                        color: v.$gray-400;
+                        font-weight: v.$font-bold;
+
+                        .dot {
+                            width: 4px;
+                            height: 4px;
+                            background: v.$gray-400;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                hr {
+                    width: 100%;
+                    background-color: v.$gray-400;
+
+                    border: none;
+                    height: 1px;
+
+                    @include breakpoint(medium) {
+                        display: none;
+                    }
+                }
+                .tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: f.rem(16);
+
+                    span {
+                        border-radius: f.rem(6);
+                        cursor: pointer;
+                        transition: 0.2s;
+                        font-weight: v.$font-bold;
+                        padding: f.rem(6) f.rem(12);
+                        color: v.$green-400;
+                        background-color: color-mix(in srgb, white 80%, v.$green-400);
+
+                        &:hover {
+                            background-color: v.$green-400;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
