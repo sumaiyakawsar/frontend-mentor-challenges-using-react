@@ -1,7 +1,9 @@
+@use "sass:map";
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @use "../../../styles/mq" as *;
-@use "../../../styles/font" as fo;
+@use "../../../styles/font" as fo; 
+
 
 .project-17 {
     font-family: fo.$rubik-font;
@@ -116,8 +118,8 @@
             
             @each $level, $data in v.$card-data {
                 &.#{$level} {
-                    background: map-get($map: $data, $key: color);
-                    background-image: url(map-get($data, image));
+                    background: map.get($map: $data, $key: color);
+                    background-image: url(map.get($data, image));
                     grid-area: $level;
                     background-size: 60px;
                     background-repeat: no-repeat;

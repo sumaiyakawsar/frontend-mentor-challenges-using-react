@@ -1,0 +1,141 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "variables" as v;
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
+
+.project-46 {
+    font-size: v.$font-size-p;
+     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: v.$font-family;
+    gap: f.rem(32);
+
+    @include breakpoint(medium) {
+        padding-block: f.rem(32);
+    }
+    .notifications-container {
+        padding: f.rem(32);
+        max-width: 100vw;
+        background-color: v.$white;
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(32);
+        border-radius: f.rem(8);
+        box-shadow: v.$box-shadow;
+        @include breakpoint(medium) {
+            max-width: 40vw;
+        }
+        .notifications-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: f.rem(20);
+                display: flex;
+                gap: f.rem(16);
+                span {
+                    background-color: v.$blue-950;
+                    color: v.$white;
+                    font-size: f.rem(12);
+                    padding: f.rem(4) f.rem(8);
+                    border-radius: f.rem(6);
+                }
+            }
+
+            button {
+                all: unset;
+                color: v.$blue-950;
+                cursor: pointer;
+            }
+        }
+
+        .notifications-list {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(12);
+
+            .notification {
+                display: flex;
+                gap: f.rem(16);
+                padding: f.rem(16);
+                border-radius: f.rem(8);
+                background-color: white;
+
+                transition: none; // handled by GSAP now
+                transform-origin: center;
+
+                &.unread {
+                    background-color: v.$navy-50;
+                }
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+
+                .content {
+                    flex: 1;
+                    display: flex;
+                    gap: f.rem(8);
+                    flex-direction: column;
+                    font-size: f.rem(12);
+                    .message {
+                        .name,
+                        .target {
+                            font-weight: v.$font-bold;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: v.$blue-950;
+                            }
+                        }
+
+                        .target {
+                            color: v.$gray-600;
+                        }
+
+                        .dot {
+                            display: inline-block;
+                            width: f.em(8);
+                            height: f.em(8);
+                            background-color: v.$red-500;
+                            border-radius: 50%;
+                            margin-left: f.em(6);
+                            transform-origin: center;
+                        }
+                    }
+
+                    .time {
+                        color: v.$gray-500;
+                        font-size: f.rem(13);
+                    }
+
+                    .private-message {
+                        color: v.$gray-600;
+                        border: 1px solid v.$blue-100;
+                        padding: f.rem(16);
+                        border-radius: f.em(8);
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: v.$blue-100;
+                        }
+                    }
+                }
+
+                .thumbnail {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

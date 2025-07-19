@@ -44,6 +44,8 @@ import Project43 from "../images/project43-huddle-landing-page.png"
 import Project44 from "../images/project44-intro-component-with-signup-form.png"
 import Project45 from "../images/project45-static-job-listings.png"
 
+import Project46 from "../images/project46-notifications-page.png"
+
 export const Projects = [
     {
         projectId: 1,
@@ -439,6 +441,15 @@ export const Projects = [
         projectLevelNo: "3",
         projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "Filter"]
+    },
+    {
+        projectId: 46,
+        projectTitle: " Notifications page",
+        src: "/project46",
+        projectImage: Project46,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS"]
     },
     // {
     //     projectId: 1,

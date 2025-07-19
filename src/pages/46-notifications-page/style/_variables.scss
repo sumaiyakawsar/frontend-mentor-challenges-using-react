@@ -1,0 +1,29 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary
+
+$red-500: hsl(1, 90%, 64%);
+$blue-950: hsl(219, 85%, 26%);
+
+// Neutral
+
+$white: hsl(0, 100%, 100%);
+$navy-50: hsl(210, 60%, 98%);
+$navy-100: hsl(205, 33%, 90%);
+$navy-950: hsl(224, 21%, 14%);
+
+$blue-100: hsl(211, 68%, 94%);
+$gray-500: hsl(219, 14%, 63%);
+$gray-600: hsl(219, 12%, 42%);
+
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+// Typography
+$font-size-p: f.rem(16);
+
+$font-family: "Plus Jakarta Sans", sans-serif;
+
+$font-normal: 500;
+$font-bold: 800;
