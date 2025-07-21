@@ -18,7 +18,7 @@ export const socialAccounts = [
     {
         platform: "Twitter",
         username: "@nathanf",
-        icon: iconInstagram,
+        icon: iconTwitter,
         followers: 1044,
         metricLabel: "FOLLOWERS",
         changeToday: 99,
@@ -27,7 +27,7 @@ export const socialAccounts = [
     {
         platform: "Instagram",
         username: "@realnathanf",
-        icon: iconTwitter,
+        icon: iconInstagram ,
         followers: 11000,
         metricLabel: "FOLLOWERS",
         changeToday: 1099,

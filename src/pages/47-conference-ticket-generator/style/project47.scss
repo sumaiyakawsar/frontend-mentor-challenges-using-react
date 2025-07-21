@@ -265,7 +265,10 @@
                     height: 100%;
                     gap: f.rem(16);
                     flex: 1;
-                    padding: f.rem(24);
+
+                    @include breakpoint(small) {
+                        padding: f.rem(24);
+                    }
 
                     .conference,
                     .user {
@@ -274,18 +277,27 @@
                         gap: f.rem(16);
 
                         &__img {
-                            width: 50px;
-                            height: 50px;
+                            width: 30px;
+                            height: 30px;
+                            object-fit: cover;
                             border-radius: f.rem(8);
                             display: block;
                         }
 
                         &__details {
+                            h3 {
+                                font-size: clamp(16px, 3vw, 32px);
+                            }
+
                             .datelocation,
                             .github__handle {
                                 display: flex;
-                                font-size: f.rem(14);
+                                align-items: center;
+                                font-size: clamp(10px, 1.3vw, 12px);
                                 color: v.$neutral-300;
+                                p {
+                                    font-size: clamp(10px, 1.3vw, 12px);
+                                }
                             }
                         }
                     }
@@ -295,10 +307,13 @@
                     transform: rotate(90deg);
                     transform-origin: center;
 
-                    font-size: f.rem(20);
-                    color: v.$neutral-500; // Match your design
+                    font-size: clamp(14px, 1.5vw, 20px);
+                    color: v.$neutral-500;
                     opacity: 0.7;
                     letter-spacing: 0.1em;
+
+                    @include breakpoint(medium) {
+                    }
                 }
             }
         }

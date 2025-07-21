@@ -31,7 +31,7 @@ function Project10() {
                     <a href="https://www.frontendmentor.io/profile/sumaiyakawsar" className="social_links">Frontend Mentor</a>
                     <a href="https://www.linkedin.com/in/sumaiyakawsar/" className="social_links">Linkedin</a>
                     <a href="https://x.com/SumaiyaKawsar_" className="social_links">X</a>
-                    <a href="https://www.instagram.com/sumaiyakawsar_/" className="social_links">Instagram</a>
+                    <a href="https://www.instagram.com/devsume/" className="social_links">Instagram</a>
                 </div>
 
             </div>

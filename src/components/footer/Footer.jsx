@@ -79,7 +79,7 @@ const Footer = () => {
 
         </a>
         <a
-          href="https://www.instagram.com/sumaiyakawsar_/"
+          href="https://www.instagram.com/devsume/"
           target="_blank"
           className="social__icon "
           aria-label="instagram"
