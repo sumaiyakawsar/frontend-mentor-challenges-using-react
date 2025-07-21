@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
 import './style/project19.scss';

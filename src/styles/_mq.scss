@@ -1,4 +1,4 @@
-@use 'functions' as f;
+@use "functions" as f;
 @use "sass:map";
 
 $breakpoints-down: (
@@ -11,4 +11,3 @@ $breakpoints-down: (
         @content;
     }
 }
- 

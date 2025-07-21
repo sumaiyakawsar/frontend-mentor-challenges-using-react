@@ -1,0 +1,306 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap");
+
+.project-47 {
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: v.$font-family;
+    gap: f.rem(32);
+    color: white;
+    padding: f.rem(32);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: f.rem(32);
+
+        .welcome__form {
+            color: v.$neutral-300;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(32);
+
+            h1 {
+                color: v.$neutral-0;
+            }
+
+            .form {
+                text-align: start;
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(16);
+                max-width: 500px;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: f.rem(12);
+
+                    .upload-box {
+                        padding: f.rem(16);
+                        border: 2px dashed v.$neutral-500;
+                        text-align: center;
+                        cursor: pointer;
+                        border-radius: f.rem(8);
+                        background-color: rgba(v.$neutral-0, 0.1);
+                        position: relative;
+
+                        .placeholder-wrapper {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            gap: f.rem(24);
+
+                            .placeholder-icon {
+                                border-radius: f.rem(8);
+                                padding: f.rem(8);
+                                background-color: rgba(v.$neutral-0, 0.1);
+                                box-shadow: v.$box-shadow;
+                                border: 1px solid v.$neutral-700;
+                                .icon {
+                                    width: 35px;
+                                    height: 35px;
+                                    display: block;
+                                }
+                            }
+
+                            p {
+                                font-size: f.rem(16);
+                                color: v.$neutral-500;
+                                font-weight: v.$font-bolder;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: rgba(v.$neutral-0, 0.3);
+                            .placeholder-icon {
+                                outline: v.$neutral-500 solid 1px;
+                            }
+                        }
+
+                        .preview-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: f.rem(24);
+
+                            .avatar-preview {
+                                width: 70px;
+                                height: 70px;
+                                object-fit: cover;
+                                border-radius: f.rem(8);
+                                outline: v.$neutral-0 solid 1px;
+                            }
+
+                            .action-buttons {
+                                display: flex;
+                                gap: f.rem(10);
+
+                                button {
+                                    all: unset;
+                                    padding: f.rem(6) f.rem(12);
+
+                                    border-radius: f.rem(4);
+                                    background-color: rgba(v.$neutral-0, 0.3);
+                                    color: #fff;
+                                    font-size: 0.85rem;
+                                    cursor: pointer;
+                                    transition: background-color 0.2s ease;
+
+                                    &:hover {
+                                        background-color: v.$orange-500;
+                                    }
+
+                                    &:nth-child(1) {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:focus,
+                        &:focus-visible {
+                            outline: v.$neutral-500 1px solid;
+                            outline-offset: 2px;
+                        }
+                    }
+
+                    .info-box {
+                        font-size: f.rem(12);
+                        color: v.$neutral-500;
+                        display: flex;
+                        gap: f.rem(10);
+                        align-items: center;
+
+                        &.error {
+                            color: v.$orange-500;
+                        }
+
+                        .info,
+                        .error-text {
+                            display: flex;
+                            gap: f.rem(10);
+                            align-items: center;
+                        }
+                    }
+
+                    .input {
+                        padding: f.rem(16);
+                        border-radius: f.rem(8);
+                        border: 2px solid v.$neutral-500;
+                        background-color: rgba(v.$neutral-0, 0.1);
+                        color: v.$neutral-0;
+                        cursor: pointer;
+                        &.error {
+                            border: v.$orange-700 1px solid;
+                        }
+
+                        &:focus {
+                            outline: v.$neutral-500 1px solid;
+                            outline-offset: 2px;
+                        }
+                        &:hover {
+                            background-color: rgba(v.$neutral-0, 0.3);
+                        }
+                        &::placeholder {
+                            font-family: v.$font-family;
+                            color: v.$neutral-500;
+                        }
+                    }
+                }
+
+                .btnSubmit {
+                    padding: f.rem(16);
+                    border-radius: f.rem(8);
+                    background-color: v.$orange-500;
+                    cursor: pointer;
+                    text-align: center;
+                    font-weight: v.$font-bolder;
+                    color: v.$neutral-900;
+                    &:hover {
+                        background-color: v.$orange-700;
+                    }
+
+                    &:focus {
+                        outline: v.$neutral-500 1px solid;
+                        outline-offset: 2px;
+                    }
+                }
+            }
+        }
+
+        .confirmation {
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(32);
+            text-align: center;
+
+            h2 {
+                font-size: f.rem(40);
+                span {
+                    background: v.$gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+
+            p {
+                font-weight: v.$font-normal;
+                font-size: f.rem(18);
+                color: v.$neutral-300;
+                span {
+                    color: color-mix(in srgb, white 30%, v.$orange-500);
+                }
+            }
+
+            .ticket {
+                position: relative;
+
+                width: 100%;
+                margin: 0 auto;
+                aspect-ratio: 2;
+                overflow: hidden;
+
+                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: f.rem(16);
+
+                .bg {
+                    position: absolute;
+
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain; // <-- show entire image
+                    z-index: 0;
+                    pointer-events: none;
+                }
+
+                .contents {
+                    z-index: 1;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    height: 100%;
+                    gap: f.rem(16);
+                    flex: 1;
+                    padding: f.rem(24);
+
+                    .conference,
+                    .user {
+                        display: flex;
+                        align-items: center;
+                        gap: f.rem(16);
+
+                        &__img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: f.rem(8);
+                            display: block;
+                        }
+
+                        &__details {
+                            .datelocation,
+                            .github__handle {
+                                display: flex;
+                                font-size: f.rem(14);
+                                color: v.$neutral-300;
+                            }
+                        }
+                    }
+                }
+
+                .ticket__number {
+                    transform: rotate(90deg);
+                    transform-origin: center;
+
+                    font-size: f.rem(20);
+                    color: v.$neutral-500; // Match your design
+                    opacity: 0.7;
+                    letter-spacing: 0.1em;
+                }
+            }
+        }
+    }
+}

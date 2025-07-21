@@ -162,6 +162,84 @@
     &46 {
         background-color: v.$navy-46;
     }
+
+    &47 {
+        // Layer order: Think from front to back. The last image is the base background.
+        background-image: url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+            url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-top.svg"),
+            url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+            url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+            url("../../../pages/47-conference-ticket-generator/images/pattern-lines.svg"),
+            url("../../../pages/47-conference-ticket-generator/images/background-mobile.png");
+
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+        background-position:
+            top -2% left -5%,
+            top 5% right,
+            // squiggly-line-top
+            bottom left,
+            // squiggly-line-bottom
+            105% 60%,
+            // pattern-circle (adjust as needed)
+            center,
+            // pattern-lines
+            center; // background-desktop
+
+        background-size:
+            100px,
+            100px,
+            // top squiggly
+            300px,
+            // bottom squiggly
+            100px,
+            // circle
+            cover,
+            // lines
+            cover; // base background
+
+        // Responsive layout for tablets
+        @include breakpoint(small) {
+            background-image: url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-top.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-lines.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/background-tablet.png");
+        }
+
+        // Responsive layout for desktops
+        @include breakpoint(medium) {
+            background-image: url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-top.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-bottom-desktop.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/pattern-lines.svg"),
+                url("../../../pages/47-conference-ticket-generator/images/background-desktop.png");
+
+            background-position:
+                top -10% left 5%,
+                top 5% right,
+                // squiggly-line-top
+                bottom left,
+                // squiggly-line-bottom
+                75% 60%,
+                // pattern-circle (adjust as needed)
+                center,
+                // pattern-lines
+                center; // background-desktop
+
+            background-size:
+                auto,
+                auto,
+                auto,
+                200px,
+                // circle
+                cover,
+                // lines
+                cover; // base background
+        }
+    }
 }
 
 .theme {

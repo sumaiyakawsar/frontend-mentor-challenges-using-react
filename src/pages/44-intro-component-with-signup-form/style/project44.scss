@@ -59,8 +59,10 @@
             @include breakpoint(medium) {
                 text-align: left;
             }
-            h1 {
-                font-size: f.rem(32);
+            .typing {
+                h1 {
+                    font-size: f.rem(32);
+                }
             }
             p {
                 opacity: 76%;

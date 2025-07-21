@@ -68,8 +68,6 @@ const Project21 = () => {
         }));
 
         validateField(name, fieldValue); // Real-time validation
-
-
     };
 
 

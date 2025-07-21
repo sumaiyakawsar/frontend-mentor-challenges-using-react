@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export default function MultiLineTypewriter({ text = '', speed = 50, className = '' }) {
     const [displayedText, setDisplayedText] = useState('');
 
+
     useEffect(() => {
         let i = 0;
         const interval = setInterval(() => {
@@ -15,11 +16,11 @@ export default function MultiLineTypewriter({ text = '', speed = 50, className =
     }, [text, speed]);
 
     return (
-        <h1 className={`typing ${className}`}>
+        <div className={`typing ${className}`}>
             {displayedText.split('\n').map((line, i) => (
-                <div key={i}>{line}</div>
+                <h1 key={i}>{line}</h1>
             ))}
-        </h1>
+        </div>
     );
 }
 

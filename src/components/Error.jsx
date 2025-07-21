@@ -1,6 +1,13 @@
-function Error({ message, className,  id }) {
+function Error({ message, className, id, icon: Icon }) {
     return (
-        <div role="alert" id={id} className={className}>{message}</div>
+        <div
+            role="alert"
+            id={id}
+            className={className}
+        >
+            {Icon && <Icon aria-hidden="true" />}
+            {message}
+        </div>
     )
 }
 
