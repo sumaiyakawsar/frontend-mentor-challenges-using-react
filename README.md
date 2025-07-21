@@ -51,13 +51,15 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 39           | [Stats preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project39)      | Newbie       | ✔️    |
 | 40           | [Social proof section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project40)              | Newbie       | ✔️    |
 | 41           | [Single price grid component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project41)       | Newbie       | ✔️    |
-| 42           | [Base Apparel coming soon page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project42)                                   | Newbie       | ✔️    |
-| 43           | [Intro component with sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project43)                                                                                                                      | Newbie       | ✔️    |
-| 44           | [Huddle landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project44)                                                                                                                      | Newbie       | ✔️    |
-| 45           | [Job listings](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project45)                                                                                                      | Intermediate       | ✔️    |
-| 46           | ------                                                                                                                  | Junior       | ❌    |
-| 47           | ------                                                                                                                  | Junior       | ❌    |
-| 48           | ------                                                                                                                  | Junior       | ❌    |
+| 42           | [Base Apparel coming soon page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project42)     | Newbie       | ✔️    |
+| 43           | [Intro component with sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project43) | Newbie       | ✔️    |
+| 44           | [Huddle landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project44)               | Newbie       | ✔️    |
+| 45           | [Job listings](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project45)                      | Intermediate | ✔️    |
+| 46           | [Notifications Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project47)                | Junior       | ✔️    |
+| 47           | [Conference Ticket Generator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project48)       | Junior       | ✔️    |
+| 48           | ----                                                                                                                    | Junior       | ❌    |
+| 48           | ---                                                                                                                     | Junior       | ❌    |
+| 48           | ----                                                                                                                    | Junior       | ❌    |
 
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
