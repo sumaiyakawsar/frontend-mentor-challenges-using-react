@@ -359,7 +359,6 @@
 
     &-42 {
         background: v.$light-Gradient-42;
-
         color: v.$pink-42;
 
         a {
@@ -427,6 +426,16 @@
             // Optional for other browsers:
             background-clip: text;
             color: transparent;
+        }
+    }
+
+    &-48 {
+        background: #cccccc31;
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$green-48;
         }
     }
 }

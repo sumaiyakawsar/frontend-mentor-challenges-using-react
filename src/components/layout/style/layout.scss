@@ -240,6 +240,16 @@
                 cover; // base background
         }
     }
+
+    &48 {
+        background-image: url("../../../pages/48-clipboard-landing-page/images/bg-header-mobile.png");
+        background-repeat: no-repeat; // Prevent tiling
+        background-size: contain;
+        
+        @include breakpoint(medium) {
+            background-image: url("../../../pages/48-clipboard-landing-page/images/bg-header-desktop.png");
+        }
+    }
 }
 
 .theme {

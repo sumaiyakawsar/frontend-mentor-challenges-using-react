@@ -1,0 +1,257 @@
+@use "../../../styles/functions" as f;
+@use "variables" as v;
+@use "../../../styles/mq" as *;
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+.project-48 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    line-height: 1.5;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: f.rem(48);
+
+    section {
+        padding-block: f.rem(48);
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: f.rem(32);
+
+        h1,
+        h2,
+        h3 {
+            color: v.$gray-700;
+        }
+        p {
+            color: v.$gray-500;
+            font-size: clamp(14px, 1vw, 16px);
+        }
+        .header__container {
+            text-align: center;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: f.rem(32);
+            .logo {
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+            }
+        }
+
+        .btn__container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: f.rem(16);
+
+            .btn {
+                all: unset;
+                width: 100%;
+                padding: f.rem(12) f.rem(24);
+
+                cursor: pointer;
+                border-radius: f.rem(25);
+                font-weight: bold;
+                text-align: center;
+                color: white;
+                box-shadow:
+                    inset 0 10px 30px rgba(17, 17, 17, 0.068),
+                    0 4px 6px rgba(0, 0, 0, 0.322);
+                @include breakpoint(medium) {
+                    width: auto;
+                }
+
+                &.ios {
+                    background-color: v.$green-500;
+                    &:hover,
+                    &:focus,
+                    &:focus-visible {
+                        background-color: color-mix(in srgb, white 20%, v.$green-500);
+                    }
+                }
+                &.mac {
+                    background-color: v.$blue-100;
+                    &:hover,
+                    &:focus,
+                    &:focus-visible {
+                        background-color: color-mix(in srgb, white 20%, v.$blue-100);
+                    }
+                }
+            }
+        }
+
+        .content {
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: f.rem(48);
+            @include breakpoint(medium) {
+                flex-direction: row;
+                align-self: flex-start;
+                margin-left: -120px;
+            }
+
+            img {
+                flex: 1;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .features {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                gap: f.rem(32);
+                .feature {
+                    text-align: center;
+                    @include breakpoint(medium) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        img.devices {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            display: block;
+        }
+
+        .tools {
+            width: 80vw;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(32);
+            @include breakpoint(medium) {
+                flex-direction: row;
+            }
+            .tool {
+                flex: 1;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: f.rem(16);
+
+                img {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .partners {
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: f.rem(32);
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+            }
+        }
+    }
+
+    .footer-this {
+        width: 100%;
+        background: #cccccc31;
+        padding-block: f.rem(16);
+
+        .container {
+            margin: 0 auto;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: f.rem(32);
+            text-align: center;
+
+            @include breakpoint(medium) {
+                justify-content: space-between;
+                text-align: left;
+                flex-direction: row;
+                gap: f.rem(80);
+            }
+            img {
+                display: block;
+                width: 50px;
+            }
+            .nav-links {
+                flex: 1;
+                display: grid;
+                gap: f.rem(16);
+
+                a {
+                    color: v.$gray-700;
+
+                    &:hover {
+                        color: v.$green-500;
+                    }
+                }
+                @include breakpoint(medium) {
+                    grid-template-columns: repeat(3, auto);
+                    grid-template-rows: repeat(2, auto);
+                    gap: 0.5rem 2rem;
+                    a {
+                        color: v.$gray-700;
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            grid-column: 1;
+                        }
+
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            grid-column: 2;
+                        }
+
+                        &:nth-child(1),
+                        &:nth-child(3),
+                        &:nth-child(5) {
+                            grid-row: 1;
+                        }
+
+                        &:nth-child(2),
+                        &:nth-child(4) {
+                            grid-row: 2;
+                        }
+
+                        &:nth-child(5) {
+                            grid-column: 3;
+                        }
+                    }
+                }
+            }
+
+            .social-links {
+                display: flex;
+                gap: f.rem(16);
+                a {
+                    all: unset;
+                    cursor: pointer;
+                    color: v.$gray-700;
+                    &:hover {
+                        color: v.$green-500;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -44,8 +44,9 @@ import Project43 from "../images/project43-huddle-landing-page.png"
 import Project44 from "../images/project44-intro-component-with-signup-form.png"
 import Project45 from "../images/project45-static-job-listings.png"
 import Project46 from "../images/project46-notifications-page.png"
-
 import Project47 from "../images/project47-conference-ticket-generator.png"
+
+import Project48 from "../images/project48-clipboard-landing-page.png"
 
 export const Projects = [
     {
@@ -419,12 +420,12 @@ export const Projects = [
         projectTags: ["React", "SCSS"]
     }, {
         projectId: 43,
-        projectTitle: "Huddle landing page",
+        projectTitle: "Huddle page",
         src: "/project43",
         projectImage: Project43,
         projectLevelNo: "1",
         projectLevel: "newbie",
-        projectTags: ["React", "SCSS"]
+        projectTags: ["React", "SCSS", "Landing"]
     }, {
         projectId: 44,
         projectTitle: "Intro component",
@@ -460,6 +461,15 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS"]
+    },
+    {
+        projectId: 48,
+        projectTitle: "Clipboard page",
+        src: "/project48",
+        projectImage: Project48,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Landing"]
     },
     // {
     //     projectId: 1,

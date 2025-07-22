@@ -14,7 +14,7 @@ import github from "./images/icon-github.svg"
 import MultiLineTypewriter from "../../components/utility/MultiLineTypewriter";
 
 const Project47 = () => {
-  useFavicon("icons/project21.png");
+  useFavicon("icons/project47.png");
   useDocumentTitle("Conference ticket generator | Frontend Mentor");
   const fileInputRef = useRef(null);
 

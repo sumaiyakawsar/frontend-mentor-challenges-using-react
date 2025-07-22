@@ -49,6 +49,7 @@ import Project44 from './pages/44-intro-component-with-signup-form/Project44';
 import Project45 from './pages/45-static-job-listings/Project45';
 import Project46 from './pages/46-notifications-page/Project46';
 import Project47 from './pages/47-conference-ticket-generator/Project47';
+import Project48 from './pages/48-clipboard-landing-page/Project48';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -110,6 +111,7 @@ function App() {
     { path: "/project45", element: <Project45 /> },
     { path: "/project46", element: <Project46 /> },
     { path: "/project47", element: <Project47 /> },
+    { path: "/project48", element: <Project48 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
