@@ -1,16 +1,16 @@
-# Frontend Mentor - Bookmark landing page
+# Frontend Mentor - Clipboard landing page solution
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project26">
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project48">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/26-bookmark-landing-page">
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/48-clipboard-landing-page">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158">
+    <a href="https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9">
       Challenge
     </a>
   </h3>
@@ -18,21 +18,20 @@
  
 
 ## Overview
+ ![Time taken Badge](https://img.shields.io/badge/Time_Taken-2hr_23m-6abecd?style=plastic) 
+
 
 ### The challenge
 
 Users should be able to:
 
-- [x] View the optimal layout for the interface depending on their device's screen size
-- [x] See hover and focus states for all interactive elements on the page
-- [x] Receive an error message when the newsletter form is submitted if:
-- The input field is empty
-- The email address is not formatted correctly
+- [x] View the optimal layout for the site depending on their device's screen size
+- [x] See hover states for all interactive elements on the page
 
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project26-bookmark-landing-page.png)
+![Screenshot](../homepage/images/project48-clipboard-landing-page.png)
 
 
 ## Author
