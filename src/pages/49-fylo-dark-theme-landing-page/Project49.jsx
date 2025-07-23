@@ -8,7 +8,7 @@ import {
     testimonials,
     FootertitlesR, FootertitlesL
 } from "./data/data";
-
+import Error from "../../components/Error";
 import Navbar from "./component/Navbar";
 import Footer from "./component/footer";
 
@@ -18,10 +18,8 @@ import quotes from "./images/bg-quotes.png"
 import { MdArrowCircleRight } from "react-icons/md";
 
 
-import Error from "../../components/Error";
-
 const Project49 = () => {
-    useFavicon("icons/project26.png");
+    useFavicon("icons/project49.png");
     useDocumentTitle("Fylo landing page | Frontend Mentor");
 
     const [email, setEmail] = useState("");
@@ -53,7 +51,7 @@ const Project49 = () => {
 
                     <div className="intro__content">
                         <div className="image">
-                            <img src={imgIntro} alt="" />
+                            <img src={imgIntro} alt="illustration" />
 
                         </div>
                         <h1>  All your files in one secure location, accessible anywhere. </h1>
@@ -82,7 +80,7 @@ const Project49 = () => {
             <section className="productivity">
                 <div className="container">
                     <div className="image">
-                        <img src={imgProductive} alt="" className="illustration" />
+                        <img src={imgProductive} alt="illustration" className="illustration" />
                     </div>
                     <div className="contents">
                         <h2>
