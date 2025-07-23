@@ -1,0 +1,31 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+// Primary
+$navy-850: hsl(217, 28%, 15%);  
+$navy-900: hsl(218, 28%, 13%);  
+$navy-950: hsl(216, 53%, 9%); 
+$navy-800: hsl(219, 30%, 18%);  
+
+// Accent
+$teal-200: hsl(176, 68%, 64%); 
+$cyan-500: hsl(198, 60%, 50%);  
+$red-500: hsl(0, 100%, 63%);  
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+
+$box-shadow:
+    0 10px 30px rgba(17, 17, 17, 0.068),
+    0 4px 6px rgba(0, 0, 0, 0.322);
+
+// ## Typography
+$font-size-p: f.rem(14);
+
+// Headings, Call-to-actions, Header Navigation
+$os-font: "Open Sans", sans-serif;
+$raleway-font: "Raleway", sans-serif;
+
+
+$font-normal: 400;
+$font-bold: 700;

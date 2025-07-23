@@ -438,4 +438,17 @@
             color: v.$green-48;
         }
     }
+    &-49 {
+        background: v.$navy-49;
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$white;
+
+            &:hover {
+                color: v.$teal-49;
+            }
+        }
+    }
 }

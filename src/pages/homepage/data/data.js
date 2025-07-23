@@ -47,6 +47,7 @@ import Project46 from "../images/project46-notifications-page.png"
 import Project47 from "../images/project47-conference-ticket-generator.png"
 
 import Project48 from "../images/project48-clipboard-landing-page.png"
+import Project49 from "../images/project49-fylo-dark-theme-landing-page.png"
 
 export const Projects = [
     {
@@ -467,6 +468,14 @@ export const Projects = [
         projectTitle: "Clipboard page",
         src: "/project48",
         projectImage: Project48,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Landing"]
+    }, {
+        projectId: 49,
+        projectTitle: "Fylo page",
+        src: "/project49",
+        projectImage: Project49,
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Landing"]

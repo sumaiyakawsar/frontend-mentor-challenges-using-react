@@ -26,11 +26,11 @@ function Footer({ MenuTitles }) {
                     <a href="https://x.com/SumaiyaKawsar_" target="_blank"
                         rel="noopener noreferrer"
                         className="social__icon"
-                        aria-label="facebook"> <FaTwitter /></a>
+                        aria-label="twitter"> <FaTwitter /></a>
                     <a href="https://www.instagram.com/devsume/" target="_blank"
                         rel="noopener noreferrer"
                         className="social__icon"
-                        aria-label="facebook"> <FaInstagram /></a>
+                        aria-label="instagram"> <FaInstagram /></a>
                 </div>
 
 

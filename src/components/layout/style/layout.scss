@@ -245,10 +245,14 @@
         background-image: url("../../../pages/48-clipboard-landing-page/images/bg-header-mobile.png");
         background-repeat: no-repeat; // Prevent tiling
         background-size: contain;
-        
+
         @include breakpoint(medium) {
             background-image: url("../../../pages/48-clipboard-landing-page/images/bg-header-desktop.png");
         }
+    }
+
+    &49 {
+        background-color: v.$navy-49;
     }
 }
 
