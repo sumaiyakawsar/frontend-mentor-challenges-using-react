@@ -45,9 +45,9 @@ import Project44 from "../images/project44-intro-component-with-signup-form.png"
 import Project45 from "../images/project45-static-job-listings.png"
 import Project46 from "../images/project46-notifications-page.png"
 import Project47 from "../images/project47-conference-ticket-generator.png"
-
 import Project48 from "../images/project48-clipboard-landing-page.png"
 import Project49 from "../images/project49-fylo-dark-theme-landing-page.png"
+import Project50 from "../images/project50-sunnyside-agency-landing-page.png"
 
 export const Projects = [
     {
@@ -480,6 +480,16 @@ export const Projects = [
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Landing"]
     },
+    {
+        projectId: 50,
+        projectTitle: "Fylo page",
+        src: "/project50",
+        projectImage: Project50,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Landing"]
+    },
+
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",

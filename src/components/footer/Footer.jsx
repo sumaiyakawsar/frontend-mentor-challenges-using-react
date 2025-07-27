@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link, useLocation } from 'react-router-dom';
 import '../../styles/component.scss'
 import { FaFacebookF, FaPinterestP, FaInstagram } from "react-icons/fa6";
@@ -51,11 +51,11 @@ const Footer = () => {
     "project43": "footer-43",
     "project44": "footer-44",
     "project45": "footer-45",
-    "project46": "footer-46", 
+    "project46": "footer-46",
     "project47": "footer-47",
     "project48": "footer-48",
     "project49": "footer-49",
-
+    "project50": "footer-50",
   };
 
   const fgClass = footerClassMap[lastSegment ?? ""] || "footer-default";

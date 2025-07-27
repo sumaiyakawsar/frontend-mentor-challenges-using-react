@@ -48,19 +48,19 @@ export const testimonials = [
     {
         comment: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
         owner: "Satish Patel",
-        ownerimg:profile1,
+        ownerimg: profile1,
 
     },
     {
         comment: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
         owner: "Bruce McKenzie",
-        ownerimg:profile2,
+        ownerimg: profile2,
 
-    }, 
+    },
     {
         comment: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
         owner: "Iva Boyd",
-        ownerimg:profile3,
+        ownerimg: profile3,
 
     }
 ];
@@ -78,22 +78,3 @@ export const FootertitlesL = [
     { title: "Terms", href: "#/project49" },
     { title: "Privacy", href: "#/project49" }
 ];
-
-// export const faq = [
-//     {
-//         question: "What is Bookmark?",
-//         answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla.Phasellus blandit ipsum quis quam ornare mattis."
-//     },
-//     {
-//         question: "How can I request a new browser?",
-//         answer: " Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.Vivamus luctus eros aliquet convallis ultricies.Mauris augue massa, ultricies non ligula.Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.Suspendisse imperdiet."
-//     },
-//     {
-//         question: "Is there a mobile app?",
-//         answer: " Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget.Cras in ligula quis est pharetra mattis sit amet pharetra purus.Sed sollicitudin ex et ultricies bibendum."
-//     },
-//     {
-//         question: "What about other Chromium browsers?",
-//         answer: "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
-//     }
-// ];

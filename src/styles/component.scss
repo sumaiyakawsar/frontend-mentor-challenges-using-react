@@ -451,4 +451,18 @@
             }
         }
     }
+    &-50 {
+        background:color-mix(in srgb, white 20%, v.$green-50) ;
+
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$white;
+
+            &:hover {
+                color: v.$green-505;
+            }
+        }
+    }
 }
