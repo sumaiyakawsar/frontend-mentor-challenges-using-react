@@ -1,4 +1,4 @@
-# Frontend Mentor - Fylo dark theme landing page solution
+# Frontend Mentor - Sunnyside agency landing page solution
 
 <div align="center">
   <h3>

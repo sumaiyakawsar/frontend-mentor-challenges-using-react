@@ -482,7 +482,7 @@ export const Projects = [
     },
     {
         projectId: 50,
-        projectTitle: "Fylo page",
+        projectTitle: "Sunnyside agency page",
         src: "/project50",
         projectImage: Project50,
         projectLevelNo: "2",
