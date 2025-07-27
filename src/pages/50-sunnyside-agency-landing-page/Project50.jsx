@@ -17,7 +17,7 @@ import arrow from "./images/icon-arrow-down.svg"
 
 
 const Project50 = () => {
-    useFavicon("icons/project49.png");
+    useFavicon("icons/project50.png");
     useDocumentTitle("Sunnyside agency landing page | Frontend Mentor");
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
