@@ -61,7 +61,7 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 49           | [Fylo Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project49)                         | Junior       | ✔️    |
 | 50           | [Agency Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project50)                                                                                                                   | Junior       | ✔️    |
 | 51           | [Bento Grid](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project51)                                                                                                                   | Junior       | ✔️    |
-| 52           | ---                                                                                                            | Junior       | ❌    |
+| 52           | [Pricing with toggle ](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project52)                                                                                                                       | Junior       | ✔️    |
 | 51           | ---                                                                                                            | Junior       | ❌    |
 
 
