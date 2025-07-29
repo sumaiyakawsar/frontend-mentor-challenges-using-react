@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
 import './style/project51.scss';
@@ -16,7 +15,7 @@ import Card from "./component/Card";
 
 
 function Project51() {
-    useFavicon("icons/project50.png");
+    useFavicon("icons/project1314.png");
     useDocumentTitle("Bento grid | Frontend Mentor");
 
     return (
