@@ -475,4 +475,14 @@
             }
         }
     }
+
+    &-52 {
+        a {
+            color: v.$purple-52;
+
+            &:hover {
+                color: v.$purple-521;
+            }
+        }
+    }
 }

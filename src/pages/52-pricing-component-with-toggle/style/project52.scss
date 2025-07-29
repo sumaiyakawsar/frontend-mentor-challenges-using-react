@@ -1,0 +1,161 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+.project-52 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-weight;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(48);
+        width: 80vw;
+        @include breakpoint(medium) {
+            width: 60vw;
+        }
+        h1 {
+            color: v.$gray-650;
+        }
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            span {
+                color: v.$gray-700;
+            }
+
+            .toggle-switch {
+                width: 60px;
+                height: 30px;
+                position: relative;
+                cursor: pointer;
+                transition: background 0.3s ease;
+
+                background: v.$linear-gradient;
+                border-radius: f.rem(50);
+                &:hover {
+                    opacity: 70%;
+                }
+                .switch-ball {
+                    width: 24px;
+                    height: 24px;
+                    background: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 3px;
+                    transition: left 0.3s ease;
+                    left: 4px;
+
+                    &.right {
+                        left: 32px;
+                    }
+                }
+            }
+        }
+        .pricing-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: f.rem(32);
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+                gap: 8px;
+            }
+
+            .pricing-card {
+                width: 100%;
+                background: white;
+                padding: f.rem(32);
+                border-radius: f.rem(8);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                gap: f.rem(32);
+
+                span {
+                    font-size: f.rem(14);
+                    color: hsl(0, 0%, 33%);
+                }
+
+                h2 {
+                    font-size: f.rem(36);
+                    color: v.$gray-700;
+                }
+
+                ul {
+                    list-style: none;
+                    color: v.$gray-700;
+
+                    li {
+                        border-bottom: v.$blue-50 1px solid;
+                        padding: f.rem(8);
+                        font-size: f.rem(14);
+                        &:first-of-type {
+                            border-top: v.$blue-50 1px solid;
+                        }
+                    }
+                }
+
+                button {
+                    background: v.$linear-gradient;
+                    color: v.$blue-50;
+                    padding: f.rem(8);
+                    border-radius: f.rem(6);
+                    cursor: pointer;
+                    font-weight: inherit;
+                    transition: all 0.3s ease;
+                    text-transform: uppercase;
+                    letter-spacing: f.rem(1);
+
+                    &:hover {
+                        background: none;
+                        outline: 1px solid v.$purple-1;
+                        color: v.$purple-2;
+                    }
+                }
+
+                &.highlighted {
+                    background: v.$linear-gradient;
+                    color: v.$blue-50;
+
+                    box-shadow: 0 20px 40px rgba(v.$purple-2, 0.3);
+                    @include breakpoint(medium) {
+                        transform: scale(1.1);
+                    }
+
+                    h2,
+                    span,
+                    ul li {
+                        color: v.$blue-50;
+                    }
+
+                    button {
+                        background: v.$blue-50;
+                        color: v.$purple-2;
+
+                        &:hover {
+                            background: none;
+                            outline-color: v.$blue-50;
+                            color: v.$blue-50;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

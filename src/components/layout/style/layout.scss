@@ -258,6 +258,16 @@
     &51 {
         background-color: v.$white-51;
     }
+
+    &52 {
+        background-color: v.$blue-51;
+        background-image: url("../../../pages/52-pricing-component-with-toggle/images/bg-top.svg"),
+            url("../../../pages/52-pricing-component-with-toggle/images/bg-bottom.svg");
+        background-position:
+            top -5vw right 0vw,
+            bottom 0vw left 0vw;
+        background-repeat: no-repeat, no-repeat;
+    }
 }
 
 .theme {
