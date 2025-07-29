@@ -1,0 +1,37 @@
+# Frontend Mentor - Bento grid solution  
+
+<div align="center">
+  <h3>
+    <a href="https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project51">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/sumaiyakawsar/frontend-mentor-challenges-using-react/tree/main/src/pages/51-bento-grid">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj">
+      Challenge
+    </a>
+  </h3>
+</div>
+ 
+
+## Overview
+ ![Time taken Badge](https://img.shields.io/badge/Time_Taken-5hr_3m-6abecd?style=plastic) 
+
+### The challenge
+
+Users should be able to:
+
+- [x] View the optimal layout for the interface depending on their device's screen size 
+
+
+### Screenshot
+
+![Screenshot](../homepage/images/project51-bento-grid.png)
+
+
+## Author
+
+[![FrontendMentor Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io/profile/sumaiyakawsar)](https://www.frontendmentor.io/profile/sumaiyakawsar) [![X Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-black?style=plastic&labelColor=black&logo=X&logoColor=white&link=https://x.com/SumaiyaKawsar_)](https://x.com/SumaiyaKawsar_)

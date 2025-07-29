@@ -452,7 +452,7 @@
         }
     }
     &-50 {
-        background:color-mix(in srgb, white 20%, v.$green-50) ;
+        background: color-mix(in srgb, white 20%, v.$green-50);
 
         .socials {
             display: none;
@@ -462,6 +462,16 @@
 
             &:hover {
                 color: v.$green-505;
+            }
+        }
+    }
+
+    &-51 {
+        a {
+            color: v.$purple-51;
+
+            &:hover {
+                color: v.$yellow-51;
             }
         }
     }

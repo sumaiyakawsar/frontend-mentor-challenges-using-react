@@ -55,11 +55,15 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 43           | [Intro component with sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project43) | Newbie       | ✔️    |
 | 44           | [Huddle landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project44)               | Newbie       | ✔️    |
 | 45           | [Job listings](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project45)                      | Intermediate | ✔️    |
-| 46           | [Notifications Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project47)                | Junior       | ✔️    |
-| 47           | [Conference Ticket Generator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project48)       | Junior       | ✔️    |
-| 48           | ----                                                                                                                    | Junior       | ❌    |
-| 48           | ---                                                                                                                     | Junior       | ❌    |
-| 48           | ----                                                                                                                    | Junior       | ❌    |
+| 46           | [Notifications Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project46)                | Junior       | ✔️    |
+| 47           | [Conference Ticket Generator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project47)       | Junior       | ✔️    |
+| 48           | [Clipboard Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project48)                    | Junior       | ✔️    |
+| 49           | [Fylo Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project49)                         | Junior       | ✔️    |
+| 50           | [Agency Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project50)                                                                                                                   | Junior       | ✔️    |
+| 51           | [Bento Grid](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project51)                                                                                                                   | Junior       | ✔️    |
+| 52           | ---                                                                                                            | Junior       | ❌    |
+| 51           | ---                                                                                                            | Junior       | ❌    |
+
 
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)

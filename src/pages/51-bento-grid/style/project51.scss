@@ -1,0 +1,263 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500&display=swap");
+
+.project-51 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: f.rem(32);
+
+    h1 {
+        font-size: f.rem(48);
+        margin-bottom: f.rem(32);
+    }
+
+    h2 {
+        font-size: f.rem(34);
+    }
+
+    h1,
+    h2 {
+        font-weight: v.$font-bold;
+    }
+    p {
+        font-size: f.rem(16);
+        line-height: 1.6;
+    }
+
+    img {
+        display: block;
+    }
+    .container {
+        width: 85vw;
+        gap: f.rem(32);
+        display: grid;
+        grid-template-areas:
+            "content-grid"
+            "post-ai";
+
+        @include breakpoint(medium) {
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas: "post-ai content-grid ";
+        }
+
+        .content-grid {
+            grid-area: content-grid;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "socialmedia"
+                "manage"
+                "posting-schedule"
+                "schedule-social"
+                "followers"
+                "audience";
+            gap: f.rem(32);
+
+            @include breakpoint(medium) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "socialmedia socialmedia schedule-social"
+                    "manage    posting-schedule   schedule-social"
+                    "audience   followers     followers";
+            }
+        }
+        .postai {
+            grid-area: post-ai;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(32);
+        }
+    }
+
+    .card {
+        border-radius: f.rem(8);
+        padding: f.rem(32);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        box-shadow: v.$box-shadow;
+
+        &:hover {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        &.social-media {
+            grid-area: socialmedia;
+            padding: f.rem(48);
+            align-items: center;
+            gap: f.rem(8);
+
+            span {
+                color: v.$yellow-500;
+            }
+        }
+
+        &.manage {
+            grid-area: manage;
+            gap: f.rem(16);
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: auto;
+                object-position: left;
+            }
+
+            @include breakpoint(medium) {
+                padding-right: 0;
+                h2 {
+                    padding-right: f.rem(16);
+                }
+            }
+        }
+
+        &.posting-schedule {
+            grid-area: posting-schedule;
+            justify-content: space-between;
+            padding-bottom: 0;
+            gap: f.rem(16);
+            text-align: left;
+
+            @include breakpoint(medium) {
+                padding-bottom: 0;
+                img {
+                    max-height: 140px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+        }
+
+        &.schedule-social {
+            grid-area: schedule-social;
+            gap: f.rem(32);
+
+            @include breakpoint(medium) {
+                padding-right: 0;
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: auto;
+                    object-position: left;
+                }
+                h2,
+                p {
+                    padding-right: f.rem(32);
+                    text-align: left;
+                }
+            }
+        }
+
+        &.followers {
+            grid-area: followers;
+
+            align-items: center;
+            padding-inline: f.rem(60);
+            gap: f.rem(32);
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+                padding: f.rem(32);
+                text-align: left;
+            }
+        }
+
+        &.audience {
+            grid-area: audience;
+            justify-content: space-between;
+            gap: f.rem(16);
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(16);
+                h2 {
+                    font-size: f.rem(54);
+                }
+            }
+
+            img {
+                align-self: flex-start;
+              width: 50%;
+                  @include breakpoint(medium) {
+                   width: 90%;
+                    height: auto;
+                }
+            }
+        }
+
+        &.create-post {
+            gap: f.rem(16);
+            span {
+                color: v.$purple-500;
+                font-style: italic;
+            }
+        }
+
+        &.ai {
+            justify-content: space-between;
+            gap: f.rem(16);
+        }
+
+        &.manage,
+        &.audience,
+        &.create-post,
+        &.ai {
+            text-align: left;
+            img {
+                align-self: flex-start;
+            }
+        }
+
+        &.posting-schedule,
+        &.create-post,
+        &.ai {
+            img {
+                width: 60%;
+                @include breakpoint(medium) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        &.social-media {
+            img {
+                width: 10em;
+            }
+        }
+
+        //Colors
+        &.purple {
+            background-color: v.$purple-500;
+            color: v.$white;
+        }
+
+        &.yellow {
+            background-color: v.$yellow-500;
+        }
+
+        &.lightyellow {
+            background-color: v.$yellow-100;
+        }
+
+        &.lightpurple {
+            background-color: v.$purple-100;
+        }
+
+        &.white {
+            background-color: v.$white;
+        }
+    }
+}

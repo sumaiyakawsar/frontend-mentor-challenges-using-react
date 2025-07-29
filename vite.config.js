@@ -6,6 +6,6 @@ export default defineConfig({
   base: "/frontend-mentor-challenges-using-react/",
   plugins: [react()],
   build: {
-    chunkSizeWarningLimit: 1000, // Increase warning limit to 1000 kB (1 MB)
+    chunkSizeWarningLimit: 2000, 
   }
 })

@@ -48,6 +48,7 @@ import Project47 from "../images/project47-conference-ticket-generator.png"
 import Project48 from "../images/project48-clipboard-landing-page.png"
 import Project49 from "../images/project49-fylo-dark-theme-landing-page.png"
 import Project50 from "../images/project50-sunnyside-agency-landing-page.png"
+import Project51 from "../images/project51-bento-grid.png"
 
 export const Projects = [
     {
@@ -488,6 +489,16 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Landing"]
+    },
+
+    {
+        projectId: 51,
+        projectTitle: "Bento Grid",
+        src: "/project51",
+        projectImage: Project51,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Grid"]
     },
 
     // {
