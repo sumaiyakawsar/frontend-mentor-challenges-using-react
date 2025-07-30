@@ -485,4 +485,14 @@
             }
         }
     }
+
+    &-53 {
+        a {
+            color: v.$gray-53;
+
+            &:hover {
+                color: v.$gray-530;
+            }
+        }
+    }
 }

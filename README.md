@@ -59,12 +59,12 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 47           | [Conference Ticket Generator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project47)       | Junior       | ✔️    |
 | 48           | [Clipboard Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project48)                    | Junior       | ✔️    |
 | 49           | [Fylo Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project49)                         | Junior       | ✔️    |
-| 50           | [Agency Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project50)                                                                                                                   | Junior       | ✔️    |
-| 51           | [Bento Grid](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project51)                                                                                                                   | Junior       | ✔️    |
-| 52           | [Pricing with toggle ](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project52)                                                                                                                       | Junior       | ✔️    |
-| 51           | ---                                                                                                            | Junior       | ❌    |
-
-
+| 50           | [Agency Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project50)                       | Junior       | ✔️    |
+| 51           | [Bento Grid](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project51)                        | Junior       | ✔️    |
+| 52           | [Pricing with toggle](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project52)               | Junior       | ✔️    |
+| 53           | [Intro section with dropdown](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project53)       | Junior       | ✔️    |
+| 51           | ---                                                                                                                     | Junior       | ❌    |
+| 51           | ---                                                                                                                     | Junior       | ❌    |
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
 

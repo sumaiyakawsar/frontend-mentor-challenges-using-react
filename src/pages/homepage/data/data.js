@@ -50,6 +50,7 @@ import Project49 from "../images/project49-fylo-dark-theme-landing-page.png"
 import Project50 from "../images/project50-sunnyside-agency-landing-page.png"
 import Project51 from "../images/project51-bento-grid.png"
 import Project52 from "../images/project52-pricing-component-with-toggle.png"
+import Project53 from "../images/project53-intro-with-dropdown-nav.png"
 
 export const Projects = [
     {
@@ -508,6 +509,15 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Component"]
+    },
+    {
+        projectId: 53,
+        projectTitle: "Intro section with dropdown",
+        src: "/project53",
+        projectImage: Project53,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Landing", "Dropdown"]
     },
     // {
     //     projectId: 1,

@@ -6,13 +6,13 @@ const ProjectCard = ({ project, onTagClick }) => {
     return (
         <div className="project">
             <Link
-                key={project.id}
+                key={project.Id}
                 to={project.src}
                 exact
                 strict
             >
                 <div className="project__top">
-                    <img className="project__top__img" src={project.projectImage} />
+                    <img className="project__top__img" src={project.projectImage} alt={project.Id}/>
                     <div className={`project__top__num ${project.projectLevel}`}>{project.projectId}</div>
                 </div>
 
