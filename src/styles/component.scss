@@ -495,4 +495,16 @@
             }
         }
     }
+
+    &-54 {
+        background: v.$gray-54;
+
+        a {
+            color: v.$white;
+
+            &:hover {
+                color: v.$gray-530;
+            }
+        }
+    }
 }

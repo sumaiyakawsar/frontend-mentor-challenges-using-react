@@ -1,0 +1,524 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+.project-54 {
+    font-family: v.$op-font;
+    font-size: v.$font-size-p;
+    flex: 1;
+    @include flex-col(f.rem(32));
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100dvw;
+
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+        position: relative;
+
+        @include breakpoint(medium) {
+            width: 80vw;
+        }
+    }
+
+    .btn {
+        all: unset;
+        background: none;
+        cursor: pointer;
+        padding: f.rem(8) f.rem(16);
+
+        border-radius: f.rem(34);
+        font-size: f.rem(16);
+        text-align: center;
+        font-family: v.$u-font;
+        font-weight: v.$font-bold-x;
+        color: v.$white;
+
+        &__secondary {
+            color: v.$red-500;
+            background: v.$white;
+            &:hover {
+                background: rgba(v.$white, 0.2);
+                color: v.$white;
+            }
+        }
+        &__primary {
+            border: v.$white 1px solid;
+            &:hover {
+                background: v.$white;
+                color: v.$red-500;
+            }
+        }
+    }
+
+    .intro {
+        padding-block: f.rem(24);
+        width: 100%;
+        background: url("../images/bg-pattern-intro-mobile.svg"), v.$bg-intro;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% contain;
+        border-bottom-left-radius: f.rem(120);
+
+        @include breakpoint(medium) {
+            background: url("../images/bg-pattern-intro-desktop.svg"), v.$bg-intro;
+            background-size: 100% contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: f.rem(32);
+
+            .menu-toggle {
+                background: none;
+                border: none;
+                color: v.$white;
+                cursor: pointer;
+                font-size: f.rem(44);
+                @include breakpoint(medium) {
+                    display: none;
+                }
+            }
+
+            .nav-links {
+                display: none;
+
+                @include breakpoint(medium) {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    gap: f.rem(32);
+                    justify-content: space-between;
+                    width: auto;
+
+                    .main-nav {
+                        display: flex;
+                        align-items: center;
+                        gap: f.rem(32);
+
+                        .nav-item {
+                            position: relative;
+
+                            .menu-link {
+                                color: v.$white;
+                                font-weight: v.$font-normal;
+                                text-decoration: none;
+                                display: flex;
+                                gap: f.rem(8);
+                                font-size: f.rem(14);
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            .dropdown {
+                                @include flex-col(f.rem(4));
+                                position: absolute;
+                                top: 100%;
+                                left: -20px;
+                                background: v.$white;
+                                box-shadow: v.$box-shadow;
+                                z-index: 3;
+                                width: 150px;
+                                min-width: 100%;
+                                margin-top: f.rem(16);
+                                border-radius: f.rem(8);
+                                padding: f.rem(8) 0;
+
+                                .dropdown-item {
+                                    cursor: pointer;
+                                    font-size: f.rem(14);
+                                    font-weight: v.$font-normal;
+                                    padding: f.rem(8) f.rem(16);
+
+                                    &:hover {
+                                        font-weight: v.$font-bold-xx;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .btns {
+                        @include flex-row(f.rem(32));
+
+                        .btn__secondary {
+                            padding: f.rem(8) f.rem(32);
+                        }
+                    }
+                }
+            }
+        }
+
+        .mobile-menu {
+            position: absolute;
+            top: 100px;
+            background-color: v.$white;
+            border-radius: f.rem(8);
+            z-index: 3;
+            box-shadow: v.$box-shadow;
+            transition:
+                transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+
+            &.open {
+                width: 100%;
+            }
+
+            .mobile-nav {
+                @include flex-col(f.rem(32));
+                align-items: center;
+                padding: f.rem(24);
+
+                .nav__wrapper {
+                    width: 100%;
+                    .nav-item {
+                        .menu-link {
+                            font-size: f.rem(18);
+                            font-weight: v.$font-bold-x;
+                            color: v.$blue-900;
+                            width: 100%;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: f.rem(16);
+
+                            .arrow-icon {
+                                color: v.$red-500;
+                            }
+
+                            &.active {
+                                color: v.$gray-600; // darker or highlighted text when active
+                            }
+                        }
+
+                        .dropdown {
+                            @include flex-col(f.rem(16));
+                            align-items: center;
+                            justify-content: center;
+                            color: v.$gray-600;
+                            background: rgb(241, 232, 232);
+
+                            padding: f.rem(28);
+                            width: 100%;
+                            border-radius: f.rem(8);
+
+                            .dropdown-item {
+                                cursor: pointer;
+                                font-size: f.rem(18);
+                                font-weight: v.$font-bold-x;
+                                color: v.$blue-900;
+                            }
+                        }
+                    }
+                }
+
+                .btns {
+                    border-top: 1px solid #ccc;
+                    padding: f.rem(16);
+                    width: 100%;
+                    @include flex-col(f.rem(16));
+                    align-items: center;
+                    .btn {
+                        text-align: center;
+                        padding: f.rem(12) f.rem(32);
+                        cursor: pointer;
+                        background: none;
+                        border-radius: f.rem(34);
+                        font-size: f.rem(20);
+                        font-weight: v.$font-bold-x;
+                        color: v.$blue-900;
+                        &__signup {
+                            background: v.$bg-intro;
+                            color: v.$white;
+                        }
+                    }
+                }
+            }
+
+            @include breakpoint(medium) {
+                display: none; // Hide on desktop
+            }
+        }
+
+        .content {
+            flex: 1;
+            @include flex-col(f.rem(32));
+            align-items: center;
+            justify-content: center;
+            color: v.$white;
+            padding-block: f.rem(140);
+            text-align: center;
+
+            @include breakpoint(medium) {
+                padding-block: f.rem(80);
+            }
+
+            h1 {
+                font-size: f.rem(48);
+                font-family: v.$op-font;
+            }
+            p {
+                font-weight: v.$font-thin;
+                font-size: f.rem(18);
+            }
+            .btns {
+                padding-top: f.rem(16);
+                @include flex-row(f.rem(16));
+            }
+        }
+    }
+
+    .future,
+    .future-bottom {
+        padding-block: f.rem(36);
+
+        .container {
+            align-items: center;
+            @include flex-col(f.rem(48));
+
+            .text-content {
+                flex: 1;
+                @include flex-col(f.rem(32));
+
+                .block {
+                    @include flex-col(f.rem(16));
+                    text-align: center;
+
+                    @include breakpoint(medium) {
+                        text-align: left;
+                    }
+
+                    h3 {
+                        font-size: 1.4rem;
+                        color: v.$blue-900;
+                    }
+
+                    p {
+                        line-height: 1.5;
+                        color: v.$gray-600;
+                    }
+                }
+            }
+        }
+    }
+
+    .future {
+        .container {
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+                color: v.$blue-900;
+
+                @include breakpoint(medium) {
+                    text-align: left;
+                }
+            }
+
+            .future__layout {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: f.rem(48);
+                align-items: center;
+
+                @include breakpoint(medium) {
+                    flex-direction: row;
+                    align-items: center;
+                    position: relative;
+                }
+
+                .future__image {
+                    flex: 1;
+                    height: 600px;
+
+                    @include breakpoint(medium) {
+                        transform: translateX(48%);
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: left;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        position: relative;
+        padding-block: f.rem(60);
+        width: 100%;
+
+        .bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            background: v.$bg-body;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70%;
+            margin-top: auto;
+            margin-bottom: 0;
+            border-top-right-radius: 5rem;
+            border-bottom-left-radius: 5rem;
+            z-index: 1;
+            @include breakpoint(medium) {
+                margin: auto 0;
+            }
+            .circle {
+                position: absolute;
+                inset: 0;
+                background: url("../images/bg-pattern-circles.svg") no-repeat;
+                background-size: 100%;
+                background-position: top -50vw left 0vw;
+
+                z-index: 2;
+                @include breakpoint(medium) {
+                    background-size: 70%;
+                    background-position: bottom -10vw left -12vw;
+                }
+            }
+        }
+
+        .container {
+            @include flex-col(f.rem(48));
+            position: relative;
+            z-index: 3;
+            align-items: center;
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .image__wrapper {
+                flex: 1;
+                position: relative;
+                margin-block: -6rem;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+
+            .text {
+                flex: 1;
+                color: white;
+                text-align: center;
+                @include flex-col(f.rem(16));
+
+                @include breakpoint(medium) {
+                    text-align: left;
+                }
+
+                h2 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .future-bottom {
+        .container {
+            @include breakpoint(medium) {
+                flex-direction: row;
+            }
+
+            .future__image {
+                flex: 1;
+                height: 600px;
+
+                @include breakpoint(medium) {
+                    transform: translateX(-28%);
+                }
+
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: right;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .footer-54 {
+        width: 100%;
+        padding-top: f.rem(60);
+
+        .container {
+            color: v.$white;
+            font-size: f.rem(16);
+            @include flex-col(f.rem(32));
+            align-items: center;
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+        .logo {
+            flex: 25%;
+        }
+        .nav-links {
+            flex: 75%;
+            @include flex-col(f.rem(24));
+
+            .nav-item {
+                flex: 1;
+                text-align: center;
+
+                .dropdown {
+                    padding-top: f.rem(28);
+                    @include flex-col(f.rem(10));
+
+                    .dropdown-item {
+                        color: v.$white;
+                        opacity: 0.7;
+                        cursor: pointer;
+                        &:hover,
+                        &:focus,
+                        &:focus-visible {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                @include breakpoint(medium) {
+                    text-align: left;
+                }
+            }
+
+            @include breakpoint(medium) {
+                flex-direction: row;
+            }
+        }
+    }
+}
