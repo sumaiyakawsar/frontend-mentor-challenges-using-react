@@ -1,4 +1,4 @@
-# Frontend Mentor -  Blogr landing page solution
+# Frontend Mentor - Blogr landing page solution
 
 <div align="center">
   <h3>
