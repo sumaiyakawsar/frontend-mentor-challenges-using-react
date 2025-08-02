@@ -507,4 +507,15 @@
             }
         }
     }
+
+    &-55 {
+        background-color: v.$gray-55;
+
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$blue-55;
+        }
+    }
 }

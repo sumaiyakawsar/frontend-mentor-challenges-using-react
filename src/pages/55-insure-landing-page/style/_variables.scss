@@ -1,0 +1,22 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+$blue-950: hsl(256, 26%, 20%);
+$blue-500: hsl(216, 30%, 68%);
+
+// Neutral
+$gray-950: hsl(270, 9%, 17%);
+$gray-700: hsl(273, 4%, 51%);
+$gray-50: hsl(0, 0%, 98%);
+
+//Typography
+$font-size-p: f.rem(16);
+$box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+
+//Font
+$dm-display-font: "DM Serif Display", serif;//Heading
+$karla-font: "Karla", sans-serif;//Body
+
+
+$font-normal: 400;
+$font-bold: 700;

@@ -51,8 +51,8 @@ import Project50 from "../images/project50-sunnyside-agency-landing-page.png"
 import Project51 from "../images/project51-bento-grid.png"
 import Project52 from "../images/project52-pricing-component-with-toggle.png"
 import Project53 from "../images/project53-intro-with-dropdown-nav.png"
-
 import Project54 from "../images/project54-blogr-landing-page.png"
+import Project55 from "../images/project55-insure-landing-page.png"
 
 export const Projects = [
     {
@@ -523,12 +523,21 @@ export const Projects = [
     },
     {
         projectId: 54,
-        projectTitle: "Intro section with dropdown",
+        projectTitle: "Blogr",
         src: "/project54",
         projectImage: Project54,
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Landing", "Dropdown"]
+    },
+    {
+        projectId: 55,
+        projectTitle: "Insure",
+        src: "/project55",
+        projectImage: Project55,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Landing"]
     },
     // {
     //     projectId: 1,
