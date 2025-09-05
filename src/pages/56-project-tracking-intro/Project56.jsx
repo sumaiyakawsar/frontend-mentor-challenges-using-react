@@ -10,7 +10,7 @@ import MobileMenu from './component/MobileMenu';
 import illustration from "./images/illustration-devices.svg"
 
 export default function Project56() {
-  useFavicon("icons/project1314.png");
+  useFavicon("icons/project56.svg");
   useDocumentTitle("Project tracking intro | Frontend Mentor");
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
