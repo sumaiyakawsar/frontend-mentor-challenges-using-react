@@ -1,9 +1,9 @@
 @use "sass:map";
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @use "../../../styles/mq" as *;
-@use "../../../styles/font" as fo; 
-
+@use "../../../styles/font" as fo;
 
 .project-17 {
     font-family: fo.$rubik-font;
@@ -11,8 +11,7 @@
 
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    align-items: center;
+    @include place-center;
 
     .dashboard__cards {
         display: grid;
@@ -20,7 +19,7 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
             "profile" "work" "play" "study"
-            "exercise" "social" "selfcare" !important;
+            "exercise" "social" "self-care" !important;
 
         @include breakpoint(medium) {
             grid-template-columns: repeat(4, 1fr);
@@ -31,12 +30,11 @@
         }
         .profile {
             &__card {
+                grid-area: profile;
                 background: v.$navy-900;
                 border-radius: f.rem(16);
                 overflow: hidden;
-                grid-area: profile;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(0));
                 @include breakpoint(medium) {
                     width: f.em(200);
                 }
@@ -70,15 +68,14 @@
             &__details {
                 background-color: v.$purple-600;
                 border-radius: f.rem(16);
-                display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: f.rem(16);
+                @include flex-row(f.rem(16));
                 padding: f.rem(32);
 
                 @include breakpoint(medium) {
                     flex: 1;
-                    flex-direction: column;
+                    @include flex-col(f.rem(16));
                     align-items: flex-start;
                 }
 
@@ -96,8 +93,8 @@
                     h1 {
                         font-size: f.rem(24);
                         font-weight: v.$font-normal;
-
                         color: white;
+
                         @include breakpoint(medium) {
                             font-size: f.rem(32);
                         }
@@ -109,18 +106,17 @@
             border-radius: f.rem(16);
             color: #fff;
             overflow: hidden;
-
             position: relative;
 
             &__image-wrapper {
                 height: 40px;
             }
-            
+
             @each $level, $data in v.$card-data {
                 &.#{$level} {
+                    grid-area: $level;
                     background: map.get($map: $data, $key: color);
                     background-image: url(map.get($data, image));
-                    grid-area: $level;
                     background-size: 60px;
                     background-repeat: no-repeat;
                     background-position: right 20px top;
@@ -138,9 +134,7 @@
                 transition: all 0.3s ease;
 
                 @include breakpoint(medium) {
-                    display: flex;
-                    flex-direction: column;
-                    gap: f.rem(16);
+                    @include flex-col(f.rem(16));
                     position: absolute;
                     bottom: 0;
                     left: 0;

@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
@@ -7,23 +8,15 @@
     font-family: v.$font-family;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
-
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    @include place-center;
 
     .rating {
         flex: 1;
         padding: f.rem(28);
-
-        display: flex;
-        flex-direction: column;
         align-items: flex-start;
-        gap: f.rem(28);
-
+        @include flex-col(f.rem(28));
         background-color: v.$grey-900;
         border-radius: f.rem(16);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -96,11 +89,10 @@
             }
         }
         .thankYou {
-            display: flex;
-            flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: f.rem(20);
+            @include flex-col(f.rem(20));
+            
             .result {
                 background: v.$grey-800;
                 color: v.$orange-500;

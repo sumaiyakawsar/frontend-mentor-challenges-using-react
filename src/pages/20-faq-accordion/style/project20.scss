@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
 
@@ -6,13 +7,10 @@
     font-family: v.$font-family;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
-
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flex-center;
+
     .img__container {
         position: absolute;
         top: 0;
@@ -33,9 +31,8 @@
         z-index: 20;
 
         .faq-header {
-            display: flex;
-            gap: f.rem(32);
             align-items: center;
+            @include flex-row(f.rem(32));
 
             .faq-icon {
                 img {
@@ -90,12 +87,12 @@
                 }
 
                 &.open {
-                    .faq-question { 
+                    .faq-question {
                         span {
                             color: v.$purple-700;
                         }
                     }
-                    .faq-answer { 
+                    .faq-answer {
                         max-height: 500px;
                         padding-bottom: 1rem;
                     }

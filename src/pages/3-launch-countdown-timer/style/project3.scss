@@ -1,19 +1,16 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @use "../../../styles/font" as fo;
+@use "../../../styles/mixin" as *;
 
 .project-3 {
     font-family: fo.$red-hat-font;
     font-size: v.$font-size-p;
-
     padding: f.rem(32);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: f.rem(32);
+    flex: 1; 
     width: 100%;
+    @include flex-col(f.rem(32));
+    @include flex-center;
 
     .heading {
         color: v.$white;
@@ -22,18 +19,18 @@
         text-transform: uppercase;
         letter-spacing: f.rem(7);
         margin-bottom: f.rem(32);
-        text-shadow: v.$soft-red-100 1px 1px 5px;
+        text-shadow: v.$soft-red 1px 1px 5px;
     }
 
     .countdown-container {
-        display: flex;
         flex-wrap: wrap;
-        gap: f.rem(32);
+        @include flex-row(f.rem(32));
         width: 70%;
         justify-content: center;
 
         .ctd {
-            color: v.$soft-red-100;
+            color: v.$soft-red;
+            font-weight: v.$font-weight;
             flex: 1 0 150px;
             text-align: center;
 
@@ -74,7 +71,7 @@
                 }
                 .top {
                     z-index: 3;
-                    color: v.$soft-red-80;
+                    color: v.$soft-red;
                     background-color: v.$saturated-blue;
                     transform-origin: 50% 100%;
                     transform: perspective(200px);

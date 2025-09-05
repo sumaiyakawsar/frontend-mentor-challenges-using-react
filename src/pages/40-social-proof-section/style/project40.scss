@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
 @use "../../../styles/font" as fo;
 @use "variables" as v;
@@ -7,33 +8,23 @@
     font-family: fo.$league-spartan;
     font-size: v.$font-size-p;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
 
     .container {
         padding-block: f.rem(90);
         width: 80vw;
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(64);
-
+        
+ @include flex-col(f.rem(64));
         @include breakpoint(medium) {
             width: 70vw;
         }
 
         .top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include v-align-center;
             flex-wrap: wrap;
             gap: f.rem(48);
-
             .description {
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(32);
+                @include flex-col(f.rem(32));
 
                 @include breakpoint(medium) {
                     min-width: 400px;
@@ -46,7 +37,7 @@
                     text-align: center;
                     white-space: pre-line;
                     overflow: hidden;
-                    
+
                     @include breakpoint(medium) {
                         text-align: left;
                     }
@@ -64,9 +55,7 @@
 
             .ratings {
                 flex: 1;
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
                 @include breakpoint(medium) {
                     flex: none;
                 }
@@ -74,11 +63,8 @@
                     padding: f.rem(16) f.rem(40);
                     border-radius: f.rem(10);
                     background-color: v.$light-grayish-magenta;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: f.rem(24);
+                    @include flex-center;
+                    @include flex-col(f.rem(24));
                     box-shadow: v.$box-shadow;
 
                     @include breakpoint(medium) {
@@ -98,8 +84,7 @@
                         }
                     }
                     .star-rating {
-                        display: flex;
-                        gap: f.rem(4);
+                        @include flex-row(f.rem(4));
                         @include breakpoint(medium) {
                             gap: f.rem(2);
                         }
@@ -114,21 +99,16 @@
         }
 
         .reviews__container {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
             line-height: 1.5;
             @include breakpoint(medium) {
-                gap: f.rem(32);
-                flex-direction: row;
+                @include flex-row(f.rem(32));
             }
             .review {
                 box-shadow: v.$box-shadow;
                 padding: f.rem(32);
                 background-color: v.$very-dark-magenta;
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(18);
+                @include flex-col(f.rem(18));
                 border-radius: f.rem(8);
 
                 @include breakpoint(medium) {
@@ -147,9 +127,8 @@
 
                 .user {
                     &__profile {
-                        display: flex;
+                        @include flex-row(f.rem(24));
                         align-items: center;
-                        gap: f.rem(24);
 
                         .avatar {
                             border-radius: 50%;

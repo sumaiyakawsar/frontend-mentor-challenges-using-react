@@ -1,5 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @use "../../../styles/font" as fo;
 
@@ -7,10 +8,8 @@
     font-size: v.$font-size-p;
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-col(f.rem(0));
+    @include flex-center;
     font-family: fo.$poppins;
 
     .toast {
@@ -23,9 +22,8 @@
         padding: f.rem(16);
         border-radius: f.rem(8);
         box-shadow: v.$box-shadow;
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(12);
+          @include flex-col(f.rem(12));
+ 
         z-index: 1000;
         transition:
             transform 0.4s ease,
@@ -38,10 +36,8 @@
 
     .container {
         width: 85vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: f.rem(64);
+        @include flex-col(f.rem(64)); 
+        align-items: center; 
         color: white;
         @include breakpoint(medium) {
             flex-direction: row;
@@ -52,9 +48,7 @@
             flex: 1;
         }
         .left {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(24);
+         @include flex-col(f.rem(24)); 
             text-align: center;
             @include breakpoint(medium) {
                 text-align: left;
@@ -70,9 +64,8 @@
         }
 
         .right {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(16);
+         @include flex-col(f.rem(16));
+ 
 
             .subscription {
                 box-shadow: v.$box-shadow;
@@ -91,16 +84,13 @@
                 padding: f.rem(32);
                 background-color: white;
                 border-radius: f.rem(8);
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
+  
                 box-shadow: v.$box-shadow;
 
                 .form-group {
                     border-radius: f.rem(24);
-                    display: flex;
-                    flex-direction: column;
-                    gap: f.rem(8);
+                              @include flex-col(f.rem(8));
 
                     .input-group {
                         position: relative;

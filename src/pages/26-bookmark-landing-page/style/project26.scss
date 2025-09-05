@@ -1,7 +1,8 @@
 @use "../../../styles/functions" as f;
-@use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
 @use "../../../styles/font" as fo;
+@use "variables" as v;
 
 .project-26 {
     font-family: fo.$rubik-font;
@@ -46,11 +47,7 @@
         max-width: 550px;
         text-align: center;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: f.rem(16);
+        @include flex-col(f.rem(16));
         padding-bottom: f.rem(32);
     }
 
@@ -62,9 +59,9 @@
     }
 
     .social-links {
-        display: flex;
-        gap: 1rem;
+        @include flex-row(f.rem(16));
         justify-content: center;
+
         a {
             font-size: f.rem(28);
             color: v.$grey-50;
@@ -102,10 +99,8 @@
                 }
 
                 .nav-links {
-                    display: flex;
                     align-items: center;
-                    gap: f.rem(48);
-
+                    @include flex-row(f.rem(48));
                     a {
                         text-transform: uppercase;
                         color: v.$blue-950;
@@ -146,13 +141,10 @@
             right: 0;
             width: 100dvw;
             height: 100dvh;
-
             background-color: hsla(from v.$blue-950 h s l / 0.95);
-
             z-index: 1000;
             padding: f.rem(20) f.rem(60);
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
             transform: translateX(100%);
             opacity: 0;
             pointer-events: none;
@@ -183,11 +175,9 @@
             }
 
             .mobile-nav {
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(0));
+                @include flex-center;
                 flex: 1;
-                align-items: center;
-                justify-content: center;
 
                 a {
                     font-size: f.rem(20);
@@ -195,7 +185,6 @@
                     text-transform: uppercase;
                     color: v.$grey-50;
                     border-top: v.$grey-50 solid 1px;
-
                     width: 100%;
                     padding: f.rem(16);
                     text-align: center;
@@ -210,7 +199,6 @@
                         text-align: center;
                         padding: f.rem(16);
                         font-size: f.rem(20);
-
                         border: v.$grey-50 solid 2px;
                         background-color: transparent;
                         color: v.$grey-50;
@@ -226,13 +214,12 @@
 
     .hero {
         .container {
-            display: flex;
-            flex-direction: column-reverse;
             align-items: center;
             text-align: center;
-            gap: f.rem(32);
+
+            @include flex-col(f.rem(32));
             @include breakpoint(medium) {
-                flex-direction: row;
+                flex-direction: row-reverse;
                 text-align: left;
                 justify-content: space-between;
             }
@@ -240,18 +227,15 @@
 
         &__content {
             max-width: 500px;
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
             @include breakpoint(medium) {
                 align-items: flex-start;
             }
         }
 
         &__buttons {
-            display: flex;
-            gap: f.rem(16);
+            @include flex-row(f.rem(16));
             .btn {
                 box-shadow: v.$box-shadow;
                 &--primary {
@@ -311,10 +295,8 @@
         position: relative;
         .tab {
             &-buttons {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
+                @include flex-center;
+                @include flex-col(f.rem(0));
                 button {
                     border-bottom: #666 1px solid;
                     color: hsla(from v.$blue-950 h s l / 0.8);
@@ -345,19 +327,17 @@
 
             &-content {
                 padding-top: f.rem(32);
-                display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                gap: f.rem(48);
+                @include flex-row(f.rem(48));
 
                 &__img-wrapper {
                     position: relative;
                     flex: 1 1 400px;
                     max-width: 600px;
                     min-height: 400px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center;
+
                     img {
                         position: relative;
                         z-index: 2;
@@ -382,10 +362,8 @@
 
                 &__text {
                     flex: 1 1 400px;
-                    display: flex;
-                    flex-direction: column;
                     align-items: center;
-                    gap: f.rem(16);
+                    @include flex-col(f.rem(16));
                     max-width: 500px;
 
                     @include breakpoint(medium) {
@@ -398,29 +376,22 @@
 
     .download {
         &__cards {
-            display: flex;
             justify-content: center;
-            gap: f.rem(32);
-
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+            @include flex-col(f.rem(32));
 
             @include breakpoint(medium) {
                 flex-direction: row;
                 justify-content: center;
                 align-items: flex-start;
                 position: relative;
-                gap: 2rem;
             }
         }
+
         &__card {
             border-radius: f.rem(8);
             box-shadow: v.$box-shadow;
             padding-top: f.rem(16);
-
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
             align-items: center;
             overflow: hidden;
             position: relative;
@@ -440,11 +411,9 @@
 
             .details {
                 padding: f.rem(16);
-                display: flex;
                 width: 100%;
-                flex-direction: column;
                 align-items: center;
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
                 img {
                     height: 60px;
                     margin-bottom: 1.5rem;
@@ -458,17 +427,14 @@
 
     .faq {
         .container {
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
         }
         .faq-card {
             max-width: 600px;
             width: 100%;
             min-width: 400px;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
             flex-shrink: 0;
 
             .faq-item {
@@ -492,6 +458,7 @@
                     .icon {
                         color: v.$blue-600;
                     }
+
                     &:hover,
                     &:focus-visible {
                         .title {
@@ -506,10 +473,8 @@
                     transition:
                         max-height 0.4s ease,
                         padding 0.4s ease;
-
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    font-size: 0.95rem;
+                    padding-block: 0;
+                    font-size: f.rem(15);
                 }
 
                 &.open {
@@ -520,7 +485,7 @@
                     }
                     .faq-answer {
                         max-height: 500px;
-                        padding-bottom: 1rem;
+                        padding-bottom: f.rem(16);
                     }
                 }
             }
@@ -535,23 +500,22 @@
         background: v.$blue-600;
         color: v.$grey-50;
         text-align: center;
-        padding: 4rem 1.5rem;
+        padding: f.rem(64) f.rem(24);
+
         &__tag {
             text-transform: uppercase;
             letter-spacing: f.rem(8);
-            font-size: 0.8rem;
+            font-size: f.rem(12);
         }
         &__title {
             color: v.$grey-50;
-            font-size: 1.75rem;
-            font-weight: 500;
+            font-size: f.rem(28);
+            font-weight: v.$font-bold;
             max-width: 500px;
             margin: f.rem(20) auto f.rem(20);
         }
         &__form {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
             max-width: 400px;
             margin: 0 auto;
 
@@ -565,7 +529,7 @@
                     padding-right: f.rem(48);
                     border-radius: f.rem(5);
                     text-align: left;
-                    color: hsl(229, 31%, 21%);
+                    color: v.$blue-950;
                 }
 
                 &.error input {
@@ -602,7 +566,6 @@
                 color: v.$grey-50;
                 border: none;
                 border-radius: f.rem(5);
-
                 transition: background-color 0.3s ease;
 
                 &:hover,
@@ -615,17 +578,14 @@
             }
 
             @include breakpoint(medium) {
-                flex-direction: row;
-                gap: f.rem(16);
                 align-items: flex-start;
-
+                @include flex-row(f.rem(16));
                 .input-group {
                     flex: 1;
                 }
 
                 button {
                     white-space: nowrap;
-
                     width: auto;
                 }
             }
@@ -637,22 +597,16 @@
 
         .container {
             font-size: f.rem(16);
-            display: flex;
             justify-content: space-between;
-            flex-direction: column;
             align-items: center;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
         }
         &__left {
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
 
             nav {
-                display: flex;
-                flex-direction: column;
-                gap: 1.5rem;
+                @include flex-col(f.rem(24));
 
                 a {
                     color: v.$grey-50;

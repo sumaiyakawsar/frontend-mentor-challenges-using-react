@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500&display=swap");
@@ -7,9 +8,7 @@
     font-family: v.$font-family;
     font-size: v.$font-size-p;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     padding-block: f.rem(32);
 
     h1 {
@@ -35,8 +34,7 @@
     }
     .container {
         width: 85vw;
-        gap: f.rem(32);
-        display: grid;
+        @include grid(f.rem(32));
         grid-template-areas:
             "content-grid"
             "post-ai";
@@ -48,7 +46,7 @@
 
         .content-grid {
             grid-area: content-grid;
-            display: grid;
+            @include grid(f.rem(32));
             grid-template-columns: 1fr;
             grid-template-areas:
                 "socialmedia"
@@ -57,7 +55,6 @@
                 "schedule-social"
                 "followers"
                 "audience";
-            gap: f.rem(32);
 
             @include breakpoint(medium) {
                 grid-template-columns: repeat(3, 1fr);
@@ -69,9 +66,7 @@
         }
         .postai {
             grid-area: post-ai;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
         }
     }
 
@@ -79,9 +74,7 @@
         border-radius: f.rem(8);
         padding: f.rem(32);
         text-align: center;
-        display: flex;
-        flex-direction: column;
-
+        @include flex-col(f.rem(0));
         height: 100%;
         box-shadow: v.$box-shadow;
         transition: box-shadow 0.3s ease-in-out;
@@ -180,9 +173,7 @@
             gap: f.rem(16);
 
             .content {
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
                 h2 {
                     font-size: f.rem(54);
                 }
@@ -190,9 +181,9 @@
 
             img {
                 align-self: flex-start;
-              width: 50%;
-                  @include breakpoint(medium) {
-                   width: 90%;
+                width: 50%;
+                @include breakpoint(medium) {
+                    width: 90%;
                     height: auto;
                 }
             }

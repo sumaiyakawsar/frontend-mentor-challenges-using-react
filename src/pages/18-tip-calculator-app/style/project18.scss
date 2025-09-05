@@ -1,6 +1,7 @@
 @use "../../../styles/functions" as f;
-@use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
+@use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 
 .project-18 {
@@ -9,11 +10,8 @@
     font-weight: v.$font-normal;
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: f.rem(32);
+    @include flex-col(f.rem(32));
+    @include flex-center;
 
     .flex {
         display: flex;
@@ -25,10 +23,8 @@
         border-radius: f.rem(12);
         background-color: v.$white;
         padding: f.rem(28);
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(32);
         max-width: f.em(800);
+        @include flex-col(f.rem(32));
 
         @include breakpoint(medium) {
             flex-direction: row;
@@ -36,9 +32,8 @@
 
         &_container {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
+
             .error {
                 outline: red 2px solid;
                 &:focus,
@@ -58,7 +53,6 @@
                     top: 50%;
                     left: 1rem;
                     transform: translateY(-50%);
-
                     pointer-events: none;
                 }
             }
@@ -129,14 +123,12 @@
             background-color: v.$green-900;
             border-radius: f.rem(12);
             padding: f.rem(32);
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(24));
             justify-content: space-between;
 
             &__container {
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(20);
+                @include flex-col(f.rem(20));
+
                 .row {
                     display: flex;
                     justify-content: space-between;

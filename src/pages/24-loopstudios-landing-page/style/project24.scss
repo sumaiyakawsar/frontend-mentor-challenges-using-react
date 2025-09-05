@@ -1,4 +1,6 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
+
 @use "../../../styles/mq" as *;
 @use "../../../styles/font" as fo;
 @use "variables" as v;
@@ -8,9 +10,7 @@
     font-weight: v.$font-normal;
     line-height: 1.5;
     width: 100dvw;
-    display: flex;
-    flex-direction: column;
-    gap: f.rem(32);
+    @include flex-col(f.rem(32));
 
     h1,
     h2,
@@ -28,7 +28,6 @@
         background-size: cover;
         background-position: center;
         color: v.$white;
-
         padding: f.rem(32);
 
         @include breakpoint(medium) {
@@ -37,9 +36,7 @@
         }
         .container {
             min-height: 90vh;
-            display: flex;
-            flex-direction: column;
-
+            @include flex-col(f.rem(0));
             .navbar {
                 display: flex;
                 justify-content: space-between;
@@ -66,8 +63,7 @@
                     }
 
                     .nav-links {
-                        display: flex;
-                        gap: 1.5rem;
+                        @include flex-row(f.rem(24));
                         font-family: fo.$alata;
 
                         a {
@@ -113,8 +109,7 @@
                 background-color: v.$black;
                 z-index: 1000;
                 padding: f.rem(32);
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(32));
                 transform: translateX(100%);
                 opacity: 0;
                 pointer-events: none;
@@ -135,7 +130,7 @@
                         background: none;
                         border: none;
                         cursor: pointer;
-                        
+
                         .icon {
                             color: white;
                             font-size: f.rem(32);
@@ -144,9 +139,7 @@
                 }
 
                 .mobile-nav {
-                    display: flex;
-                    flex-direction: column;
-                    gap: f.rem(24);
+                    @include flex-col(f.rem(24));
                     flex: 1;
                     justify-content: center;
 
@@ -182,8 +175,7 @@
     }
 
     .intro {
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(0));
         align-items: center;
         text-align: center;
 
@@ -237,11 +229,8 @@
     .creations {
         padding: f.rem(16);
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: f.rem(32);
+        @include flex-center;
+        @include flex-col(f.rem(32));
 
         &__header {
             display: flex;
@@ -352,12 +341,10 @@
 
     .footer {
         background: v.$black;
-        // width: 100%;
         .container {
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: f.rem(32);
+
+            @include flex-col(f.rem(32));
 
             @include breakpoint(medium) {
                 flex-direction: row;
@@ -366,14 +353,9 @@
         }
 
         &__left {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
-
+            @include flex-col(f.rem(32));
             nav {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
+                @include flex-col(f.rem(8));
 
                 a {
                     font-size: f.rem(20);
@@ -385,9 +367,7 @@
                 }
 
                 @include breakpoint(medium) {
-                    flex-direction: row;
-                    gap: 1.5rem;
-
+                    @include flex-row(f.rem(24));
                     a {
                         &::after {
                             content: "";
@@ -420,14 +400,11 @@
         }
 
         &__right {
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
 
             .social-links {
-                display: flex;
-                gap: 1rem;
+                @include flex-row(f.rem(16));
                 color: v.$white;
 
                 a {

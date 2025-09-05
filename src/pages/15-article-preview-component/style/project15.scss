@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/animations";
 @use "variables" as v;
 @use "../../../styles/mq" as *;
@@ -9,19 +10,16 @@
     font-size: v.$font-size-p;
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include place-center;
 
     .card {
         min-width: f.rem(300);
         border-radius: f.rem(8);
         margin: f.rem(80);
 
-        display: flex;
-        flex-direction: column;
         justify-content: center;
+
+        @include flex-col(f.rem(0));
 
         background: white;
         box-shadow: v.$box-shadow;
@@ -49,14 +47,12 @@
 
         &__content {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
+            @include flex-col(f.rem(0));
+
             .details {
                 padding: f.rem(32);
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(22);
+                @include flex-col(f.rem(22));
             }
         }
 
@@ -74,15 +70,14 @@
                 width: 100%;
                 padding: f.rem(16) f.rem(32);
 
-                display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: f.rem(22);
+
+                @include flex-row(f.rem(22));
 
                 .profile {
-                    display: flex;
                     align-items: center;
-                    gap: f.rem(30);
+                    @include flex-row(f.rem(30));
                 }
                 &__img {
                     height: auto;

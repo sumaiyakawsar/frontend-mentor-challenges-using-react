@@ -1,27 +1,24 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
+@use "../../../styles/mixin" as *;
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
 
 .project-7 {
     font-family: v.$font-family;
     font-size: v.$font-size-p;
     line-height: 1.5;
-
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include place-center;
+
     .card {
         min-width: 327px;
         max-width: 384px;
         border: v.$gray-950 solid 1px;
         border-radius: f.rem(20);
-        display: flex;
         box-shadow: 8px 8px 0px 0px rgba(0, 0, 0);
-        gap: f.rem(24);
         background: v.$white;
-        flex-direction: column;
         padding: f.em(24);
+        @include flex-col(f.rem(24));
 
         &__img {
             width: 100%;
@@ -30,11 +27,10 @@
         }
 
         &__details {
-            display: flex;
-            gap: f.rem(12);
-            flex-direction: column;
+            @include flex-col(f.rem(12));
             align-items: flex-start;
         }
+
         &__tag {
             color: v.$gray-950;
             font-weight: v.$font-bold;
@@ -61,9 +57,8 @@
         }
 
         &__author {
-            display: flex;
             align-items: center;
-            gap: f.rem(12);
+            @include flex-row(f.rem(12));
             .author {
                 &__img {
                     width: 32px;

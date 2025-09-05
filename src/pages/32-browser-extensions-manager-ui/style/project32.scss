@@ -1,4 +1,6 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
+
 @use "variables" as v;
 @use "../../../styles/mq" as *;
 @use "theme";
@@ -16,11 +18,8 @@
     .container {
         margin: 0 auto;
         width: 95%;
-        padding: f.rem(16); 
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(16);
-
+        padding: f.rem(16);
+        @include flex-col(f.rem(16));
         @include breakpoint(medium) {
             width: 75%;
             gap: f.rem(32);
@@ -45,10 +44,7 @@
                 background: var(--toggle-color);
                 box-shadow: v.$box-shadow;
                 cursor: pointer;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
                 transition: all 0.3s ease;
 
                 svg {
@@ -58,7 +54,7 @@
                 }
 
                 &:hover {
-                    background: var(--toggle-color-hover);  
+                    background: var(--toggle-color-hover);
                 }
 
                 &:focus,
@@ -70,20 +66,16 @@
         }
 
         .filter__container {
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: f.rem(16);
 
+            @include flex-col(f.rem(16));
             @include breakpoint(medium) {
                 justify-content: space-between;
                 flex-direction: row;
             }
 
             .filters {
-                display: flex;
-                gap: f.rem(16);
-
+                @include flex-row(f.rem(16));
                 button {
                     padding: f.rem(10);
                     border-radius: f.rem(20);
@@ -120,7 +112,7 @@
 
             display: grid;
             gap: f.rem(16);
-            margin-top: 1.5rem;
+            margin-top: f.rem(24);
 
             // Responsive layout for tablets
             @include breakpoint(small) {
@@ -137,19 +129,16 @@
                 box-shadow: v.$box-shadow;
                 padding: f.rem(16);
                 border-radius: f.rem(16);
-                display: flex;
-                flex-direction: column;
                 justify-content: space-between;
-                gap: f.rem(40);
+                @include flex-col(f.rem(40));
                 transition: all 0.3s ease;
                 min-height: f.em(220);
             }
 
             &__header {
-                display: flex;
                 align-items: flex-start;
-                gap: f.rem(16);
 
+                @include flex-row(f.rem(16));
                 img {
                     width: 40px;
                     height: 40px;
@@ -158,26 +147,23 @@
 
                 .info {
                     h2 {
-                        font-size: 1rem;
+                        font-size: f.rem(16);
                     }
 
                     p {
-                        font-size: 0.875rem;
+                        font-size: f.rem(14);
                         color: var(--text-color-lighter);
                     }
                 }
             }
 
             &__footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
+                @include v-align-center;
                 .remove-btn {
                     background: transparent;
                     border: 1px solid v.$neutral-600;
                     border-radius: f.rem(24);
-                    padding: 0.4rem 1rem;
+                    padding: f.rem(6) f.rem(16);
                     cursor: pointer;
                     transition: all 0.2s ease;
                     color: inherit;
@@ -222,13 +208,10 @@
                     .slider {
                         position: absolute;
                         cursor: pointer;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
+                        inset: 0;
                         background-color: var(--toggle-bg);
                         transition: 0.4s;
-                        border-radius: 34px;
+                        border-radius: f.rem(34);
 
                         &::before {
                             position: absolute;
@@ -251,9 +234,7 @@
             inset: 0;
             background-color: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(2px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include place-center;
             animation: fadeIn 0.3s ease;
             z-index: 10;
 
@@ -264,20 +245,17 @@
                 text-align: center;
                 max-width: 450px;
                 animation: scaleIn 0.3s ease;
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(18);
+                @include flex-col(f.rem(18));
                 color: var(--text-color);
 
                 p {
-                    font-size: 0.9rem;
+                    font-size: f.rem(14);
                     color: var(--text-color-lighter);
                 }
 
                 .modal-actions {
-                    display: flex;
                     justify-content: space-evenly;
-                    gap: f.rem(16);
+                    @include flex-row(f.rem(16));
 
                     .btn {
                         padding: f.rem(8) f.rem(16);
@@ -307,18 +285,18 @@
 
         .toast {
             position: fixed;
-            bottom: 2rem;
+            bottom: f.rem(32);
             left: 50%;
             transform: translateX(-50%);
             background: var(--button-bg-active);
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            font-size: 0.875rem;
+            padding: f.rem(12) f.rem(24);
+            border-radius: f.rem(8);
+            font-size: f.rem(14);
             opacity: 0;
             pointer-events: none;
             transition: all 0.3s ease;
-            
+
             &.show {
                 opacity: 1;
                 pointer-events: auto;

@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @use "../../../styles/mq" as *;
 
@@ -12,7 +13,7 @@
     width: 90%;
 
     .navbar {
-        display: flex;
+        @include flex-row(f.rem(0));
         justify-content: space-between;
         align-items: center;
         padding: f.rem(16);
@@ -23,15 +24,10 @@
         }
 
         .navigation {
-            display: flex;
             align-items: center;
             justify-self: flex-start;
-            flex-direction: row-reverse;
             gap: f.rem(16);
-
-            @include breakpoint(medium) {
-                flex-direction: row;
-            }
+            @include flex-row(f.rem(32));
 
             .logo {
                 @include breakpoint(medium) {
@@ -58,9 +54,7 @@
                 font-weight: v.$font-normal;
 
                 @include breakpoint(medium) {
-                    display: flex;
-                    gap: 1.5rem;
-
+                    @include flex-row(f.rem(24));
                     a {
                         color: v.$dark-grayish-blue;
                         padding: f.rem(32) 0;
@@ -76,13 +70,10 @@
         }
 
         .user {
-            display: flex;
-            gap: f.rem(24);
             align-items: center;
+            @include flex-row(f.rem(24));
 
             @include breakpoint(medium) {
-                gap: f.rem(32);
-
                 .imgavatar {
                     width: f.rem(50);
                 }
@@ -92,6 +83,10 @@
                 cursor: pointer;
                 position: relative;
                 font-size: f.rem(28);
+
+                .cart-icon {
+                    display: block;
+                }
 
                 .cart-count {
                     position: absolute;
@@ -166,9 +161,7 @@
         }
 
         .mobile-nav {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(24);
+            @include flex-col(f.rem(24));
             margin-top: f.rem(40);
             a {
                 font-size: f.rem(18);
@@ -187,17 +180,12 @@
         right: f.rem(20);
         top: f.rem(80);
         z-index: 100;
-
         width: 90vw;
-
         background: v.$white;
         box-shadow: v.$box-shadow;
         border-radius: f.rem(10);
 
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(16);
-
+        @include flex-col(f.rem(16));
         opacity: 0;
         transform: translateY(-1rem);
 
@@ -232,10 +220,8 @@
         .cart-items {
             .cart-item {
                 padding: 0 f.rem(16);
-
-                display: flex;
                 align-items: center;
-                gap: f.rem(16);
+                @include flex-row(f.rem(16));
 
                 &.removing {
                     animation: burstRemove 0.3s ease forwards;
@@ -285,14 +271,16 @@
     }
 
     .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: f.rem(24);
-
+        @include flex-col(f.rem(24));
+        @include flex-center;
         @include breakpoint(medium) {
             padding: f.rem(24);
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: f.rem(64);
+            max-width: 100%;
+            margin: 0 auto;
         }
 
         &__images,
@@ -305,8 +293,8 @@
 
             @include breakpoint(medium) {
                 max-width: none;
-                display: flex;
-                gap: f.rem(16);
+
+                @include flex-row(f.rem(16));
             }
 
             .main-image-wrapper {
@@ -336,7 +324,6 @@
                     z-index: 1;
 
                     font-size: f.rem(16);
-                    display: flex;
 
                     &.left {
                         left: f.rem(10);
@@ -360,11 +347,10 @@
                 display: none;
 
                 @include breakpoint(medium) {
-                    display: flex;
                     justify-content: space-between;
                     width: 100%;
                     max-width: f.em(500);
-                    gap: f.rem(12);
+                    @include flex-row(f.rem(12));
 
                     .thumbnail {
                         width: 70px;
@@ -391,10 +377,9 @@
         }
 
         &__details {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
             padding: f.rem(24);
+
             .company-name {
                 text-transform: uppercase;
                 font-weight: v.$font-bold;
@@ -412,9 +397,8 @@
                 font-size: f.rem(14);
             }
             .price {
-                display: flex;
+                @include flex-row(f.rem(0));
                 justify-content: space-between;
-                flex-direction: row;
                 align-items: center;
 
                 @include breakpoint(medium) {
@@ -423,9 +407,8 @@
                 }
 
                 .product__price {
-                    display: flex;
                     align-items: center;
-                    gap: f.rem(12);
+                    @include flex-row(f.rem(12));
 
                     .current {
                         font-size: f.rem(24);
@@ -450,10 +433,7 @@
             }
 
             .product__actions {
-                display: flex;
-                flex-direction: column;
-
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
 
                 .quantity {
                     padding: 0.75rem 1.5rem;
@@ -468,12 +448,12 @@
                         background: none;
                         cursor: pointer;
                         border: none;
-                        // border: red solid 2px;
                         font-weight: bold;
                         font-size: f.rem(18);
 
                         .icon {
                             color: v.$orange;
+                            display: block;
                         }
                     }
                 }
@@ -489,10 +469,9 @@
                     font-weight: v.$font-bold;
                     font-size: f.rem(14);
                     border-radius: f.rem(8);
-                    display: flex;
                     align-items: center;
                     justify-content: center;
-                    gap: f.rem(10);
+                    @include flex-row(f.rem(10));
 
                     .icon {
                         font-size: f.rem(18);
@@ -517,13 +496,6 @@
         }
 
         @include breakpoint(medium) {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            gap: f.rem(64);
-            max-width: 100%;
-            margin: 0 auto;
-
             &__images,
             &__details {
                 flex: 1 1 0;
@@ -543,9 +515,7 @@
         position: fixed;
         inset: 0;
         background-color: v.$black-75;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         z-index: 200;
 
         .lightbox-content {
@@ -584,7 +554,6 @@
                     border: none;
                     cursor: pointer;
                     font-size: f.rem(16);
-                    display: flex;
 
                     &.left {
                         left: -1.5rem;
@@ -610,9 +579,8 @@
             .lightbox-thumbnails {
                 padding: 0 f.rem(32);
                 margin-top: f.rem(16);
-                display: flex;
-                gap: f.rem(16);
                 justify-content: center;
+                @include flex-row(f.rem(16));
 
                 .thumb-wrapper {
                     width: f.em(70);

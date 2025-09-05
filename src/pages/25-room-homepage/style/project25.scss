@@ -1,7 +1,8 @@
 @use "../../../styles/functions" as f;
-@use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
 @use "../../../styles/font" as fo;
+@use "variables" as v;
 
 .project-25 {
     font-family: fo.$league-spartan;
@@ -16,9 +17,8 @@
         z-index: 10;
         left: 0px;
         top: 0px;
-        display: flex;
         align-items: center;
-        gap: f.rem(32);
+        @include flex-row(f.rem(32));
 
         .menu-toggle {
             background: none;
@@ -35,9 +35,7 @@
         }
         .logo {
             flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
         }
         @include breakpoint(medium) {
             left: 20px;
@@ -49,9 +47,7 @@
                 flex: 0;
             }
             .nav-links {
-                display: flex;
-                gap: 1.5rem;
-
+                @include flex-row(f.rem(24));
                 font-weight: v.$font-normal;
 
                 a {
@@ -103,8 +99,7 @@
         top: 0;
         right: 0;
         width: 100%;
-        background-color: v.$white; // soft yellow tone from your mockup
-
+        background-color: v.$white;
         box-shadow: v.$box-shadow;
         z-index: 1000;
         padding: f.rem(16);
@@ -114,8 +109,9 @@
         transition:
             transform 0.3s ease-in-out,
             opacity 0.3s ease-in-out;
-        display: flex;
-        flex-direction: row;
+
+        @include flex-row(f.rem(0));
+        align-items: center;
         justify-content: space-between;
 
         &.open {
@@ -128,7 +124,7 @@
             background: none;
             border: none;
             cursor: pointer;
-            
+
             .icon {
                 font-size: f.rem(32);
                 color: v.$grey-500;
@@ -136,18 +132,15 @@
         }
 
         .mobile-nav {
-            display: flex;
-            flex-direction: row;
-            gap: f.rem(24);
+            @include flex-row(f.rem(24));
             a {
                 font-size: f.rem(19.2);
                 font-weight: v.$font-normal;
-                // color: v.$very-dark-blue;
             }
         }
 
         @include breakpoint(medium) {
-            display: none; // Hide on desktop
+            display: none;
         }
     }
 
@@ -156,9 +149,7 @@
         flex: 1;
 
         .slide {
-            display: flex;
-            flex-direction: column;
-
+            @include flex-col(f.rem(0));
             &__image {
                 order: 1;
                 position: relative;
@@ -200,7 +191,6 @@
                     }
                 }
 
-                // Tablet and up
                 @include breakpoint(medium) {
                     flex: 0 0 55%;
                 }
@@ -209,10 +199,8 @@
             &__content {
                 order: 2;
                 padding: f.rem(48) f.rem(32);
-                display: flex;
-                flex-direction: column;
                 justify-content: center;
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
 
                 h1 {
                     font-size: f.rem(32);
@@ -235,7 +223,6 @@
                     }
                 }
 
-                // Tablet and up
                 @include breakpoint(medium) {
                     flex: 0 0 45%;
                     padding: f.rem(70);
@@ -246,7 +233,6 @@
                 }
             }
 
-            // Tablet and up
             @include breakpoint(medium) {
                 flex-direction: row;
                 height: 600px;
@@ -279,10 +265,9 @@
 
         &__content {
             padding: f.rem(32);
-            display: flex;
-            flex-direction: column;
             justify-content: center;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
+            
             h2 {
                 text-transform: uppercase;
                 letter-spacing: f.em(8);

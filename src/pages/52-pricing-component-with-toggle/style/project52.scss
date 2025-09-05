@@ -1,5 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
@@ -8,16 +9,13 @@
     font-size: v.$font-size-p;
     font-weight: v.$font-weight;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-col(f.rem(0));
+    @include flex-center;
     text-align: center;
 
     .container {
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(48);
+        @include flex-col(f.rem(48));
+
         width: 80vw;
         @include breakpoint(medium) {
             width: 60vw;
@@ -26,10 +24,8 @@
             color: v.$gray-650;
         }
         .toggle-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
+            @include flex-center;
+            gap: f.rem(16);
 
             span {
                 color: v.$gray-700;
@@ -64,11 +60,8 @@
             }
         }
         .pricing-cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
+            @include flex-center;
 
             @include breakpoint(medium) {
                 flex-direction: row;
@@ -82,10 +75,9 @@
                 border-radius: f.rem(8);
                 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
                 transition: transform 0.3s ease;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(32));
+
                 align-items: stretch;
-                gap: f.rem(32);
 
                 span {
                     font-size: f.rem(14);
@@ -132,8 +124,8 @@
                 &.highlighted {
                     background: v.$linear-gradient;
                     color: v.$blue-50;
-
                     box-shadow: 0 20px 40px rgba(v.$purple-2, 0.3);
+                    
                     @include breakpoint(medium) {
                         transform: scale(1.1);
                     }

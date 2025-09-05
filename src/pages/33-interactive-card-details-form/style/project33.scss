@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @use "../../../styles/mq" as *;
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
@@ -12,18 +13,13 @@
     width: 100%;
 
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: f.rem(130);
-
+        @include flex-col(f.rem(130));
+        @include flex-center;
         @include breakpoint(medium) {
             height: 100dvh;
             width: 100dvw;
-            flex-direction: row;
             justify-content: space-between;
-            gap: f.rem(20);
+            @include flex-row(f.rem(20));
         }
 
         button {
@@ -74,8 +70,7 @@
                 bottom: -40%;
 
                 @include breakpoint(medium) {
-                    flex-direction: column;
-                    gap: f.rem(40);
+                    @include flex-col(f.rem(40));
                     position: relative;
                     max-width: none;
                     left: 10%;
@@ -93,8 +88,6 @@
 
                 .card-front {
                     z-index: 2;
-                    // top: f.rem(40);
-                    // left: f.rem(16);
 
                     @include breakpoint(medium) {
                         top: 0;
@@ -146,7 +139,6 @@
 
                 .card-back {
                     z-index: 1;
-                    // left: 25%;
                     right: f.rem(-50);
                     top: f.rem(80);
 
@@ -186,17 +178,14 @@
             }
 
             .card-form {
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(24);
+                @include flex-col(f.rem(24));
                 border-radius: f.rem(8);
                 width: 100%;
                 max-width: f.rem(400);
                 margin: 0 auto;
 
                 label {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-col(f.rem(0));
                     font-size: f.rem(12);
                     color: v.$purple-950;
                     text-transform: uppercase;
@@ -208,7 +197,6 @@
                         border-radius: f.rem(6);
                         border: 1px solid v.$gray-200;
                         transition: border 0.2s ease;
-
                         font-size: f.rem(14);
                         outline: none;
 
@@ -230,15 +218,12 @@
                 }
 
                 .form-row {
-                    display: flex;
-                    gap: f.rem(16);
+                    @include flex-row(f.rem(16));
                     width: 100%;
-
                     justify-content: space-between;
 
                     @include breakpoint(medium) {
                         flex-direction: row;
-                        justify-content: space-between;
                     }
 
                     label {
@@ -247,8 +232,8 @@
                     }
 
                     .row-fields {
-                        display: flex;
-                        gap: f.rem(8);
+                        @include flex-row(f.rem(8));
+
                         input {
                             flex: 1;
                             min-width: 0;
@@ -261,7 +246,7 @@
                 text-align: center;
 
                 img {
-                    margin-bottom: 1rem;
+                    margin-bottom: f.rem(16);
                     width: 64px;
                 }
 
@@ -278,11 +263,11 @@
                 }
 
                 button {
-                    padding: 1rem 2rem;
+                    padding: f.rem(16) f.rem(32);
                     background-color: #21092f;
                     color: white;
                     border: none;
-                    border-radius: 6px;
+                    border-radius: f.rem(6);
                     cursor: pointer;
                 }
             }

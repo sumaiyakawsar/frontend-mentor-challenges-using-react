@@ -1,6 +1,7 @@
 @use "../../../styles/functions" as f;
-@use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
+@use "variables" as v;
 
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
@@ -10,19 +11,17 @@
     font-weight: v.$font-normal;
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    align-items: center;
+    @include place-center;
 
     .result-card {
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(0));
         overflow: hidden;
         background-color: v.$white;
 
         @include breakpoint(medium) {
             max-width: 700px;
             flex-direction: row;
-            border-radius: 2rem;
+            border-radius: f.rem(32);
             box-shadow: v.$box-shadow;
         }
     }
@@ -30,8 +29,7 @@
     .result-section {
         background: linear-gradient(to top, v.$light-royal-blue, v.$light-slate-blue);
         color: v.$white;
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(0));
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
@@ -53,32 +51,29 @@
 
         .score-circle {
             background: linear-gradient(to top, v.$persian-blue, v.$violet-blue);
-
             border-radius: 50%;
             width: f.em(130);
             height: f.em(130);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex-col(f.rem(0));
+            @include flex-center;
 
             h1 {
                 font-size: f.rem(42);
             }
 
             span {
-                font-size: 0.9rem;
+                font-size: f.rem(14);
                 color: v.$light-lavender;
             }
         }
 
         .rating {
-            font-size: 1.5rem;
-            margin-top: 1rem;
+            font-size: f.rem(24);
+            margin-top: f.rem(16);
         }
 
         .desc {
-            font-size: 0.9rem;
+            font-size: f.rem(14);
             color: v.$light-lavender;
             padding: 0 f.rem(16);
         }
@@ -96,26 +91,23 @@
             opacity: 0;
             transform: translateX(100%);
             animation: slideOutRight 0.8s ease-out forwards;
-            animation-delay: 0.8s;
         }
         h3 {
             font-weight: v.$font-bold;
-            padding-bottom: 1.5rem;
+            padding-bottom: f.rem(24);
             color: v.$dark-gray-blue;
         }
 
         .summary-items {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
 
             .summary-item {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                border-radius: 0.75rem;
+                border-radius: f.rem(12);
                 padding: f.rem(16);
-                font-size: 0.95rem;
+                font-size: f.rem(15);
                 opacity: 0;
                 animation: riseFade 0.6s ease-out forwards;
 
@@ -132,9 +124,8 @@
                     animation-delay: 0.9s;
                 }
                 .category {
-                    display: flex;
                     align-items: center;
-                    gap: 0.5rem;
+                    @include flex-row(f.rem(8));
 
                     img {
                         width: 25px;
@@ -155,7 +146,7 @@
                         font-weight: v.$font-normal;
                     }
                 }
-                
+
                 @each $key, $color in v.$summary-colors {
                     &.#{$key} {
                         background-color: hsla(from #{$color} h s l / 0.1);
@@ -166,15 +157,15 @@
         }
 
         .btn_continue {
-            margin-top: 2rem;
+            margin-top: f.rem(32);
             width: 100%;
             background-color: v.$dark-gray-blue;
             text-align: center;
             color: white;
             border: none;
             padding: f.rem(16);
-            border-radius: 2rem;
-            font-weight: bold;
+            border-radius: f.rem(32);
+            font-weight: v.$font-bold;
             cursor: pointer;
             transition: background-color 0.3s;
 

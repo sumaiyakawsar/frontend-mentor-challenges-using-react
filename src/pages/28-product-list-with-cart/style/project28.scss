@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @use "../../../styles/mq" as *;
 @use "../../../styles/font" as fo;
@@ -9,14 +10,10 @@
   font-weight: v.$font-normal;
   line-height: 1.5;
   flex: 1;
-  display: flex;
-  align-items: center;
   padding-top: f.rem(60);
 
   .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    @include flex-col(f.rem(32));
     width: 80%;
     margin: 0 auto;
 
@@ -28,12 +25,10 @@
 
   .btn {
     font-size: f.rem(16);
-
     width: 100%;
     background: v.$red;
     color: v.$rose-50;
     text-align: center;
-
     border: none;
     padding: f.rem(16);
     border-radius: f.rem(24);
@@ -49,13 +44,13 @@
 
     &__title {
       font-size: f.rem(48);
-      margin-bottom: 1rem;
+      margin-bottom: f.rem(16);
     }
 
     &__grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1.5rem;
+      gap: f.rem(24);
 
       @include breakpoint(medium) {
         grid-template-columns: repeat(3, 1fr);
@@ -63,29 +58,25 @@
     }
 
     .product-card {
-      display: flex;
-      flex-direction: column;
-
+      @include flex-col(f.rem(0));
       .product-image {
         border: 2px solid transparent;
         transition: border 0.3s ease;
         img {
           width: 100%;
           display: block;
-          border-radius: 1rem;
+          border-radius: f.rem(16);
         }
         &.active {
           border: 2px solid color-mix(in srgb, white 20%, v.$red);
-          border-radius: 1rem;
+          border-radius: f.rem(16);
         }
       }
 
       .cart-actions {
         width: 180px;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         overflow: hidden;
         transform: translateY(-50%);
 
@@ -138,9 +129,8 @@
           padding: f.rem(10) f.rem(32);
           border-radius: f.rem(24);
           font-weight: v.$font-bold;
-          display: flex;
           align-items: center;
-          gap: f.rem(8);
+          @include flex-row(f.rem(8));
           cursor: pointer;
           flex: 1;
 
@@ -160,16 +150,15 @@
           flex: 1;
           background-color: v.$red;
           padding: f.rem(8);
-          display: flex;
-          gap: 1rem;
+          @include flex-row(f.rem(16));
           align-items: center;
           justify-content: space-between;
 
           button {
             background: none;
             border: none;
-
             cursor: pointer;
+
             .icon {
               border: v.$rose-50 solid 1px;
               border-radius: 50%;
@@ -195,17 +184,17 @@
 
       &__info {
         .product__category {
-          font-size: 0.75rem;
+          font-size: f.rem(12);
           text-transform: uppercase;
           color: v.$rose-500;
           font-weight: v.$font-normal;
         }
 
         .product__name {
-          font-size: 1rem;
-          font-weight: 700;
-          margin: 0.25rem 0;
-          color: #000;
+          font-size: f.rem(16);
+          font-weight: v.$font-bolder;
+          margin: f.rem(4) 0;
+          color: v.$rose-900;
         }
 
         .product__price {
@@ -243,11 +232,9 @@
       list-style: none;
 
       li {
-        display: flex;
         align-items: center;
-        gap: 1rem;
-        padding-top: f.rem(16);
-        padding-bottom: f.rem(16);
+        @include flex-row(f.rem(16));
+        padding-block: f.rem(16);
         border-bottom: v.$rose-100 solid 2px;
 
         div {
@@ -259,9 +246,7 @@
           }
 
           .item-meta {
-            display: flex;
-            gap: f.rem(12);
-
+            @include flex-row(f.rem(12));
             .item-quantity {
               font-weight: v.$font-bolder;
               color: v.$red;
@@ -297,15 +282,14 @@
     }
 
     &__summary {
-      display: flex;
-      flex-direction: column;
-      gap: f.rem(32);
+      @include flex-col(f.rem(32));
       padding-top: f.rem(32);
 
       .cart__total {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         strong {
           color: v.$rose-900;
           font-size: f.rem(24);
@@ -318,9 +302,8 @@
         background: hsla(from v.$red h s l / 0.04);
         padding: f.rem(16);
         color: v.$rose-900;
-        display: flex;
         justify-content: center;
-        gap: f.rem(12);
+        @include flex-row(f.rem(12));
         border-radius: f.rem(12);
       }
     }
@@ -348,9 +331,8 @@
       width: 100%;
       box-shadow: v.$box-shadow;
       animation: fadeIn 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      gap: f.rem(32);
+      @include flex-col(f.rem(32));
+
       @include breakpoint(medium) {
         max-width: 480px;
         border-radius: f.rem(18);
@@ -389,11 +371,9 @@
           list-style: none;
 
           .confirmation-item {
-            display: flex;
             align-items: center;
-            gap: f.rem(16);
-            padding-top: f.rem(16);
-            padding-bottom: f.rem(16);
+            @include flex-row(f.rem(16));
+            padding-block: f.rem(16);
             border-bottom: v.$rose-100 solid 2px;
             &:first-of-type {
               padding-top: 0;
@@ -416,9 +396,7 @@
               .item-meta {
                 font-size: f.rem(13);
                 color: v.$rose-400;
-                display: flex;
-                gap: f.rem(16);
-
+                @include flex-row(f.rem(16));
                 .item-quantity {
                   font-weight: v.$font-bold;
                   color: v.$red;
@@ -440,7 +418,9 @@
         .order-total {
           display: flex;
           padding-top: f.rem(16);
+          align-items: center;
           justify-content: space-between;
+          
           strong {
             font-weight: v.$font-bolder;
             font-size: f.rem(24);

@@ -8,6 +8,29 @@
     flex-direction: row;
     gap: $gap;
 }
+@mixin grid($gap:0){
+    display: grid;
+    gap: $gap;
+}
+
+@mixin place-center {
+    display: grid;
+    place-content: center;
+}
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin v-align-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-col-center($gap: 0) {
+    @include flex-col($gap);
+    @include flex-center;
+}
 @mixin responsive-img {
     max-width: 100%;
     width: 100%;

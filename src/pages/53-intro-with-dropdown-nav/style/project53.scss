@@ -1,5 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 
@@ -7,18 +8,16 @@
     font-family: v.$font-family;
     font-size: v.$font-size-p;
     flex: 1;
-    display: flex;
-    flex-direction: column;
+    @include flex-col(f.rem(0));
     justify-content: space-between;
     .icon {
         font-size: f.rem(44);
     }
 
     .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: f.rem(32);
+        @include flex-row(f.rem(32));
+
+        @include v-align-center;
         padding: f.rem(24);
 
         .menu-toggle {
@@ -38,17 +37,14 @@
 
             @include breakpoint(medium) {
                 flex: 1;
-                display: flex;
-                flex-direction: row;
-                gap: f.rem(32);
+                @include flex-row(f.rem(32));
                 justify-content: space-between;
                 width: auto;
 
                 .main-nav {
-                    display: flex;
                     align-items: center;
-                    gap: f.rem(32);
 
+                    @include flex-row(f.rem(32));
                     .nav-item {
                         position: relative;
 
@@ -56,8 +52,8 @@
                             text-decoration: none;
                             color: v.$gray-500;
                             font-weight: v.$font-normal;
-                            display: flex;
-                            gap: f.rem(8);
+
+                            @include flex-row(f.rem(8));
                             font-size: f.rem(14);
                             &:hover {
                                 color: v.$gray-950;
@@ -80,14 +76,11 @@
                             border-radius: f.rem(6);
                             padding: f.rem(8) 0;
 
-                            display: flex;
-                            flex-direction: column;
-                            gap: f.rem(4);
+                            @include flex-col(f.rem(4));
 
                             .dropdown-item {
-                                display: flex;
+                                @include flex-row(f.rem(16));
                                 align-items: center;
-                                gap: f.rem(16);
                                 padding: f.rem(8) f.rem(16);
                                 cursor: pointer;
                                 font-weight: v.$font-normal;
@@ -104,9 +97,7 @@
                 }
 
                 .btns {
-                    display: flex;
-                    gap: f.rem(32);
-
+                    @include flex-row(f.rem(32));
                     .btn {
                         background: none;
                         cursor: pointer;
@@ -151,10 +142,7 @@
         height: 100vh;
         background-color: v.$gray-50;
 
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(24);
-
+        @include flex-col(f.rem(24));
         max-width: 320px;
         z-index: 999;
         box-shadow: v.$box-shadow;
@@ -178,19 +166,15 @@
         }
 
         .mobile-nav {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(8);
-
+            @include flex-col(f.rem(8));
             .nav-item {
                 a {
                     font-size: f.rem(16);
                     font-weight: v.$font-normal;
                     text-decoration: none;
                     color: v.$gray-500;
-                    display: flex;
+                    @include flex-row(f.rem(16));
                     align-items: center;
-                    gap: f.rem(16);
                     padding: f.rem(8) 0;
 
                     &:hover {
@@ -201,14 +185,11 @@
                 .dropdown {
                     margin-top: f.rem(8);
                     margin-left: f.rem(16);
-                    display: flex;
-                    flex-direction: column;
-                    gap: f.rem(8);
+                    @include flex-col(f.rem(8));
 
                     .dropdown-item {
-                        display: flex;
                         align-items: center;
-                        gap: f.rem(8);
+                        @include flex-row(f.rem(08));
                         padding: 0.3rem 0;
                         font-size: 0.95rem;
                         color: v.$gray-500;
@@ -230,9 +211,7 @@
         }
 
         .btns {
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
+            @include flex-col(f.rem(12));
             margin-top: f.rem(32);
 
             .btn {
@@ -271,21 +250,17 @@
 
         &__text {
             flex: 1;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(16));
             align-items: center;
             justify-content: space-between;
-            gap: f.rem(16);
             padding-inline: f.rem(32);
             max-height: 100%;
 
             &--body {
                 flex: 1;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: f.rem(32);
+                @include flex-col(f.rem(32));
+                @include flex-center;
+
                 h1 {
                     font-size: f.rem(36);
                 }
@@ -319,9 +294,7 @@
 
             .clients {
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include v-align-center;
 
                 img {
                     max-height: 30px;
@@ -351,7 +324,7 @@
 
             &__text {
                 h1 {
-                    font-size: 4rem;
+                    font-size: f.rem(64);
                 }
             }
         }

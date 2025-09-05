@@ -1,18 +1,18 @@
 @use "../../../styles/functions" as f;
- 
+
 // Colors
 // Primary
-$grayish-blue: rgb(132, 134, 169);
-$soft-red-100: rgba(251, 96, 135,100%);
-$soft-red-80: rgba(251, 96, 135, 80%);
+$grayish-blue: hsl(237, 18%, 59%);
+$soft-red: hsl(345, 95%, 68%);
 
 // Neutral
-$white: rgb(255, 255, 255);
-$saturated-blue: rgb(42, 42, 65);
-$dark-desaturated-blue: rgb(52, 54, 80);
-$dark-blue: rgb(30, 31, 41);
-$dark-black-blue: rgb(25, 26, 36);
+$white: hsl(0, 0%, 100%);
+$saturated-blue: hsl(240, 21%, 21%);
+$dark-desaturated-blue: hsl(236, 21%, 26%);
+$dark-blue: hsl(235, 16%, 14%);
+$dark-black-blue: hsl(234, 17%, 12%);
 
 // ## Typography
 $font-size-p: f.rem(14);
- 
+
+$font-weight: 700;

@@ -1,23 +1,21 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
 @use "../../../styles/font" as fo;
+@use "../../../styles/mixin" as *;
 
 .projects {
     font-family: fo.$outfit-font;
     font-size: v.$font-size-p;
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-    gap: f.rem(48);
     padding: f.rem(80);
     width: 100%;
     margin: 0 auto;
+    @include flex-col(f.rem(48));
 
     &__filters {
-        display: flex;
-        gap: f.rem(16);
         flex-wrap: wrap;
+        @include flex-row(f.rem(16));
 
         .filter-btn {
             padding: 0.5rem 1rem;
@@ -55,16 +53,14 @@
             background: white;
             border-radius: f.rem(6);
             box-shadow: v.$box-shadow;
-            display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: f.rem(16);
             width: 100%;
+            @include flex-row(f.rem(16));
 
             .tags {
-                display: flex;
                 flex-wrap: wrap;
-                gap: 1rem;
+                @include flex-row(f.rem(16));
 
                 .tag {
                     display: flex;
@@ -157,10 +153,9 @@
                     border-radius: 50%;
                     width: f.rem(26);
                     height: f.rem(26);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: f.rem(10);
+                    display: grid;
+                    place-content: center;
+                    font-size: f.rem(12);
                     font-weight: bold;
                     z-index: 2;
                     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -174,9 +169,7 @@
             }
 
             &__body {
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
                 padding: f.rem(12);
 
                 &__header {
@@ -225,16 +218,15 @@
             }
 
             &__tags {
-                display: flex;
                 flex-wrap: wrap;
-                gap: f.rem(8);
+                @include flex-row(f.rem(8));
                 padding: f.rem(12);
 
                 .tag {
                     background-color: #f5f5f5;
                     border-radius: f.rem(8);
                     font-weight: v.$font-bold;
-                    padding: f.rem(6) f.rem(6);
+                    padding: f.rem(6);
                     cursor: pointer;
                     transition: background 0.2s ease;
 

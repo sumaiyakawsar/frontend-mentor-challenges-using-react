@@ -1,12 +1,12 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 
 .project-49 {
     font-family: v.$os-font;
     font-size: v.$font-size-p;
-
     width: 100dvw;
     color: v.$white;
 
@@ -55,10 +55,7 @@
         }
 
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
+            @include v-align-center;
             .logo {
                 img {
                     max-width: f.rem(120); // or try 100–120 depending on look
@@ -67,9 +64,7 @@
                 }
             }
             .nav-links {
-                display: flex;
-                gap: f.rem(16);
-
+                @include flex-row(f.rem(16));
                 a {
                     color: v.$white;
                     text-decoration: none;
@@ -82,9 +77,6 @@
                     }
                 }
             }
-
-            @include breakpoint(medium) {
-            }
         }
 
         &__content {
@@ -92,11 +84,9 @@
             max-width: 700px;
             width: 70vw;
             margin: 0 auto;
-            display: flex;
+            @include flex-col(f.rem(20));
             align-items: center;
-            flex-direction: column;
             text-align: center;
-            gap: f.rem(20);
             padding: f.rem(32);
 
             .image {
@@ -119,7 +109,8 @@
         }
     }
     .features {
-        .container {  max-width: 800px;
+        .container {
+            max-width: 800px;
             width: 70vw;
             display: grid;
             grid-template-columns: 1fr;
@@ -134,10 +125,8 @@
                 padding: f.rem(32);
                 border-radius: 12px;
                 color: #fff;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(16));
                 align-items: center;
-                gap: f.rem(16);
 
                 img {
                     width: 60px;
@@ -159,10 +148,8 @@
     }
     .productivity {
         .container {
-            display: flex;
-            flex-direction: column;
             align-items: flex-start;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
 
             @include breakpoint(medium) {
                 flex-direction: row;
@@ -173,17 +160,14 @@
                 img {
                     width: 100%;
                     height: 100%;
-
                     display: block;
                 }
             }
 
             .contents {
                 flex: 1;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(14));
                 align-items: flex-start;
-                gap: f.rem(14);
 
                 h2 {
                     font-size: f.rem(28);
@@ -211,13 +195,12 @@
         }
     }
 
-    .testimonials {   
-        .container {padding-block: f.rem(32);
+    .testimonials {
+        .container {
+            padding-block: f.rem(32);
             position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
-            
+            @include flex-col(f.rem(32));
+
             @include breakpoint(medium) {
                 flex-direction: row;
                 align-items: center;
@@ -233,15 +216,13 @@
                 background: v.$navy-800;
                 border-radius: f.rem(8);
                 padding: f.rem(32);
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(32);
+                @include flex-col(f.rem(32));
                 color: v.$white;
-                .user {
-                    display: flex;
-                    align-items: center;
-                    gap: f.rem(8);
 
+                .user {
+                    align-items: center;
+
+                    @include flex-row(f.rem(10));
                     img {
                         border-radius: 50%;
                         width: 35px;
@@ -277,9 +258,7 @@
             max-width: 800px;
             width: 70vw;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(20);
+            @include flex-col(f.rem(20));
             // 👇 This is what overlaps the footer visually
             margin-bottom: -100px;
         }
@@ -296,9 +275,7 @@
         }
 
         &__form {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
             width: 100%;
 
             @include breakpoint(medium) {
@@ -309,9 +286,7 @@
 
         &__input-wrapper {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-
+            @include flex-col(f.rem(0));
             input {
                 flex: 1;
                 padding: f.rem(16) f.rem(32);
@@ -341,9 +316,7 @@
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
 
             @include breakpoint(medium) {
                 flex-direction: row;
@@ -354,9 +327,8 @@
         }
 
         .row {
-            display: flex;
-            gap: f.rem(18);
             align-items: center;
+            @include flex-row(f.rem(18));
 
             p {
                 color: v.$white;
@@ -388,17 +360,12 @@
 
         .contact {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
         }
 
         .nav-links {
-            display: flex;
-            flex-direction: column;
-
+            @include flex-col(f.rem(16));
             flex: 1;
-            gap: f.rem(16);
 
             a {
                 font-weight: v.$font-normal;
@@ -412,9 +379,8 @@
         }
 
         .social-links {
-            display: flex;
+            @include flex-row(f.rem(16));
             justify-content: end;
-            gap: f.rem(16);
             align-items: center;
             align-self: center;
 
@@ -424,8 +390,7 @@
 
             a {
                 color: v.$white;
-                display: grid;
-                place-content: center;
+                @include place-center;
                 border-radius: 50%;
                 border: 1px solid v.$white;
                 width: 30px;

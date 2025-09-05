@@ -1,4 +1,5 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @use "../../../styles/mq" as *;
 
@@ -8,13 +9,9 @@
     font-family: v.$font-family;
     font-size: v.$font-size-p;
     font-weight: v.$font-normal;
-
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    @include place-center;
 
     .toast {
         position: fixed;
@@ -26,21 +23,16 @@
         padding: f.rem(16);
         border-radius: f.rem(8);
         box-shadow: v.$box-shadow;
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(12);
-
+        @include flex-col(f.rem(12));
         z-index: 1000;
         transition:
             transform 0.4s ease,
             opacity 0.4s ease;
 
         .row {
-            display: flex;
             align-items: center;
-            gap: 1rem;
-
-            .icon{
+            @include flex-row(f.rem(16));
+            .icon {
                 font-size: f.rem(24);
             }
         }
@@ -60,9 +52,7 @@
         border-radius: f.rem(12);
         padding: f.rem(24);
         max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(16);
+        @include flex-col(f.rem(16));
         box-shadow: v.$box-shadow;
 
         .error-text {
@@ -76,17 +66,13 @@
             gap: f.rem(12);
 
             &.row {
-                display: flex;
-                gap: 1rem;
+                @include flex-col(f.rem(16));
                 @include breakpoint(small) {
                     flex-direction: row;
                 }
             }
             .column {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                gap: f.rem(12);
+                @include flex-col(f.rem(12));
             }
             label {
                 font-weight: v.$font-bold;
@@ -138,10 +124,8 @@
         }
 
         .query-options {
-            display: flex;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
             justify-content: space-between;
-            flex-direction: column;
 
             @include breakpoint(small) {
                 flex-direction: row;
@@ -167,7 +151,7 @@
 
                 &:has(input[type="radio"]:focus) {
                     outline: 2px solid v.$green-600;
-                    outline-offset: 2px; 
+                    outline-offset: 2px;
                 }
 
                 input {

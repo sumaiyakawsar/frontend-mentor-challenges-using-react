@@ -58,6 +58,11 @@ const Project26 = () => {
 
             <section className="hero">
                 <div className="container">
+                    <div className="hero__image-wrapper">
+                        <div className="hero__background-shape"></div>
+                        <img src={imgHero} alt="Hero" />
+                    </div>
+
                     <div className="hero__content">
                         <h1>
                             A Simple Bookmark Manager
@@ -77,10 +82,7 @@ const Project26 = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="hero__image-wrapper">
-                        <div className="hero__background-shape"></div>
-                        <img src={imgHero} alt="Hero" />
-                    </div>
+
                 </div>
             </section>
 

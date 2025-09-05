@@ -1,26 +1,23 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/font" as fo;
 
 .project-9 {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: fo.$outfit-font;
     font-size: f.rem(18);
-
     line-height: 150%;
+    @include place-center;
+
     .card {
         min-width: 327px;
         max-width: 384px;
         background-color: v.$very-dark-blue-card;
         color: v.$white;
         border-radius: f.rem(20);
-        display: flex;
         box-shadow: 0px 0 rgba(0, 0, 0);
-        gap: f.rem(24);
-        flex-direction: column;
+        @include flex-col(f.rem(24));
         padding: f.em(24);
 
         .img__container {
@@ -43,11 +40,9 @@
                 height: 100%;
                 background: v.$cyan-trans;
                 cursor: pointer;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 opacity: 0;
                 transition: opacity 0.3s ease-in-out;
+                @include place-center;
             }
 
             &:hover {
@@ -61,9 +56,7 @@
             z-index: 10;
         }
         &__details {
-            display: flex;
-            gap: f.rem(12);
-            flex-direction: column;
+            @include flex-col(f.rem(12));
             align-items: flex-start;
         }
 
@@ -90,20 +83,21 @@
             font-weight: v.$font-bold;
         }
         &__info {
-            display: flex;
-            gap: f.rem(8);
+            @include flex-row(f.rem(8));
             align-items: center;
         }
+
         &__time {
             color: v.$soft-blue;
         }
+
         &__footer {
             border-top: 1px solid v.$very-dark-blue-line;
             padding-top: f.rem(14);
-            display: flex;
             align-items: center;
-            gap: f.rem(12);
             color: v.$soft-blue;
+            @include flex-row(f.rem(12));
+            
             .author {
                 &__img {
                     width: 32px;

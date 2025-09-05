@@ -10,6 +10,10 @@ const Navbar = ({ toggleMenu, toggleCart, cartItemCount, menuTitles, cartRef }) 
         <div className='navbar'>
 
             <div className="navigation">
+                <button type="button" className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+                    <MdOutlineMenu className='icon' />
+                </button>
+                
                 <div className="logo">
                     <img src={logo} alt="logo" />
                 </div>
@@ -22,16 +26,13 @@ const Navbar = ({ toggleMenu, toggleCart, cartItemCount, menuTitles, cartRef }) 
                         </a>
                     ))}
                 </nav>
-                <button type="button" className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
-                     <MdOutlineMenu className='icon' />
 
-                </button>
             </div>
 
 
             <div className="user">
                 <div className="cart-icon-wrapper" onClick={toggleCart} ref={cartRef}>
-                    <IoCartOutline />
+                    <IoCartOutline className='cart-icon'/>
                     {cartItemCount > 0 && <span className="cart-count">{cartItemCount}</span>}
                 </div>
 

@@ -9,9 +9,7 @@
     font-size: v.$font-size-p;
     flex: 1;
     @include flex-col(f.rem(32));
-    justify-content: space-between;
-    align-items: center;
-
+    @include v-align-center;
     width: 100dvw;
 
     .container {
@@ -70,15 +68,12 @@
             background-repeat: no-repeat;
         }
         .container {
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
             height: 100%;
         }
 
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include v-align-center;
             gap: f.rem(32);
 
             .menu-toggle {
@@ -97,16 +92,13 @@
 
                 @include breakpoint(medium) {
                     flex: 1;
-                    display: flex;
-                    flex-direction: row;
-                    gap: f.rem(32);
+                    @include flex-row(f.rem(32));
                     justify-content: space-between;
                     width: auto;
 
                     .main-nav {
-                        display: flex;
                         align-items: center;
-                        gap: f.rem(32);
+                        @include flex-row(f.rem(32));
 
                         .nav-item {
                             position: relative;
@@ -115,8 +107,7 @@
                                 color: v.$white;
                                 font-weight: v.$font-normal;
                                 text-decoration: none;
-                                display: flex;
-                                gap: f.rem(8);
+                                @include flex-row(f.rem(8));
                                 font-size: f.rem(14);
 
                                 &:hover {
@@ -192,9 +183,7 @@
                             color: v.$blue-900;
                             width: 100%;
                             text-align: center;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+                            @include flex-center;
                             padding: f.rem(16);
 
                             .arrow-icon {
@@ -208,11 +197,9 @@
 
                         .dropdown {
                             @include flex-col(f.rem(16));
-                            align-items: center;
-                            justify-content: center;
+                            @include flex-center;
                             color: v.$gray-600;
                             background: rgb(241, 232, 232);
-
                             padding: f.rem(28);
                             width: 100%;
                             border-radius: f.rem(8);
@@ -258,8 +245,7 @@
         .content {
             flex: 1;
             @include flex-col(f.rem(32));
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             color: v.$white;
             padding-block: f.rem(140);
             text-align: center;
@@ -378,8 +364,8 @@
             height: 70%;
             margin-top: auto;
             margin-bottom: 0;
-            border-top-right-radius: 5rem;
-            border-bottom-left-radius: 5rem;
+            border-top-right-radius: f.rem(80);
+            border-bottom-left-radius: f.rem(80);
             z-index: 1;
             @include breakpoint(medium) {
                 margin: auto 0;

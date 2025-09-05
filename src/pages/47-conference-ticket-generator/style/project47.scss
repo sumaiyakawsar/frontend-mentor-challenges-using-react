@@ -1,5 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap");
 
@@ -7,27 +8,19 @@
     font-size: v.$font-size-p;
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: v.$font-family;
-    gap: f.rem(32);
     color: white;
     padding: f.rem(32);
-
+    @include flex-col(f.rem(32));
+    align-items: center;
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: f.rem(32);
+        @include flex-col(f.rem(32));
+        @include flex-center;
 
         .welcome__form {
             color: v.$neutral-300;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
 
             h1 {
                 color: v.$neutral-0;
@@ -37,16 +30,11 @@
                 text-align: start;
                 width: 100%;
                 margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(16);
+                @include flex-col(f.rem(16));
                 max-width: 500px;
 
                 .form-group {
-                    display: flex;
-                    flex-direction: column;
-                    gap: f.rem(12);
-
+                    @include flex-col(f.rem(12));
                     .upload-box {
                         padding: f.rem(16);
                         border: 2px dashed v.$neutral-500;
@@ -57,11 +45,8 @@
                         position: relative;
 
                         .placeholder-wrapper {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            flex-direction: column;
-                            gap: f.rem(24);
+                            @include flex-col(f.rem(24));
+                            @include flex-center;
 
                             .placeholder-icon {
                                 border-radius: f.rem(8);
@@ -91,10 +76,8 @@
                         }
 
                         .preview-wrapper {
-                            display: flex;
-                            flex-direction: column;
+                            @include flex-col(f.rem(24));
                             align-items: center;
-                            gap: f.rem(24);
 
                             .avatar-preview {
                                 width: 70px;
@@ -105,9 +88,7 @@
                             }
 
                             .action-buttons {
-                                display: flex;
-                                gap: f.rem(10);
-
+                                @include flex-row(f.rem(10));
                                 button {
                                     all: unset;
                                     padding: f.rem(6) f.rem(12);
@@ -140,18 +121,17 @@
                     .info-box {
                         font-size: f.rem(12);
                         color: v.$neutral-500;
-                        display: flex;
-                        gap: f.rem(10);
-                        align-items: center;
 
+                        align-items: center;
+                        @include flex-row(f.rem(10));
                         &.error {
                             color: v.$orange-500;
                         }
 
                         .info,
                         .error-text {
-                            display: flex;
-                            gap: f.rem(10);
+                            @include flex-row(f.rem(10));
+
                             align-items: center;
                         }
                     }
@@ -203,9 +183,8 @@
 
         .confirmation {
             max-width: 500px;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
+
             text-align: center;
 
             h2 {
@@ -238,9 +217,7 @@
                 overflow: hidden;
 
                 text-align: left;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                @include v-align-center;
                 padding: f.rem(16);
 
                 .bg {
@@ -258,12 +235,10 @@
                 .contents {
                     z-index: 1;
                     position: relative;
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-col(f.rem(16));
                     align-items: flex-start;
                     justify-content: space-between;
                     height: 100%;
-                    gap: f.rem(16);
                     flex: 1;
 
                     @include breakpoint(small) {
@@ -272,9 +247,9 @@
 
                     .conference,
                     .user {
-                        display: flex;
+                        @include flex-row(f.rem(16));
+
                         align-items: center;
-                        gap: f.rem(16);
 
                         &__img {
                             width: 30px;
@@ -311,9 +286,6 @@
                     color: v.$neutral-500;
                     opacity: 0.7;
                     letter-spacing: 0.1em;
-
-                    @include breakpoint(medium) {
-                    }
                 }
             }
         }

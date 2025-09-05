@@ -1,5 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,100..900&display=swap");
 
@@ -13,12 +14,9 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
         height: 80vh;
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(32));
         justify-content: center;
-        padding: f.rem(32);
 
         @include breakpoint(medium) {
             background-image: url("../images/desktop/image-header.jpg");
@@ -26,14 +24,13 @@
 
         .container {
             position: relative;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
+
             height: 100%;
 
             .navbar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include v-align-center;
+                padding: f.rem(32);
 
                 .menu-toggle {
                     background: none;
@@ -56,9 +53,8 @@
                     }
 
                     .nav-links {
-                        display: flex;
+                        @include flex-row(f.rem(48));
                         align-items: center;
-                        gap: f.rem(48);
 
                         a {
                             color: v.$white;
@@ -84,7 +80,6 @@
                             text-transform: uppercase;
                             font-family: v.$fraunces-font;
                             transition: background 0.3s ease;
-
                             cursor: pointer;
                             border-radius: f.rem(25);
 
@@ -106,8 +101,8 @@
 
                 z-index: 1000;
 
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(0));
+
                 transition:
                     transform 0.3s ease-in-out,
                     opacity 0.3s ease-in-out;
@@ -128,11 +123,8 @@
 
                 .mobile-nav {
                     flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: f.rem(32);
+                    @include flex-col(f.rem(32));
+                    @include flex-center;
                     padding: f.rem(48);
 
                     a {
@@ -163,11 +155,9 @@
 
             .intro {
                 flex: 1;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(48));
                 align-items: center;
                 padding-top: f.rem(60);
-                gap: f.rem(48);
 
                 h1 {
                     text-transform: uppercase;
@@ -188,10 +178,8 @@
 
     .services {
         .service-block {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flex-col(f.rem(0));
+            @include flex-center;
             @include breakpoint(medium) {
                 flex-direction: row;
                 height: auto; // or set a fixed height if necessary
@@ -213,26 +201,21 @@
                 }
                 @include breakpoint(medium) {
                     width: 50%;
-                    
                 }
             }
 
             .text-block {
                 padding: f.rem(40);
-                display: flex;
-                align-items: center; // vertically center text
-                justify-content: center;
+                @include flex-center;
+
                 @include breakpoint(medium) {
                     width: 50%;
                     padding: f.rem(60);
                 }
 
                 .content {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: f.rem(32);
+                    @include flex-col(f.rem(32));
+                    @include flex-center;
                     text-align: center;
 
                     @include breakpoint(medium) {
@@ -299,8 +282,7 @@
     }
 
     .specialties {
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(0));
         @include breakpoint(medium) {
             flex-direction: row;
         }
@@ -325,9 +307,7 @@
                 transform: translateX(-50%);
                 width: 80%;
                 color: v.$green-800;
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(28);
+                @include flex-col(f.rem(28));
 
                 @include breakpoint(medium) {
                     bottom: 3rem;
@@ -355,11 +335,9 @@
             width: 90vw;
             margin: 0 auto;
             padding-block: f.rem(60);
-
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(32));
             align-items: center;
-            gap: f.rem(32);
+
             h2 {
                 text-transform: uppercase;
                 letter-spacing: f.em(3);
@@ -369,19 +347,15 @@
             .testimonial {
                 border-radius: f.rem(8);
                 padding: f.rem(32);
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(32);
+                @include flex-col(f.rem(32));
+
                 @include breakpoint(medium) {
                     flex-direction: row;
                 }
                 &__content {
                     text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: f.rem(32);
+                    @include flex-col(f.rem(32));
+                    @include flex-center;
 
                     img {
                         border-radius: 50%;
@@ -395,10 +369,9 @@
                 }
 
                 .user {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-col(f.rem(10));
+
                     align-items: center;
-                    gap: f.rem(8);
 
                     p {
                         font-weight: v.$font-bold;
@@ -416,9 +389,8 @@
         }
     }
     .image__gallery {
-        display: grid;
+        @include grid(f.rem(0));
         grid-template-columns: repeat(2, 1fr); // mobile: 2 columns
-        gap: 0;
 
         picture {
             width: 100%;
@@ -440,11 +412,8 @@
         padding-block: f.rem(32);
 
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
+            @include flex-center;
 
             img {
                 display: block;
@@ -452,9 +421,7 @@
         }
 
         .nav-links {
-            display: flex;
-            gap: f.rem(32);
-
+            @include flex-row(f.rem(32));
             a {
                 color: v.$green-800;
 
@@ -469,9 +436,7 @@
         }
 
         .social-links {
-            display: flex;
-            gap: f.rem(16);
-
+            @include flex-row(f.rem(16));
             a {
                 font-size: f.rem(20);
                 color: v.$green-800;

@@ -1,33 +1,30 @@
 @use "../../../styles/functions" as f;
 @use "../../../styles/font" as fo;
 @use "variables" as v;
+@use "../../../styles/mixin" as *;
 
 .project-1 {
     font-family: fo.$outfit-font;
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include place-center;
+
     .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: f.rem(16);
         border-radius: f.rem(16);
-
         box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
-
         background: v.$white;
         text-align: center;
         padding: f.em(16);
         max-width: 300px;
+        @include flex-col(f.rem(16));
+        align-items: center;
+        justify-content: center;
 
         &__img {
             width: 100%;
             height: auto;
             border-radius: f.em(10);
         }
+
         &__header {
             font-weight: v.$font-bold;
             font-size: f.rem(20);

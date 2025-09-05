@@ -1,4 +1,6 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
+
 @use "variables" as v;
 @use "../../../styles/mq" as *;
 
@@ -11,14 +13,11 @@
     line-height: 1.5;
     flex: 1;
     @include breakpoint(medium) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include place-center;
     }
 
     .multi-step-form {
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(0));
         width: 100dvw;
         height: 100dvh;
 
@@ -47,11 +46,11 @@
         .btn {
             background: v.$blue-950;
             color: v.$white;
-            padding: 0.75rem 2rem;
+            padding: f.rem(12) f.rem(32);
             border: none;
-            border-radius: 8px;
-            font-weight: 500;
-            font-size: 1rem;
+            border-radius: f.rem(8);
+            font-weight: v.$font-bold;
+            font-size: f.rem(16);
             cursor: pointer;
             transition: background 0.3s;
 
@@ -101,10 +100,8 @@
         }
 
         .sidebar {
-            display: flex;
-            flex-direction: row;
             justify-content: center;
-            gap: 1.5rem;
+            @include flex-row(f.rem(24));
             color: v.$white;
             height: 274px;
 
@@ -127,19 +124,15 @@
             }
 
             .step-item {
-                display: flex;
-                flex-direction: row;
                 align-items: center;
-                gap: f.rem(16);
                 margin-bottom: f.rem(48);
+                @include flex-row(f.rem(16));
                 @include breakpoint(medium) {
                     margin-bottom: 0;
                 }
 
                 .circle {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center;
                     font-weight: bold;
                     width: f.em(35);
                     height: f.em(35);
@@ -187,7 +180,7 @@
                         }
 
                         strong {
-                            font-size: 0.9rem;
+                            font-size: f.rem(14);
                             font-weight: v.$font-bolder;
                             color: v.$white;
                             letter-spacing: f.em(1);
@@ -199,8 +192,7 @@
 
         form {
             flex: 1;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
             justify-content: space-between;
             height: 100%;
 
@@ -213,8 +205,7 @@
                 width: 90%;
                 background-color: v.$white;
                 padding: f.rem(32) f.rem(32);
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(0));
                 border-radius: f.rem(8);
                 margin-top: f.rem(-80);
                 z-index: 999;
@@ -228,9 +219,7 @@
                     flex: 1;
                     width: 100%;
                     height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    gap: f.rem(32);
+                    @include flex-col(f.rem(32));
 
                     .intro {
                         h1 {
@@ -245,15 +234,11 @@
 
                     &.step1 {
                         .form-items {
-                            display: flex;
-                            flex-direction: column;
-                            gap: f.rem(24);
-
+                            @include flex-col(f.rem(24));
                             .field {
-                                display: flex;
-                                flex-direction: column;
                                 position: relative;
-                                gap: f.rem(4);
+                                @include flex-col(f.rem(4));
+
                                 .label {
                                     display: flex;
                                     justify-content: space-between;
@@ -304,10 +289,7 @@
 
                     &.step2 {
                         .plans {
-                            display: flex;
-                            flex-direction: column;
-                            gap: f.rem(16);
-
+                            @include flex-col(f.rem(16));
                             @include breakpoint(medium) {
                                 flex-direction: row;
                             }
@@ -316,9 +298,7 @@
                                 padding: f.rem(16);
                                 border-radius: f.rem(8);
                                 border: 1.5px solid v.$purple-200;
-                                display: flex;
-                                flex-direction: row;
-                                gap: f.rem(16);
+                                @include flex-row(f.rem(16));
                                 flex: 1;
                                 transition: all 0.3s;
 
@@ -365,11 +345,8 @@
                             background-color: v.$blue-100;
                             border-radius: f.rem(8);
                             padding: f.rem(16);
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            gap: f.rem(30);
-
+                            @include flex-row(f.rem(30));
+                            @include flex-center;
                             span {
                                 font-weight: v.$font-bolder;
                                 color: v.$grey-500;
@@ -397,10 +374,7 @@
                                     background-color: v.$blue-950;
                                     transition: 0.4s;
                                     border-radius: 20px;
-                                    top: 0;
-                                    left: 0;
-                                    right: 0;
-                                    bottom: 0;
+                                    inset: 0;
 
                                     &::before {
                                         content: "";
@@ -424,10 +398,7 @@
 
                     &.step3 {
                         .addons {
-                            display: flex;
-                            flex-direction: column;
-                            gap: f.rem(16);
-
+                            @include flex-col(f.rem(16));
                             .addon {
                                 display: flex;
                                 align-items: center;
@@ -439,22 +410,19 @@
                                 transition: all 0.3s ease;
 
                                 &__content {
-                                    display: flex;
                                     align-items: center;
-                                    gap: f.rem(28);
+                                    @include flex-row(f.rem(28));
 
                                     input[type="checkbox"] {
                                         appearance: none;
-                                        width: 20px; // slightly bigger for padding space
+                                        width: 20px;
                                         height: 20px;
                                         cursor: pointer;
                                         border: 2px solid v.$purple-600;
                                         border-radius: f.rem(4);
                                         background-color: v.$white;
-                                        padding: f.rem(4); // padding inside box
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
+                                        padding: f.rem(4);
+                                        @include flex-center;
                                         position: relative;
                                         transition:
                                             background 0.3s,
@@ -483,8 +451,8 @@
                                     }
 
                                     .addon-info {
-                                        display: flex;
-                                        flex-direction: column;
+                                        @include flex-col(f.rem(0));
+
                                         .addon_name {
                                             color: v.$blue-900;
                                             font-weight: v.$font-bolder;
@@ -523,8 +491,7 @@
                                 background-color: v.$blue-100;
                                 padding: f.rem(16);
                                 border-radius: f.rem(12);
-                                display: flex;
-                                flex-direction: column;
+                                @include flex-col(f.rem(0));
 
                                 .plan {
                                     display: flex;
@@ -540,9 +507,7 @@
 
                                 .addons {
                                     color: v.$grey-500;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: f.rem(16);
+                                    @include flex-col(f.rem(16));
                                     padding-top: f.rem(16);
 
                                     .addon {
@@ -585,12 +550,10 @@
             width: 90%;
             background-color: v.$white;
             padding: f.rem(80) f.rem(32);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             border-radius: f.rem(8);
             transform: translateY(-80px);
+            @include flex-col(f.rem(0));
+            @include flex-center;
 
             @include breakpoint(medium) {
                 margin: 0;
@@ -600,12 +563,9 @@
             }
 
             .some {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                gap: f.rem(20);
+                @include flex-col(f.rem(20));
+                @include flex-center;
+                text-align: center; 
 
                 h1 {
                     color: v.$blue-950;

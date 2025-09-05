@@ -53,6 +53,7 @@ import Project52 from "../images/project52-pricing-component-with-toggle.png"
 import Project53 from "../images/project53-intro-with-dropdown-nav.png"
 import Project54 from "../images/project54-blogr-landing-page.png"
 import Project55 from "../images/project55-insure-landing-page.png"
+import Project56 from "../images/project56-project-tracking-intro.png"
 
 export const Projects = [
     {
@@ -538,6 +539,15 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Landing"]
+    },
+    {
+        projectId: 56,
+        projectTitle: "Project tracking intro",
+        src: "/project56",
+        projectImage: Project56,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Component"]
     },
     // {
     //     projectId: 1,

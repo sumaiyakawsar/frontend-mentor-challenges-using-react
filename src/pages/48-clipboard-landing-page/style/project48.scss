@@ -1,5 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "variables" as v;
+@use "../../../styles/mixin" as *;
 @use "../../../styles/mq" as *;
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
@@ -9,19 +10,15 @@
     line-height: 1.5;
     width: 100%;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: f.rem(48);
+    @include flex-col(f.rem(48));
+    @include flex-center;
 
     section {
         padding-block: f.rem(48);
         width: 90vw;
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(32));
+
         align-items: center;
-        gap: f.rem(32);
 
         h1,
         h2,
@@ -35,10 +32,8 @@
         .header__container {
             text-align: center;
             max-width: 500px;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(32));
             align-items: center;
-            gap: f.rem(32);
             .logo {
                 width: 70px;
                 height: 70px;
@@ -89,10 +84,8 @@
 
         .content {
             width: 90vw;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(48));
             align-items: center;
-            gap: f.rem(48);
             @include breakpoint(medium) {
                 flex-direction: row;
                 align-self: flex-start;
@@ -108,10 +101,8 @@
 
             .features {
                 flex: 1;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(32));
 
-                gap: f.rem(32);
                 .feature {
                     text-align: center;
                     @include breakpoint(medium) {
@@ -131,19 +122,16 @@
         .tools {
             width: 80vw;
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(32);
+            @include flex-col(f.rem(32));
+
             @include breakpoint(medium) {
                 flex-direction: row;
             }
             .tool {
                 flex: 1;
                 text-align: center;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(16));
                 align-items: center;
-                gap: f.rem(16);
 
                 img {
                     display: block;
@@ -156,12 +144,10 @@
 
         .partners {
             width: 80vw;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(32));
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: f.rem(32);
 
             @include breakpoint(medium) {
                 flex-direction: row;
@@ -177,17 +163,14 @@
         .container {
             margin: 0 auto;
             width: 80vw;
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(32));
             align-items: center;
-            gap: f.rem(32);
             text-align: center;
 
             @include breakpoint(medium) {
                 justify-content: space-between;
                 text-align: left;
-                flex-direction: row;
-                gap: f.rem(80);
+                @include flex-row(f.rem(80));
             }
             img {
                 display: block;
@@ -195,9 +178,7 @@
             }
             .nav-links {
                 flex: 1;
-                display: grid;
-                gap: f.rem(16);
-
+                @include grid(f.rem(16));
                 a {
                     color: v.$gray-700;
 
@@ -241,8 +222,7 @@
             }
 
             .social-links {
-                display: flex;
-                gap: f.rem(16);
+                @include flex-row(f.rem(16));
                 a {
                     all: unset;
                     cursor: pointer;

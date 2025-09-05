@@ -1,5 +1,6 @@
 @use "../../../styles/functions" as f;
 @use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
@@ -7,10 +8,8 @@
     font-size: v.$font-size-p;
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-col(f.rem(0));
+    @include flex-center;
     font-family: v.$font-family;
     padding: f.rem(32);
 
@@ -18,8 +17,8 @@
         box-shadow: v.$box-shadow;
         border-radius: f.rem(8);
         overflow: hidden;
-        display: flex;
-        flex-direction: column;
+        @include flex-col(f.rem(0));
+
         width: 80vw;
 
         @include breakpoint(medium) {
@@ -28,9 +27,7 @@
         .description {
             background-color: white;
             padding: f.rem(32);
-            display: flex;
-            flex-direction: column;
-            gap: f.rem(16);
+            @include flex-col(f.rem(16));
             .typing {
                 color: v.$teal-500;
             }
@@ -44,8 +41,7 @@
         }
 
         .bottom {
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
             align-items: stretch;
             color: v.$teal-100;
             @include breakpoint(medium) {
@@ -55,15 +51,13 @@
                 background-color: v.$teal-500;
                 padding: f.rem(32);
                 flex: 1;
-                display: flex;
-                flex-direction: column;
+                @include flex-col(f.rem(32));
                 justify-content: space-between;
-                gap: f.rem(32);
 
                 .price {
-                    display: flex;
                     align-items: center;
-                    gap: f.rem(8);
+
+                    @include flex-row(f.rem(8));
                     .amount {
                         font-weight: v.$font-bold;
                         font-size: f.rem(28);
@@ -90,13 +84,9 @@
 
             .why {
                 background-color: color-mix(in srgb, white 25%, v.$teal-500);
-
                 padding: f.rem(32);
                 flex: 1;
-
-                display: flex;
-                flex-direction: column;
-                gap: f.rem(24);
+                @include flex-col(f.rem(24));
 
                 ul {
                     li {

@@ -1,42 +1,38 @@
 @use "../../../styles/functions" as f;
+@use "../../../styles/mixin" as *;
 @use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 .project-2 {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include place-center;
 
     .card-container {
         width: 50vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
         font-size: v.$font-size-p;
         user-select: none;
-
         border-radius: f.rem(10);
         overflow: hidden;
+        @include flex-row(f.rem(0));
+        flex-wrap: wrap;
+        justify-content: center;
 
         .card {
-            display: flex;
-            flex-direction: column;
+            @include flex-col(f.rem(0));
             justify-content: space-between;
             align-items: flex-start;
             flex: 1 0 200px; // grow: 1, shrink: 0, basis: 200px
             padding: f.rem(32);
 
             &__top {
-                display: flex;
-                flex-direction: column;
                 margin-bottom: f.rem(80);
                 justify-content: space-between;
-                gap: f.rem(32);
+                @include flex-col(f.rem(32));
+
                 img {
                     width: f.rem(50);
                 }
+
                 h1 {
                     text-transform: uppercase;
                     font-family: v.$big-shoulders;

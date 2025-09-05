@@ -518,4 +518,14 @@
             color: v.$blue-55;
         }
     }
+
+    &-56 {
+        a {
+            color: v.$red-56;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
