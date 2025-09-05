@@ -45,6 +45,12 @@
     button {
         background: none;
         cursor: pointer;
+
+        &:focus,
+        &:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(v.$purple-600, 0.4);  
+        }
     }
 
     .btn {
@@ -98,7 +104,7 @@
                 padding: f.rem(16);
                 box-shadow: v.$box-shadow;
                 display: grid;
-                grid-template-columns: 30px 1fr;
+                grid-template-columns: auto 1fr;
                 grid-template-areas:
                     "profiles profiles"
                     "contentes contentes"
@@ -217,6 +223,12 @@
 
             textarea {
                 grid-area: texts;
+                &:focus,
+                &:focus-visible {
+                    outline: none;
+                    border: none;
+                    box-shadow: 0 0 0 3px rgba(v.$purple-600, 0.4);
+                }
             }
 
             button {
@@ -259,7 +271,7 @@
                 @include flex-row(f.rem(32));
 
                 button {
-                    padding:f.rem(12) f.rem(24);
+                    padding: f.rem(12) f.rem(24);
                     text-align: center;
                     flex: 1;
                     border-radius: f.rem(8);

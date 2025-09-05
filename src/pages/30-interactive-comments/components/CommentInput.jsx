@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const CommentInput = ({ currentUser, onSubmit }) => {
     const [content, setContent] = useState('')
