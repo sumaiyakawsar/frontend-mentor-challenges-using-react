@@ -29,7 +29,8 @@
     }
     &8 {
         background-color: v.$dark-cyan;
-        background-image: url("../../../pages/8-profile-card-component/images/bg-pattern-top.svg"),
+        background-image:
+            url("../../../pages/8-profile-card-component/images/bg-pattern-top.svg"),
             url("../../../pages/8-profile-card-component/images/bg-pattern-bottom.svg");
         background-position:
             top -25vw left -20vw,
@@ -113,7 +114,8 @@
 
     &40 {
         background-color: v.$light-grayish-magenta;
-        background-image: url("../../../pages/40-social-proof-section/images/bg-pattern-top-mobile.svg"),
+        background-image:
+            url("../../../pages/40-social-proof-section/images/bg-pattern-top-mobile.svg"),
             url("../../../pages/40-social-proof-section/images/bg-pattern-bottom-mobile.svg");
         background-position:
             top 0vw left 0vw,
@@ -122,7 +124,8 @@
         background-size: contain, 100%;
 
         @include breakpoint(medium) {
-            background-image: url("../../../pages/40-social-proof-section/images/bg-pattern-top-desktop.svg"),
+            background-image:
+                url("../../../pages/40-social-proof-section/images/bg-pattern-top-desktop.svg"),
                 url("../../../pages/40-social-proof-section/images/bg-pattern-bottom-desktop.svg");
             background-position:
                 top -15vw left -30vw,
@@ -165,7 +168,8 @@
 
     &47 {
         // Layer order: Think from front to back. The last image is the base background.
-        background-image: url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+        background-image:
+            url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
             url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-top.svg"),
             url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
             url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
@@ -200,7 +204,8 @@
 
         // Responsive layout for tablets
         @include breakpoint(small) {
-            background-image: url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+            background-image:
+                url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
                 url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-top.svg"),
                 url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
                 url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
@@ -210,7 +215,8 @@
 
         // Responsive layout for desktops
         @include breakpoint(medium) {
-            background-image: url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
+            background-image:
+                url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
                 url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-top.svg"),
                 url("../../../pages/47-conference-ticket-generator/images/pattern-squiggly-line-bottom-desktop.svg"),
                 url("../../../pages/47-conference-ticket-generator/images/pattern-circle.svg"),
@@ -261,12 +267,26 @@
 
     &52 {
         background-color: v.$blue-51;
-        background-image: url("../../../pages/52-pricing-component-with-toggle/images/bg-top.svg"),
+        background-image:
+            url("../../../pages/52-pricing-component-with-toggle/images/bg-top.svg"),
             url("../../../pages/52-pricing-component-with-toggle/images/bg-bottom.svg");
         background-position:
             top -5vw right 0vw,
             bottom 0vw left 0vw;
         background-repeat: no-repeat, no-repeat;
+    }
+
+    &57 {
+        background: url("../../../pages/57-fylo-data-storage/images/bg-mobile.png") no-repeat center bottom;
+        background-size: cover;
+        @include breakpoint(medium) {
+            background:
+                url("../../../pages/57-fylo-data-storage/images/bg-desktop.png") bottom no-repeat,
+                v.$blue-57;
+            background-size:
+                100% 50%,
+                cover;
+        }
     }
 }
 

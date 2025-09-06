@@ -1,0 +1,209 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+.project-57 {
+    font-family: v.$raleway-font;
+    font-size: v.$font-size-p;
+    flex: 1;
+    @include flex-col(f.rem(0));
+    @include flex-center;
+    text-align: center;
+
+    .storage-container {
+        width: 80vw;
+        @include flex-col(f.rem(16));
+
+        @include breakpoint(medium) {
+            flex-direction: row;
+            align-items: flex-end;
+            max-width: 60vw;
+        }
+
+        .storage-box {
+            background: v.$blue-850;
+            border-radius: f.rem(10);
+            padding: f.rem(32);
+            color: v.$blue-200;
+            @include breakpoint(medium) {
+                flex: 1;
+            }
+        }
+
+        .brand-box {
+            border-top-right-radius: f.rem(80);
+            @include flex-col(f.rem(32));
+            @include breakpoint(medium) {
+                flex: 35%;
+            }
+            .logo {
+                width: 150px;
+            }
+
+            .icons {
+                @include flex-row(f.rem(16));
+
+                .icon {
+                    background: v.$blue-950;
+                    color: v.$blue-icon;
+                    padding: f.rem(10);
+                    border-radius: f.rem(8);
+                    @include flex-center;
+                    font-size: 1.6rem;
+                    cursor: pointer;
+                    transition:
+                        transform 0.3s ease,
+                        background 0.3s ease;
+
+                    &:hover {
+                        animation: bounce 0.6s ease; // run bounce effect
+                        background: v.$linear-gradient; // optional: gradient on hover
+                    }
+
+                    &:focus,
+                    &:focus-visible {
+                        outline: none; // remove default outline
+                        background: v.$linear-gradient;
+                        color: white;
+                        box-shadow: 0 0 0 4px rgba(v.$blue-950, 0.4); // glowing ring
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+
+        .usage-box {
+            text-align: center;
+            position: relative;
+            overflow: visible;
+            @include flex-col(f.rem(16));
+            padding-bottom: f.rem(72);
+
+            @include breakpoint(medium) {
+                text-align: left;
+                padding-bottom: f.rem(32); // not needed on desktop
+                flex: 65%;
+            }
+
+            p {
+                font-size: 0.9rem;
+                color: v.$blue-200;
+            }
+
+            .progress-bar {
+                width: 100%;
+                background: v.$blue-950;
+                border-radius: f.rem(15);
+                height: f.rem(14);
+                overflow: hidden;
+                padding: 2px;
+                .progress {
+                    --progress-width: 80%;
+                    background: v.$linear-gradient;
+                    height: 100%;
+                    border-radius: f.rem(15);
+                    position: relative;
+                    animation: fillProgress 1.2s ease-in-out forwards;
+
+                    .circle {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: f.rem(12);
+                        height: f.rem(12);
+                        background: white;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .limits {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8rem;
+                font-weight: v.$font-bold;
+                color: v.$blue-200;
+            }
+
+            .storage-left {
+                background: white;
+                color: v.$blue-950;
+                border-radius: f.rem(10);
+                padding: f.rem(12) f.rem(20);
+                @include flex-center;
+                flex-direction: row;
+                gap: f.rem(8);
+                font-weight: v.$font-bold;
+                width: fit-content;
+                box-shadow: 0 f.rem(12) f.rem(24) rgba(0, 0, 0, 0.25);
+
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: f.rem(-28);
+                margin: 0;
+                margin: 1rem auto 0; // ✅ push it below on mobile
+
+                @include breakpoint(medium) {
+                    left: auto;
+                    transform: none;
+                    bottom: auto;
+                    top: f.rem(-44);
+                    right: f.rem(40);
+                    border-radius: f.rem(10) f.rem(10) 0 f.rem(10);
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: f.rem(-20);
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-left: f.rem(20) solid transparent;
+                        border-top: f.rem(20) solid #fff;
+                    }
+                }
+                h1 {
+                    font-size: f.rem(32);
+                    line-height: 1;
+                    margin: 0;
+                }
+
+                span {
+                    font-size: f.rem(12);
+                    font-size: 0.8rem;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}

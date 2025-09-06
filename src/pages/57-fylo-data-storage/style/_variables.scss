@@ -1,0 +1,22 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary
+$linear-gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+// Neutral
+$blue-icon:hsl(228,55%,62%);
+$blue-200: hsl(243, 100%, 93%);
+$blue-850: hsl(228, 56%, 26%);
+$blue-950: hsl(229, 57%, 11%);
+$grayish-blue: hsl(229, 7%, 55%);
+
+//Typography
+$font-size-p: f.rem(14);
+
+//Font
+$raleway-font: "Raleway", sans-serif;
+
+$font-normal: 400;
+$font-bold: 700;

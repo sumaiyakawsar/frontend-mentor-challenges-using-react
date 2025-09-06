@@ -58,6 +58,7 @@ import Project53 from './pages/53-intro-with-dropdown-nav/Project53';
 import Project54 from './pages/54-blogr-landing-page/Project54';
 import Project55 from './pages/55-insure-landing-page/Project55';
 import Project56 from './pages/56-project-tracking-intro/Project56';
+import Project57 from './pages/57-fylo-data-storage/Project57';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -128,6 +129,7 @@ function App() {
     { path: "/project54", element: <Project54 /> },
     { path: "/project55", element: <Project55 /> },
     { path: "/project56", element: <Project56 /> },
+    { path: "/project57", element: <Project57 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

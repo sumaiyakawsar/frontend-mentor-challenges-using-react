@@ -54,6 +54,7 @@ import Project53 from "../images/project53-intro-with-dropdown-nav.png"
 import Project54 from "../images/project54-blogr-landing-page.png"
 import Project55 from "../images/project55-insure-landing-page.png"
 import Project56 from "../images/project56-project-tracking-intro.png"
+import Project57 from "../images/project57-fylo-data-storage.png"
 
 export const Projects = [
     {
@@ -545,6 +546,14 @@ export const Projects = [
         projectTitle: "Project tracking intro",
         src: "/project56",
         projectImage: Project56,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Component"]
+    }, {
+        projectId: 57,
+        projectTitle: "Project tracking intro",
+        src: "/project57",
+        projectImage: Project57,
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Component"]
