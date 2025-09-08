@@ -1,0 +1,144 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
+@use "../../../styles/font" as fo;
+@use "variables" as v;
+
+.project-58 {
+    font-family: fo.$inter-font;
+    flex: 1;
+    @include flex-col(f.rem(0));
+    @include flex-center;
+    text-align: center;
+
+    .testimonial {
+        @include flex-col(f.rem(48));
+        align-items: center;
+        padding: f.rem(32) f.rem(16);
+        text-align: center;
+        position: relative;
+
+        &__image-wrapper {
+            position: relative;
+            @include flex-center;
+
+            .testimonial__bg-shape {
+                position: absolute;
+                width: 120%;
+                display: block;
+                height: auto;
+                inset: -30px;
+                z-index: 0;
+            }
+        }
+
+        &__image {
+            width: 400px;
+            display: block;
+            border-radius: f.rem(12);
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        &__controls {
+            position: absolute;
+            bottom: -15px;
+            display: flex;
+            gap: f.rem(10);
+            background: white;
+            z-index: 3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            overflow: hidden;
+
+            button {
+                background: white;
+                color: v.$gray-400;
+                border: none;
+                width: 40px;
+                height: 40px;
+                @include flex-center;
+                cursor: pointer;
+
+                &:hover {
+                    background: #f5f5f5;
+                }
+
+                &:focus-visible {
+                    background: rgb(119, 0, 255);
+                }
+            }
+        }
+
+        &__content {
+            padding: f.rem(32);
+            position: relative;
+            background: url("../images/pattern-quotes.svg");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 60px;
+            @include flex-col(f.rem(24));
+
+            .testimonial__text {
+                font-size: f.rem(26);
+                line-height: 1.5;
+                color: v.$blue-950;
+            }
+            .testimonial__details {
+                @include flex-col(f.rem(10));
+                .testimonial__name {
+                    font-weight: v.$font-bold;
+                    font-size: f.rem(24);
+                    color: v.$blue-950;
+                }
+
+                .testimonial__role {
+                    color: v.$gray-400;
+                    font-size: f.rem(14);
+                }
+            }
+        }
+    }
+
+    /* 🔼 Desktop and tablet enhancements */
+    @include breakpoint(medium) {
+        .testimonial {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+            gap: f.rem(32);
+
+            &__content {
+                flex: 1;
+                background-position: top left 20%;
+
+                .testimonial__details {
+                    align-items: center;
+                    flex-direction: row;
+                    gap: f.rem(10);
+                }
+            }
+
+            &__image-wrapper {
+                flex: 1;
+                margin-bottom: 0;
+
+                .testimonial__bg-shape {
+                    width: 110%;
+                    inset: -50px;
+                }
+            }
+
+            &__image {
+                width: 400px;
+            }
+
+            &__controls {
+                left: 120px;
+            }
+        }
+    }
+}
