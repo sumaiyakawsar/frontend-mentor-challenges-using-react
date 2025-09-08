@@ -30,10 +30,10 @@ function Project58() {
                     <img src={img} alt={name} className="testimonial__image" loading="lazy" />
 
                     <div className="testimonial__controls">
-                        <button onClick={prevSlide}>
+                        <button onClick={prevSlide} type='button'>
                             <FaChevronLeft size={20} />
                         </button>
-                        <button onClick={nextSlide}>
+                        <button onClick={nextSlide} type='button'>
                             <FaChevronRight size={20} />
                         </button>
                     </div>
