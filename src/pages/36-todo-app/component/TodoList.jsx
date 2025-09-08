@@ -11,7 +11,8 @@ import {
     SortableContext,
     sortableKeyboardCoordinates,
     verticalListSortingStrategy,
-} from "@dnd-kit/sortable"; import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
+} from "@dnd-kit/sortable";
+import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
 import SortableTodoItem from "./SortableTodoItem";
 import { useState } from "react";
 
