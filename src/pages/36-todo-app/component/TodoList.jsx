@@ -11,7 +11,7 @@ import {
     SortableContext,
     sortableKeyboardCoordinates,
     verticalListSortingStrategy,
-} from "@dnd-kit/sortable";
+} from "@dnd-kit/sortable"; import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
 import SortableTodoItem from "./SortableTodoItem";
 import { useState } from "react";
 
@@ -58,6 +58,7 @@ const TodoList = ({ todos, filter, toggleTodo, deleteTodo, reorderTodos }) => {
     return (
         <DndContext
             sensors={sensors}
+            modifiers={[restrictToVerticalAxis]}
             collisionDetection={closestCenter}
             onDragStart={handleDragStart}
             onDragEnd={handleDragEnd}

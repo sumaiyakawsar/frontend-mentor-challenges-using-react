@@ -56,6 +56,7 @@ import Project55 from "../images/project55-insure-landing-page.png"
 import Project56 from "../images/project56-project-tracking-intro.png"
 import Project57 from "../images/project57-fylo-data-storage.png"
 import Project58 from "../images/project58-coding-bootcamp-testimonials.png"
+import Project59 from "../images/project59-interactive-pricing-component.png"
 
 export const Projects = [
     {
@@ -563,6 +564,14 @@ export const Projects = [
         projectTitle: "Bootcamp Testimonials Slider",
         src: "/project58",
         projectImage: Project58,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Component"]
+    }, {
+        projectId: 59,
+        projectTitle: "Interactive pricing component",
+        src: "/project59",
+        projectImage: Project59,
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Component"]
