@@ -43,7 +43,7 @@ function Project58() {
                 <div className="testimonial__content">
                     <p className="testimonial__text">“{quote}”</p>
                     <div className="testimonial__details">
-                        <h4 className="testimonial__name">{name}</h4>
+                        <h1 className="testimonial__name">{name}</h1>
                         <p className="testimonial__role">{role}</p>
                     </div>
 
