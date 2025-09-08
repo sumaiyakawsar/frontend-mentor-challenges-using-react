@@ -552,7 +552,7 @@ export const Projects = [
         projectTags: ["React", "SCSS", "Component"]
     }, {
         projectId: 57,
-        projectTitle: "Project tracking intro",
+        projectTitle: "Fylo Data Storage",
         src: "/project57",
         projectImage: Project57,
         projectLevelNo: "2",
@@ -560,7 +560,7 @@ export const Projects = [
         projectTags: ["React", "SCSS", "Component"]
     }, {
         projectId: 58,
-        projectTitle: "Coding Bootcamp Testimonials Slider",
+        projectTitle: "Bootcamp Testimonials Slider",
         src: "/project58",
         projectImage: Project58,
         projectLevelNo: "2",

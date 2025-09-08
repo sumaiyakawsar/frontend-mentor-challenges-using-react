@@ -27,7 +27,7 @@ function Project58() {
                 {/* Image + background */}
                 <div className="testimonial__image-wrapper">
                     <img src={imgBg} alt="bg shape" className="testimonial__bg-shape" />
-                    <img src={img} alt={name} className="testimonial__image" />
+                    <img src={img} alt={name} className="testimonial__image" loading="lazy" />
 
                     <div className="testimonial__controls">
                         <button onClick={prevSlide}>
