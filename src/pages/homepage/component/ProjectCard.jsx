@@ -12,7 +12,7 @@ const ProjectCard = ({ project, onTagClick }) => {
                 strict
             >
                 <div className="project__top">
-                    <img className="project__top__img" src={project.projectImage} alt={project.Id}/>
+                    <img className="project__top__img" src={project.projectImage} alt={project.Id} />
                     <div className={`project__top__num ${project.projectLevel}`}>{project.projectId}</div>
                 </div>
 
