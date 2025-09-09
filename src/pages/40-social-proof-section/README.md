@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project40-social-proof-section.png)
+![Screenshot](../homepage/images/project40-social-proof-section.webp)
  
 
 ## Author

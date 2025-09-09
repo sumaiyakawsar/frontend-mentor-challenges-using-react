@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project52-pricing-component-with-toggle.png)
+![Screenshot](../homepage/images/project52-pricing-component-with-toggle.webp)
 
 
 ## Author

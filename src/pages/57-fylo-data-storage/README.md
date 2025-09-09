@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project57-fylo-data-storage.png)
+![Screenshot](../homepage/images/project57-fylo-data-storage.webp)
 
 
 ## Author

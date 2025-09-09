@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project38-order-summary-component.png)
+![Screenshot](../homepage/images/project38-order-summary-component.webp)
 
  
 

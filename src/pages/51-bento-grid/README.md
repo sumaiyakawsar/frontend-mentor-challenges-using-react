@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project51-bento-grid.png)
+![Screenshot](../homepage/images/project51-bento-grid.webp)
 
 
 ## Author

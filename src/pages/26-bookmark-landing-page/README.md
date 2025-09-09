@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project26-bookmark-landing-page.png)
+![Screenshot](../homepage/images/project26-bookmark-landing-page.webp)
 
 
 ## Author

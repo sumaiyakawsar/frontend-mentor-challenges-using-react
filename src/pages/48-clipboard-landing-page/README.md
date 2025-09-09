@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project48-clipboard-landing-page.png)
+![Screenshot](../homepage/images/project48-clipboard-landing-page.webp)
 
 
 ## Author

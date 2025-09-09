@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project50-sunnyside-agency-landing-page.png)
+![Screenshot](../homepage/images/project50-sunnyside-agency-landing-page.webp)
 
 
 ## Author

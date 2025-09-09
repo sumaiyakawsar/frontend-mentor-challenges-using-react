@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project53-intro-with-dropdown-nav.png)
+![Screenshot](../homepage/images/project53-intro-with-dropdown-nav.webp)
 
 
 ## Author

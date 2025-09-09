@@ -39,7 +39,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project47-conference-ticket-generator.png)
+![Screenshot](../homepage/images/project47-conference-ticket-generator.webp)
 
 
 ## Author

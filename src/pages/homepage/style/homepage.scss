@@ -396,9 +396,17 @@
             &__top {
                 position: relative;
 
-                &__img {
-                    height: 200px;
+                // Make wrapper take full width + height
+                .lazy-load-image-background,
+                .lazy-load-image-loaded {
                     width: 100%;
+                    height: 200px;
+                    display: block;
+                }
+                &__img {
+                    height: 100%; // fill container
+                    width: 100%;
+                    display: block;
                     object-fit: cover;
                     object-position: top;
                 }

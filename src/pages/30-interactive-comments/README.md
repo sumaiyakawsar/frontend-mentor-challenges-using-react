@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project30-interactive-comments.png)
+![Screenshot](../homepage/images/project30-interactive-comments.webp)
 
  
 

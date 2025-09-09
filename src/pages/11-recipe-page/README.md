@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../homepage/images/project11-recipe-page.png)
+![Screenshot](../homepage/images/project11-recipe-page.webp)
 
 
 ## My process

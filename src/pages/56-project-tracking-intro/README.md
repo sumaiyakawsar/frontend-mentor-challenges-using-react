@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project56-project-tracking-intro.png)
+![Screenshot](../homepage/images/project56-project-tracking-intro.webp)
 
 
 ## Author

@@ -31,7 +31,7 @@ Users should be able to:
   
 ### Screenshot
 
-![Screenshot](../homepage/images/project19-Interactive-rating.png)
+![Screenshot](../homepage/images/project19-Interactive-rating.webp)
 
  
 

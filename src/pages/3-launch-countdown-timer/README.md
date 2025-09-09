@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project3-CountdownTimer.png)
+![Screenshot](../homepage/images/project3-CountdownTimer.webp)
 
 ## My process
 

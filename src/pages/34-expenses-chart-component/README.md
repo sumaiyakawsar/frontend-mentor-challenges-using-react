@@ -32,7 +32,7 @@ Users should be able to:
 - [x] **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 ### Screenshot
 
-![Screenshot](../homepage/images/project34-expenses-chart-component.png)
+![Screenshot](../homepage/images/project34-expenses-chart-component.webp)
 
  
 

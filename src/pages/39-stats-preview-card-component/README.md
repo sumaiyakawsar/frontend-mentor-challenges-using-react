@@ -30,7 +30,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project39-stats-preview-card-component.png)
+![Screenshot](../homepage/images/project39-stats-preview-card-component.webp)
 
 
 ## Author

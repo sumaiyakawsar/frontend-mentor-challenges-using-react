@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project55-insure-landing-page.png)
+![Screenshot](../homepage/images/project55-insure-landing-page.webp)
 
 
 ## Author

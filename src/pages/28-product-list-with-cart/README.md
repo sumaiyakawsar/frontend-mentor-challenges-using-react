@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project28-product-list-with-cart.png)
+![Screenshot](../homepage/images/project28-product-list-with-cart.webp)
 
  ### Built with
 - Mobile-first workflow

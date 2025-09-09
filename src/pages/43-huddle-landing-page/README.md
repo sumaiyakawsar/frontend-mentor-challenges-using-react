@@ -32,7 +32,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project43-huddle-landing-page.png)
+![Screenshot](../homepage/images/project43-huddle-landing-page.webp)
 
 
 ## Author

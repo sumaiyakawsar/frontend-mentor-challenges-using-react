@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../homepage/images/project10-social-links-profile.png)
+![Screenshot](../homepage/images/project10-social-links-profile.webp)
 
 
 ## My process

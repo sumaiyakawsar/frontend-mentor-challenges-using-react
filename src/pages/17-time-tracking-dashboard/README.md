@@ -31,7 +31,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project17-time-tracking-dashboard.png)
+![Screenshot](../homepage/images/project17-time-tracking-dashboard.webp)
 
  
 

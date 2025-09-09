@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project36-todo-app.png)
+![Screenshot](../homepage/images/project36-todo-app.webp)
 
  
 

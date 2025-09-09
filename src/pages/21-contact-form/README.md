@@ -36,7 +36,7 @@ Users should be able to:
   
 ### Screenshot
 
-![Screenshot](../homepage/images/project21-contact-form.png)
+![Screenshot](../homepage/images/project21-contact-form.webp)
 
  
 

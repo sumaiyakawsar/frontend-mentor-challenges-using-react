@@ -32,7 +32,7 @@ Your users should be able to:
   - The email address is not formatted correctly
 ### Screenshot
 
-![Screenshot](../homepage/images/project42-base-apparel-coming-soon.png)
+![Screenshot](../homepage/images/project42-base-apparel-coming-soon.webp)
 
 
 ## Author

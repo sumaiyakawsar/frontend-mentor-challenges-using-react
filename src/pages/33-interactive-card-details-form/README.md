@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project33-interactive-card-details-form.png)
+![Screenshot](../homepage/images/project33-interactive-card-details-form.webp)
 
  
 

@@ -67,8 +67,8 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 55           | [Insure](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project55)                            | Junior       | ✔️    |
 | 56           | [Project tracking intro component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project56)  | Junior       | ✔️    |
 | 57           | [Fylo data storage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project57)                 | Junior       | ✔️    |
-| 58           | [Bootcamp testimonials slider](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project58)      | Junior       | ❌    |
-| 59           | [Interactive pricing component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project59)      | Junior       | ❌    |
+| 58           | [Bootcamp testimonials slider](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project58)      | Junior       | ✔️    |
+| 59           | [Interactive pricing component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project59)     | Junior       | ✔️    |
 | 60           | ---                                                                                                                     | Junior       | ❌    |
 | 61           | ---                                                                                                                     | Junior       | ❌    |
 

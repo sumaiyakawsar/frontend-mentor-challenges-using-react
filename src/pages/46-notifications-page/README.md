@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project46-notifications-page.png)
+![Screenshot](../homepage/images/project46-notifications-page.webp)
 
 
 ## Author

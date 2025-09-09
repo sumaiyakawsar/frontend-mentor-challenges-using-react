@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project58-coding-bootcamp-testimonials.png)
+![Screenshot](../homepage/images/project58-coding-bootcamp-testimonials.webp)
 
 
 ## Author

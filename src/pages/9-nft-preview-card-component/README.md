@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../homepage/images/project9-nft-preview-card-component.png)
+![Screenshot](../homepage/images/project9-nft-preview-card-component.webp)
 
 
 ## My process

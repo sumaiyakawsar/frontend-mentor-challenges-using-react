@@ -32,7 +32,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project45-static-job-listings.png)
+![Screenshot](../homepage/images/project45-static-job-listings.webp)
 
 
 ## Author

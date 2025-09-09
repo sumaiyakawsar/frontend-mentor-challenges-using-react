@@ -35,7 +35,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project16-Newsletter.png)
+![Screenshot](../homepage/images/project16-Newsletter.webp)
 
 ## My process
 

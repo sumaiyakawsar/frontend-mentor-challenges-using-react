@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../homepage/images/project8-profile-card-component.png)
+![Screenshot](../homepage/images/project8-profile-card-component.webp)
 
 
 ## My process

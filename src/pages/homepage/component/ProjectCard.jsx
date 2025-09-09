@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ProjectCard = ({ project, onTagClick }) => {
     const tags = [...project.projectTags];
@@ -12,7 +13,9 @@ const ProjectCard = ({ project, onTagClick }) => {
                 strict
             >
                 <div className="project__top">
-                    <img className="project__top__img" src={project.projectImage} alt={project.Id} />
+                    <LazyLoadImage src={project.projectImage} alt={project.Id}
+                        effect="blur" className="project__top__img" width={project.projectImage.width} />
+                    {/* <img  loading="lazy" /> */}
                     <div className={`project__top__num ${project.projectLevel}`}>{project.projectId}</div>
                 </div>
 

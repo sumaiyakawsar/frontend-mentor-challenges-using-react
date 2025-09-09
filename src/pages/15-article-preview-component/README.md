@@ -30,7 +30,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project15-article-preview-component.png)
+![Screenshot](../homepage/images/project15-article-preview-component.webp)
 
 ## My process
 

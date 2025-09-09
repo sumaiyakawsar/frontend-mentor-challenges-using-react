@@ -30,7 +30,7 @@ Users should be able to:
   
 ### Screenshot
 
-![Screenshot](../homepage/images/project22-news-homepage.png)
+![Screenshot](../homepage/images/project22-news-homepage.webp)
 
  
 

@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../homepage/images/project7-blog-preview-card.png)
+![Screenshot](../homepage/images/project7-blog-preview-card.webp)
 
 
 ## My process

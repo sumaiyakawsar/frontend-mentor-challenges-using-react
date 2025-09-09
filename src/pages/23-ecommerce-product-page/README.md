@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project23-ecommerce-product-page.png)
+![Screenshot](../homepage/images/project23-ecommerce-product-page.webp)
 
  ### Built with
 - Mobile-first workflow

@@ -32,7 +32,7 @@ Users should be able to:
   
 ### Screenshot
 
-![Screenshot](../homepage/images/project20-faq-accordion.png)
+![Screenshot](../homepage/images/project20-faq-accordion.webp)
 
  
 

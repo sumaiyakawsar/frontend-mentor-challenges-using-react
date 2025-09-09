@@ -32,7 +32,7 @@ Users should be able to:
 - [x] See hover and focus states for all interactive elements on the page
 ### Screenshot
 
-![Screenshot](../homepage/images/project29-mortgage-calculator.png)
+![Screenshot](../homepage/images/project29-mortgage-calculator.webp)
 
  
 

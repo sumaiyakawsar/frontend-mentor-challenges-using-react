@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project44-intro-component-with-signup-form.png)
+![Screenshot](../homepage/images/project44-intro-component-with-signup-form.webp)
 
 
 ## Author

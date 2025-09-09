@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project49-fylo-dark-theme-landing-page.png)
+![Screenshot](../homepage/images/project49-fylo-dark-theme-landing-page.webp)
 
 
 ## Author

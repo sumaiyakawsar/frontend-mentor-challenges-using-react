@@ -34,7 +34,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-![Screenshot](../homepage/images/project2-3-card-layout.png)
+![Screenshot](../homepage/images/project2-3-card-layout.webp)
 
 
 ## My process

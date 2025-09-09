@@ -42,7 +42,7 @@ Bonus Features
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project32-browser-extensions-manager-ui.png)
+![Screenshot](../homepage/images/project32-browser-extensions-manager-ui.webp)
 
  
 

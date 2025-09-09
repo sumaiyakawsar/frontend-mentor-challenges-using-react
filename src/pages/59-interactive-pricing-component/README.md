@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project59-interactive-pricing-component.png)
+![Screenshot](../homepage/images/project59-interactive-pricing-component.webp)
 
 
 ## Author

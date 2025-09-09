@@ -31,7 +31,7 @@ Users should be able to:
  
 ### Screenshot
 
-![Screenshot](../homepage/images/project18-tip-calculator.png)
+![Screenshot](../homepage/images/project18-tip-calculator.webp)
 
  
 

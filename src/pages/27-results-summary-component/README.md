@@ -31,7 +31,7 @@ Users should be able to:
  
 ### Screenshot
 
-![Screenshot](../homepage/images/project27-results-summary.png)
+![Screenshot](../homepage/images/project27-results-summary.webp)
 
  
 

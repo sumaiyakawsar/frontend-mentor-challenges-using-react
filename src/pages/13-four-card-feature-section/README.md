@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project13-four-card-feature-section.png)
+![Screenshot](../homepage/images/project13-four-card-feature-section.webp)
 
 ## My process
 

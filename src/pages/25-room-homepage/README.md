@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project25-room-homepage.png)
+![Screenshot](../homepage/images/project25-room-homepage.webp)
 
 
 ## Author

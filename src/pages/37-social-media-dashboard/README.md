@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project37-social-media-dashboard.png)
+![Screenshot](../homepage/images/project37-social-media-dashboard.webp)
 
  
 

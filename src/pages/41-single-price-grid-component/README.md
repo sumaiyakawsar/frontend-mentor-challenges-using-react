@@ -30,7 +30,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot](../homepage/images/project41-single-price-grid-component.png)
+![Screenshot](../homepage/images/project41-single-price-grid-component.webp)
 
 
 ## Author
