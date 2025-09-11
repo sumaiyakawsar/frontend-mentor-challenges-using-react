@@ -9,3 +9,9 @@ export const formatNumber = (num) => {
 export const formatWithCommas = (num) => {
     return num.toLocaleString();
 };
+
+
+export const formatCurrency = (value) => {
+    if (value == null) return ""; // return empty string if no pledge
+    return value.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+};

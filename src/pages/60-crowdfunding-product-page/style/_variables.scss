@@ -1,0 +1,22 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary
+$green-400: hsl(176, 50%, 47%);
+$green-700: hsl(176, 72%, 28%);
+
+// Neutral
+
+$black: hsl(0, 0%, 0%);
+$gray-500: hsl(0, 0%, 48%);
+
+//Typography
+$font-size-p: f.rem(16);
+$transition: all 0.3s ease;
+//Font
+$font-family: "Commissioner", sans-serif;
+
+$font-normal: 400;
+$font-semi-bold: 500;
+$font-bold: 700;

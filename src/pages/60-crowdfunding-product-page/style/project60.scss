@@ -1,0 +1,622 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/mixin" as *;
+@use "../../../styles/animations" as *;
+@use "variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:slnt,wght,FLAR,VOLM@-12..0,400;500;600;700,0..100,0..100&display=swap");
+
+.project-60 {
+    font-family: v.$font-family;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    flex: 1;
+    width: 100dvw;
+
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+
+        @include breakpoint(small) {
+            width: 80vw;
+        }
+    }
+
+    h1 {
+        font-size: f.rem(18);
+        font-weight: v.$font-bold;
+    }
+
+    p {
+        color: rgba(v.$gray-500, 0.7);
+        font-size: f.rem(14);
+        line-height: 1.5;
+    }
+
+    .btn {
+        border-radius: f.rem(24);
+        padding: f.rem(16) f.rem(32);
+        cursor: pointer;
+        border: none;
+        transition: v.$transition;
+        font-weight: 600;
+        &__container {
+            @include v-align-center;
+        }
+        &__primary {
+            color: white;
+            background: v.$green-400;
+            &:hover {
+                background: v.$green-700;
+            }
+        }
+        &__bookmark {
+            @include flex-row(f.rem(10));
+            align-items: center;
+            background: none;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            transition: v.$transition;
+            opacity: 1;
+            border-radius: 50%;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            .icon {
+                @include flex-center;
+                background: v.$black;
+                color: v.$gray-500;
+                border-radius: 50%;
+                width: f.rem(48);
+                height: f.rem(48);
+                font-size: f.rem(20);
+                transition: v.$transition;
+            }
+            .label {
+                display: none; // hide by default (mobile first)
+            }
+
+            &.active {
+                .icon {
+                    background: v.$green-700; // green circle
+                    color: white;
+                }
+
+                .label {
+                    color: v.$green-700;
+                }
+            }
+
+            // Desktop → pill with label
+            @include breakpoint(small) {
+                background: #f4f4f4;
+                border-radius: 999px;
+                padding: 0.2rem 2rem 0.2rem 0.2rem;
+
+                .label {
+                    display: inline; // show label on desktop
+                    color: v.$gray-500;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    background: #e5e5e5;
+                }
+            }
+        }
+
+        &:focus,
+        &:focus-visible {
+            outline-offset: 2px;
+            outline: v.$green-400 1px solid;
+        }
+    }
+
+    .header {
+        background-image: url("../images/image-hero-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        color: v.$gray-500;
+        padding-block: f.rem(32);
+        height: 400px;
+
+        @include breakpoint(small) {
+            background-image: url("../images/image-hero-desktop.jpg");
+        }
+        .container {
+            position: relative;
+
+            .navbar {
+                @include v-align-center;
+                gap: f.rem(32);
+
+                .menu-toggle {
+                    background: none;
+                    border: none;
+                    color: v.$gray-500;
+                    cursor: pointer;
+                    font-size: f.rem(44);
+
+                    .toggle-icon {
+                        display: block;
+                        width: f.rem(32);
+                        height: f.rem(32);
+                    }
+
+                    @include breakpoint(small) {
+                        display: none;
+                    }
+                }
+
+                .nav-links {
+                    display: none;
+
+                    @include breakpoint(small) {
+                        @include flex-row(f.rem(32));
+                        justify-content: space-between;
+                        width: auto;
+                        align-items: center;
+
+                        .nav-item {
+                            position: relative;
+
+                            .menu-link {
+                                color: white;
+                                font-weight: v.$font-bold;
+                                text-decoration: none;
+                                @include flex-row(f.rem(8));
+                                font-size: f.rem(14);
+
+                                &:hover,
+                                &:focus,
+                                &:focus-visible {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mobile-menu {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                background: white;
+                border-radius: f.rem(8);
+                z-index: 3;
+                transition:
+                    transform 0.3s ease-in-out,
+                    opacity 0.3s ease-in-out;
+
+                &.open {
+                    width: 100%;
+                }
+
+                .mobile-nav {
+                    @include flex-col(f.rem(0));
+
+                    .nav-item {
+                        padding: f.rem(24);
+
+                        &:not(:last-child) {
+                            border-bottom: #f1ebeb 1px solid;
+                        }
+
+                        .menu-link {
+                            font-size: f.rem(18);
+                            font-weight: v.$font-semi-bold;
+                            color: v.$black;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                @include breakpoint(small) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .funding {
+        position: relative; // relative to the page
+        top: -100px; // adjust this to control how much it overlaps
+        z-index: 2; // appear above the header
+        &-container {
+            width: 90vw;
+            margin: 0 auto;
+            @include flex-col(f.rem(32));
+            justify-content: center; // center horizontally
+
+            @include breakpoint(small) {
+                max-width: 700px;
+            }
+
+            .card {
+                background: white;
+                border-radius: f.rem(10); // smooth corners
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                padding: f.rem(32);
+                @include flex-col(f.rem(32));
+
+                &:hover {
+                    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+                }
+
+                &.intro {
+                    text-align: center;
+                    position: relative;
+                    padding-top: f.rem(48);
+
+                    .logoM {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        z-index: 5;
+                        transform: translate(-50%, -50%); // center horizontally & lift above card
+                        width: f.rem(64); // adjust size
+                        height: auto;
+                    }
+                }
+
+                .progress-card {
+                    @include flex-col(f.rem(24));
+                    align-items: center;
+
+                    &__stats {
+                        @include flex-col(f.rem(6));
+                        align-items: center;
+                        text-align: center;
+                        width: max-content;
+                        position: relative;
+
+                        // horizontal divider for mobile
+                        &:not(:last-child)::after {
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            background: #ddd;
+                            width: 60%; // divider will be smaller than parent width
+                            margin: 1rem auto 0; // center it
+                        }
+
+                        &-amount {
+                            font-size: f.rem(28);
+                            font-weight: v.$font-bold;
+                        }
+                        &-label {
+                            font-size: f.rem(14);
+                            opacity: 0.9;
+                            color: v.$gray-500;
+                            text-wrap: nowrap;
+                        }
+                    }
+                    &__bar-wrap {
+                        position: relative;
+                        width: 100%;
+                    }
+
+                    &__bar {
+                        position: relative;
+                        height: f.rem(12);
+                        background-color: hsl(0, 0%, 96%);
+                        border-radius: f.rem(25);
+                        overflow: hidden;
+                        cursor: pointer;
+                        transition: v.$transition;
+                    }
+
+                    &__fill {
+                        height: 100%;
+                        background: linear-gradient(90deg, v.$green-400 0%, v.$green-700 100%);
+                        border-radius: f.rem(25);
+                        transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                        position: relative;
+                        overflow: hidden;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(90deg, transparent 0%, rgba(white, 0.3) 50%, transparent 100%);
+                            animation: shimmer 2s infinite;
+                        }
+
+                        &--hover {
+                            &::after {
+                                animation: shimmer 1s infinite;
+                            }
+                        }
+                    }
+
+                    @include breakpoint(small) {
+                        flex-direction: row; // switch to row on desktop
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        &__stats {
+                            flex: 1;
+                            align-items: flex-start;
+                            text-align: left;
+                            // add vertical divider
+                            &:not(:last-child)::after {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 1px;
+                                height: 100%;
+                                background: #ddd;
+                                margin: 0; // reset mobile margin
+                            }
+                        }
+                    }
+                }
+
+                .goal-message {
+                    font-size: f.rem(19);
+                    font-weight: 600;
+                    text-align: center;
+                    color: v.$green-400;
+                    animation: pop 0.6s ease-in-out;
+                }
+
+                .craft-card {
+                    border: rgba(v.$gray-500, 0.2) 1px solid;
+                    border-radius: f.rem(8);
+                    padding: f.rem(24);
+                    @include flex-col(f.rem(16));
+
+                    &.disabled {
+                        opacity: 0.5;
+                        pointer-events: none; // prevents clicking inside the card
+                    }
+
+                    &__header,
+                    &__footer {
+                        @include v-align-center;
+                        flex-wrap: wrap;
+                    }
+                    &__header {
+                        gap: f.rem(8);
+
+                        h3 {
+                            font-size: f.rem(14);
+                        }
+                        .pledge {
+                            color: v.$green-400;
+                            font-weight: v.$font-bold;
+                            font-size: f.rem(13);
+                        }
+                    }
+                    &__footer {
+                        gap: f.rem(16);
+
+                        h4 {
+                            @include flex-row(f.rem(4));
+                            align-items: center;
+                            font-size: f.rem(24);
+                            font-weight: v.$font-bold;
+
+                            span {
+                                font-weight: v.$font-normal;
+                                font-size: f.rem(12);
+                                color: v.$gray-500;
+                            }
+                        }
+
+                        button:disabled {
+                            background: #ccc;
+                            color: #666;
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        z-index: 4;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        @include flex-center;
+        padding: f.rem(16);
+
+        &-content {
+            background: white;
+            border-radius: f.rem(10);
+            padding: f.rem(32);
+            width: 100%;
+            overflow-y: auto;
+            max-height: 90vh;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(24);
+            h2 {
+                font-size: f.rem(22);
+                font-weight: v.$font-bold;
+            }
+        }
+
+        &-pledge {
+            max-width: 700px;
+            position: relative;
+            p {
+                padding-bottom: f.rem(8);
+            }
+
+            .close-btn {
+                position: absolute;
+                top: f.rem(16);
+                right: f.rem(16);
+                background: none;
+                border: none;
+                font-size: f.rem(24);
+                font-weight: bold;
+                cursor: pointer;
+                color: v.$gray-500;
+
+                &:hover {
+                    color: v.$black;
+                }
+            }
+        }
+
+        &-confirm {
+            max-width: 500px;
+            text-align: center;
+            align-items: center;
+
+            .icon {
+                width: 90px;
+                display: block;
+                height: 90px;
+                color: v.$green-400;
+            }
+        }
+    }
+
+    .reward-card {
+        border: 2px solid #e5e5e5;
+        border-radius: f.rem(8);
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+
+        &:focus-visible , &:focus-within{
+            outline: none; // remove default
+            border-color: v.$green-400;
+            box-shadow: 0 0 0 3px rgba(v.$green-400, 0.3);
+        }
+
+        &.selected {
+            border-color: v.$green-400;
+        }
+
+        &.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .pledge-header {
+            @include flex-col(f.rem(16));
+            padding: f.rem(24);
+
+            .reward-header {
+                align-items: center;
+                @include flex-row(f.rem(16));
+                flex-wrap: wrap;
+
+                input[type="radio"] {
+                    width: 20px;
+                    height: 20px;
+                    flex-shrink: 0;
+                }
+
+                .reward-title {
+                    flex: 1;
+
+                    h3 {
+                        @include flex-row(f.rem(12));
+                        flex-wrap: wrap;
+                        line-height: 1;
+                        font-size: f.rem(16);
+                        font-weight: v.$font-bold;
+                        &:hover {
+                            color: v.$green-400;
+                        }
+                        span {
+                            color: v.$green-400;
+                            font-size: f.rem(14);
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                @include breakpoint(small) {
+                    flex-wrap: nowrap;
+                }
+            }
+            .reward-description {
+                @include breakpoint(small) {
+                    padding-left: f.rem(35);
+                }
+            }
+
+            .quantity {
+                display: none;
+
+                &-mobile {
+                    display: block;
+                    font-weight: v.$font-bold;
+                    span {
+                        color: v.$gray-500;
+                        font-weight: v.$font-normal;
+                    }
+                    @include breakpoint(small) {
+                        display: none;
+                    }
+                }
+
+                @include breakpoint(small) {
+                    @include flex-row(f.rem(8));
+                    font-weight: v.$font-bold;
+                    span {
+                        color: v.$gray-500;
+                        font-weight: v.$font-normal;
+                    }
+                }
+            }
+        }
+
+        .pledge-footer {
+            border-top: 1px solid #ddd;
+            padding: f.rem(24);
+            align-items: center;
+            @include flex-col(f.rem(16));
+
+            @include breakpoint(small) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            span {
+                font-weight: v.$font-bold;
+                color: rgba(v.$gray-500, 0.7);
+                font-size: f.rem(14);
+            }
+
+            .pledge-right {
+                display: flex;
+                gap: f.rem(16);
+
+                .pledge-input {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid rgba(v.$gray-500, 0.7);
+                    border-radius: f.rem(20);
+                    padding: f.rem(12);
+                    gap: f.rem(4);
+
+                    input {
+                        border: none;
+                        outline: none;
+                        width: 80px;
+                        font-weight: v.$font-bold;
+                        cursor: pointer;
+                        padding-inline: f.rem(6);
+                        caret-color: v.$green-400;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -60,7 +60,9 @@
     }
     a {
         font-weight: 700;
-        &:hover,&:focus, &:focus-visible {
+        &:hover,
+        &:focus,
+        &:focus-visible {
             text-decoration: underline;
         }
     }
@@ -536,6 +538,11 @@
     &-59 {
         a {
             color: v.$strong-cyan-59;
+        }
+    }
+    &-60 {
+        a {
+            color: v.$green-60;
         }
     }
 }

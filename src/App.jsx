@@ -61,6 +61,7 @@ import Project56 from './pages/56-project-tracking-intro/Project56';
 import Project57 from './pages/57-fylo-data-storage/Project57';
 import Project58 from './pages/58-coding-bootcamp-testimonials/Project58';
 import Project59 from './pages/59-interactive-pricing-component/Project59';
+import Project60 from './pages/60-crowdfunding-product-page/Project60';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -134,6 +135,7 @@ function App() {
     { path: "/project57", element: <Project57 /> },
     { path: "/project58", element: <Project58 /> },
     { path: "/project59", element: <Project59 /> },
+    { path: "/project60", element: <Project60 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },

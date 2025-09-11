@@ -10,67 +10,73 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 
 | Challenge No | Challenge Name                                                                                                          | Level        | Done |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------ | ---- |
-| 1            | [QR code component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project1)                    | Newbie       | ✔️    |
-| 2            | [3-column preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project2)      | Newbie       | ✔️    |
-| 3            | [Launch countdown timer](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project3)               | Intermediate | ✔️    |
-| 4            | [REST Countries API with color theme switcher solution](https://sumaiyakawsar.github.io/rest-api-countries-react/)      | Advanced     | ✔️    |
-| 5            | [Space tourism multi-page website](https://sumaiyakawsar.github.io/space-tourism-website/)                              | Intermediate | ✔️    |
-| 6            | [Advice Generator](https://sumaiyakawsar.github.io/sk-advice-generator/)                                                | Junior       | ✔️    |
-| 7            | [Blog Preview Card](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project7)                    | Newbie       | ✔️    |
-| 8            | [Profile Card Component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project8)               | Newbie       | ✔️    |
-| 9            | [NFT preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project9)           | Newbie       | ✔️    |
-| 10           | [Social links profile](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project10)                | Newbie       | ✔️    |
-| 11           | [Recipe Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project11)                         | Newbie       | ✔️    |
-| 12           | [Product preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project12)      | Newbie       | ✔️    |
-| 13           | [Four card feature section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project13)           | Newbie       | ✔️    |
-| 14           | [Testimonials grid section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project14)           | Junior       | ✔️    |
-| 15           | [Article preview component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project15)           | Newbie       | ✔️    |
-| 16           | [Newsletter sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/16-newsletter-sign-up) | Newbie       | ✔️    |
-| 17           | [Time tracking dashboard](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project17)           | Junior       | ✔️    |
-| 18           | [Tip calculator app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project18)                | Junior       | ✔️    |
-| 19           | [Interactive rating component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project19)      | Newbie       | ✔️    |
-| 20           | [FAQ accordion](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project20)                     | Newbie       | ✔️    |
-| 21           | [Contact Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project21)                      | Junior       | ✔️    |
-| 22           | [News homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project22)                     | Junior       | ✔️    |
-| 23           | [E-commerce product page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project23)           | Intermediate | ✔️    |
-| 24           | [Loopstudios landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project24)          | Junior       | ✔️    |
-| 25           | [Room Homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project25)                     | Intermediate | ✔️    |
-| 26           | [Bookmark landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project26)             | Intermediate | ✔️    |
-| 27           | [Results Summary](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project27)                   | Newbie       | ✔️    |
-| 28           | [Product list with cart](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project28)            | Junior       | ✔️    |
-| 29           | [Mortgage repayment calculator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project29)     | Junior       | ✔️    |
-| 30           | [Interactive Comments](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project30)              | Intermediate | ✔️    |
-| 31           | [Multi Step Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project31)                   | Advanced     | ✔️    |
-| 32           | [Browser Extension Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project32)            | Junior       | ✔️    |
-| 33           | [Interactive Card Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project33)             | Junior       | ✔️    |
-| 34           | [Expenses Chart Component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project34)          | Junior       | ✔️    |
-| 35           | [Ping Coming Soon Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project35)             | Newbie       | ✔️    |
-| 36           | [Todo app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project36)                          | Intermediate | ✔️    |
-| 37           | [Social Media Dashboard](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project37)            | Junior       | ✔️    |
-| 38           | [Order summary card](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project38)                | Newbie       | ✔️    |
-| 39           | [Stats preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project39)      | Newbie       | ✔️    |
-| 40           | [Social proof section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project40)              | Newbie       | ✔️    |
-| 41           | [Single price grid component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project41)       | Newbie       | ✔️    |
-| 42           | [Base Apparel coming soon page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project42)     | Newbie       | ✔️    |
-| 43           | [Intro component with sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project43) | Newbie       | ✔️    |
-| 44           | [Huddle landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project44)               | Newbie       | ✔️    |
-| 45           | [Job listings](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project45)                      | Intermediate | ✔️    |
-| 46           | [Notifications Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project46)                | Junior       | ✔️    |
-| 47           | [Conference Ticket Generator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project47)       | Junior       | ✔️    |
-| 48           | [Clipboard Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project48)                    | Junior       | ✔️    |
-| 49           | [Fylo Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project49)                         | Junior       | ✔️    |
-| 50           | [Agency Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project50)                       | Junior       | ✔️    |
-| 51           | [Bento Grid](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project51)                        | Junior       | ✔️    |
-| 52           | [Pricing with toggle](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project52)               | Junior       | ✔️    |
-| 53           | [Intro section with dropdown](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project53)       | Junior       | ✔️    |
-| 54           | [Blogr](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project54)                             | Junior       | ✔️    |
-| 55           | [Insure](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project55)                            | Junior       | ✔️    |
-| 56           | [Project tracking intro component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project56)  | Junior       | ✔️    |
-| 57           | [Fylo data storage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project57)                 | Junior       | ✔️    |
-| 58           | [Bootcamp testimonials slider](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project58)      | Junior       | ✔️    |
-| 59           | [Interactive pricing component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project59)     | Junior       | ✔️    |
-| 60           | ---                                                                                                                     | Junior       | ❌    |
-| 61           | ---                                                                                                                     | Junior       | ❌    |
+| 1            | [QR code component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project1)                    | Newbie       | ✔️  |
+| 2            | [3-column preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project2)      | Newbie       | ✔️  |
+| 3            | [Launch countdown timer](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project3)               | Intermediate | ✔️  |
+| 4            | [REST Countries API with color theme switcher solution](https://sumaiyakawsar.github.io/rest-api-countries-react/)      | Advanced     | ✔️  |
+| 5            | [Space tourism multi-page website](https://sumaiyakawsar.github.io/space-tourism-website/)                              | Intermediate | ✔️  |
+| 6            | [Advice Generator](https://sumaiyakawsar.github.io/sk-advice-generator/)                                                | Junior       | ✔️  |
+| 7            | [Blog Preview Card](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project7)                    | Newbie       | ✔️  |
+| 8            | [Profile Card Component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project8)               | Newbie       | ✔️  |
+| 9            | [NFT preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project9)           | Newbie       | ✔️  |
+| 10           | [Social links profile](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project10)                | Newbie       | ✔️  |
+| 11           | [Recipe Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project11)                         | Newbie       | ✔️  |
+| 12           | [Product preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project12)      | Newbie       | ✔️  |
+| 13           | [Four card feature section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project13)           | Newbie       | ✔️  |
+| 14           | [Testimonials grid section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project14)           | Junior       | ✔️  |
+| 15           | [Article preview component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/project15)           | Newbie       | ✔️  |
+| 16           | [Newsletter sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/16-newsletter-sign-up) | Newbie       | ✔️  |
+| 17           | [Time tracking dashboard](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project17)           | Junior       | ✔️  |
+| 18           | [Tip calculator app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project18)                | Junior       | ✔️  |
+| 19           | [Interactive rating component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project19)      | Newbie       | ✔️  |
+| 20           | [FAQ accordion](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project20)                     | Newbie       | ✔️  |
+| 21           | [Contact Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project21)                      | Junior       | ✔️  |
+| 22           | [News homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project22)                     | Junior       | ✔️  |
+| 23           | [E-commerce product page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project23)           | Intermediate | ✔️  |
+| 24           | [Loopstudios landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project24)          | Junior       | ✔️  |
+| 25           | [Room Homepage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project25)                     | Intermediate | ✔️  |
+| 26           | [Bookmark landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project26)             | Intermediate | ✔️  |
+| 27           | [Results Summary](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project27)                   | Newbie       | ✔️  |
+| 28           | [Product list with cart](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project28)            | Junior       | ✔️  |
+| 29           | [Mortgage repayment calculator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project29)     | Junior       | ✔️  |
+| 30           | [Interactive Comments](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project30)              | Intermediate | ✔️  |
+| 31           | [Multi Step Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project31)                   | Advanced     | ✔️  |
+| 32           | [Browser Extension Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project32)            | Junior       | ✔️  |
+| 33           | [Interactive Card Form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project33)             | Junior       | ✔️  |
+| 34           | [Expenses Chart Component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project34)          | Junior       | ✔️  |
+| 35           | [Ping Coming Soon Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project35)             | Newbie       | ✔️  |
+| 36           | [Todo app](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project36)                          | Intermediate | ✔️  |
+| 37           | [Social Media Dashboard](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project37)            | Junior       | ✔️  |
+| 38           | [Order summary card](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project38)                | Newbie       | ✔️  |
+| 39           | [Stats preview card component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project39)      | Newbie       | ✔️  |
+| 40           | [Social proof section](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project40)              | Newbie       | ✔️  |
+| 41           | [Single price grid component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project41)       | Newbie       | ✔️  |
+| 42           | [Base Apparel coming soon page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project42)     | Newbie       | ✔️  |
+| 43           | [Intro component with sign-up form](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project43) | Newbie       | ✔️  |
+| 44           | [Huddle landing page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project44)               | Newbie       | ✔️  |
+| 45           | [Job listings](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project45)                      | Intermediate | ✔️  |
+| 46           | [Notifications Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project46)                | Junior       | ✔️  |
+| 47           | [Conference Ticket Generator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project47)       | Junior       | ✔️  |
+| 48           | [Clipboard Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project48)                    | Junior       | ✔️  |
+| 49           | [Fylo Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project49)                         | Junior       | ✔️  |
+| 50           | [Agency Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project50)                       | Junior       | ✔️  |
+| 51           | [Bento Grid](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project51)                        | Junior       | ✔️  |
+| 52           | [Pricing with toggle](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project52)               | Junior       | ✔️  |
+| 53           | [Intro section with dropdown](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project53)       | Junior       | ✔️  |
+| 54           | [Blogr](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project54)                             | Junior       | ✔️  |
+| 55           | [Insure](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project55)                            | Junior       | ✔️  |
+| 56           | [Project tracking intro component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project56)  | Junior       | ✔️  |
+| 57           | [Fylo data storage](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project57)                 | Junior       | ✔️  |
+| 58           | [Bootcamp testimonials slider](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project58)      | Junior       | ✔️  |
+| 59           | [Interactive pricing component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project59)     | Junior       | ✔️  |
+| 60           | [Crowdfunding product page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project60)         | Junior       | ✔️  |
+| 61           | ---                                                                                                                     | Junior       | ❌  |
+| 62           | ---                                                                                                                     | Junior       | ❌  |
+| 63           | ---                                                                                                                     | Junior       | ❌  |
+| 64           | ---                                                                                                                     | Junior       | ❌  |
+| 65           | ---                                                                                                                     | Junior       | ❌  |
+| 66           | ---                                                                                                                     | Junior       | ❌  |
+| 67           | ---                                                                                                                     | Junior       | ❌  |
 
 
 

@@ -57,6 +57,7 @@ import Project56 from "../images/project56-project-tracking-intro.webp"
 import Project57 from "../images/project57-fylo-data-storage.webp"
 import Project58 from "../images/project58-coding-bootcamp-testimonials.webp"
 import Project59 from "../images/project59-interactive-pricing-component.webp"
+import Project60 from "../images/project60-crowdfunding-product-page.webp"
 
 export const Projects = [
     {
@@ -575,6 +576,14 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Component"]
+    }, {
+        projectId: 60,
+        projectTitle: "Crowdfunding product page",
+        src: "/project60",
+        projectImage: Project60,
+        projectLevelNo: "2",
+        projectLevel: "junior",
+        projectTags: ["React", "SCSS", "Landing"]
     },
     // {
     //     projectId: 1,

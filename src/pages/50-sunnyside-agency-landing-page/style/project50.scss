@@ -8,7 +8,10 @@
     font-family: v.$barlow-font;
     font-size: v.$font-size-p;
     width: 100dvw;
-
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+    }
     .hero {
         background-image: url("../images/mobile/image-header.jpg");
         background-size: cover;
@@ -30,7 +33,7 @@
 
             .navbar {
                 @include v-align-center;
-                padding: f.rem(32);
+                padding-block: f.rem(32);
 
                 .menu-toggle {
                     background: none;
@@ -98,7 +101,9 @@
                 position: absolute;
                 top: 80px;
                 background-color: v.$white;
-
+                border: red solid 2px;
+                // margin-inline: f.rem(32);
+                right: 0;
                 z-index: 1000;
 
                 @include flex-col(f.rem(0));
