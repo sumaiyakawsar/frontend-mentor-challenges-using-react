@@ -2,7 +2,7 @@
 @use "variables" as v;
 @use "../../../styles/font" as fo;
 @use "../../../styles/mixin" as *;
-@use "theme";
+@use "../../../styles/theme";
 
 .projects {
     min-height: 100vh;

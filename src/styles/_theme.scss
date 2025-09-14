@@ -15,26 +15,14 @@
 //     --kpi-bg-dark: rgba(255, 255, 255, 0.1);
 // }
 
-// .theme[data-theme="light"].homepage {
-//     --header-bg: var(--header-bg-light);
-//     --bg-color: var(--bg-color-light);
-//     --card-bg: var(--card-bg-light);
-//     --text-color: var(--text-color-light);
-//     --kpi-bg: var(--kpi-bg-light);
-// }
-
-// .theme[data-theme="dark"].homepage {
-//     --header-bg: var(--header-bg-dark);
-//     --bg-color: var(--bg-color-dark);
-//     --card-bg: var(--card-bg-dark);
-//     --text-color: var(--text-color-dark);
-//     --kpi-bg: var(--kpi-bg-dark);
-// }
+ 
 
 // Dark mode variables
 .theme[data-theme="dark"].homepage {
-    --bg-primary: #1a1a1a;
     --bg-color: #1a1a1a;
+
+
+    --bg-primary: #1a1a1a;
     --bg-header: #2d2d2d;
     --bg-card: #2d2d2d;
     --bg-toggle: #3d3d3d;
@@ -48,14 +36,16 @@
     --accent-primary: #6e8efb;
     --accent-primary-dark: #5d7ce0;
     --accent-secondary: #ff6b6b;
-    --accent-secondary-dark: #e55c5c;
+    --accent-secondary-dark: #e55c5c;   
     --project-name: red;
 }
 
 // Light mode variables
 .theme[data-theme="light"].homepage {
-    --bg-primary: #f8f9fa;
     --bg-color: #f8f9fa;
+
+
+    --bg-primary: #f8f9fa;
     --bg-header: #ffffff;
     --bg-card: #ffffff;
     --bg-toggle: #f1f3f5;

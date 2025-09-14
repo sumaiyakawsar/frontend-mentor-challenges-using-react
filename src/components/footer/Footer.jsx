@@ -8,7 +8,12 @@ const Footer = () => {
 
 
   const lastSegment = pathname.split('/').filter(Boolean).pop();
-
+  console.log(lastSegment);
+  const socials = [
+    { icon: <FaFacebookF />, href: "https://www.facebook.com/Sumaiya.Kawsar/", label: "facebook" },
+    { icon: <FaPinterestP />, href: "https://www.pinterest.com/sumaiyakawsar693/", label: "pinterest" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/devsume/", label: "instagram" },
+  ];
 
   const footerClassMap = {
     "": "footer-main", // Home route "/"
@@ -65,51 +70,34 @@ const Footer = () => {
     "project58": "footer-58",
     "project59": "footer-59",
     "project60": "footer-60",
+    "project61": "footer-61",
+
   };
 
   const fgClass = footerClassMap[lastSegment ?? ""] || "footer-default";
 
+
+
   return (
     <footer id='footer' className={`footer ${fgClass}`}>
       <div className="socials">
-        <a
-          href="https://www.facebook.com/Sumaiya.Kawsar/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social__icon "
-          aria-label="facebook"
-        ><FaFacebookF />
-
-        </a>
-        <a
-          href="https://www.pinterest.com/sumaiyakawsar693/"
-          target="_blank"
-          className="social__icon  "
-          aria-label="pinterest"
-          rel="noopener noreferrer"
-        ><FaPinterestP />
-
-        </a>
-        <a
-          href="https://www.instagram.com/devsume/"
-          target="_blank"
-          className="social__icon "
-          aria-label="instagram"
-          rel="noopener noreferrer"
-        ><FaInstagram />
-
-        </a>
+        {socials.map(({ icon, href, label }) => (
+          <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="social__icon" aria-label={label}>
+            {icon}
+          </a>
+        ))}
       </div>
 
       {
         fgClass === "footer-35" ?
           <p>&copy; Copyright Ping. All rights reserved.</p>
           : ""
-      }
+      } 
 
       <div className="attribution">Challenge by
-        <Link to="https://www.frontendmentor.io?ref=challenge"> Frontend Mentor</Link>. Coded by <Link
-          to="https://github.com/sumaiyakawsar"> Sumaiya Kawsar</Link>.
+        <Link to="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</Link>.
+        Coded by
+        <Link to="https://github.com/sumaiyakawsar"> Sumaiya Kawsar</Link>.
       </div>
 
 

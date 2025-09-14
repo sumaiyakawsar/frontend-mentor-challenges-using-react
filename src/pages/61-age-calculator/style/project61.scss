@@ -1,0 +1,135 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/font" as fo;
+@use "../../../styles/mixin" as *;
+@use "../../../styles/animations" as *;
+@use "variables" as v;
+
+.project-61 {
+    font-family: fo.$poppins;
+    font-size: v.$font-size-p;
+    font-weight: v.$font-normal;
+    flex: 1;
+    @include flex-col(f.rem(0));
+    @include flex-center;
+    width: 100dvw;
+
+    .age-calculator {
+        background: v.$white;
+        padding: f.rem(32);
+        border-radius: f.rem(16);
+        width: 90vw;
+        max-width: 600px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        border-bottom-right-radius: f.rem(100);
+        .calculator {
+            @include flex-col(f.rem(48));
+            .input-container {
+                display: flex;
+                align-items: flex-start;
+                gap: f.rem(24);
+
+                .input-group {
+                    flex: 1; // 👈 all take equal width
+                    max-width: 120px; // adjust as you like
+                    @include flex-col(f.rem(4));
+                    label {
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                        color: v.$grey-500;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+
+                    input {
+                        padding: 0.7rem;
+                        border: 1px solid #ddd;
+                        border-radius: 6px;
+                        font-size: 1.2rem;
+                        width: 100%; // 👈 fill the column
+
+                        font-weight: bold;
+
+                        &:hover,
+                        &:focus,
+                        &:focus-visible {
+                            border: 1px solid v.$purple-500;
+                        }
+                    }
+
+                    &.error {
+                        input {
+                            border-color: v.$red-400;
+                        }
+                        label {
+                            color: v.$red-400;
+                        }
+
+                        .error-text {
+                            font-size: f.rem(10);
+                            color: v.$red-400;
+                        }
+                    }
+                }
+            }
+            .submit-container {
+                position: relative;
+                hr {
+                    border: none;
+                    height: 2px;
+                    background: #eee;
+                }
+
+                .submit-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: v.$purple-500;
+                    border: none;
+                    border-radius: 50%;
+
+                    padding: f.rem(16);
+                    @include place-center;
+                    cursor: pointer;
+                    margin-top: auto;
+
+                    &:hover {
+                        background-color: v.$black;
+                    }
+
+                    &:focus,
+                    &:focus-visible {
+                        outline-offset: 2px;
+                        outline: 1px solid v.$purple-500;
+                    }
+
+                    @include breakpoint(small) {
+                        left: auto;
+                        right: 0; // move to end
+                        transform: translateY(-50%);
+                    }
+                    img {
+                        width: 28px;
+                        height: 28px;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .results {
+            padding-top: f.rem(48);
+            font-weight: v.$font-bold;
+            font-style: italic;
+            font-size: f.rem(48);
+            p {
+                span {
+                    color: v.$purple-500;
+                    transition: all 0.4s ease-out;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
