@@ -139,6 +139,7 @@ function App() {
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },
+    { path: "/weather-app-challenge", url: "https://sumaiyakawsar.github.io/weather-app-challenge/" },
 
     // { path: "*", element: <NotFound /> },
 

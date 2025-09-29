@@ -59,6 +59,7 @@ import Project58 from "../images/project58-coding-bootcamp-testimonials.webp"
 import Project59 from "../images/project59-interactive-pricing-component.webp"
 import Project60 from "../images/project60-crowdfunding-product-page.webp"
 import Project61 from "../images/project61-age-calculator.webp"
+import Project62 from "../images/project62-weather-app-hackathon.png"
 
 export const Projects = [
     {
@@ -101,12 +102,12 @@ export const Projects = [
     },
     {
         projectId: 5,
-        projectTitle: "Space tourism multi-page site",
+        projectTitle: "Space tourism site",
         src: "https://sumaiyakawsar.github.io/space-tourism-website/",
         projectImage: project5,
         projectLevelNo: "3",
         projectLevel: "intermediate",
-        projectTags: ["React", "SCSS", "Flex"]
+        projectTags: ["React", "SCSS", "Flex", "Multi-Page"]
     },
     {
         projectId: 6,
@@ -593,6 +594,14 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Calculator"]
+    }, {
+        projectId: 62,
+        projectTitle: "Weather App - Hackathon",
+        src: "https://sumaiyakawsar.github.io/weather-app-challenge/",
+        projectImage: Project62,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "API","Flex", "Grid","Theme","Hackathon"]
     },
     // {
     //     projectId: 1,
