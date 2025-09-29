@@ -9,6 +9,7 @@ const ProjectCard = ({ project, onTagClick }) => {
             <Link
                 key={project.Id}
                 to={project.src}
+                target="_blank"
                 exact
                 strict
             >
