@@ -71,6 +71,7 @@ const Footer = () => {
     "project59": "footer-59",
     "project60": "footer-60",
     "project61": "footer-61",
+    "project63": "footer-63",
 
   };
 
@@ -92,7 +93,7 @@ const Footer = () => {
         fgClass === "footer-35" ?
           <p>&copy; Copyright Ping. All rights reserved.</p>
           : ""
-      } 
+      }
 
       <div className="attribution">Challenge by
         <Link to="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</Link>.

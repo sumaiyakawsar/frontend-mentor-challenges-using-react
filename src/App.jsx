@@ -63,6 +63,8 @@ import Project58 from './pages/58-coding-bootcamp-testimonials/Project58';
 import Project59 from './pages/59-interactive-pricing-component/Project59';
 import Project60 from './pages/60-crowdfunding-product-page/Project60';
 import Project61 from './pages/61-age-calculator/Project61';
+import Project63 from './pages/63-manage-landing-page/Project63';
+import { ToastContainer } from 'react-toastify';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -135,7 +137,7 @@ function App() {
     { path: "/project59", element: <Project59 /> },
     { path: "/project60", element: <Project60 /> },
     { path: "/project61", element: <Project61 /> },
-
+    { path: "/project63", element: <Project63 /> },
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },
@@ -165,6 +167,21 @@ function App() {
         })}
 
       </Routes>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        toastClassName="custom-toast"
+        bodyClassName="custom-toast-body"
+      />
+
     </Layout>
 
 

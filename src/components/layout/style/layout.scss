@@ -303,6 +303,25 @@
     &61 {
         background-color: v.$grey-61;
     }
+
+    &63 {
+        background-image:
+            url("../../../pages/63-manage-landing-page/images/bg-tablet-pattern.svg"),
+            url("../../../pages/63-manage-landing-page/images/bg-tablet-pattern.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position:
+            top -20vw right -20vw,
+            top 75vw right -30vw;
+
+        background-size: 80vw, 50vw;
+        @include breakpoint(medium) {
+            background-position:
+                top -20vw right -20vw,
+                bottom 50vw left -30vw;
+
+            background-size: 60vw, 50vw;
+        }
+    }
 }
 
 .theme {
