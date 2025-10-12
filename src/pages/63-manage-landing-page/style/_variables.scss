@@ -1,0 +1,26 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary 
+
+$orange-400: hsl(12, 88%, 59%);
+$blue-950: hsl(228, 39%, 23%);
+
+// Neutral
+$white: hsl(0, 100%, 100%);
+$gray-950: hsl(233, 12%, 13%);
+$orange-50: hsl(13, 100%, 96%);
+$gray-50: hsl(0, 0%, 98%);
+$black: hsl(0, 0%, 0%);
+
+//Typography
+$font-size-p: f.rem(16);
+$transition: all 0.3s ease;
+$box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+$font-family: "Be Vietnam Pro", sans-serif;
+
+$font-normal: 400;
+$font-semi-bold: 500;
+$font-bold: 700;

@@ -9,7 +9,7 @@
     position: fixed;
     bottom: f.rem(20); // or just 20px
     right: f.rem(20);
-    z-index: 1000; 
+    z-index: 1000;
     border-radius: 50%;
     transition: transform 0.2s ease;
 
@@ -544,6 +544,16 @@
     &-61 {
         a {
             color: v.$purple-61;
+        }
+    }
+
+    &-63 {
+        background-color: v.$gray-63;
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$orange-63;
         }
     }
 }

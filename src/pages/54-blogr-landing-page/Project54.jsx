@@ -114,7 +114,7 @@ export default function Project54() {
 
       <section className='future-bottom '>
         <div className="container">
-          
+
           <div className="future__image">
             <picture >
               {/* Mobile Image */}

@@ -41,4 +41,24 @@ body {
     a {
         text-decoration: none;
     }
+
+      .custom-toast {
+            padding: 0.75rem 1.25rem;
+            border-radius: f.rem(16);
+            backdrop-filter: blur(7px); // glass effect
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            // Use CSS variables for dynamic theming
+            background-color: rgba(255, 255, 255, 0.1);
+            color: black;
+
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease;
+        }
 }

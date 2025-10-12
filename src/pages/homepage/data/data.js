@@ -59,7 +59,8 @@ import Project58 from "../images/project58-coding-bootcamp-testimonials.webp"
 import Project59 from "../images/project59-interactive-pricing-component.webp"
 import Project60 from "../images/project60-crowdfunding-product-page.webp"
 import Project61 from "../images/project61-age-calculator.webp"
-import Project62 from "../images/project62-weather-app-hackathon.png"
+import Project62 from "../images/project62-weather-app-hackathon.webp"
+import Project63 from "../images/project63-manage-landing-page.webp"
 
 export const Projects = [
     {
@@ -252,12 +253,12 @@ export const Projects = [
     },
     {
         projectId: 22,
-        projectTitle: "News homepage",
+        projectTitle: "News",
         src: "/project22",
         projectImage: project22,
         projectLevelNo: "2",
         projectLevel: "junior",
-        projectTags: ["React", "SCSS", "Grid"]
+        projectTags: ["React", "SCSS", "Grid", "Landing"]
     },
     {
         projectId: 23,
@@ -270,7 +271,7 @@ export const Projects = [
     },
     {
         projectId: 24,
-        projectTitle: "Loopstudios page",
+        projectTitle: "Loopstudios",
         src: "/project24",
         projectImage: project24,
         projectLevelNo: "2",
@@ -288,7 +289,7 @@ export const Projects = [
     },
     {
         projectId: 26,
-        projectTitle: "Bookmark page",
+        projectTitle: "Bookmark",
         src: "/project26",
         projectImage: project26,
         projectLevelNo: "3",
@@ -433,7 +434,7 @@ export const Projects = [
         projectTags: ["React", "SCSS"]
     }, {
         projectId: 43,
-        projectTitle: "Huddle page",
+        projectTitle: "Huddle",
         src: "/project43",
         projectImage: Project43,
         projectLevelNo: "1",
@@ -477,7 +478,7 @@ export const Projects = [
     },
     {
         projectId: 48,
-        projectTitle: "Clipboard page",
+        projectTitle: "Clipboard",
         src: "/project48",
         projectImage: Project48,
         projectLevelNo: "2",
@@ -485,7 +486,7 @@ export const Projects = [
         projectTags: ["React", "SCSS", "Landing"]
     }, {
         projectId: 49,
-        projectTitle: "Fylo page",
+        projectTitle: "Fylo",
         src: "/project49",
         projectImage: Project49,
         projectLevelNo: "2",
@@ -494,7 +495,7 @@ export const Projects = [
     },
     {
         projectId: 50,
-        projectTitle: "Sunnyside agency page",
+        projectTitle: "Sunnyside agency",
         src: "/project50",
         projectImage: Project50,
         projectLevelNo: "2",
@@ -580,13 +581,14 @@ export const Projects = [
         projectTags: ["React", "SCSS", "Component"]
     }, {
         projectId: 60,
-        projectTitle: "Crowdfunding product page",
+        projectTitle: "Crowdfunding product",
         src: "/project60",
         projectImage: Project60,
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Landing"]
-    }, {
+    },
+    {
         projectId: 61,
         projectTitle: "Age Calculator",
         src: "/project61",
@@ -594,15 +596,26 @@ export const Projects = [
         projectLevelNo: "2",
         projectLevel: "junior",
         projectTags: ["React", "SCSS", "Calculator"]
-    }, {
+    },
+    {
         projectId: 62,
         projectTitle: "Weather App - Hackathon",
         src: "https://sumaiyakawsar.github.io/weather-app-challenge/",
         projectImage: Project62,
         projectLevelNo: "3",
         projectLevel: "intermediate",
-        projectTags: ["React", "SCSS", "API","Flex", "Grid","Theme","Hackathon"]
+        projectTags: ["React", "SCSS", "API", "Theme", "Hackathon"]
     },
+    {
+        projectId: 63,
+        projectTitle: "Manage",
+        src: "/project63",
+        projectImage: Project63,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Landing"]
+    },
+
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",

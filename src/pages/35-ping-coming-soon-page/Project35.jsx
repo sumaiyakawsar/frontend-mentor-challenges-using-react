@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import {   toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle';
-import Error from "../../components/Error"; 
+import Error from "../../components/Error";
 import './style/project35.scss';
 
 import illustration from "./images/illustration-dashboard.png"
@@ -27,7 +27,9 @@ const Project35 = () => {
   };
 
   const handleSubmit = (e) => {
+
     e.preventDefault();
+
     const validationError = validateEmail(email);
     if (validationError) {
       setError(validationError);
@@ -35,22 +37,14 @@ const Project35 = () => {
       setError("");
       setSubmitted(true);
 
-      toast.success("You are on the list!", {
-        position: "bottom-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        theme: "dark",
-      });
+      toast.success("You are on the list!");
 
       setEmail("");
 
-
-      // Optional: Reset submitted animation after some time
+ 
       setTimeout(() => setSubmitted(false), 500); // for animation
 
-    }
+    } 
   };
 
   const handleChange = (e) => {
@@ -91,7 +85,6 @@ const Project35 = () => {
           <img src={illustration} alt="illustration" className="illustration" />
         </div>
       </div>
-      <ToastContainer />
 
 
 
