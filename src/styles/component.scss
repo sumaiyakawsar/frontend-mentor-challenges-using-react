@@ -556,4 +556,13 @@
             color: v.$orange-63;
         }
     }
+    &-64 {
+        background-color: v.$blue-64;
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$green-64;
+        }
+    }
 }

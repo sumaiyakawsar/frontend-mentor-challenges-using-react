@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 
 import { Routes, Route, Navigate } from "react-router-dom";
 import './styles/app.scss'
+import { ToastContainer } from 'react-toastify';
 import Layout from "./components/layout/layout"
 import ScrollToTop from './components/utility/ScrollToTop';
 import Homepage from "./pages/homepage/Homepage";
@@ -64,7 +65,7 @@ import Project59 from './pages/59-interactive-pricing-component/Project59';
 import Project60 from './pages/60-crowdfunding-product-page/Project60';
 import Project61 from './pages/61-age-calculator/Project61';
 import Project63 from './pages/63-manage-landing-page/Project63';
-import { ToastContainer } from 'react-toastify';
+import Project64 from './pages/64-digitalbank-landing-page/Project64';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -138,6 +139,8 @@ function App() {
     { path: "/project60", element: <Project60 /> },
     { path: "/project61", element: <Project61 /> },
     { path: "/project63", element: <Project63 /> },
+    { path: "/project64", element: <Project64 /> },
+
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
     { path: "/sk-advice-generator", url: "https://sumaiyakawsar.github.io/sk-advice-generator/" },

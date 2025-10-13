@@ -1,0 +1,27 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+
+// Primary
+
+$blue-950: hsl(233, 26%, 24%);
+$green-500: hsl(136, 64%, 51%);
+$cyan-400: hsl(192, 69%, 51%);
+
+// Neutral
+$white: hsl(0, 100%, 100%);
+$gray-600: hsl(233, 8%, 62%);
+$gray-100: hsl(220, 16%, 96%);
+$gray-50: hsl(0, 0%, 98%);
+$black: hsl(0, 0%, 0%);
+
+$transition: all 0.3s ease;
+$box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+//Typography
+$font-size-p: f.rem(18);
+$font-family: "Public Sans", sans-serif;
+
+$font-thin: 300;
+$font-normal: 400;
+$font-bold: 700;
