@@ -61,6 +61,7 @@ import Project60 from "../images/project60-crowdfunding-product-page.webp"
 import Project61 from "../images/project61-age-calculator.webp"
 import Project62 from "../images/project62-weather-app-hackathon.webp"
 import Project63 from "../images/project63-manage-landing-page.webp"
+import Project64 from "../images/project64-digitalbank-landing-page.webp"
 
 export const Projects = [
     {
@@ -615,7 +616,15 @@ export const Projects = [
         projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "Landing"]
     },
-
+    {
+        projectId: 64,
+        projectTitle: "Digitalbank",
+        src: "/project64",
+        projectImage: Project64,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Landing"]
+    },
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",

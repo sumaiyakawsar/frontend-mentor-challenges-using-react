@@ -73,7 +73,7 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 61           | [Age calculator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project61)                    | Junior       | ✔️  |
 | 62           | [Weather App](https://sumaiyakawsar.github.io/weather-app-challenge/)                                                   | Intermediate | ✔️  |
 | 63           | [Manage Landing Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project63)               | Intermediate | ✔️  |
-| 64           | ---                                                                                                                     | Intermediate | ❌  |
+| 64           | [Digitalbank Landing Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project64)          | Intermediate | ❌  |
 | 65           | ---                                                                                                                     | Intermediate | ❌  |
 | 66           | ---                                                                                                                     | Intermediate | ❌  |
 | 67           | ---                                                                                                                     | Intermediate | ❌  |

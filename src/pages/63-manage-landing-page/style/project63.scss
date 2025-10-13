@@ -95,22 +95,15 @@
                     justify-content: space-between;
                     width: auto;
 
-                    .main-nav {
-                        align-items: center;
-                        @include flex-row(f.rem(32));
+                    .menu-link {
+                        color: v.$gray-950;
+                        font-weight: v.$font-semi-bold;
+                        text-decoration: none;
+                        @include flex-row(f.rem(8));
+                        font-size: f.rem(14);
 
-                        .nav-item {
-                            .menu-link {
-                                color: v.$gray-950;
-                                font-weight: v.$font-semi-bold;
-                                text-decoration: none;
-                                @include flex-row(f.rem(8));
-                                font-size: f.rem(14);
-
-                                &:hover {
-                                    color: color-mix(in srgb, white 55%, v.$gray-950);
-                                }
-                            }
+                        &:hover {
+                            color: color-mix(in srgb, white 55%, v.$gray-950);
                         }
                     }
                 }

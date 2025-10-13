@@ -1,10 +1,8 @@
-import logo from '../images/logo.svg'
+import logo from '../images/logo-dark.svg'
 import { MdOutlineMenu } from "react-icons/md";
 import { LiaTimesSolid } from "react-icons/lia";
 
 const Navbar = ({ toggleMenu, menuTitles, isMenuOpen }) => {
-
-
     return (
         <div className='navbar'>
             <div className="logo">
@@ -19,17 +17,18 @@ const Navbar = ({ toggleMenu, menuTitles, isMenuOpen }) => {
             </button>
 
             <nav className="nav-links">
-                {menuTitles.map((menu, index) => (
 
-                    <a href={menu.src} key={index}
-                        className="menu-link"
-                    >
-                        {menu.title}
-                    </a>
+                {menuTitles.map((menu, index) => (
+                         <a href={menu.src} key={index}
+                            className="menu-link">
+                            {menu.title}
+                        </a>
+                     
                 ))}
+
             </nav>
 
-            <button type='button' className='btn btn__primary'>Get Started</button>
+            <button type='button' className='btn'>Request Invite</button>
         </div>
     )
 }
