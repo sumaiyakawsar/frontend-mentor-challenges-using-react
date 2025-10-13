@@ -71,12 +71,12 @@ After converting to react and adding more projects: [![wakatime](https://wakatim
 | 59           | [Interactive pricing component](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project59)     | Junior       | ✔️  |
 | 60           | [Crowdfunding product page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project60)         | Junior       | ✔️  |
 | 61           | [Age calculator](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project61)                    | Junior       | ✔️  |
-| 62           | [Weather App](https://sumaiyakawsar.github.io/weather-app-challenge/)                                                  | Intermediate  | ✔️  |
-| 63           | ---                                                                                                                     | Junior       | ❌  |
-| 64           | ---                                                                                                                     | Junior       | ❌  |
-| 65           | ---                                                                                                                     | Junior       | ❌  |
-| 66           | ---                                                                                                                     | Junior       | ❌  |
-| 67           | ---                                                                                                                     | Junior       | ❌  |
+| 62           | [Weather App](https://sumaiyakawsar.github.io/weather-app-challenge/)                                                   | Intermediate | ✔️  |
+| 63           | [Manage Landing Page](https://sumaiyakawsar.github.io/frontend-mentor-challenges-using-react/#/project63)               | Intermediate | ✔️  |
+| 64           | ---                                                                                                                     | Intermediate | ❌  |
+| 65           | ---                                                                                                                     | Intermediate | ❌  |
+| 66           | ---                                                                                                                     | Intermediate | ❌  |
+| 67           | ---                                                                                                                     | Intermediate | ❌  |
 
 
 
