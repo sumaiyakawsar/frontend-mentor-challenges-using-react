@@ -322,6 +322,47 @@
             background-size: 60vw, 50vw;
         }
     }
+
+    &65 {
+        background-color: v.$gray-65;
+        position: relative;
+        /* --- Background shapes  --- */
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+        }
+        &::before {
+            opacity: 1;
+            top: 0;
+            left: -250px;
+            width: 500px;
+            height: 50%;
+            background: linear-gradient(to bottom, v.$pink-65, v.$purple-65);
+            border-radius: 0 0 250px 250px;
+
+            @include breakpoint(medium) {
+                height: 80%;
+                left: -150px;
+            }
+        }
+        &::after {
+            opacity: 1;
+            bottom: 0;
+            right: -250px;
+            width: 500px;
+            height: 60%;
+            background-color: hsl(270, 20%, 94%);
+            border-radius: 250px 250px 0 0;
+            @include breakpoint(medium) {
+                height: 80%;
+                right: -150px;
+                // bottom: 0;
+            }
+        }
+    }
 }
 
 .theme {
