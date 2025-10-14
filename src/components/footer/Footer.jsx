@@ -73,6 +73,7 @@ const Footer = () => {
     "project61": "footer-61",
     "project63": "footer-63",
     "project64": "footer-64",
+    "project65": "footer-65",
 
   };
 

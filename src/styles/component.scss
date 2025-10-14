@@ -565,4 +565,16 @@
             color: v.$green-64;
         }
     }
+
+    &-65 {
+        a {
+            background: v.$gradient-65;
+            z-index: 999;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            background-clip: text;
+            color: transparent;
+        }
+    }
 }

@@ -1,0 +1,36 @@
+@use "../../../styles/functions" as f;
+
+// Colors
+// Primary
+
+// Text
+$purple-300: hsl(276, 100%, 81%); //(sub-heading at the top of the app UI)
+$purple-600: hsl(276, 55%, 52%); // (chat on the left)
+$gray-500: hsl(270, 7%, 64%); //(chat on the right, paragraph)
+$gray-300: hsl(206, 6%, 79%); // (placeholder text)
+$purple-950: hsl(271, 36%, 24%); //(main heading)
+
+// Gradients
+
+// These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+
+$pink-500: hsl(293, 100%, 63%);
+$purple-500: hsl(264, 100%, 61%);
+
+// Secondary
+
+$white: hsl(0, 100%, 100%);
+$gray-100: hsl(270, 20%, 96%); //(app background)
+$purple-950: hsl(271, 36%, 24%); //(submit button background)
+$pink-400: hsl(289, 100%, 72%); //(radio button outline)
+
+$box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+
+// Typography
+$font-size-p: f.rem(16);
+
+$font-normal: 400;
+$font-semi-bold: 500;
+$font-bold: 700;

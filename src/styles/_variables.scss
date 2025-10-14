@@ -1,6 +1,6 @@
 // Colors
 $frontend-io: #3f54a3;
-$main-color:hsl(330, 100%, 71%);
+$main-color: hsl(330, 100%, 71%);
 
 $white: hsl(0, 0%, 100%);
 $black: rgb(0, 0, 0);
@@ -166,7 +166,7 @@ $gray-55: hsl(0, 0%, 98%);
 $red-56: hsl(0, 100%, 68%);
 
 // Project 59
-$strong-cyan-59: hsl(174, 86%, 45%);  
+$strong-cyan-59: hsl(174, 86%, 45%);
 
 // 60
 $green-60: hsl(176, 50%, 47%);
@@ -182,7 +182,8 @@ $orange-63: hsl(12, 88%, 59%);
 $blue-64: hsl(233, 26%, 24%);
 $green-64: hsl(136, 64%, 51%);
 
-
+// 65
+$gradient-65: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
 
 // Typography
 $font-size-p: 15px;
