@@ -577,4 +577,14 @@
             color: transparent;
         }
     }
+
+    &-66 {
+        background-color: v.$gray-66;
+        .socials {
+            display: none;
+        }
+        a {
+            color: v.$white;
+        }
+    }
 }

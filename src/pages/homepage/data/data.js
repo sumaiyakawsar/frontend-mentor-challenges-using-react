@@ -63,6 +63,7 @@ import Project62 from "../images/project62-weather-app-hackathon.webp"
 import Project63 from "../images/project63-manage-landing-page.webp"
 import Project64 from "../images/project64-digitalbank-landing-page.webp"
 import Project65 from "../images/project65-chat-app.webp"
+import Project66 from "../images/project66-url-shortening.webp"
 
 export const Projects = [
     {
@@ -633,6 +634,15 @@ export const Projects = [
         projectLevelNo: "3",
         projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "Landing"]
+    },
+    {
+        projectId: 66,
+        projectTitle: "Shortly URL shortening",
+        src: "/project66",
+        projectImage: Project66,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Landing", "API"]
     }
     // {
     //     projectId: 1,
