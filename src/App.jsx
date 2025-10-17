@@ -67,6 +67,7 @@ import Project61 from './pages/61-age-calculator/Project61';
 import Project63 from './pages/63-manage-landing-page/Project63';
 import Project64 from './pages/64-digitalbank-landing-page/Project64';
 import Project65 from './pages/65-chat-app/Project65';
+import Project66 from './pages/66-url-shortening/Project66';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -142,6 +143,7 @@ function App() {
     { path: "/project63", element: <Project63 /> },
     { path: "/project64", element: <Project64 /> },
     { path: "/project65", element: <Project65 /> },
+    { path: "/project66", element: <Project66 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
