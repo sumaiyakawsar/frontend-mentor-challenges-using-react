@@ -75,7 +75,7 @@ const Footer = () => {
     "project64": "footer-64",
     "project65": "footer-65",
     "project66": "footer-66",
-
+    "project67": "footer-67",
   };
 
   const fgClass = footerClassMap[lastSegment ?? ""] || "footer-default";
