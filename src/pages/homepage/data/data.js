@@ -64,6 +64,7 @@ import Project63 from "../images/project63-manage-landing-page.webp"
 import Project64 from "../images/project64-digitalbank-landing-page.webp"
 import Project65 from "../images/project65-chat-app.webp"
 import Project66 from "../images/project66-url-shortening.webp"
+import Project67 from "../images/project67-ip-address-tracker.webp"
 
 export const Projects = [
     {
@@ -643,7 +644,16 @@ export const Projects = [
         projectLevelNo: "3",
         projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "Landing", "API"]
-    }
+    },
+    {
+        projectId: 67,
+        projectTitle: "IP Address Tracker",
+        src: "/project67",
+        projectImage: Project67,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "API"]
+    },
     // {
     //     projectId: 1,
     //     projectTitle: "AboutMe",

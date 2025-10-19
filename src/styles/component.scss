@@ -7,7 +7,7 @@
 .main-home {
     padding: f.rem(8);
     position: fixed;
-    bottom: f.rem(20); // or just 20px
+    bottom: f.rem(20);
     right: f.rem(20);
     z-index: 1000;
     border-radius: 50%;
@@ -524,10 +524,6 @@
     &-56 {
         a {
             color: v.$red-56;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
     }
 
@@ -583,6 +579,14 @@
         .socials {
             display: none;
         }
+        a {
+            color: v.$white;
+        }
+    }
+
+    &-67 {
+        background-color: v.$blue-67;
+
         a {
             color: v.$white;
         }
