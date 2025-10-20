@@ -1,5 +1,5 @@
 
-# Frontend Mentor -  IP address tracker solution
+# Frontend Mentor -  Calculator App solution
 
 <div align="center">
   <h3>

@@ -88,6 +88,7 @@ export default function Calculator() {
                 {buttons.map((btn) => (
                     <button
                         key={btn}
+                        type="button"
                         onClick={handleClick}
                         className={`btn 
                             ${btn === "RESET" ? "reset" : ""} 
