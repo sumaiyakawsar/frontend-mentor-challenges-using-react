@@ -15,3 +15,10 @@ export const formatCurrency = (value) => {
     if (value == null) return ""; // return empty string if no pledge
     return value.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
 };
+export const formatNumberComma = (numStr) => {
+    // Don't format if it's an invalid expression
+    if (isNaN(Number(numStr))) return numStr;
+    const [integer, decimal] = numStr.split(".");
+    const formattedInt = integer.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return decimal ? `${formattedInt}.${decimal}` : formattedInt;
+};

@@ -1,0 +1,177 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/font" as fo;
+@use "../../../styles/mixin" as *;
+@use "../../../styles/animations" as *;
+@use "variables" as v;
+@use "themes" as *;
+
+.project-68 {
+    font-family: fo.$league-spartan;
+    font-weight: v.$font-normal;
+    flex: 1;
+    @include flex-col(f.rem(0));
+    @include flex-center;
+    width: 100dvw;
+
+    .calc {
+        width: 90vw;
+        max-width: 400px;
+        color: var(--text-secondary);
+        @include flex-col(f.rem(24));
+
+        &-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .theme-toggle-wrapper {
+                align-items: center;
+                @include flex-row(f.rem(16));
+                color: var(--text-secondary);
+
+                .theme-label {
+                    font-size: f.rem(12);
+                    letter-spacing: 1px;
+                }
+
+                .theme-toggle {
+                    @include flex-col(f.rem(8));
+                    align-items: center;
+                    width: 52px;
+                    user-select: none;
+
+                    .numbers {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        .num {
+                            cursor: pointer;
+                            font-size: 0.7rem;
+                            color: var(--text-muted);
+                            transition: color 0.2s ease;
+                            font-weight: bold;
+                            flex: 1;
+                            text-align: center;
+                            &.active {
+                                color: var(--text-secondary);
+                            }
+                        }
+                    }
+
+                    .track {
+                        position: relative;
+                        width: 100%;
+                        height: 20px;
+                        background: var(--toggle-bg);
+                        border-radius: 999px;
+                        cursor: pointer;
+                        padding: f.em(8);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .knob {
+                            position: absolute;
+                            inset: 3px;
+                            height: 14px;
+                            width: 14px;
+                            border-radius: 50%;
+                            background: var(--toggle-knob);
+                            transition: transform 0.3s ease;
+
+                            &:hover,
+                            &:focus-visible {
+                                background: var(--hover-btn-tertiary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .calculator {
+            width: 100%;
+            @include flex-col(f.rem(16));
+            color: var(--text-primary);
+
+            .calc-display {
+                background: var(--screen-bg);
+                color: var(--text-secondary);
+                padding: f.rem(32);
+                text-align: right;
+                font-size: f.rem(32);
+                border-radius: f.rem(10);
+                font-weight: v.$font-normal;
+                overflow-x: auto;
+            }
+
+            .calc-grid {
+                background: var(--primary-bg);
+                padding: f.rem(24);
+                border-radius: f.rem(10);
+                display: grid;
+                gap: f.rem(16);
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(5, 60px);
+
+                .btn {
+                    border: none;
+                    border-radius: f.rem(8);
+                    font-size: f.rem(24);
+                    font-weight: v.$font-normal;
+                    font-family: inherit;
+                    cursor: pointer;
+                    background: var(--key-primary);
+                    color: var(--text-primary);
+                    box-shadow: 0 4px var(--key-primary-shadow);
+                    transition: transform 0.1s;
+                    @include flex-center;
+
+                    &:active {
+                        transform: scale(0.96);
+                    }
+
+                    &:hover,
+                    &:focus-visible {
+                        background: var(--hover-btn-primary);
+                    }
+
+                    &.del,
+                    &.reset {
+                        background: var(--key-secondary);
+                        box-shadow: 0 4px var(--key-secondary-shadow);
+                        color: white;
+
+                        &:hover,
+                        &:focus-visible {
+                            background: var(--hover-btn-secondary);
+                        }
+                    }
+
+                    &.reset,
+                    &.equal {
+                        grid-column: span 2;
+                    }
+
+                    &.equal {
+                        background: var(--key-tertiary);
+                        box-shadow: 0 4px var(--key-tertiary-shadow);
+                        color: var(--text-tertiary);
+
+                        &:hover,
+                        &:focus-visible {
+                            background: var(--hover-btn-tertiary);
+                        }
+                    }
+                }
+            }
+        }
+
+        @include breakpoint(medium) {
+            width: 40vw;
+        }
+    }
+}

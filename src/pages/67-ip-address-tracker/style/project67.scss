@@ -11,28 +11,7 @@
     font-weight: v.$font-normal;
     flex: 1;
     @include flex-col(f.rem(0));
-
     width: 100dvw;
-    position: relative;
-
-    .btn {
-        all: unset;
-        cursor: pointer;
-        padding: f.rem(8) f.rem(28);
-        border-radius: f.rem(32);
-        font-size: f.rem(16);
-        text-align: center;
-        color: v.$white;
-        transition: v.$transition;
-        font-weight: v.$font-bold;
-        @include flex-center;
-        font-size: f.rem(14);
-
-        &:hover,
-        &:focus-visible {
-            // color: v.$gray-900;
-        }
-    }
 
     .container {
         width: 80vw;
@@ -87,6 +66,11 @@
             }
 
             button {
+                all: unset;
+
+                transition: v.$transition;
+                font-weight: v.$font-bold;
+                font-size: f.rem(14);
                 background-color: v.$black;
                 color: v.$white;
                 border: none;
