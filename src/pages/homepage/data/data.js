@@ -65,6 +65,7 @@ import Project64 from "../images/project64-digitalbank-landing-page.webp"
 import Project65 from "../images/project65-chat-app.webp"
 import Project66 from "../images/project66-url-shortening.webp"
 import Project67 from "../images/project67-ip-address-tracker.webp"
+import Project68 from "../images/project68-calculator-app.webp"
 
 export const Projects = [
     {
@@ -653,6 +654,15 @@ export const Projects = [
         projectLevelNo: "3",
         projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "API"]
+    },
+    {
+        projectId: 68,
+        projectTitle: "Calculator app",
+        src: "/project68",
+        projectImage: Project68,
+        projectLevelNo: "3",
+        projectLevel: "intermediate",
+        projectTags: ["React", "SCSS", "Calculator"]
     },
     // {
     //     projectId: 1,

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_KEY = import.meta.env.VITE_IPIFY_API_KEY;
+const API_KEY = "at_2gZB4R0xeGYqaCLeqEoY1OYO88D86";
 
 export default function useIPInfo(initialIP = "") {
     const [ipData, setIpData] = useState(null);
