@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { formatNumberComma, formatWithCommas } from "../../../components/utility/numberFormat";
+import { formatNumberComma } from "../../../components/utility/numberFormat";
 
 export default function Calculator() {
     const [value, setValue] = useState("0");
@@ -12,7 +12,8 @@ export default function Calculator() {
 
         if (input === "=" || input === "Enter") {
             try {
-                const result = eval(value.replace(/x/g, "*").replace(/÷/g, "/"));
+                const expression = value.replace(/x/g, "*").replace(/÷/g, "/");
+                const result = Function(`"use strict"; return (${expression})`)();
                 setValue(result.toString());
             } catch {
                 setValue("Error");
@@ -35,7 +36,6 @@ export default function Calculator() {
             const lastPart = parts[parts.length - 1];
             if (lastPart.includes(".")) return;
         }
-
 
         // Append input
         setValue(value === "0" ? input : value + input);
