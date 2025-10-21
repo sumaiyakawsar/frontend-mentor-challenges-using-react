@@ -66,6 +66,7 @@ import Project65 from "../images/project65-chat-app.webp"
 import Project66 from "../images/project66-url-shortening.webp"
 import Project67 from "../images/project67-ip-address-tracker.webp"
 import Project68 from "../images/project68-calculator-app.webp"
+import Project69 from "../images/project69-rock-paper-scissors.webp"
 
 export const Projects = [
     {
@@ -663,6 +664,15 @@ export const Projects = [
         projectLevelNo: "3",
         projectLevel: "intermediate",
         projectTags: ["React", "SCSS", "Calculator"]
+    },
+    {
+        projectId: 69,
+        projectTitle: "RPSLS Game",
+        src: "/project69",
+        projectImage: Project69,
+        projectLevelNo: "4",
+        projectLevel: "advanced",
+        projectTags: ["React", "SCSS", "Game"]
     },
     // {
     //     projectId: 1,

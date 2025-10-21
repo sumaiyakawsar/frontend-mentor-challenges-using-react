@@ -1,0 +1,397 @@
+@use "../../../styles/functions" as f;
+@use "../../../styles/mq" as *;
+@use "../../../styles/font" as fo;
+@use "../../../styles/mixin" as *;
+@use "../../../styles/animations" as *;
+@use "variables" as v;
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+.project-69 {
+  font-family: v.$font-family;
+  font-weight: v.$font-normal;
+  flex: 1;
+  @include flex-col(f.rem(0));
+  @include flex-center;
+  width: 100dvw;
+  text-transform: uppercase;
+
+  @include breakpoint(medium) {
+    position: relative;
+  }
+
+  .btn {
+    all: unset;
+    cursor: pointer;
+    border-radius: f.rem(8);
+    font-weight: v.$font-bold;
+    text-transform: uppercase;
+    padding: f.rem(10) f.rem(32);
+
+    &.play-again {
+      background: #fff;
+      color: v.$navy-900;
+
+      transition: background 0.3s;
+      @include flex-center;
+
+      &:hover {
+        background: hsl(229, 64%, 46%);
+        color: #fff;
+      }
+    }
+
+    &.rules-btn {
+      border: 2px solid #fff;
+      color: #fff;
+      background-color: transparent;
+
+      @include breakpoint(medium) {
+        position: absolute;
+        right: f.em(20);
+        bottom: f.em(20);
+      }
+    }
+  }
+  .container {
+    width: 90vw;
+    max-width: 100%;
+    min-height: 100vh;
+    @include flex-col(f.rem(32));
+    @include flex-center;
+    padding-block: f.rem(16);
+
+    @include breakpoint(medium) {
+      width: 60vw;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid v.$gray-600;
+    border-radius: f.rem(10);
+    padding: f.rem(16);
+    width: 100%;
+
+    .score-box {
+      background: #fff;
+      border-radius: f.rem(8);
+      padding: f.rem(8) f.rem(24);
+      text-align: center;
+      @include flex-center;
+      flex-direction: column;
+      width: f.em(120);
+      position: relative;
+      span {
+        font-size: f.rem(16);
+        letter-spacing: 1px;
+        color: v.$blue-700;
+      }
+
+      h2 {
+        font-size: f.rem(48);
+        color: v.$gray-600;
+      }
+
+      .reset-score {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        cursor: pointer;
+        color: v.$red-600;
+      }
+    }
+  }
+  .game {
+    flex: 1;
+    @include flex-center;
+    width: 100%;
+    flex-direction: column;
+    @include breakpoint(medium) {
+    }
+    // STEP 1: Pentagon layout
+    .pentagon-container {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      margin: 0 auto;
+      @include flex-center;
+
+      @include breakpoint(medium) {
+        width: 450px;
+        height: 450px;
+      }
+      .pentagon-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        object-fit: contain;
+        z-index: 0;
+      }
+
+      .choice {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        transition: transform 0.2s ease;
+        border: 12px solid transparent;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &.scissors {
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -20%);
+        }
+
+        &.spock {
+          top: 35%;
+          left: 0;
+          transform: translate(-40%, -50%);
+        }
+
+        &.paper {
+          top: 35%;
+          right: 0;
+          transform: translate(40%, -50%);
+        }
+
+        &.lizard {
+          bottom: 0;
+          left: 15%;
+          transform: translate(-20%, 20%);
+        }
+
+        &.rock {
+          bottom: 0;
+          right: 15%;
+          transform: translate(20%, 20%);
+        }
+      }
+    }
+    .choice {
+      width: 150px;
+      height: 150px;
+      border: 24px solid transparent;
+      background: #fff;
+      @include breakpoint(medium) {
+        width: 200px;
+        height: 200px;
+      }
+      cursor: pointer;
+      border-radius: 50%;
+      @include flex-center;
+      transition: transform 0.2s ease;
+
+      img {
+        width: 50%;
+      }
+
+      &.rock {
+        border-color: v.$red-600;
+        box-shadow: 0 6px v.$red-800;
+      }
+      &.paper {
+        border-color: v.$blue-500;
+        box-shadow: 0 6px v.$blue-700;
+      }
+
+      &.scissors {
+        border-color: v.$gold-500;
+        box-shadow: 0 6px v.$gold-600;
+      }
+
+      &.lizard {
+        border-color: v.$purple-600;
+        box-shadow: 0 6px v.$purple-700;
+      }
+      &.spock {
+        border-color: v.$light-blue-400;
+        box-shadow: 0 6px v.$light-blue-500;
+      }
+    }
+
+    // STEP 2–4: Battle display
+    .battle {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: f.rem(32);
+      text-align: center;
+
+      .pick {
+        position: relative;
+        text-align: center;
+        @include flex-col(f.rem(24));
+        align-items: center;
+        @include breakpoint(medium) {
+          flex-direction: column-reverse;
+          gap: f.rem(24);
+        }
+        .choice {
+          position: relative;
+          z-index: 2;
+        }
+        &.winner::before,
+        &.winner::after,
+        &.winner .ring {
+          content: "";
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          pointer-events: none;
+        }
+
+        &.winner::before {
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+          animation: pulse-winner 2s infinite ease-in-out;
+        }
+
+        &.winner::after {
+          width: 420px;
+          height: 420px;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 80%);
+          animation: pulse-winner 2s infinite ease-in-out 0.3s;
+        }
+
+        &.winner .ring {
+          width: 540px;
+          height: 540px;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 90%);
+          animation: pulse-winner 2s infinite ease-in-out 0.6s;
+        }
+
+        h3 {
+          color: white;
+        }
+
+        .loading-circle {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+          position: relative;
+          @include flex-center;
+          animation: pulse 1.5s infinite ease-in-out;
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+          margin: 0 auto;
+          @include breakpoint(medium) {
+            width: 200px;
+            height: 200px;
+          }
+        }
+        &.user {
+          order: 1;
+        }
+        &.computer {
+          order: 2;
+          @include breakpoint(medium) {
+            order: 3;
+          }
+        }
+      }
+
+      .result-box {
+        order: 3;
+        @include flex-col(f.rem(16));
+        @include breakpoint(medium) {
+          order: 2;
+        }
+
+        h2 {
+          font-size: f.rem(50);
+          color: white;
+          @include breakpoint(medium) {
+            font-size: f.rem(32);
+          }
+        }
+      }
+    }
+  }
+
+  .rules-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+
+    @include breakpoint(medium) {
+      @include flex-center;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .rules-content {
+      background: #fff;
+      color: #333;
+      padding: f.rem(32);
+      width: 100%;
+      height: 100%;
+      @include flex-col(f.rem(32));
+      align-items: center;
+      justify-content: space-around;
+
+      @include breakpoint(medium) {
+        width: 500px;
+        height: auto;
+        text-align: left;
+        border-radius: f.rem(8);
+        align-items: stretch;
+      }
+      .rules-header {
+        @include breakpoint(medium) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        h3 {
+          font-size: f.rem(38);
+          font-weight: v.$font-bold;
+
+          @include breakpoint(medium) {
+            font-size: f.rem(24);
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .close-mobile {
+        all: unset;
+        display: block;
+        color: #ccc;
+        font-size: f.rem(32);
+        cursor: pointer;
+        font-weight: v.$font-bold;
+        @include breakpoint(medium) {
+          display: none;
+        }
+      }
+
+      .close-desktop {
+        display: none;
+        @include breakpoint(medium) {
+          all: unset;
+          display: block;
+          font-weight: v.$font-bold;
+          cursor: pointer;
+          color: #ccc;
+          font-size: f.rem(32);
+
+          > * {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -70,6 +70,7 @@ import Project65 from './pages/65-chat-app/Project65';
 import Project66 from './pages/66-url-shortening/Project66';
 import Project67 from './pages/67-ip-address-tracker/Project67';
 import Project68 from './pages/68-calculator-app/Project68';
+import Project69 from './pages/69-rock-paper-scissors/Project69';
 
 
 const ExternalRedirect = ({ url }) => {
@@ -148,6 +149,7 @@ function App() {
     { path: "/project66", element: <Project66 /> },
     { path: "/project67", element: <Project67 /> },
     { path: "/project68", element: <Project68 /> },
+    { path: "/project69", element: <Project69 /> },
 
     { path: "/rest-api-countries-react", url: "https://sumaiyakawsar.github.io/rest-api-countries-react/" },
     { path: "/space-tourism-website", url: "https://sumaiyakawsar.github.io/space-tourism-website/" },
