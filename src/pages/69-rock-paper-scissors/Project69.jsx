@@ -15,7 +15,7 @@ import { choices } from "./data/data";
 const getRandomChoice = () => choices[Math.floor(Math.random() * choices.length)];
 
 export default function project69() {
-    useFavicon("icons/project18.png");
+    useFavicon("icons/project69.png");
     useDocumentTitle("RPSLS | Frontend Mentor");
 
     const [step, setStep] = useState(1);
@@ -24,7 +24,6 @@ export default function project69() {
     const [result, setResult] = useState("");
     const [showRules, setShowRules] = useState(false);
 
-    // lazy-initialize score from localStorage so 0 is handled correctly
     const [score, setScore] = useState(() => {
         const s = localStorage.getItem("rpsls_score");
         return s !== null ? parseInt(s, 10) : 0;
@@ -78,14 +77,14 @@ export default function project69() {
 
 
     return (
-        <div className='project-69'>
+        <section className='project-69'>
             <div className="container">
                 <header className="game-header">
                     <img src={logo} alt="logo" />
 
                     <div className="score-box">
                         <span>Score</span>
-                        <h2>{score}</h2>
+                        <h1>{score}</h1>
 
                         <MdRestartAlt role='button' title='Reset Score' className="reset-score" onClick={() => setScore(0)} />
 
@@ -101,6 +100,7 @@ export default function project69() {
                             {choices.map((c) => (
                                 <button
                                     key={c.name}
+                                    type='button'
                                     className={`choice ${c.color}`}
                                     onClick={() => handleUserChoice(c)}
                                 >
@@ -126,7 +126,7 @@ export default function project69() {
                             {step === 4 && (
                                 <div className="result-box">
                                     <h2>{result}</h2>
-                                    <button className="btn play-again" onClick={resetGame}>
+                                    <button className="btn play-again" type='button' onClick={resetGame}>
                                         Play Again
                                     </button>
                                 </div>
@@ -150,7 +150,7 @@ export default function project69() {
             </div>
 
             {/* Rules Button */}
-            <button className="btn rules-btn " onClick={() => setShowRules(!showRules)}>
+            <button className="btn rules-btn" type='button' onClick={() => setShowRules(!showRules)}>
                 Rules
             </button>
 
@@ -160,18 +160,18 @@ export default function project69() {
                     <div className="rules-content">
                         <div className="rules-header">
                             <h3>Rules</h3>
-                            <button onClick={() => setShowRules(false)} className="close-desktop">
+                            <button onClick={() => setShowRules(false)} type='button' className="close-desktop">
                                 <MdClose />
                             </button>
                         </div>
                         <img src={rules} alt="rules" />
 
-                        <button onClick={() => setShowRules(false)} className="close-mobile">
+                        <button onClick={() => setShowRules(false)} type='button' className="close-mobile">
                             <MdClose />
                         </button>
                     </div>
                 </div>
             )}
-        </div >
+        </section >
     )
 }
