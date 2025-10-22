@@ -103,14 +103,7 @@
     }
 }
 
-@keyframes shimmer {
-    0% {
-        left: -100%;
-    }
-    100% {
-        left: 100%;
-    }
-}
+
 
 @keyframes fadeInUp {
     from {
@@ -160,7 +153,16 @@
         transform: scale(1);
     }
 }
+
 @keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+@keyframes skeleton {
     0% {
         background-position: -200% 0;
     }

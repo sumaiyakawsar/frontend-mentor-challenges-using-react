@@ -492,7 +492,8 @@
         cursor: pointer;
         transition: border-color 0.3s ease;
 
-        &:focus-visible , &:focus-within{
+        &:focus-visible,
+        &:focus-within {
             outline: none; // remove default
             border-color: v.$green-400;
             box-shadow: 0 0 0 3px rgba(v.$green-400, 0.3);

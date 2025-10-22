@@ -23,6 +23,7 @@ export default function project69() {
     const [computerChoice, setComputerChoice] = useState("");
     const [result, setResult] = useState("");
     const [showRules, setShowRules] = useState(false);
+    const [gameWon, setGameWon] = useState(false);
 
     const [score, setScore] = useState(() => {
         const s = localStorage.getItem("rpsls_score");
@@ -32,6 +33,9 @@ export default function project69() {
     // Save score to localStorage whenever it changes
     useEffect(() => {
         localStorage.setItem("rpsls_score", score);
+        if (score >= 3) {
+            setGameWon(true);
+        }
     }, [score]);
 
     const handleUserChoice = (choice) => {
@@ -75,7 +79,11 @@ export default function project69() {
         setResult("");
     };
 
-
+    const handleFullReset = () => {
+        setScore(0);
+        setGameWon(false);
+        resetGame();
+    };
     return (
         <section className='project-69'>
             <div className="container">
@@ -170,6 +178,17 @@ export default function project69() {
                             <MdClose />
                         </button>
                     </div>
+                </div>
+            )}
+
+            {/* 🎉 Win Animation */}
+            {gameWon && (
+                <div className="win-overlay">
+                    <div className="confetti"></div>
+                    <h1 className="win-text">🎉 Congratulations! You Won the Game! 🎉</h1>
+                    <button className="btn reset-btn" type='button' onClick={handleFullReset}>
+                        Reset Game
+                    </button>
                 </div>
             )}
         </section >
