@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
+import './style/homepage.scss'
 import useFavicon from '../../components/favicons/favicon';
 import useDocumentTitle from '../../components/favicons/useTitle'
 import { useTheme } from '../../components/theme/ThemeContext';
 import TagFilterBar from '../../components/TagFilterBar';
 import ProjectCard from './component/ProjectCard';
 import { Projects } from "./data/data";
-import './style/homepage.scss'
 
 function Homepage() {
     useFavicon("icons/main.png");
@@ -154,7 +154,7 @@ function Homepage() {
                 <div className='projects-grid'>
                     {filteredProjects.length > 0 ? (
                         filteredProjects.map(project => (
-                            <ProjectCard key={project.id} project={project} onTagClick={handleTagClick} />
+                            <ProjectCard key={project.projectId} project={project} onTagClick={handleTagClick} />
                         ))
                     ) : (
                         <div className="no-projects-message">

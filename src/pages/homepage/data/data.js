@@ -674,14 +674,7 @@ export const Projects = [
         projectLevel: "advanced",
         projectTags: ["React", "SCSS", "Game"]
     },
-    // {
-    //     projectId: 1,
-    //     projectTitle: "AboutMe",
-    //     src: "/about",
-    //     projectImage: project16,
-    //     projectLevelNo: "1",
-    //     projectLevel: "newbie",
-    // },
+    
 
 ];
 

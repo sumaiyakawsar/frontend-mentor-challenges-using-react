@@ -217,10 +217,10 @@
     }
 
     .container {
-        @include flex-col(f.rem(48));
+        @include flex-col(clamp(2rem, 6vw, 3rem));
         align-items: center;
         justify-content: center;
-        padding: f.rem(32);
+        padding: clamp(1.5rem, 5vw, 2rem);
     }
 
     .filter-section {

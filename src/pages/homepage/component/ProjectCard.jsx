@@ -7,17 +7,14 @@ const ProjectCard = ({ project, onTagClick }) => {
     return (
         <div className="project">
             <Link
-                key={project.Id}
                 to={project.src}
                 target="_blank"
-                exact
-                strict
             >
                 <div className="project__top">
                     <LazyLoadImage src={project.projectImage} alt={project.Id}
                         effect="blur" className="project__top__img" width={project.projectImage.width} />
-                    {/* <img  loading="lazy" /> */}
-                    <div className={`project__top__num ${project.projectLevel}`}>{project.projectId}</div>
+
+                    <div className={`project__top__num ${project.projectLevel}`}>#{project.projectId}</div>
                 </div>
 
                 <div className="project__body">
